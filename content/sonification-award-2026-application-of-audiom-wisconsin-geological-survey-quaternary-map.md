@@ -6,6 +6,8 @@ slug: "sonification-award-2026-application-of-audiom-wisconsin-geological-survey
 layout: "audiom-embed"
 audiom_id: 38
 draft: false
+aliases:
+  - /sonification
 ---
 
 # Sonification Award 2026 Application of Audiom Wisconsin Geological Survey Quaternary Map

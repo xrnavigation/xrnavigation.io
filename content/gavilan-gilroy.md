@@ -6,6 +6,8 @@ slug: "gavilan-gilroy"
 layout: "audiom-embed"
 audiom_id: 38
 draft: false
+aliases:
+  - /gilroy-campus-map
 ---
 
 # Gilroy Campus Map

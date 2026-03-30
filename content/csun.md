@@ -6,6 +6,9 @@ slug: "csun"
 layout: "audiom-embed"
 audiom_id: 38
 draft: false
+aliases:
+  - /csun26
+  - /csun25
 ---
 
 # Audiom CSUN 2026 Map

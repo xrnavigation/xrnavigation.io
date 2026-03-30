@@ -6,6 +6,9 @@ slug: "atia"
 layout: "audiom-embed"
 audiom_id: 38
 draft: false
+aliases:
+  - /atia26
+  - /atia25
 ---
 
 # Audiom ATIA 2026 Map

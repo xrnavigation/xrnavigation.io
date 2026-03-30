@@ -6,6 +6,8 @@ slug: "peachability-walk-june-22-2025"
 layout: "audiom-embed"
 audiom_id: 900
 draft: false
+aliases:
+  - /peach
 ---
 
 # Peachability Walk June 22, 2025

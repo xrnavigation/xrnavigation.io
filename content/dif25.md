@@ -6,6 +6,8 @@ slug: "dif25"
 layout: "audiom-embed"
 audiom_id: 38
 draft: false
+aliases:
+  - /audiom-disability-innovation-forum-2025-map
 ---
 
 # Audiom Disability Innovation Forum 2025 Map

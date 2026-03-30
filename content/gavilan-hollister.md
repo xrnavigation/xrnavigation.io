@@ -6,6 +6,8 @@ slug: "gavilan-hollister"
 layout: "audiom-embed"
 audiom_id: 38
 draft: false
+aliases:
+  - /gavilan-college-hollister-campus-map
 ---
 
 # Gavilan Hollister Campus
