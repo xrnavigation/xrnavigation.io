@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Dark Mode & High Contrast Overrides
+   Applied via data-theme attribute on <html>
+   ========================================================================== */
+
+/* Dark Mode (Black & White)
+   ========================================================================== */
+[data-theme="dark"] {
+  --color-text: #ffffff;
+  --color-heading: #ffffff;
+  --color-bg: #000000;
+  --color-white: #111111;
+  --color-border: #333333;
+  --color-muted: #aaaaaa;
+  --color-accent: #8faf9f;
+}
+
+[data-theme="dark"] body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+[data-theme="dark"] img {
+  filter: grayscale(100%);
+}
+
+[data-theme="dark"] .site-header {
+  background: #000000;
+  border-bottom-color: #333333;
+}
+
+[data-theme="dark"] .site-footer {
+  background: #000000;
+  border-top-color: #333333;
+}
+
+[data-theme="dark"] .blog-card {
+  background: #111111;
+  border-color: #333333;
+}
+
+[data-theme="dark"] a {
+  color: #8faf9f;
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+  background: #111111;
+  color: #ffffff;
+  border-color: #333333;
+}
+
+[data-theme="dark"] .theme-btn {
+  background: #111111;
+  color: #ffffff;
+  border-color: #333333;
+}
+
+[data-theme="dark"] .theme-btn--active,
+[data-theme="dark"] .theme-btn[aria-pressed="true"] {
+  background: #8faf9f;
+  color: #000000;
+  border-color: #8faf9f;
+}
+
+/* High Contrast Mode
+   ========================================================================== */
+[data-theme="hc"] {
+  --color-text: #0000FF;
+  --color-heading: #0000FF;
+  --color-bg: #000000;
+  --color-white: #000000;
+  --color-border: #0000FF;
+  --color-muted: #0000FF;
+  --color-accent: #0000FF;
+}
+
+[data-theme="hc"] body {
+  background-color: #000000;
+  color: #0000FF;
+}
+
+[data-theme="hc"] .site-header {
+  background: #000000;
+  border-bottom-color: #0000FF;
+}
+
+[data-theme="hc"] .site-footer {
+  background: #000000;
+  border-top-color: #0000FF;
+}
+
+[data-theme="hc"] .blog-card {
+  background: #000000;
+  border-color: #0000FF;
+}
+
+[data-theme="hc"] a {
+  color: #0000FF;
+}
+
+[data-theme="hc"] h1,
+[data-theme="hc"] h2,
+[data-theme="hc"] h3,
+[data-theme="hc"] h4,
+[data-theme="hc"] h5,
+[data-theme="hc"] h6 {
+  color: #0000FF;
+}
+
+[data-theme="hc"] .form-group input,
+[data-theme="hc"] .form-group textarea {
+  background: #000000;
+  color: #0000FF;
+  border-color: #0000FF;
+}
+
+[data-theme="hc"] .btn-primary {
+  background: #0000FF;
+  color: #000000;
+}
+
+[data-theme="hc"] .theme-btn {
+  background: #000000;
+  color: #0000FF;
+  border-color: #0000FF;
+}
+
+[data-theme="hc"] .theme-btn--active,
+[data-theme="hc"] .theme-btn[aria-pressed="true"] {
+  background: #0000FF;
+  color: #000000;
+}
+
+[data-theme="hc"] .nav-item a {
+  color: #0000FF;
+}
+
+[data-theme="hc"] .nav-item a[aria-current="page"] {
+  border-bottom-color: #0000FF;
+}
+
+[data-theme="hc"] :focus-visible {
+  outline-color: #FFFF00;
+}

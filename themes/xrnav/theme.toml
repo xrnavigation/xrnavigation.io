@@ -1,0 +1,6 @@
+name = "xrnav"
+description = "Custom theme for xrnavigation.io"
+min_version = "0.100.0"
+
+[author]
+  name = "XR Navigation"

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="page-single audiom-embed-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+  {{ with .Params.audiom_id }}
+  <div class="audiom-embed">
+    <iframe
+      src="https://www.audiom.net/embed/{{ . }}"
+      width="100%"
+      height="560"
+      style="border: 0;"
+      title="{{ $.Title }}"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+  {{ end }}
+</article>
+{{ end }}

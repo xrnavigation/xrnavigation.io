@@ -1,0 +1,33 @@
+<header class="site-header" role="banner">
+  <div class="site-header-inner">
+    <a href="{{ "/" | relURL }}" class="site-logo" aria-label="{{ .Site.Title }} — Home">
+      {{/* Logo image will be added when media is exported */}}
+      <span class="site-title">XR Navigation</span>
+    </a>
+
+    <button
+      class="mobile-menu-toggle"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      aria-label="Menu">
+      <span class="hamburger-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <ul class="nav-list">
+        {{ range .Site.Menus.main }}
+        <li class="nav-item">
+          <a
+            href="{{ .URL }}"
+            {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}
+            {{ if $currentPage := $.Page }}{{ if eq .URL $currentPage.RelPermalink }}aria-current="page"{{ end }}{{ end }}>
+            {{ .Name }}
+            {{ if .Params.external }}<span class="sr-only">(opens in new tab)</span>{{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ partial "theme-switcher.html" . }}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+{{/* Google Fonts: Lato (body) + Montserrat (headings) */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+
+{{/* Stylesheets */}}
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/dark-mode.css" | relURL }}">
+
+{{/* Analytics placeholder */}}
+{{ if .Site.Params.googleAnalytics }}
+<!-- Google Analytics: {{ .Site.Params.googleAnalytics }} -->
+<!-- Add GA script during final deployment -->
+{{ end }}

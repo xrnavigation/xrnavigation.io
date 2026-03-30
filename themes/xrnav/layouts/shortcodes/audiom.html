@@ -1,0 +1,13 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" | default .Page.Title -}}
+<div class="audiom-embed">
+  <iframe
+    src="https://www.audiom.net/embed/{{ $id }}"
+    width="100%"
+    height="560"
+    style="border: 0;"
+    title="{{ $title }}"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="page-list">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{ .Content }}
+  <ul class="content-list">
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ if .Description }}<p>{{ .Description }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

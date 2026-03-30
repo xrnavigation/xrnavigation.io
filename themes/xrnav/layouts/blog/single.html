@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="blog-post">
+  <header class="blog-post-header">
+    <h1>{{ .Title }}</h1>
+    <div class="blog-post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{ with .Params.author }}
+      <span class="blog-post-author">by {{ . }}</span>
+      {{ end }}
+    </div>
+  </header>
+  {{ with .Params.featured_image }}
+  <figure class="blog-post-image">
+    <img src="{{ . }}" alt="{{ $.Title }}">
+  </figure>
+  {{ end }}
+  <div class="blog-post-content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
