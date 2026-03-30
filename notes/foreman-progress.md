@@ -1,39 +1,39 @@
 # Foreman Progress — Migration Prep
 Date: 2026-03-30
 
-## STATUS: All 5 subagents dispatched, running in background
+## STATUS: 2 of 5 agents complete, 3 running
 
-## DONE
-- Full WP audit (notes/wp-audit.md) — committed 48538b8
-- Design tokens extracted (notes/design-tokens.md) — committed 48538b8
-- PROPOSAL.md written (not committed, on disk)
-- All 5 prompts written and committed:
-  - prompts/migration-playwright-baseline.md — committed c629789
-  - prompts/migration-hugo-scaffold.md — committed c629789
-  - prompts/migration-wp-export.md — committed b22641c
-  - prompts/migration-media-download.md — committed 6ca8c1e
-  - prompts/migration-redirects-forms-css.md — committed 6ca8c1e
+## COMPLETED AGENTS
 
-## DISPATCHED SUBAGENTS (all running in parallel)
-1. **playwright-baseline** — Build Playwright screenshot test suite
-2. **hugo-scaffold** — Initialize Hugo project + custom theme
-3. **wp-export** — Export all WP content via REST API to Markdown
-4. **media-download** — Download all media files from WP
-5. **redirects-forms-css** — Export redirects, form fields, Custom CSS/JS via browser
+### 1. Playwright baseline — DONE, VERIFIED
+- Commit: 44a9c52
+- Files: tests/visual-baseline.spec.ts, tests/playwright.config.ts, tsconfig.json, package.json, .gitignore
+- Status: Test suite created, verified with --list. Not yet run (takes minutes). Matches plan.
 
-## WAITING FOR
-- All 5 agents to complete and write reports to reports/*.md
-- Will read each report and verify against plan before proceeding
+### 2. WP content export — DONE, VERIFIED
+- Commit: 44a9c52 (same hash? agents may have landed on same commit — need to check)
+- Also: 1b1d8af (report + stats)
+- Files: scripts/wp-export.js, 90 content/*.md files
+- 79 pages + 11 posts exported, 52 audiom embed pages detected
+- Follow-up items flagged:
+  - content/blog.md conflicts with content/blog/ directory — needs delete/merge
+  - Image URLs still point to WP uploads — media download agent handles this
+  - WPForms not in REST API — forms need rebuilding (expected)
+  - Homepage needs manual template work (expected)
+  - Able Player markup partially converted (expected)
 
-## NEXT (after agents complete)
-- Read all 5 reports
-- Verify each agent committed its work
-- Update this notes file with results
-- Determine integration tasks (wire exported content into Hugo theme)
+## RUNNING AGENTS
+3. **hugo-scaffold** — still running
+4. **media-download** — resumed after stall, still running
+5. **redirects-forms-css** — still running
 
-## KEY FACTS
-- WP admin browser session is on tab 429210767 (logged in as q.alpha)
-- Agent 5 (redirects-forms-css) shares the browser tab — may conflict with other browser use
-- Site has ~86 URLs total from sitemaps
-- Working directory: C:\Users\Q\src\audiom\xrnavigation.io
-- Repo is on `master` branch
+## POTENTIAL ISSUES
+- WP export and Playwright agents may have same commit hash 44a9c52 — possible merge conflict or one overwrote the other. Need to check git log after all agents finish.
+- Multiple agents writing to same repo without coordination could cause git conflicts.
+
+## NEXT (after all agents complete)
+- Check git log for conflicts/overwrites
+- Delete content/blog.md (conflicts with content/blog/ directory)
+- Integration: wire exported content into Hugo theme
+- Run Playwright baseline screenshots
+- Image URL rewriting pass (after media download completes)
