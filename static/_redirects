@@ -1,0 +1,15 @@
+# Redirect rules exported from WordPress Redirection plugin
+# Format: source  destination  status_code
+
+/csun26  /csun  301
+/csun25  /csun  301
+/atia26  /atia  301
+/atia25  /atia  301
+/atia25/  /atia/  301
+/sonification  /sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map/  301
+/audiom-experience-builder  https://xrnavigation.github.io/Audiom-Esri/  301
+/audiom-disability-innovation-forum-2025-map/  /dif25/  301
+/gavilan-college-hollister-campus-map/  /gavilan-hollister/  301
+/gilroy-campus-map/  /gavilan-gilroy/  301
+/peach  /peachability-walk-june-22-2025/  301
+/conference-contact  https://docs.google.com/forms/d/e/1FAIpQLSdcHTRwgm8WhmT7tBcgC24c681ncHGgBxxNJg2JteklGp_Nbg/viewform  301

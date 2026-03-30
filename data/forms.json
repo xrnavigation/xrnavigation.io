@@ -1,0 +1,59 @@
+{
+  "forms": [
+    {
+      "id": 1507,
+      "name": "Footer Form - Desktop",
+      "fields": [
+        {
+          "field_id": "1",
+          "type": "name",
+          "label": "Your Name",
+          "required": true,
+          "placeholder": "Name"
+        },
+        {
+          "field_id": "2",
+          "type": "email",
+          "label": "Your Email",
+          "required": true,
+          "placeholder": "Email"
+        },
+        {
+          "field_id": "3",
+          "type": "text",
+          "label": "Your Message",
+          "required": true,
+          "placeholder": "Message"
+        }
+      ]
+    },
+    {
+      "id": 2494,
+      "name": "Footer Form - Mobile",
+      "fields": [
+        {
+          "field_id": "1",
+          "type": "name",
+          "label": "Your Name",
+          "required": true,
+          "placeholder": "Name"
+        },
+        {
+          "field_id": "2",
+          "type": "email",
+          "label": "Your Email",
+          "required": true,
+          "placeholder": "Email"
+        },
+        {
+          "field_id": "3",
+          "type": "text",
+          "label": "Your Message",
+          "required": true,
+          "placeholder": "Message"
+        }
+      ]
+    }
+  ],
+  "notes": "Both forms are identical in structure. The site uses two separate forms (desktop/mobile) to work around WPForms duplicate ID issues when the same form appears twice on a page. In the Hugo migration, a single HTML form with proper responsive CSS replaces both."
+}

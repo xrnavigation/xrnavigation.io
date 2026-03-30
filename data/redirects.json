@@ -1,0 +1,14 @@
+[
+  {"from": "/csun26", "to": "/csun", "type": 301},
+  {"from": "/csun25", "to": "/csun", "type": 301},
+  {"from": "/atia26", "to": "/atia", "type": 301},
+  {"from": "/atia25", "to": "/atia", "type": 301},
+  {"from": "/atia25/", "to": "/atia/", "type": 301},
+  {"from": "/sonification", "to": "/sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map/", "type": 301},
+  {"from": "/audiom-experience-builder", "to": "https://xrnavigation.github.io/Audiom-Esri/", "type": 301},
+  {"from": "/audiom-disability-innovation-forum-2025-map/", "to": "/dif25/", "type": 301},
+  {"from": "/gavilan-college-hollister-campus-map/", "to": "/gavilan-hollister/", "type": 301},
+  {"from": "/gilroy-campus-map/", "to": "/gavilan-gilroy/", "type": 301},
+  {"from": "/peach", "to": "/peachability-walk-june-22-2025/", "type": 301},
+  {"from": "/conference-contact", "to": "https://docs.google.com/forms/d/e/1FAIpQLSdcHTRwgm8WhmT7tBcgC24c681ncHGgBxxNJg2JteklGp_Nbg/viewform", "type": 301}
+]
