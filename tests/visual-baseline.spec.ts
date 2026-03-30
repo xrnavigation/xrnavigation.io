@@ -72,22 +72,42 @@ test.beforeAll(async () => {
 });
 
 test('capture visual baselines', async ({ browser }) => {
+  const failed: string[] = [];
+  let skipped = 0;
+  let captured = 0;
+
   // Process each URL sequentially to avoid overwhelming the site
   for (const url of allUrls) {
     const slug = slugFromUrl(url);
 
     for (const vp of VIEWPORTS) {
+      const filename = `${slug}-${vp.name}.png`;
+      const filepath = path.join(BASELINE_DIR, filename);
+
+      // Skip already-captured screenshots
+      if (fs.existsSync(filepath)) {
+        skipped++;
+        continue;
+      }
+
       const context = await browser.newContext({
         viewport: { width: vp.width, height: vp.height },
       });
       const page = await context.newPage();
 
       try {
-        // Navigate and wait for network idle
+        // Navigate with a short timeout — don't wait for networkidle in goto
         await page.goto(url, {
-          waitUntil: 'networkidle',
+          waitUntil: 'domcontentloaded',
           timeout: 30_000,
         });
+
+        // Race networkidle against a 10s ceiling so pages with persistent
+        // connections (reCAPTCHA, analytics) don't block the whole run.
+        await Promise.race([
+          page.waitForLoadState('networkidle').catch(() => {}),
+          page.waitForTimeout(10_000),
+        ]);
 
         // Wait for fonts to finish loading
         await page.evaluate(() => document.fonts.ready);
@@ -96,18 +116,27 @@ test('capture visual baselines', async ({ browser }) => {
         await page.waitForTimeout(1000);
 
         // Take full-page screenshot
-        const filename = `${slug}-${vp.name}.png`;
         await page.screenshot({
-          path: path.join(BASELINE_DIR, filename),
+          path: filepath,
           fullPage: true,
         });
 
+        captured++;
         console.log(`  ✓ ${filename}`);
       } catch (err) {
-        console.error(`  ✗ ${slug}-${vp.name}: ${err}`);
+        failed.push(filename);
+        console.error(`  ✗ ${filename}: ${err}`);
       } finally {
         await context.close();
       }
+    }
+  }
+
+  console.log(`\nBaseline summary: ${captured} captured, ${skipped} skipped (existing), ${failed.length} failed`);
+  if (failed.length > 0) {
+    console.log('Failed pages:');
+    for (const f of failed) {
+      console.log(`  - ${f}`);
     }
   }
 });
