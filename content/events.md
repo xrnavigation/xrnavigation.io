@@ -79,13 +79,13 @@ Biggs, Brandon, et al. “[Evaluation of a non-visual auditory choropleth and tr
 
 ![Logo of Create-X from Georgia Tech](https://xrnavigation.io/wp-content/uploads/2025/07/Create-X-Georgia-Tech-3-1024x614.jpg)
 
-![Logo of M-Enabling Summit](https://xrnavigation.io/wp-content/uploads/2025/07/m_enabling_summit_logo.jpg)
+![Logo of M-Enabling Summit](/images/m_enabling_summit_logo.jpg)
 
 ![Logo of CSUN Assistive Technology Conference](https://xrnavigation.io/wp-content/uploads/2025/07/CSUN-Assistive-Technology-Conference-1-1024x243.png)
 
-![Logo of Vision Rehabilitation and Assistive Technology Conference](https://xrnavigation.io/wp-content/uploads/2025/07/Annual-Vision-Rehabilitation-Assistive-Technology-Expo.jpg)
+![Logo of Vision Rehabilitation and Assistive Technology Conference](/images/Annual-Vision-Rehabilitation-Assistive-Technology-Expo.jpg)
 
-![Logo of Assistive Technology Industry Association](https://xrnavigation.io/wp-content/uploads/2025/07/Assistive-Technology-Industry-Association.png)
+![Logo of Assistive Technology Industry Association](/images/Assistive-Technology-Industry-Association.png)
 
 ## Process
 

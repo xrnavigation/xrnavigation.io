@@ -10,6 +10,6 @@ draft: false
 
 The following documents may be useful in creating a sole source justification for Audiom from XR Navigation for local, state, or federal agencies:
 
-[Audiom\_Sole\_Source\_Justification\_Template](https://xrnavigation.io/wp-content/uploads/2025/11/Audiom_Sole_Source_Justification_Template-1.docx)[Download (Word file)](https://xrnavigation.io/wp-content/uploads/2025/11/Audiom_Sole_Source_Justification_Template-1.docx)
+[Audiom\_Sole\_Source\_Justification\_Template](/images/Audiom_Sole_Source_Justification_Template-1.docx)[Download (Word file)](/images/Audiom_Sole_Source_Justification_Template-1.docx)
 
-[XR Navigation Sole-Source Certification Letter – Template](https://xrnavigation.io/wp-content/uploads/2025/11/XR-Navigation-Sole-Source-Certification-Letter-Template.docx)[Download (Word File)](https://xrnavigation.io/wp-content/uploads/2025/11/XR-Navigation-Sole-Source-Certification-Letter-Template.docx)
+[XR Navigation Sole-Source Certification Letter – Template](/images/XR-Navigation-Sole-Source-Certification-Letter-Template.docx)[Download (Word File)](/images/XR-Navigation-Sole-Source-Certification-Letter-Template.docx)

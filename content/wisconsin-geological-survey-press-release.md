@@ -8,4 +8,4 @@ draft: false
 
 # Wisconsin Geological Survey Press Release
 
-[Wisconsin\_Geological\_Survey\_Press\_Release](https://xrnavigation.io/wp-content/uploads/2025/12/Wisconsin_Geological_Survey_Press_Release.pdf)[Download](https://xrnavigation.io/wp-content/uploads/2025/12/Wisconsin_Geological_Survey_Press_Release.pdf)
+[Wisconsin\_Geological\_Survey\_Press\_Release](/images/Wisconsin_Geological_Survey_Press_Release.pdf)[Download](/images/Wisconsin_Geological_Survey_Press_Release.pdf)

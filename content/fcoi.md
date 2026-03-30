@@ -10,4 +10,4 @@ draft: false
 
 Below is the current XR Navigation Financial Conflict of Interest Policy for download:
 
-[XR Navigation FCOI Policy](https://xrnavigation.io/wp-content/uploads/2025/09/XR-Navigation-FCOI-Policy-2.docx)[Download](https://xrnavigation.io/wp-content/uploads/2025/09/XR-Navigation-FCOI-Policy-2.docx)
+[XR Navigation FCOI Policy](/images/XR-Navigation-FCOI-Policy-2.docx)[Download](/images/XR-Navigation-FCOI-Policy-2.docx)

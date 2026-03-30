@@ -8,6 +8,6 @@ draft: false
 
 # This is a COVID statistic map showing total cases over Washington, Oregon, and Idaho
 
-![Map of Oregon, Idaho, and Washington, activate long description below](https://xrnavigation.io/wp-content/uploads/2025/10/covid_cases_new.jpg)
+![Map of Oregon, Idaho, and Washington, activate long description below](/images/covid_cases_new.jpg)
 
 [Long text description of the above map (Opens a new Tab)](https://xrnavigation.io/covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho/)

@@ -8,4 +8,4 @@ draft: false
 
 # This is a COVID statistic map showing total cases over Washington, Oregan, and Idaho
 
-![](https://xrnavigation.io/wp-content/uploads/2025/08/Oregon-Idaho-Washington-1.jpg)
+![](/images/Oregon-Idaho-Washington-1.jpg)

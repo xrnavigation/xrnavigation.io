@@ -71,7 +71,7 @@ make your digital map accessible
 
 ## Audiom Use Cases
 
-![A composite image featuring a split view, with one side showing a sunny university campus with realistic academic buildings, lush green lawns, and students, while the other side displays a holographic grid map overlay.](https://xrnavigation.io/wp-content/uploads/2023/10/DALL·E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.png)
+![A composite image featuring a split view, with one side showing a sunny university campus with realistic academic buildings, lush green lawns, and students, while the other side displays a holographic grid map overlay.](/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.png)
 
 ### Audiom For University  
 Campuses
@@ -80,7 +80,7 @@ Unlock accessibility and inclusivity for your university campus with Audiom. Emp
 
 [University Details](/universities/)
 
-![A blind man lost on a corporate campus that has an inaccessible digital map.](https://xrnavigation.io/wp-content/uploads/2023/10/DALL·E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-xand-informational-boards.-As-i.png)
+![A blind man lost on a corporate campus that has an inaccessible digital map.](/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-xand-informational-boards.-As-i.png)
 
 ### Audiom For Corporate  
 Campuses
@@ -89,7 +89,7 @@ Enhance your corporate campus with Audiom. Create an inclusive environment for e
 
 [Corporate Details](/corporate-campuses/)
 
-![A hospital waiting room that is a composite. it is photoreal on the left side, and a digital wireframe resembling a 3d map.](https://xrnavigation.io/wp-content/uploads/2023/10/DALL·E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp)
+![A hospital waiting room that is a composite. it is photoreal on the left side, and a digital wireframe resembling a 3d map.](/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp)
 
 ### Audiom For Health Care Facilities
 
@@ -98,7 +98,7 @@ Trust Audiom to provide an accessible and inclusive environment for your healthc
 [Health Care Details](/health-care-facilities/)
 
 ![Exhibition hall with tables of tech on the left and a wireframe version on the right.
-](https://xrnavigation.io/wp-content/uploads/2025/09/3c3db469-2bf2-4614-b745-0e83bc3ac810.png "Exhibition hall with tables of tech on the left and a wireframe version on the right.")
+](/images/3c3db469-2bf2-4614-b745-0e83bc3ac810.png "Exhibition hall with tables of tech on the left and a wireframe version on the right.")
 
 ### Audiom For Events  
 
@@ -110,13 +110,13 @@ Drive engagement, unlock sponsor revenue, and transform any event map into an in
 
 Our expert team is committed to making Audiom the best map viewer and editor for accessibility and inclusivity.
 
-![A Portrait a man, Brandon Biggs.](https://xrnavigation.io/wp-content/uploads/2023/10/unnamed-2s.webp)
+![A Portrait a man, Brandon Biggs.](/images/unnamed-2s.webp)
 
 ### Brandon Biggs
 
 CEO And Co-Founder
 
-![A portrait of a man by a river, Chris Toth.](https://xrnavigation.io/wp-content/uploads/2023/10/unnamed-2.webp)
+![A portrait of a man by a river, Chris Toth.](/images/unnamed-2.webp)
 
 ### Chris Toth
 

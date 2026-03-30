@@ -15,7 +15,7 @@ draft: false
     -   Adding attributes to customize the data source to the location. This would be making sure the features have their correct type (e.g., restaurant). It also means that their name is meaningful. If the name is “G23”, we can’t just show “G23”, we need to add context like “Room G23”.
     -   Creating a unique auditory experience that sounds as amazing as the visual experience looks.
     -   If illustration is included in the process, we will have a map artist manually add textures and depth to the map features.
-    -   ![Two simplified maps of a playground: the left map is monochrome with basic shapes, while the right map is a colored and detailed illustration.](https://xrnavigation.io/wp-content/uploads/2024/11/playground.png)
+    -   ![Two simplified maps of a playground: the left map is monochrome with basic shapes, while the right map is a colored and detailed illustration.](/images/playground.png)
         
 2.  We will provide a line of code that you can embed on any app or website to either completely replace or supplement the existing map viewer to make it accessible. This line of code will be an iFrame and [the end result will look similar to how this map looks on our website (Opens a new tab)](https://xrnavigation.io/vrate24). If you need the map self-hosted, we can do that as well in limited circumstances.
 
