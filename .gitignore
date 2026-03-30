@@ -3,3 +3,4 @@ tests/baseline/*.png
 public/
 resources/_gen/
 .hugo_build.lock
+baseline-run2.log
