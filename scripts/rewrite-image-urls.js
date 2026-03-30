@@ -89,6 +89,28 @@ for (const file of files) {
     }
   }
 
+  // Strategy 3: Catch relative /wp-content/uploads/ paths (no domain)
+  const relPattern = /\/wp-content\/uploads\/\d{4}\/\d{2}\/([^)\s"'\]]+)/g;
+  const relRemaining = [];
+  while ((match = relPattern.exec(content)) !== null) {
+    relRemaining.push({ full: match[0], filename: match[1] });
+  }
+
+  if (relRemaining.length > 0) {
+    for (const r of relRemaining) {
+      const localUrl = `/images/${r.filename}`;
+      const localFile = path.join(ROOT, 'static', 'images', r.filename);
+      if (fs.existsSync(localFile)) {
+        content = content.split(r.full).join(localUrl);
+        totalReplacements += 1;
+        modified = true;
+        console.log(`  [relative] ${file}: ${r.full} -> ${localUrl}`);
+      } else {
+        console.log(`  [WARNING-rel] ${file}: No local file for ${r.full}`);
+      }
+    }
+  }
+
   if (modified) {
     fs.writeFileSync(filePath, content, 'utf8');
     filesModified++;

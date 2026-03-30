@@ -16,10 +16,10 @@ These are the latest Accessibility Conformance Reports (ACRs) for XR Navigation 
 
 Word Audiom ACR April 2024
 
-](/wp-content/uploads/2024/06/XR-Navigation-Audiom-Map-Component-ACR-April-2024.docx)
+](/images/XR-Navigation-Audiom-Map-Component-ACR-April-2024.docx)
 
 [
 
 PDF Audiom ACR April 2024
 
-](/wp-content/uploads/2024/06/XR-Navigation-Audiom-Map-Component-ACR-April-2024.pdf)
+](/images/XR-Navigation-Audiom-Map-Component-ACR-April-2024.pdf)

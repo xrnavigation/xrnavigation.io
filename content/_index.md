@@ -52,11 +52,11 @@ Contact Us
 
 We’re proud to have served a diverse range of clients who trust Audiom to enhance accessibility and inclusivity in their spaces. Our clients include both public and private institutions
 
-![Georgia Tech Logo](/wp-content/uploads/2024/02/GeorgiaTech_RGB.webp)
+![Georgia Tech Logo](/images/GeorgiaTech_RGB.webp)
 
-![Nasa Logo](/wp-content/uploads/2024/02/NASA_logo.svg.webp)
+![Nasa Logo](/images/NASA_logo.svg.webp)
 
-![University Of Washington Logo](/wp-content/uploads/2024/02/University-of-Washington-Logo-e1708385348178.webp)
+![University Of Washington Logo](/images/University-of-Washington-Logo-e1708385348178.webp)
 
 ## What Is Audiom?
 

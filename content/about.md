@@ -98,13 +98,13 @@ National Institute on Disability, Independent Living, and Rehabilitation Researc
 
 ## Our Investors:
 
-[![Cerebral Palsy Alliance Logo](/wp-content/uploads/2023/12/CPA-Research-Foundation_Vert_GREEN-NEW.png)](https://cerebralpalsy.org.au/)
+[![Cerebral Palsy Alliance Logo](/images/CPA-Research-Foundation_Vert_GREEN-NEW.png)](https://cerebralpalsy.org.au/)
 
-[![ImpactAssets Logo](/wp-content/uploads/2023/12/ImpactAssets.png)](https://impactassets.org/)
+[![ImpactAssets Logo](/images/ImpactAssets.png)](https://impactassets.org/)
 
 ## Meet Our Team
 
-![A Portrait a man, Brandon Biggs. ](/wp-content/uploads/2023/10/unnamed-2s.webp)
+![A Portrait a man, Brandon Biggs. ](/images/unnamed-2s.webp)
 
 ### Brandon Biggs
 
@@ -112,7 +112,7 @@ Brandon Biggs is the CEO and co-founder of XR Navigation. He began working on Au
 
 [Brandon’s LinkedIn](https://www.linkedin.com/in/brandonkeithbiggs/)
 
-![A portrait of a man by a river, Chris Toth.](/wp-content/uploads/2023/10/unnamed-2.webp)
+![A portrait of a man by a river, Chris Toth.](/images/unnamed-2.webp)
 
 ### Chris Toth
 
@@ -120,7 +120,7 @@ Chris is the chief technology officer and co-founder of XR Navigation. He joined
 
 [Chris’ LinkedIn]( https://www.linkedin.com/in/christopher-toth-53b985184/)
 
-![A portrait of man, James Coughlan.](/wp-content/uploads/2023/10/unnamed-2x.webp)
+![A portrait of man, James Coughlan.](/images/unnamed-2x.webp)
 
 ### James Coughlan
 

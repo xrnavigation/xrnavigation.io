@@ -6,7 +6,7 @@ slug: "brandon-keith-biggs"
 draft: false
 ---
 
-![](/wp-content/uploads/2023/10/unnamed-1.webp)
+![](/images/unnamed-1.webp)
 
 ## Brandon Biggs
 
