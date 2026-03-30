@@ -1,58 +1,46 @@
 # Foreman Progress — Migration Prep
 Date: 2026-03-30
 
-## STATUS: 3 of 6 agents complete, 3 running
+## STATUS: 5 of 6 agents complete. Waiting on run-baseline (screenshots).
 
 ## COMPLETED AGENTS
 
 ### 1. Playwright baseline (test suite) — DONE, VERIFIED
 - Commit: 44a9c52
-- Files: tests/visual-baseline.spec.ts, tests/playwright.config.ts, tsconfig.json, package.json, .gitignore
-- Fetches URLs from sitemaps, screenshots at desktop (1920) + mobile (375), waits for fonts+network idle.
+- Test suite created, fetches URLs from sitemaps, screenshots desktop+mobile.
 
 ### 2. WP content export — DONE, VERIFIED
 - Commits: 44a9c52, 1b1d8af
-- Files: scripts/wp-export.js, 90 content/*.md files (79 pages + 11 posts)
-- 52 audiom embed pages detected with audiom_id in frontmatter
-- Follow-up needed:
-  - content/blog.md conflicts with content/blog/ directory — delete it
-  - Image URLs still point to WP uploads — need rewriting pass using manifest.json
-  - Homepage needs manual template work
-  - Forms need rebuilding (not in REST API)
+- 79 pages + 11 posts = 90 Markdown files. 52 audiom embed pages detected.
+- Follow-up: delete content/blog.md, rewrite image URLs, homepage template work.
 
 ### 3. Media download — DONE, VERIFIED
 - Commits: b3ccd4b, c76ae21
-- Files: scripts/download-media.js, static/images/ (189 files, 396MB), static/images/manifest.json
-- Zero failures. 6 videos (~367MB), rest are images/PDFs/VTT/DOCX.
+- 189 files, 396MB. Zero failures. Manifest at static/images/manifest.json.
+
+### 4. Hugo scaffold — DONE, VERIFIED
+- Commits: 2b16d83, 76d0ee5
+- Full theme: 12 layouts, 2 CSS, 2 JS. Builds clean, 98 pages.
+- A11y done right: aria-current server-side, decorative blog images, single form, data-theme switching.
+
+### 5. Redirects/forms/CSS — DONE, VERIFIED
+- Commits: aa10e54, 63c58c7
+- 12 redirects (all 301), both forms documented (identical: name/email/message).
+- Only "Interactive Focus Styles" had real CSS (outline-color #d01754, :focus-visible rules). CH 80 and Custom_Astra_JS were empty.
+- Focus styles need merging into Hugo theme CSS.
 
 ## RUNNING AGENTS
 
-### 4. hugo-scaffold — STILL RUNNING
-- Building Hugo project structure + custom theme
+### 6. run-baseline — STILL RUNNING
+- Actually capturing Playwright screenshots against live site. Takes several minutes.
 
-### 5. redirects-forms-css — STILL RUNNING
-- Exporting redirects, form structure, Custom CSS/JS via browser (tab 429210767)
-
-### 6. run-baseline — STILL RUNNING (dispatched after agent 1 completed)
-- Actually running the Playwright screenshots against live site (~86 pages x 2 viewports)
-- This one takes a while — network idle wait on each page
-
-## POTENTIAL ISSUES
-- Multiple agents committed to same repo — possible git history tangles. Need to check git log after all finish.
-- WP export commit hash 44a9c52 same as Playwright — suspicious, may be coincidence or conflict.
-- 396MB of media committed to git — repo will be large. May want git-lfs later.
-
-## NEXT (after all agents complete)
-1. Read remaining 3 reports, verify against plan
-2. Check git log for any conflicts/overwrites between agents
-3. Delete content/blog.md (conflicts with content/blog/)
-4. Image URL rewriting pass (WP URLs → local paths using manifest.json)
-5. Wire exported content into Hugo theme
-6. Run Playwright comparison: Hugo build vs WordPress baseline
-7. Iterate until screenshots match
-
-## KEY FACTS
-- Working directory: C:\Users\Q\src\audiom\xrnavigation.io
-- Repo is on `master` branch
-- WP admin browser session: tab 429210767 (logged in as q.alpha)
-- Site has ~86 URLs total from sitemaps
+## INTEGRATION TASKS (after run-baseline completes)
+1. Check git log — multiple agents committed, need to verify no conflicts/overwrites
+2. Delete content/blog.md (conflicts with content/blog/ directory)
+3. Image URL rewriting pass: WP URLs → local paths using manifest.json
+4. Merge focus styles (data/custom-css-focus-styles.css) into themes/xrnav/static/css/main.css
+5. Homepage template — exported markdown has raw Spectra HTML, needs Hugo partials
+6. Able Player setup on homepage
+7. hugo server → verify it builds and serves
+8. Run Playwright comparison: Hugo screenshots vs WordPress baseline
+9. Iterate until screenshots match
