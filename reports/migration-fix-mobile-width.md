@@ -48,4 +48,4 @@ Confirmed working: `/blog/` shows 10 posts with pagination controls. The `.Pagin
 
 ## Commit
 
-See git log for commit hash.
+`c2f71ad` Fix mobile width regression: footer grid specificity override
