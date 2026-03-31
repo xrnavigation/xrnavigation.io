@@ -6,7 +6,7 @@ slug: "brandon-keith-biggs"
 draft: false
 ---
 
-![](/images/unnamed-1.webp)
+![Brandon Keith Biggs](/images/unnamed-1.webp)
 
 ## Brandon Biggs
 

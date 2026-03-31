@@ -18,8 +18,8 @@ draft: false
     <input type="email" id="demo-email" name="email" required autocomplete="email" placeholder="Email">
   </p>
   <p>
-    <label for="demo-phone">Phone</label>
-    <input type="tel" id="demo-phone" name="phone" autocomplete="tel" placeholder="Phone">
+    <label for="demo-website">Website</label>
+    <input type="text" id="demo-website" name="website" autocomplete="url" placeholder="Website">
   </p>
   <p>
     <button type="submit">Experience The Audiom Demo Now!</button>
