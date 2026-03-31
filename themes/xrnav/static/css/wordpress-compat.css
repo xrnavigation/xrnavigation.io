@@ -1670,7 +1670,7 @@ article.post .entry-content p {
 .home-page .hero-inner {
   position: relative;
   z-index: 1;
-  max-width: 80%;
+  max-width: 64%;  /* 80% of 80% = 64% of viewport, matching WP nested containers */
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1862,7 +1862,7 @@ article.post .entry-content p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
