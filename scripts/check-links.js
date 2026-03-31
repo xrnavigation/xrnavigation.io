@@ -112,8 +112,19 @@ function resolveInPublic(urlStr, sourceFile) {
     target = path.join(path.dirname(sourceFile), p);
   }
 
+  // Also try the raw (non-decoded) path — some filenames contain literal
+  // percent-encoded characters (e.g. %C2%B7 for middle-dot in DALL·E images).
+  const cleaned = urlStr.replace(/#.*$/, "").replace(/\?.*$/, "");
+  const rawPath = cleaned.replace(/^https?:\/\/(www\.)?xrnavigation\.io/, "") || "/";
+  let rawTarget;
+  if (rawPath.startsWith("/")) {
+    rawTarget = path.join(PUBLIC, rawPath);
+  } else {
+    rawTarget = path.join(path.dirname(sourceFile), rawPath);
+  }
+
   // Check existence: exact, as directory with index.html, with .html
-  const candidates = [target];
+  const candidates = [target, rawTarget];
   if (!path.extname(target)) {
     candidates.push(path.join(target, "index.html"));
     candidates.push(target + ".html");

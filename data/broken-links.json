@@ -1,74 +1,10 @@
 {
   "broken_links": [],
-  "missing_images": [
-    {
-      "source": "corporate-campuses/index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-17-13.20.29-Photo-taken-from-a-high-angle-of-a-Silicon-Valley-esque-corporate-campus-reminiscent-of-the-Intel-campus-in-California.-Sunlit-modern-buildings-with-.webp",
-      "text": "The Challenge",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "corporate-campuses/index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-17-15.06.01-Expansive-shot-of-a-person-with-headphones-confidently-walking-through-a-contemporary-corporate-setting.-From-every-corner-of-the-environment-from-t.webp",
-      "text": "The Solution",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "health-care-facilities/index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp",
-      "text": "Navigating the Hospital Maze",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "health-care-facilities/index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-18-11.41.34-Photorealistic-image-inside-a-bustling-hospital_-A-person-in-the-center-walks-confidently-seemingly-following-audio-guidance.-Visual-cues-of-sound-wa.webp",
-      "text": "Audiom: The Solution",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.png",
-      "text": "A composite image featuring a split view, with one side showing a sunny university campus with realistic academic buildings, lush green lawns, and students, while the other side displays a holographic grid map overlay.",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-xand-informational-boards.-As-i.png",
-      "text": "A blind man lost on a corporate campus that has an inaccessible digital map.",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp",
-      "text": "A hospital waiting room that is a composite. it is photoreal on the left side, and a digital wireframe resembling a 3d map.",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "universities/index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp",
-      "text": "The Challenge of Campus Navigation",
-      "tag": "img",
-      "attr": "src"
-    },
-    {
-      "source": "universities/index.html",
-      "url": "/images/DALL%C2%B7E-2023-10-17-15.06.09-Wide-shot-capturing-a-person-with-headphones-amidst-a-modern-Silicon-Valley-esque-corporate-campus.-As-they-navigate-vibrant-soundwave-visuals-emerge.webp",
-      "text": "Audiom: The Inclusive Digital Map Solution",
-      "tag": "img",
-      "attr": "src"
-    }
-  ],
+  "missing_images": [],
   "self_referencing_external": [],
   "summary": {
     "broken_link_count": 0,
-    "missing_image_count": 9,
+    "missing_image_count": 0,
     "self_referencing_count": 0
   }
 }
