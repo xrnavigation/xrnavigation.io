@@ -11,6 +11,9 @@
 {{/* Stylesheets */}}
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 <link rel="stylesheet" href="{{ "css/dark-mode.css" | relURL }}">
+{{ if .IsHome }}
+<link rel="stylesheet" href="{{ "vendor/ableplayer/ableplayer.min.css" | relURL }}">
+{{ end }}
 
 {{/* Analytics placeholder */}}
 {{ if .Site.Params.googleAnalytics }}

@@ -59,14 +59,13 @@
   <div class="section-inner">
     <h2 id="video-heading">{{ .heading }}</h2>
     <div class="video-wrapper">
-      <video controls preload="metadata">
+      <video id="audiom-intro" data-able-player preload="metadata">
         {{- range .sources }}
-        <source src="{{ .src | relURL }}" type="video/mp4">
+        <source src="{{ .src | relURL }}" type="video/mp4" data-label="{{ .label }}">
         {{- end }}
         {{- range .captions }}
         <track kind="captions" src="{{ .src | relURL }}" srclang="{{ .srclang }}" label="{{ .label }}">
         {{- end }}
-        Your browser does not support the video element.
       </video>
     </div>
   </div>

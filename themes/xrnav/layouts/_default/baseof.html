@@ -12,5 +12,9 @@
   {{ partial "footer.html" . }}
   <script src="{{ "js/theme-switcher.js" | relURL }}"></script>
   <script src="{{ "js/mobile-menu.js" | relURL }}"></script>
+  {{ if .IsHome }}
+  <script src="{{ "vendor/jquery.slim.min.js" | relURL }}"></script>
+  <script src="{{ "vendor/ableplayer/ableplayer.min.js" | relURL }}"></script>
+  {{ end }}
 </body>
 </html>
