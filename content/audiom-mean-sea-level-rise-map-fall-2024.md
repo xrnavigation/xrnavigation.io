@@ -3,7 +3,7 @@ title: "Audiom Mean Sea Level Rise Map Fall 2024"
 date: 2025-06-06
 lastmod: 2025-06-06
 slug: "audiom-mean-sea-level-rise-map-fall-2024"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

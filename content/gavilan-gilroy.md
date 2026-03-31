@@ -3,7 +3,7 @@ title: "Gilroy Campus Map"
 date: 2025-07-01
 lastmod: 2025-08-29
 slug: "gavilan-gilroy"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 aliases:

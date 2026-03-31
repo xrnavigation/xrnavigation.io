@@ -3,7 +3,7 @@ title: "Audiom COVID-19 State Statistic Map"
 date: 2024-08-03
 lastmod: 2026-01-30
 slug: "audiom-covid-map"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

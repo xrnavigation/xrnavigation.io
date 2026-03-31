@@ -3,7 +3,7 @@ title: "Sonification Awards 2024 Application"
 date: 2024-12-31
 lastmod: 2024-12-31
 slug: "sonification-awards-2024-application"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "Audiom Human Skeleton Diagram"
 date: 2025-03-25
 lastmod: 2025-03-25
 slug: "audiom-human-skeleton-diagram"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

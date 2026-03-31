@@ -3,7 +3,7 @@ title: "Peachability Walk June 22, 2025"
 date: 2025-06-13
 lastmod: 2025-06-22
 slug: "peachability-walk-june-22-2025"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 900
 draft: false
 aliases:

@@ -3,7 +3,7 @@ title: "Audiom VRATE 2024 Exhibit Hall Map"
 date: 2024-10-18
 lastmod: 2025-05-04
 slug: "vrate24"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

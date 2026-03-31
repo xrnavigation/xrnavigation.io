@@ -3,7 +3,7 @@ title: "Rose Quarter and Sunset Maps"
 date: 2025-07-29
 lastmod: 2025-07-29
 slug: "rose-quarter-and-sunset-maps"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

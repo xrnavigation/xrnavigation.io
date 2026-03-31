@@ -3,7 +3,7 @@ title: "Audiom Create-X Demo Day Map 2024"
 date: 2024-08-25
 lastmod: 2024-08-25
 slug: "audiom-create-x-demo-day-map-2024"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

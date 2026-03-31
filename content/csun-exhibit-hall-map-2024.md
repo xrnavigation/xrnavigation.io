@@ -3,7 +3,7 @@ title: "CSUN Exhibit Hall Map 2024"
 date: 2024-08-20
 lastmod: 2024-08-20
 slug: "csun-exhibit-hall-map-2024"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

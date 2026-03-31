@@ -3,7 +3,7 @@ title: "NASA JPL Campus Map"
 date: 2024-07-31
 lastmod: 2026-01-30
 slug: "nasa-jpl-campus-map"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

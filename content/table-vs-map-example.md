@@ -3,7 +3,7 @@ title: "Table vs. Map Example"
 date: 2025-04-14
 lastmod: 2025-04-14
 slug: "table-vs-map-example"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 13
 draft: false
 ---

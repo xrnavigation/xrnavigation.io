@@ -3,7 +3,7 @@ title: "Audiom CSUN 2026 Map"
 date: 2025-01-24
 lastmod: 2026-01-21
 slug: "csun"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 aliases:

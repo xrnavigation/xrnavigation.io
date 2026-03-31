@@ -3,7 +3,7 @@ title: "Magic Map Online – Palo Alto"
 date: 2024-05-11
 lastmod: 2026-02-05
 slug: "magicmap-paloalto"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

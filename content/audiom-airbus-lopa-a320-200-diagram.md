@@ -3,7 +3,7 @@ title: "Audiom Airbus LOPA A320 200 Diagram"
 date: 2025-01-31
 lastmod: 2025-01-31
 slug: "audiom-airbus-lopa-a320-200-diagram"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

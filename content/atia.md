@@ -3,7 +3,7 @@ title: "Audiom ATIA 2026 Map"
 date: 2025-01-17
 lastmod: 2026-01-06
 slug: "atia"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 aliases:

@@ -3,7 +3,7 @@ title: "Audiom Eclipse 2024 Map"
 date: 2024-10-23
 lastmod: 2024-10-25
 slug: "eclipse24"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

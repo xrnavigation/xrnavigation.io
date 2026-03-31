@@ -3,7 +3,7 @@ title: "AudiomVision Serve Alliance 2024 Hotel Map"
 date: 2025-01-15
 lastmod: 2025-01-15
 slug: "vsa25"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

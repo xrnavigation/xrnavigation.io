@@ -4,7 +4,7 @@ date: 2024-07-26
 lastmod: 2024-07-26
 slug: "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples"
 url: /how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples/
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 13
 draft: false
 ---

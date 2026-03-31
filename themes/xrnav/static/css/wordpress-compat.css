@@ -1268,7 +1268,7 @@ article.post .entry-content p {
   max-width: 100%;
   border: 0;
   width: 100%;
-  height: auto;
+  min-height: 560px;
   margin-top: 2rem;
 }
 

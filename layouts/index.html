@@ -55,7 +55,7 @@
     {{ with $video }}
     <div class="why-video">
       <div class="video-wrapper">
-        <video id="audiom-intro" data-able-player preload="metadata">
+        <video id="audiom-intro" data-able-player data-root-path="/vendor/ableplayer/" preload="metadata">
           {{- range .sources }}
           <source src="{{ .src | relURL }}" type="video/mp4" data-label="{{ .label }}">
           {{- end }}

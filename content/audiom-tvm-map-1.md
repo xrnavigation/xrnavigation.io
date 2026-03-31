@@ -3,7 +3,7 @@ title: "Audiom TVM Map 1"
 date: 2026-01-20
 lastmod: 2026-01-20
 slug: "audiom-tvm-map-1"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

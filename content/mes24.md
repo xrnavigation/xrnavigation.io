@@ -3,7 +3,7 @@ title: "Audiom M-Enabling 2024 Exhibit Hall Map"
 date: 2024-09-25
 lastmod: 2024-09-25
 slug: "mes24"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

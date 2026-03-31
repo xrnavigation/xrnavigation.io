@@ -3,7 +3,7 @@ title: "Audiom Table vs. Map 1"
 date: 2025-04-14
 lastmod: 2025-04-14
 slug: "tvm1"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---

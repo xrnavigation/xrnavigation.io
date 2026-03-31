@@ -3,7 +3,7 @@ title: "Audiom Numbers"
 date: 2025-01-31
 lastmod: 2025-01-31
 slug: "audiom-numbers"
-layout: "audiom-embed"
+type: "audiom-embed"
 audiom_id: 38
 draft: false
 ---
