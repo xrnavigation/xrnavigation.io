@@ -1,0 +1,332 @@
+{
+  "extractedAt": "2026-03-30",
+  "source": "https://xrnavigation.io/",
+  "theme": "Astra + UAGB (Ultimate Addons for Gutenberg)",
+
+  "cssCustomProperties": {
+    "--ast-global-color-0": "#15191d",
+    "--ast-global-color-1": "#04203e",
+    "--ast-global-color-2": "#5a7969",
+    "--ast-global-color-3": "#000000",
+    "--ast-global-color-4": "#f9fafb",
+    "--ast-global-color-5": "#FFFFFF",
+    "--ast-global-color-6": "#e2e8f0",
+    "--ast-global-color-7": "#cbd5e1",
+    "--ast-global-color-8": "#94a3b8"
+  },
+
+  "breakpoints": {
+    "desktop": "min-width: 922px",
+    "tablet": "max-width: 921px",
+    "mobile": "max-width: 544px",
+    "notes": "Astra uses 921px as the hamburger/mobile-header breakpoint. Desktop nav hides at 921.9px, mobile header hides at 922px. Additional UAGB breakpoint at 768px."
+  },
+
+  "header": {
+    "desktop": {
+      "element": "header.site-header",
+      "mainHeaderBar": {
+        "height": "80px",
+        "padding": "0px",
+        "backgroundColor": "transparent (rgba(0,0,0,0))",
+        "position": "static",
+        "borderBottom": "none"
+      },
+      "logo": {
+        "width": "83px",
+        "height": "47px",
+        "maxWidth": "83px"
+      },
+      "navLinks": {
+        "fontFamily": "Lato, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "color": "rgb(4, 32, 62)",
+        "textTransform": "capitalize",
+        "letterSpacing": "0.3px",
+        "padding": "0px 16px",
+        "items": ["Home", "About", "Audiom Gallery", "Blog", "Audiom For Personal Use", "Contact"]
+      },
+      "navContainer": {
+        "display": "flex",
+        "maxWidth": "100%"
+      }
+    },
+    "tablet": {
+      "hamburgerBreakpoint": "921px",
+      "desktopHeaderHidden": true,
+      "mobileHeaderVisible": true,
+      "headerBarHeight": "81px"
+    }
+  },
+
+  "body": {
+    "backgroundColor": "rgb(249, 250, 251)",
+    "backgroundColorHex": "#f9fafb",
+    "fontFamily": "Lato, sans-serif",
+    "fontSize": "16px",
+    "lineHeight": "25.6px",
+    "color": "rgb(0, 0, 0)"
+  },
+
+  "contentContainer": {
+    "notes": "Pages use full-width UAGB containers with inner blocks constrained by max-width percentages. No single max-width wrapper.",
+    "siteContent": {
+      "maxWidth": "none",
+      "width": "100%"
+    },
+    "astContainer": {
+      "maxWidth": "100%"
+    }
+  },
+
+  "typography": {
+    "desktop": {
+      "h1": {
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "40px",
+        "fontWeight": "800",
+        "lineHeight": "56px",
+        "color": "rgb(249, 250, 251)",
+        "colorNote": "White/off-white because h1 is typically on dark hero backgrounds",
+        "marginBottom": "20px",
+        "marginTop": "0px"
+      },
+      "h2": {
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "lineHeight": "50px",
+        "color": "rgb(4, 32, 62)",
+        "colorHex": "#04203e",
+        "marginBottom": "20px",
+        "marginTop": "0px"
+      },
+      "h3": {
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "24px",
+        "fontWeight": "600",
+        "lineHeight": "31.2px",
+        "color": "rgb(4, 32, 62)",
+        "colorHex": "#04203e",
+        "marginBottom": "16px"
+      },
+      "p": {
+        "fontFamily": "system-ui stack (inherits from body: Lato, sans-serif)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "color": "rgb(119, 119, 119)",
+        "colorNote": "Homepage paragraphs are gray #777. About page paragraphs are rgb(0,0,0) black.",
+        "marginBottom": "16px"
+      },
+      "a": {
+        "color": "varies by context",
+        "bodyLink": "rgb(21, 25, 29)",
+        "bodyLinkHex": "#15191d",
+        "textDecoration": "none",
+        "ctaLink": "rgb(4, 32, 62)"
+      }
+    },
+    "tablet": {
+      "h1": { "fontSize": "30px" },
+      "h2": { "fontSize": "25px" },
+      "h3": { "fontSize": "20px" },
+      "p": { "fontSize": "16px" }
+    },
+    "mobile": {
+      "h1": { "fontSize": "30px" },
+      "h2": { "fontSize": "25px" },
+      "h3": { "fontSize": "20px" },
+      "p": { "fontSize": "16px" }
+    }
+  },
+
+  "sections": {
+    "notes": "Homepage uses 10 full-width UAGB container blocks. Each has inner-blocks constrained to a percentage max-width.",
+    "homepage": [
+      { "index": 0, "role": "hero", "paddingTop": "152px", "paddingBottom": "152px", "innerMaxWidth": "80%", "innerWidth": "1536px", "backgroundColor": "transparent (bg image)" },
+      { "index": 1, "role": "content", "paddingTop": "10px", "paddingBottom": "10px", "innerMaxWidth": "70%", "innerWidth": "1330px", "backgroundColor": "transparent" },
+      { "index": 2, "role": "content", "paddingTop": "104px", "paddingBottom": "160px", "innerMaxWidth": "70%", "innerWidth": "1330px", "backgroundColor": "transparent" },
+      { "index": 3, "role": "content", "paddingTop": "0px", "paddingBottom": "100px", "innerMaxWidth": "70%", "innerWidth": "1344px", "backgroundColor": "transparent" },
+      { "index": 4, "role": "content", "paddingTop": "10px", "paddingBottom": "10px", "innerMaxWidth": "80%", "innerWidth": "1520px", "backgroundColor": "transparent" },
+      { "index": 5, "role": "content", "paddingTop": "100px", "paddingBottom": "100px", "innerMaxWidth": "min(100%, 1200px)", "innerWidth": "1200px", "backgroundColor": "rgb(249, 250, 251)" },
+      { "index": 6, "role": "content", "paddingTop": "85px", "paddingBottom": "85px", "innerMaxWidth": "70%", "innerWidth": "1330px", "backgroundColor": "transparent" },
+      { "index": 7, "role": "content", "paddingTop": "50px", "paddingBottom": "200px", "innerMaxWidth": "70%", "innerWidth": "1330px", "backgroundColor": "transparent" },
+      { "index": 8, "role": "spacer", "paddingTop": "10px", "paddingBottom": "10px", "innerMaxWidth": "70%", "backgroundColor": "transparent" },
+      { "index": 9, "role": "content", "paddingTop": "10px", "paddingBottom": "0px", "innerMaxWidth": "min(100%, 1200px)", "backgroundColor": "transparent" }
+    ]
+  },
+
+  "footer": {
+    "structure": {
+      "aboveFooter": "site-above-footer-wrap (not visible in current data)",
+      "primaryFooter": {
+        "backgroundColor": "rgb(4, 32, 62)",
+        "backgroundColorHex": "#04203e",
+        "padding": "45px 95.25px",
+        "gridLayout": "grid",
+        "gridTemplateColumns": "repeat(2, 1fr)",
+        "gap": "50px"
+      },
+      "belowFooter": {
+        "backgroundColor": "rgb(21, 25, 29)",
+        "backgroundColorHex": "#15191d",
+        "padding": "10px 0px 0px",
+        "gridTemplateColumns": "1200px"
+      }
+    },
+    "heading": {
+      "fontFamily": "Montserrat, sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "800",
+      "color": "rgb(255, 255, 255)"
+    },
+    "link": {
+      "fontSize": "16px",
+      "color": "rgb(255, 255, 255)",
+      "textDecoration": "none"
+    },
+    "formInput": {
+      "padding": "6px 10px",
+      "borderRadius": "2px",
+      "border": "1px solid rgb(204, 204, 204)",
+      "fontSize": "16px",
+      "height": "38px"
+    },
+    "formButton": {
+      "backgroundColor": "rgb(238, 238, 238)",
+      "color": "rgb(51, 51, 51)",
+      "padding": "10px 15px",
+      "borderRadius": "0px",
+      "fontSize": "16px",
+      "fontWeight": "800"
+    },
+    "copyright": {
+      "backgroundColor": "rgb(21, 25, 29)",
+      "fontSize": "16px",
+      "color": "rgb(0, 0, 0)",
+      "padding": "10px 0px 0px"
+    }
+  },
+
+  "blog": {
+    "grid": {
+      "display": "grid",
+      "gridTemplateColumns": "380px 380px 380px",
+      "gap": "30px",
+      "cardCount": 11,
+      "plugin": "UAGB Post Grid"
+    },
+    "card": {
+      "border": "none",
+      "padding": "30px 40px 10px",
+      "boxShadow": "rgba(0, 0, 0, 0.44) 10px 10px 20px -8px",
+      "borderRadius": "10px",
+      "backgroundColor": "rgb(246, 246, 246)",
+      "backgroundColorHex": "#f6f6f6"
+    },
+    "cardTitle": {
+      "fontFamily": "Montserrat, sans-serif",
+      "fontSize": "20px",
+      "fontWeight": "800",
+      "color": "rgb(249, 250, 251)"
+    },
+    "cardExcerpt": {
+      "fontSize": "16px",
+      "color": "rgb(249, 250, 251)",
+      "lineHeight": "24px"
+    },
+    "cardImage": {
+      "wrapperHeight": "261px",
+      "wrapperOverflow": "hidden",
+      "objectFit": "cover (inferred from overflow:hidden)"
+    },
+    "cardMeta": {
+      "fontSize": "14px",
+      "color": "rgb(255, 255, 255)"
+    },
+    "cardLink": {
+      "color": "rgb(249, 250, 251)",
+      "textDecoration": "none"
+    }
+  },
+
+  "audiomEmbed": {
+    "pageTitle": {
+      "fontFamily": "Montserrat, sans-serif",
+      "fontSize": "40px",
+      "fontWeight": "800",
+      "color": "rgb(4, 32, 62)",
+      "margin": "0px"
+    },
+    "iframe": {
+      "width": "auto",
+      "height": "auto",
+      "border": "none",
+      "maxWidth": "100%",
+      "display": "inline",
+      "parentTag": "SPAN"
+    },
+    "wrapperSection": {
+      "paddingTop": "160px",
+      "paddingBottom": "160px",
+      "innerMaxWidth": "min(100%, 1200px)"
+    },
+    "entryContent": {
+      "maxWidth": "none",
+      "width": "100%"
+    }
+  },
+
+  "standardPage": {
+    "notes": "Extracted from /about/",
+    "pageTitle": {
+      "fontFamily": "Montserrat",
+      "fontSize": "40px",
+      "fontWeight": "800",
+      "lineHeight": "56px",
+      "color": "rgb(249, 250, 251)",
+      "colorNote": "White because title is on dark background section"
+    },
+    "contentWidth": "full-width (UAGB containers constrain inner content)",
+    "innerContentWidths": ["55%", "70%", "min(100%, 1200px)"],
+    "image": {
+      "borderRadius": "20px",
+      "maxWidth": "100%"
+    },
+    "paragraph": {
+      "fontSize": "16px",
+      "lineHeight": "25.6px",
+      "color": "rgb(0, 0, 0)",
+      "marginBottom": "25.6px"
+    }
+  },
+
+  "buttons": {
+    "primary": {
+      "backgroundColor": "rgb(249, 250, 251)",
+      "color": "rgb(21, 25, 29)",
+      "padding": "15px 20px",
+      "borderRadius": "4px",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontFamily": "Montserrat, sans-serif",
+      "border": "1px solid rgb(4, 32, 62)",
+      "textTransform": "capitalize",
+      "letterSpacing": "0.3px"
+    },
+    "secondary": {
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgb(4, 32, 62)",
+      "padding": "15px 20px",
+      "borderRadius": "4px",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "fontFamily": "Montserrat",
+      "border": "1px solid rgb(51, 51, 51)",
+      "textTransform": "capitalize",
+      "letterSpacing": "0.3px"
+    }
+  }
+}
