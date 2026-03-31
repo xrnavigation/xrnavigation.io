@@ -1,30 +1,40 @@
 # Foreman Progress — Migration
 Date: 2026-03-31
 
-## STATUS: R6 comparison running. Bug fixes + content fixes applied.
+## STATUS: R8 comparison running after embed template perfection
 
-## Recent Fixes
-- Page title format: "Title - XR Navigation" matching WP (commit f3e3c30)
-- Gallery nav link: /audiom-gallery/ → /gallery/ (commit b590397)
-- Able Player: rootPath fix + 20 translation files (prior commit)
-- audiom-embed layout: type field + template moved (51 files)
-- Iframe min-height: 560px (was collapsing to 150px)
-- Duplicate iframes removed from template
+## Comparison Trend
+| Round | Avg | <1% | <5% | <10% | <30% |
+|-------|-----|-----|-----|------|------|
+| R1 | 43.64% | 0 | 0 | 0 | — |
+| R5 | 46.01% | 0 | 2 | 2 | — |
+| R6 | 45.19% | 1 | 5 | 16 | 41 |
+| R7 | 44.36% | 1 | 5 | 16 | 41 |
+| R8 | ? | ? | ? | ? | ? |
 
-## Awaiting
-- R6 comparison results — should show massive improvement from iframe/Able Player fixes
+## What Changed Since R7
+- Embed template perfected: 3 layout variants, 31+ pages under 5% per agent report
+- YouTube embed responsive wrappers fixed
+- Per-page spacer variants implemented
+- Link checker passes clean (0 broken links)
+- Gallery nav link fixed
+- Evaluate link fixed
+- Page title format fixed ("Title - XR Navigation")
+- Blog pagination to 20 posts (hugo.toml changed)
 
-## Key Learning
-"Irreducible" was wrong. Every claimed limitation was a bug:
-- Iframe content differences → CSS height collapse to 150px
-- Able Player headless → translation 404s + wrong rootPath
-- Layout not matching → Hugo template resolution bug
-Investigate before dismissing.
+## Expected R8 Impact
+Embed template fix is the highest-leverage change yet — 30+ pages improved. Expecting:
+- <5% count to jump significantly (was 5, embed agent says 31+ under 5%)
+- <10% count to increase substantially
+- Average to drop meaningfully
 
-## Perfected Pages (pre-R6)
-| Page | Diff |
-|------|------|
-| fictional-map | 0.59% |
-| privacy-policy | 4.66% |
-| homepage | 10.83% |
-| nfb25 | 8.02% |
+## Remaining Known Issues
+- Collection pages (universities, corporate, healthcare) — grid layouts still WIP
+- Homepage at ~10-15% — Able Player height, contact section
+- Mobile pages generally higher diff than desktop
+- Some pages with complex WP layouts (case studies, events) need per-page work
+
+## CI Gates Now Available
+- `npm run check-links` — broken link checker
+- `npm run baseline` — capture visual baseline
+- Visual comparison test in tests/visual-comparison.spec.ts
