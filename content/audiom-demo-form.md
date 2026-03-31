@@ -8,12 +8,20 @@ draft: false
 
 # Sign Up and Get A Demo Of Audiom!
 
-Please enable JavaScript in your browser to complete this form.
-
-Name \*
-
-Email \*
-
-Phone
-
-Experience The Audiom Demo Now!
+<form method="POST" data-netlify="true" name="audiom-demo">
+  <p>
+    <label for="demo-name">Name <span aria-hidden="true">*</span></label>
+    <input type="text" id="demo-name" name="name" required autocomplete="name" placeholder="Name">
+  </p>
+  <p>
+    <label for="demo-email">Email <span aria-hidden="true">*</span></label>
+    <input type="email" id="demo-email" name="email" required autocomplete="email" placeholder="Email">
+  </p>
+  <p>
+    <label for="demo-phone">Phone</label>
+    <input type="tel" id="demo-phone" name="phone" autocomplete="tel" placeholder="Phone">
+  </p>
+  <p>
+    <button type="submit">Experience The Audiom Demo Now!</button>
+  </p>
+</form>
