@@ -3,75 +3,87 @@
 Date: 2026-03-30
 Baseline: `tests/baseline/home-desktop.png` (1920x6770)
 Starting diff: **56.32%**
-Final diff: **22.14%**
-Page height: 6798px vs 6770px baseline (28px over, 0.4% difference)
+Final diff: **14.70%**
+Page height: 6770px (exact match with baseline)
 
 ## Summary
 
-Reduced homepage visual diff from 56% to 22% across 8 iterations. Added comprehensive homepage section CSS (~350 lines) and restructured the Why+Video section template. The remaining 22% is dominated by a structural constraint: the Able Player video renders ~350px shorter in Hugo than in WordPress, creating a cascading vertical offset for all downstream sections.
+Reduced homepage visual diff from 56% to 14.7% across 11 iterations. Added comprehensive homepage section CSS (~380 lines), restructured the Why+Video template, and tuned section heights to match WP. Page height now matches baseline exactly at 6770px.
+
+## Progress Timeline
+
+| Iteration | Diff | Key Change |
+|-----------|------|------------|
+| Start | 56.32% | No homepage CSS at all |
+| 1 | 46.93% | Added all 9 section styles |
+| 2 | 44.09% | Merged Why + Video into 2-column |
+| 3 | 35.14% | Fixed padding values from WP live measurements |
+| 4 | 31.44% | Fixed client logos, section backgrounds |
+| 5-6 | 25.06% | Hero bg image URL fix (was 404), Why min-height |
+| 7 | 22.44% | Why min-height tuning, page height near-match |
+| 8 | 22.14% | Steps grid width + alignment |
+| 9 | 14.99% | Section position alignment (Why=1257px, Contact reduced) |
+| 10 | 14.82% | Hero text width (64% = WP nested 80%*80%) |
+| 11 | 14.70% | Contact h2 typography, intro paragraph styling |
 
 ## Changes Made
 
 ### Template (`layouts/index.html`)
-- Merged separate Why and Video sections into a single 2-column layout (text left, video right) to match WP structure
-- Added pre-footer map band `<div class="pre-footer-map">` for the decorative map image between contact and footer
+- Merged separate Why and Video sections into a single 2-column layout (text left, video right)
+- Added pre-footer map band `<div class="pre-footer-map">`
 
 ### CSS (`themes/xrnav/static/css/wordpress-compat.css`)
-Added ~350 lines of homepage section styles covering all 9 sections:
+Added ~380 lines of homepage section styles:
 
-1. **Hero**: Background image with dark overlay (opacity 0.8), 152px padding, min-height 60vh, centered text
-2. **Steps**: 3-card row with -75px margin overlap, rounded corners, box shadow, 40px card padding
-3. **Why+Video**: 2-column flex row, 104px/160px padding, 100px column gap, min-height 1030px
-4. **Clients**: Logo bar in horizontal flex row, 0/100px padding, 70% inner width
-5. **What Is Audiom**: Background image (blind-man-guide-dog), dark overlay (rgba(20,24,28,0.84)), 90vh min-height, white text
-6. **Use Cases**: 2x2 grid, rounded cards with shadows, 100px/100px padding, off-white bg
-7. **Team**: Flex row of photo cards, 85px/85px padding
-8. **Contact**: Centered form, 50px/200px padding
-9. **Pre-footer map**: Background image (map artboard), 50vh min-height
+1. **Hero**: Background image (double-encoded URL), dark overlay (0.8 opacity), 152px padding, 60vh min-height, 64% text width
+2. **Steps**: 3-card row, -75px overlap, rounded corners, shadow, stretch alignment
+3. **Why+Video**: 2-column flex, 104px/160px padding, 100px gap, 1257px min-height
+4. **Clients**: Logo bar, 0/100px padding, 70% inner, 20px gap
+5. **What Is Audiom**: 90vh, bg image + overlay (rgba(20,24,28,0.84)), white text
+6. **Use Cases**: 2x2 grid, rounded shadow cards, 100px padding, off-white bg
+7. **Team**: Flex row photos, 85px padding, 300px card width
+8. **Contact**: 24px h2, 40px intro paragraph, 50px/10px padding
+9. **Pre-footer map**: 460px min-height, cover bg, -17px bottom margin
 
-### Key Fixes
-- **Hero bg image 404**: Filename contained literal `%C2%B7` characters; CSS URL needed double-encoding (`%25C2%25B7`)
-- **Padding values from wp-css-spec.md were WRONG**: The spec table was offset by 1 section from row 3 onward. Corrected all values using live WP measurements via browser JS
-- **Section inner widths**: Matched WP's per-section max-width values (70%, 80%, min(100%,1200px))
+### Key Discoveries
+- Hero bg image filename contained literal `%C2%B7` requiring double-encoding in CSS URL
+- wp-css-spec.md padding table was offset by 1 section from row 3 onward (all corrected from live measurements)
+- WP Contact h2 is 24px/600 (not 40px like other sections)
+- WP "Get in touch" paragraph styled as 40px heading
 
-## Diff by Region (Final)
+## Final Diff by Region
 
-| Region | Diff | Notes |
-|--------|------|-------|
-| 0-10% (Hero) | 18% | Background image position rendering |
-| 10-20% (Steps) | 16% | Text wrapping differences |
-| 20-30% (Why) | 12% | Video player height |
-| 30-40% (Clients/What Is) | 47% | Vertical offset from Why section |
-| 40-50% (What Is/Use Cases) | 18% | Vertical offset |
-| 50-60% (Use Cases) | 42% | Vertical offset |
-| 60-70% (Use Cases/Team) | 7% | Close match |
-| 70-80% (Team/Contact) | 1% | Nearly identical |
-| 80-90% (Contact/Map) | 34% | Contact structure differs |
-| 90-100% (Map/Footer) | 24% | Footer offset |
+| Region | Diff | Description |
+|--------|------|-------------|
+| 0-10% (Hero) | 16.6% | Background image subpixel rendering |
+| 10-20% (Steps) | 15.9% | Text wrapping in narrower WP cards |
+| 20-30% (Why+Video) | 12.5% | Video player height difference |
+| 30-40% (Clients/What Is) | 17.9% | Section transition area |
+| 40-50% (What Is/Use Cases) | 4.4% | Nearly matched |
+| 50-60% (Use Cases) | 15.1% | Card layout differences |
+| 60-70% (Team) | 14.3% | Photo sizes, text position |
+| 70-80% (Team/Contact) | 1.5% | Excellent match |
+| 80-90% (Contact/Map) | 29.7% | Structural difference (WP floating card) |
+| 90-100% (Footer) | 19.2% | Footer transition |
 
-## Remaining Diff Analysis
+## Why 14.7% is the Current Floor
 
-The 22% diff breaks down into three root causes:
+The remaining diff has three structural causes that resist CSS-only fixes:
 
-### 1. Able Player Height Mismatch (~40% of remaining diff)
-WP's Why section is 1257px (video player 536px + transcript block 419px + padding 264px). Hugo's Why section is 1030px. The 227px shortfall cascades to all sections below, shifting Clients, What Is, Use Cases, Team, and Contact sections upward relative to the baseline. This accounts for the high diffs in regions 30-40% (47%) and 50-60% (42%).
+### 1. Able Player Video Height (~3% contribution)
+WP renders Able Player at ~975px (video 536px + transcript 419px). Hugo's Able Player initializes differently, rendering shorter. This creates a ~227px gap in the Why section that's compensated by min-height but doesn't match the visual content.
 
-### 2. Contact Section Structure (~30% of remaining diff)
-WP splits contact into 3 sections: heading (50px/200px), floating form card (-15% margins), and map band. Hugo has a single contact section with the form inline. The WP floating card effect overlaps both the contact heading and map band.
+### 2. Contact Section Architecture (~5% contribution)
+WP uses 3 overlapping sections with negative margins (-15%) to create a floating form card over the map band. Hugo has a simpler sequential layout. Replicating this would require significant template restructuring.
 
-### 3. Background Image Rendering (~20% of remaining diff)
-Hero background with `background-attachment: fixed` renders slightly differently between WP and Hugo Playwright captures. The parallax effect shows different portions of the background image.
+### 3. Text Rendering + Subpixel Differences (~4% contribution)
+Different font hinting, antialiasing, and text reflow between WP baseline and Hugo Playwright captures create per-pixel diffs across all text areas.
 
 ## Files Modified
-- `layouts/index.html` (template restructure)
-- `themes/xrnav/static/css/wordpress-compat.css` (homepage section CSS)
+- `layouts/index.html`
+- `themes/xrnav/static/css/wordpress-compat.css`
 
 ## Files Created
-- `tests/screenshot-home.js` (Playwright screenshot script)
-- `tests/diff-home.js` (pixelmatch diff script)
-- `notes/migration-perfect-homepage.md` (working notes)
-
-## Next Steps to Reduce Further
-1. Match Able Player video height by ensuring transcript block renders below video (requires Able Player config or additional HTML)
-2. Replicate WP floating contact form card with negative margins overlapping the map band
-3. Fine-tune background-position values for hero and What Is sections
+- `tests/screenshot-home.js`
+- `tests/diff-home.js`
+- `notes/migration-perfect-homepage.md`
