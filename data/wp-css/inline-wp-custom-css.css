@@ -1,0 +1,492 @@
+
+			/* Universal styles (affects both mobile and desktop) */
+.fadeout {
+  opacity: 1;
+  transition: opacity .5s; /* adjust timing if needed */
+}
+.fade {
+  opacity: 0 !important;
+}
+.custom-logo {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.custom-logo.fade-out {
+  opacity: 0;
+}
+
+/* Style the button in the header */
+.ast-custom-button {
+  background-color: #ffffff;
+  color: #04203E;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Add transition for smooth color changes */
+}
+/* Button hover effect */
+.ast-custom-button:hover {
+  background-color: #04203E; /* Invert colors on hover */
+  color: #ffffff;
+}
+/* Button color after scroll */
+.ast-main-header-wrap.active .ast-custom-button {
+  background-color: #04203E;
+  color: #ffffff;
+}
+/* Button hover effect after scroll */
+.ast-main-header-wrap.active .ast-custom-button:hover {
+  background-color: #ffffff; /* Invert colors on hover */
+  color: #04203E;
+}
+/* Other rules remain the same */
+.ast-primary-header-bar {
+  padding: 0;
+}
+body.scrolling .ast-main-header-wrap {
+  background-color: #ffffff;
+}
+/* Logo hover effect */
+img.custom-logo:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+  transition: transform 0.3s ease; /* Add transition for smooth scale changes */
+}
+
+/* After scrolling: When 'active' class is added to the header */
+.ast-main-header-wrap.active .menu-toggle.main-header-menu-toggle.ast-mobile-menu-trigger-minimal .ast-mobile-svg {
+  fill: #04203E; /* Dark color */
+}
+/* Mobile Specific Styles */
+/* Solid dark blue background color for mobile */
+@media (max-width: 767px) {
+  .ast-main-header-wrap {
+    background: #04203E; /* Solid dark blue using hex color */
+  }
+}
+
+
+/* Desktop Specific Styles */
+@media (min-width: 921px) {
+  /* CSS for Sticky header */
+  .ast-main-header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+  }
+  .ast-main-header-wrap.transparent {
+    background-color: transparent !important;
+  }
+  /* Header-menu-item css before scroll */
+  .menu-item a {
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    /*color: #ffffff !important;*/
+    transition: color 0.5s ease, transform 0.3s ease;
+  }
+  .menu-item a:hover {
+    transform: scale(1.1);
+  }
+  /* Header-menu-item css after scroll */
+  .ast-main-header-wrap.active {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  .ast-main-header-wrap.active .menu-item a {
+    color: #04203E !important;
+  }
+  .ast-main-header-wrap.active .menu-item a:hover {
+    color: #04203E !important;
+  }
+}
+
+
+.uagb-post__inner-wrap {
+    border-radius: 20px; /* Adjust the value to your desired border radius */
+    overflow: hidden; /* Ensures the content within the box doesn't overflow the rounded corners */
+}
+
+.uagb-post__image img {
+    border-radius: 20px 20px 0 0; /* Apply rounded corners only to the top */
+}
+
+#primary.content-area.primary {
+    margin-top: 0 !important;
+}
+
+body.single-post .ast-single-related-posts-container {
+    margin-bottom: 5% !important;
+}
+
+.no-word-break {
+    word-wrap: normal;
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
+/* CSS for larger screens (tablets and desktops) */
+.sampleform-pleasework {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+#wpforms-339 .wpforms-field-container.wpforms-field {
+  padding: 0;
+}
+
+#wpforms-339 .wpforms-field .wpforms-field-large {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px !important;
+	  border-color: #04203E;
+}
+
+/* Clear floats */
+.sampleform-pleasework::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Font styling for input fields and submit button */
+.wpforms-field-name input,
+.wpforms-field-email.wpforms-email-sample input,
+.wpforms-field-number.wpforms-phone-sample input,
+#wpforms-339-field_5,
+#wpforms-submit-339 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+/* Media query for smaller screens (e.g., mobile phones) */
+@media (min-width: 767px) {
+    #wpforms-339 .wpforms-field-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+    #wpforms-339-field_1-container { grid-area: 1 / 1 / 2 / 2; }
+    #wpforms-339-field_3-container { grid-area: 2 / 1 / 3 / 2; }
+    #wpforms-339-field_7-container { grid-area: 3 / 1 / 4 / 2; }
+    #wpforms-339-field_5-container { 
+      grid-area: 1 / 2 / 4 / 3;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    #wpforms-339-field_5 {
+      flex: 1 0 auto;
+    }
+    #wpforms-submit-339 {
+        background-color: #04203E !important;
+        border-radius: 6px !important;
+        color: white !important;
+        margin: 20px auto 0 !important;
+        display: block !important;
+        padding: 20px 30px !important; /* Added padding for the submit button */
+    }
+    #wpforms-submit-339:hover {
+        background-color: #15191D !important;
+    }
+}
+/* Style the labels and required asterisk */
+#wpforms-form-1507 .wpforms-field-label,
+#wpforms-form-1507 .wpforms-required-label {
+    color: white; /* Sets label text and asterisk to white */
+}
+
+/* Style the input fields */
+#wpforms-form-1507 .wpforms-field input[type="text"],
+#wpforms-form-1507 .wpforms-field input[type="email"] {
+    background-color: transparent; /* Removes the background fill */
+    border: none; /* Removes the default borders */
+    border-bottom: 4px solid white; /* Adds a bottom border of 4px in white */
+    color: white; /* Sets the input text color to white */
+}
+
+/* Change placeholder text color */
+#wpforms-form-1507 .wpforms-field input::placeholder {
+    color: white; /* Sets the placeholder text color to white */
+    opacity: 1; /* Ensures the placeholder text is not transparent */
+}
+
+/* Ensure the input fields do not have a border or background when focused */
+#wpforms-form-1507 .wpforms-field input[type="text"]:focus,
+#wpforms-form-1507 .wpforms-field input[type="email"]:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid white;
+    box-shadow: none; /* Removes any focus shadows */
+}
+/* Style the submit button */
+#wpforms-submit-1507 {
+    width: 60%; /* Makes the button full width */
+    border-radius: 6px; /* Sets the border radius to 6px */
+}
+
+/* Button focus effect - Ensure visibility for keyboard navigation */
+.ast-custom-button:focus {
+  outline: 2px solid #04203E; /* Example: a blue outline to indicate focus */
+  outline-offset: 2px; /* Adds some space between the outline and the button */
+}
+
+/* Adjusting input fields and textarea to full width with lighter border and border-radius */
+#wpforms-1610-field_1-container input,
+#wpforms-1610-field_2-container input,
+#wpforms-1610-field_3-container input,
+#wpforms-1610-field_4-container input,
+#wpforms-1610-field_5-container textarea {
+    width: 100% !important; /* Full width */
+    border: 1px solid #04203E !important; /* Lighter blue border */
+    border-radius: 8px !important; /* Rounded corners */
+}
+
+/* Adjusting labels to 1em font size */
+#wpforms-1610-field_1-container label,
+#wpforms-1610-field_2-container label,
+#wpforms-1610-field_3-container label,
+#wpforms-1610-field_4-container label,
+#wpforms-1610-field_5-container label {
+    font-size: 1em !important;
+}
+
+/* Styling the submit button with specified colors, border-radius, and center alignment */
+#wpforms-submit-1610 {
+    background-color: #04203E !important; /* Dark blue background */
+    color: #FFFFFF !important; /* White text */
+    border-radius: 8px !important; /* Rounded corners */
+    display: block !important;
+    margin: 0 auto !important; /* Centered button */
+}
+
+#wpforms-submit-1610:hover {
+    background-color: #15191D !important; /* Dark grey background on hover */
+}
+
+.wpforms-required-label {
+    color: #15191D !important;
+}
+
+#wpforms-submit-339 {
+    background-color: #04203E !important; /* Dark blue background */
+    color: white !important; /* White text */
+    padding: 20px 30px !important; /* Adjust padding as needed */
+    border-radius: 6px !important; /* Rounded corners */
+}
+
+#wpforms-submit-339:hover {
+    background-color: #030e1f !important; /* Slightly darker blue on hover for a subtle effect */
+}
+/* Change WPForms error text color to white for form ID 1507 */
+#wpforms-form-1507 .wpforms-error {
+    color: #ffffff !important;
+}
+
+/* Also targeting the general error container for more coverage */
+#wpforms-form-1507 .wpforms-error-container {
+    color: #ffffff !important;
+}
+/* Change WPForms required asterisk color for form ID 1507 */
+#wpforms-form-1507 .wpforms-required-label {
+    color: #ffffff !important; /* Set to white or any color you prefer */
+}
+h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word; /* Allows the words to break and wrap */
+  hyphens: auto; /* Adds hyphenation to support text breaking */
+  max-width: 100%; /* Ensures the heading does not exceed its container width */
+}
+
+/* Example of adjusting font size on small screens */
+@media screen and (max-width: 320px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: smaller; /* Adjust based on your design needs */
+  }
+}
+/* Targeting the active menu item in the primary header bar */
+.ast-primary-header-bar .main-header-menu .current-menu-item a {
+  font-weight: bold; /* Makes the active menu item text bold */
+}
+
+/* If you have a separate mobile menu and want the active item to be bold there as well */
+@media (max-width: 767px) {
+  .ast-mobile-header-content .main-header-menu .current-menu-item a {
+    font-weight: bold; /* Ensures active item is bold on mobile as well */
+  }
+}
+
+@media (max-width: 600px) {
+  .content-area .wp-block-uagb-advanced-heading .uagb-heading-text,
+  .content-area .wp-block-uagb-advanced-heading .uagb-desc-text {
+    max-width: 90%;
+  }
+}
+article .uagb-post__inner-wrap h3.uagb-post__title {
+    padding: 4px; /* Adjust padding to ensure space for outline */
+    overflow: visible; /* Ensure overflow does not clip the outline */
+}
+
+article .uagb-post__inner-wrap h3.uagb-post__title:focus {
+    outline: 2px solid blue; /* Custom focus style */
+    outline-offset: 2px; /* Adds space between the outline and the element's border */
+}
+/* Ensures that the focus outline around the author link is not clipped or hidden */
+.uagb-post__inner-wrap .uagb-post__author a {
+    padding: 2px; /* Adds padding around the link to ensure there's space for the outline */
+    margin: -2px; /* Optionally, adjust the margin to counterbalance the added padding if necessary */
+}
+
+.uagb-post__inner-wrap .uagb-post__author {
+    overflow: visible; /* Ensures that the container doesn't clip the focus outline */
+}
+
+/* Apply max-width to main content areas with !important to ensure it takes precedence */
+.main-content, .page-content, .post-content {
+  max-width: 80ch !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure full width for header, footer, and other full-width sections */
+.site-header, .site-footer, .full-width-section {
+  max-width: 100%;
+}
+
+#wpforms-form-1610 .wpforms-field-label[for="wpforms-1610-field_1"],
+#wpforms-form-1610 .wpforms-field-label[for="wpforms-1610-field_2"],
+#wpforms-form-1610 .wpforms-field-label[for="wpforms-1610-field_3"],
+#wpforms-form-1610 .wpforms-field-label[for="wpforms-1610-field_4"],
+#wpforms-form-1610 .wpforms-field-label[for="wpforms-1610-field_5"] {
+    color: black !important; /* Override label color */
+}
+
+.post-content {
+    word-wrap: break-word;  /* Ensures long words can break and wrap onto the next line */
+
+}
+/* Targeting specific elements on the page by adding a unique class or using existing IDs */
+.page-id-1399 .wp-block-uagb-advanced-heading h2 {
+    max-width: 80ch !important;
+    overflow-wrap: break-word !important;
+    margin: 0 auto !important;
+    text-align: center !important; /* Adjust alignment here as needed */
+}
+
+.page-id-1399 body p, 
+.page-id-1399 body li, 
+.page-id-1399 body ol {
+    max-width: 80ch !important;
+    overflow-wrap: break-word !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: justify !important; /* Example of changing alignment */
+}
+
+/* Universal settings for all paragraph tags across the website */
+body p,
+body li {
+    max-width: 80ch !important;
+    overflow-wrap: break-word !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: !important; /* Justify text alignment for better readability */
+}
+
+
+/* Form Label Styles */
+.site-footer .wpforms-field-label {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+/* Input and Textarea Styles */
+.site-footer .wpforms-field-large, 
+.site-footer .wpforms-field-medium {
+    border-radius: 20px;
+    background-color: #F9FAFB;
+    color: #15191D;
+    height:60px; /* Increase the height to make fields taller */
+}
+.site-footer .wpforms-field-large::placeholder, 
+.site-footer .wpforms-field-medium::placeholder {
+    color: #15191D;
+}
+
+/* Submit Button Styles */
+.site-footer [type="submit"] {
+    background-color: #F9FAFB;
+    color: #04203E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-footer [type="submit"]:hover {
+    background-color: #04203E;
+    color: #F9FAFB;
+}
+
+.site-footer [type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #04203E;
+}
+
+.alignfull:has(.has-ast-global-color-5-color) a {
+	color: var(--ast-global-color-6) !important;
+}
+
+.Change-background.alignfull a {
+	color: var(--secondary-color);	
+}
+
+:root {
+	--primary-color: #000;
+	--secondary-color: #fff;
+	--accent-color: #0054AD;
+	--background-color: #f8f9fa;
+}
+
+div.able-modal-dialog {
+	position: fixed;
+	z-index: 1000000001;
+	overflow-x: auto;
+}
+
+.site-header {
+  z-index: 1000000000;
+}
+
+*, *::before, *::after {
+	scroll-padding-top: 5rem;
+}
+.ast-main-header-wrap,
+.ast-primary-header-bar,
+.ast-container {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.ast-main-header-wrap {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.ast-primary-header-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}		

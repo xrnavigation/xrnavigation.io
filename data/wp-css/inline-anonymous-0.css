@@ -1,0 +1,29 @@
+body {
+	--outline-color: #d01754;
+	--outline-offset: max(6px, 0.16em);
+	--outline-size: max(4px, 0.08em);
+	--outline-style: solid;
+}
+
+/* Focus Styles
+   ========================================================================== */
+/* Base :focus styles for fallback purposes */
+:is(a, button, input, select, textarea, summary):focus,
+div.wpforms-container-full .wpforms-form *:focus,
+[type='checkbox']:focus + span:after,
+[type='radio']:focus + span:after {
+  border-radius: 0.5rem;
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+/* Final :focus-visible styles */
+:is(a, button, input, select, summary, textarea):focus-visible,
+div.wpforms-container-full .wpforms-form *:focus-visible,
+[type='checkbox']:focus-visible + span:after,
+[type='radio']:focus-visible + span:after {
+  border-radius: 0.5rem;
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+  z-index: 1;
+}

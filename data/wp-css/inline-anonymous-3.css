@@ -1,0 +1,27 @@
+.custom-footer {
+            padding: 20px 5%;
+            color: #ffffff; /* Text color is white */
+            background-color: transparent; /* Background is transparent */
+            font-family: 'Montserrat', sans-serif;
+        }
+        .custom-footer h2 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 24px;
+            font-weight: 800;
+            color: #ffffff; /* Headings are white */
+        }
+        .custom-footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            text-align: left;
+        }
+        .custom-footer ul li {
+            margin-bottom: 8px;
+            transition: transform 0.3s;
+        }
+        .custom-footer ul li a {
+            color: #ffffff; /* Link text is white */
+            text-decoration: none;
+        }

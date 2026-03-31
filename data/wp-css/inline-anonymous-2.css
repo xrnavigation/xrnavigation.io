@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #5a5a5a; /* Default primary color */
+    --secondary-color: #fff; /* Default secondary color */
+    --accent-color: #007bff; /* Default accent color */
+    --background-color: #f8f9fa; /* Default background color */
+}
+
+[data-color-mode="dark"] {
+    --primary-color: #cccccc;
+    --secondary-color: #333333;
+    --accent-color: #1a73e8;
+    --background-color: #222222;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+[data-color-mode="light"] {
+    --primary-color: #5a5a5a; /* Light mode primary color */
+    --secondary-color: #fff; /* Light mode secondary color */
+    --accent-color: #007bff; /* Light mode accent color */
+    --background-color: #f8f9fa; /* Light mode background color */
+}
+
+
+/* Additional element styles using the variables */
