@@ -1317,6 +1317,13 @@ article.post .entry-content p {
   margin-bottom: 25.6px;
 }
 
+.audiom-embed-page .entry-content > h2 {
+  max-width: min(100%, 1200px);
+  width: 100%;
+  margin-top: 49px;
+  margin-bottom: 20px;
+}
+
 .audiom-embed-page .entry-content > iframe {
   display: block;
   border: 0;
