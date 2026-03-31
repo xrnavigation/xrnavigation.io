@@ -34,43 +34,40 @@
   </div>
 </section>
 
-{{/* ---- Why XR Navigation ---- */}}
+{{/* ---- Why XR Navigation (2-column: text left, video right) ---- */}}
 <section class="why" aria-labelledby="why-heading">
   <div class="section-inner">
-    <h2 id="why-heading">{{ $why.heading }}</h2>
-    <p>{{ $why.text | markdownify }}</p>
-    <div class="features-grid">
-      {{- range $why.features }}
-      <div class="feature-card">
-        <h3>{{ .title }}</h3>
-        <p>{{ .text }}</p>
+    <div class="why-text">
+      <h2 id="why-heading">{{ $why.heading }}</h2>
+      <p>{{ $why.text | markdownify }}</p>
+      <div class="features-grid">
+        {{- range $why.features }}
+        <div class="feature-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{- end }}
       </div>
-      {{- end }}
+      <div class="section-cta">
+        <a href="{{ $why.cta_url | relURL }}" class="btn btn-primary">{{ $why.cta_text }}</a>
+      </div>
     </div>
-    <div class="section-cta">
-      <a href="{{ $why.cta_url | relURL }}" class="btn btn-primary">{{ $why.cta_text }}</a>
+    {{ with $video }}
+    <div class="why-video">
+      <div class="video-wrapper">
+        <video id="audiom-intro" data-able-player preload="metadata">
+          {{- range .sources }}
+          <source src="{{ .src | relURL }}" type="video/mp4" data-label="{{ .label }}">
+          {{- end }}
+          {{- range .captions }}
+          <track kind="captions" src="{{ .src | relURL }}" srclang="{{ .srclang }}" label="{{ .label }}">
+          {{- end }}
+        </video>
+      </div>
     </div>
+    {{ end }}
   </div>
 </section>
-
-{{/* ---- Video ---- */}}
-{{ with $video }}
-<section class="video-section" aria-labelledby="video-heading">
-  <div class="section-inner">
-    <h2 id="video-heading">{{ .heading }}</h2>
-    <div class="video-wrapper">
-      <video id="audiom-intro" data-able-player preload="metadata">
-        {{- range .sources }}
-        <source src="{{ .src | relURL }}" type="video/mp4" data-label="{{ .label }}">
-        {{- end }}
-        {{- range .captions }}
-        <track kind="captions" src="{{ .src | relURL }}" srclang="{{ .srclang }}" label="{{ .label }}">
-        {{- end }}
-      </video>
-    </div>
-  </div>
-</section>
-{{ end }}
 
 {{/* ---- Client Logos ---- */}}
 <section class="clients" aria-labelledby="clients-heading">
@@ -162,5 +159,8 @@
     </form>
   </div>
 </section>
+
+{{/* ---- Pre-footer Map Band ---- */}}
+<div class="pre-footer-map" aria-hidden="true"></div>
 
 {{ end }}

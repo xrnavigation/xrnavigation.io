@@ -146,6 +146,7 @@ body.ast-hfb-header {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 25.6px;
+  letter-spacing: 0.3px;
   color: #000000;
   background-color: var(--ast-global-color-4);
 }
@@ -175,7 +176,7 @@ body.ast-hfb-header {
 
 .ast-article-single {
   display: block;
-  padding-top: 32px;
+  padding-top: 0;
 }
 
 .entry-content.clear::after {
@@ -678,11 +679,12 @@ h6.wp-block-heading {
   margin-bottom: 0;
 }
 
-/* Lists — revert to browser defaults (Astra does this) */
+/* Lists — match WP Astra computed values */
 .entry-content ul,
 .entry-content ol {
-  padding: revert;
-  margin: revert;
+  padding-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Entry-content last child — no trailing margin */
@@ -1630,8 +1632,8 @@ article.post .entry-content p {
 /* --- 1. Hero Section --- */
 .home-page .hero {
   min-height: 60vh;
-  padding: 8% 0;
-  background-image: url('/images/DALL%C2%B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp');
+  padding: 152px 0;
+  background-image: url('/images/DALL%25C2%25B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp');
   background-repeat: no-repeat;
   background-position: 62% 12%;
   background-size: cover;
@@ -1751,9 +1753,10 @@ article.post .entry-content p {
   color: #777;
 }
 
-/* --- 3. Why XR Navigation --- */
+/* --- 3. Why XR Navigation (2-column: text + video) --- */
 .home-page .why {
   padding: 104px 10px 160px;
+  min-height: 1030px;
 }
 
 .home-page .why .section-inner {
@@ -1762,6 +1765,18 @@ article.post .entry-content p {
   flex-direction: row;
   align-items: stretch;
   gap: 100px;
+}
+
+.home-page .why-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-page .why-video {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
 }
 
 .home-page .why h2 {
@@ -1773,15 +1788,10 @@ article.post .entry-content p {
   margin-bottom: 20px;
 }
 
-.home-page .why > .section-inner > p {
-  display: none;
-}
-
 .home-page .why .features-grid {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1;
 }
 
 .home-page .why .feature-card {
@@ -1804,25 +1814,6 @@ article.post .entry-content p {
   margin-top: 20px;
 }
 
-/* --- 4. Video Section --- */
-.home-page .video-section {
-  padding: 0 0 100px;
-}
-
-.home-page .video-section .section-inner {
-  max-width: 70%;
-}
-
-.home-page .video-section h2 {
-  font-family: var(--font-heading);
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  color: var(--ast-global-color-1);
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 .home-page .video-wrapper {
   width: 100%;
 }
@@ -1834,12 +1825,12 @@ article.post .entry-content p {
 
 /* --- 5. Client Logos --- */
 .home-page .clients {
-  padding: 10px;
+  padding: 0 10px 100px;
   text-align: center;
 }
 
 .home-page .clients .section-inner {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .home-page .clients h2 {
@@ -1866,20 +1857,43 @@ article.post .entry-content p {
 }
 
 .home-page .logo-bar img {
-  max-height: 80px;
+  max-height: 141px;
+  max-width: 435px;
   width: auto;
   object-fit: contain;
 }
 
 /* --- 6. What Is Audiom --- */
 .home-page .what-is {
-  padding: 100px 80px;
-  background-color: var(--ast-global-color-4);
+  padding: 10px;
+  min-height: 90vh;
+  background-image: url('/images/blind-man-with-guide-dog-in-a-summer-city-2021-08-29-10-33-51-utc.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-page .what-is::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 24, 28, 0.84);
+  pointer-events: none;
 }
 
 .home-page .what-is .section-inner {
-  max-width: min(100%, 1200px);
+  max-width: 80%;
+  position: relative;
+  z-index: 1;
 }
 
 .home-page .what-is h2 {
@@ -1887,12 +1901,12 @@ article.post .entry-content p {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  color: var(--ast-global-color-1);
+  color: var(--ast-global-color-4);
   margin-bottom: 20px;
 }
 
 .home-page .what-is p {
-  color: #777;
+  color: var(--ast-global-color-4);
 }
 
 .home-page .what-is .section-cta {
@@ -1901,8 +1915,9 @@ article.post .entry-content p {
 
 /* --- 7. Use Cases --- */
 .home-page .use-cases {
-  padding: 85px 10px;
+  padding: 100px 10px;
   text-align: center;
+  background-color: var(--ast-global-color-4);
 }
 
 .home-page .use-cases .section-inner {
@@ -1971,7 +1986,7 @@ article.post .entry-content p {
 
 /* --- 8. Team --- */
 .home-page .team {
-  padding: 50px 10px 200px;
+  padding: 85px 10px;
   text-align: center;
 }
 
@@ -2028,7 +2043,7 @@ article.post .entry-content p {
 
 /* --- 9. Contact Section --- */
 .home-page .contact-section {
-  padding: 10px;
+  padding: 50px 10px 200px;
   text-align: center;
 }
 
@@ -2054,6 +2069,18 @@ article.post .entry-content p {
   text-align: left;
 }
 
+/* --- 10. Pre-footer Map Band --- */
+.home-page .pre-footer-map {
+  min-height: 50vh;
+  padding: 10px;
+  background-image: url('/images/map-for-bottomArtboard-1%404x.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  margin-bottom: -17px;
+}
+
 /* --- Homepage Responsive --- */
 @media (max-width: 921px) {
   .home-page .hero h1 {
@@ -2073,7 +2100,6 @@ article.post .entry-content p {
     gap: 40px;
   }
 
-  .home-page .video-section .section-inner,
   .home-page .clients .section-inner,
   .home-page .use-cases .section-inner,
   .home-page .team .section-inner,
