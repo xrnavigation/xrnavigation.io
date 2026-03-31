@@ -55,4 +55,54 @@
 **KEY FINDING:** The mobile viewport width changed from 375 to 550 between rounds, inflating all mobile diffs. This is a test configuration or rendering issue, not a regression.
 
 **DONE:** Tests completed, analysis script written, notes updated.
-**NEXT:** Write round 4 report, kill Hugo, commit.
+
+## 2026-03-30 (Round 5 -- after mobile width fix)
+
+**OBSERVATIONS:**
+- 180 comparisons, 0 matching, 2 minor, 178 major, 0 errors
+- Avg 46.01%, median 46.94% -- improved over R4 (51.31%/55.49%) but still worse than R3 (42.17%/38.70%)
+- Desktop avg 41.47%, mobile avg 50.55%
+- Width mismatches dropped from 90 to 5 -- mobile width fix worked
+- Mobile improved 10.55pp over R4
+- Only 2 pages under 10%: fictional-map desktop (4.96%), privacy-policy desktop (9.96%)
+- Blog listing is worst (85-90%) due to no pagination in Hugo
+- Portfolio/grid pages 67-80% -- card layouts not matching
+
+**DONE:** Test run, analysis, report written to reports/migration-comparison-round5.md
+**NEXT:** Blog pagination, grid/card layouts, homepage spacing, general padding audit.
+
+## 2026-03-30 (Round 6 -- after Able Player and iframe fixes)
+
+**RESULTS:** 180 comparisons, 1 matching, 15 minor, 164 major, 0 errors
+- Avg 45.19%, median 48.87% -- improved from R5 (46.01%/46.94%)
+- Desktop avg 40.38% (R5: 41.47%), mobile avg 49.99% (R5: 50.55%)
+- 1 page under 1% (fictional-map desktop 0.41%), 5 under 5%, 16 under 10%
+- Best: fictional-map desktop 0.41%, covid-statistic desktop 2.12%, privacy-policy desktop 4.72%
+- Worst: blog mobile 89.4%, map-evaluation-tool mobile 89.4%, blog desktop 84.5%
+- map-evaluation-tool mobile has width mismatch (2351 vs 375)
+**DONE:** Tests complete, analysis done, need to write report and commit.
+
+## 2026-03-30 (Round 7)
+
+**RESULTS:** 180 comparisons, 1 matching, 15 minor, 164 major, 0 errors
+- Avg 44.36% (R6: 45.19%), median 46.12% (R6: 48.87%)
+- Desktop avg 39.72% (R6: 40.38%), mobile avg 49.01% (R6: 49.99%)
+- Blog dramatically improved: desktop 33.96% (was 84.51%), mobile 48.09% (was 89.44%)
+- map-evaluation-tool dropped off worst 10
+- Under 10%: 16, under 20%: 27 (was 26), under 30%: 41 (same)
+- 66 standard pages >= 50% -- embed-heavy audiom demos dominate
+- 10 collection/portfolio pages >= 50% -- grid layout mismatches
+**STATUS:** Analysis done, writing report and committing.
+
+## 2026-03-30 (Round 8 -- after embed template perfection)
+
+**RESULTS:** 180 comparisons, 1 matching, 43 minor, 136 major, 0 errors
+- Avg 32.23% (R7: 44.36%), median 33.90% (R7: 46.12%) -- massive improvement
+- Desktop avg 24.69% (R7: 39.72%), mobile avg 39.77% (R7: 49.01%)
+- Desktop median 11.74%, mobile median 37.07%
+- Under 1%: 1, under 5%: 39 (R7: 5), under 10%: 44 (R7: 16), under 20%: 55 (R7: 27), under 30%: 73 (R7: 41)
+- 13 audiom embed pages now under 5% (all desktop)
+- Mobile audiom embeds still 27-47% due to structural differences
+- Worst: digital-map-tool-accessibility-comparison mobile 84.28%, universities desktop 77.81%
+- Best: fictional-map desktop 0.41%, covid-statistic desktop 2.12%, lske-map-* desktop ~3.25%
+**STATUS:** Writing report and committing.
