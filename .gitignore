@@ -4,3 +4,7 @@ public/
 resources/_gen/
 .hugo_build.lock
 baseline-run2.log
+tests/current/
+tests/diffs/
+tests/comparison-results.json
+tests/parse-results.js
