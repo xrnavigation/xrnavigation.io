@@ -264,3 +264,47 @@ main:focus {
     justify-content: center;
   }
 }
+
+/* ==========================================================================
+   Responsive Typography (Astra mobile breakpoints)
+   Must be in main.css (loaded last) to override base heading sizes above.
+   Matches wordpress-compat.css responsive rules but wins cascade order.
+   ========================================================================== */
+@media (max-width: 921px) {
+  h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  /* Mobile content padding — match WP ast-container 20px padding */
+  .ast-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* Audiom embed pages and homepage should NOT get this padding */
+  .home-page .ast-container,
+  .audiom-embed-page .ast-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

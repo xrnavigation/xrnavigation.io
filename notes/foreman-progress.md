@@ -1,40 +1,32 @@
 # Foreman Progress — Migration
 Date: 2026-03-31
 
-## STATUS: R8 comparison running after embed template perfection
+## STATUS: 2 of 3 parallel agents done, 1 still running (collections v2). Uncommitted CSS/footer changes on disk.
 
-## Comparison Trend
-| Round | Avg | <1% | <5% | <10% | <30% |
-|-------|-----|-----|-----|------|------|
-| R1 | 43.64% | 0 | 0 | 0 | — |
-| R5 | 46.01% | 0 | 2 | 2 | — |
-| R6 | 45.19% | 1 | 5 | 16 | 41 |
-| R7 | 44.36% | 1 | 5 | 16 | 41 |
-| R8 | ? | ? | ? | ? | ? |
+## R8 Results (current baseline)
+| Metric | Value |
+|--------|-------|
+| Average | 32.23% |
+| Desktop avg | 24.69% |
+| Mobile avg | 39.77% |
+| Under 5% | 39 |
+| Under 10% | 44 |
+| Under 30% | 73 |
 
-## What Changed Since R7
-- Embed template perfected: 3 layout variants, 31+ pages under 5% per agent report
-- YouTube embed responsive wrappers fixed
-- Per-page spacer variants implemented
-- Link checker passes clean (0 broken links)
-- Gallery nav link fixed
-- Evaluate link fixed
-- Page title format fixed ("Title - XR Navigation")
-- Blog pagination to 20 posts (hugo.toml changed)
+## Agent Results This Round
+- **embed-mobile** — still running (or finished? checking)
+- **collections v2** — still running (redispatched after v1 hit 500 error)
+- **standard-mobile** — finished but no commits. Burned context analyzing CSS padding rules without committing fixes. Left uncommitted changes to footer.html, main.css, wordpress-compat.css.
 
-## Expected R8 Impact
-Embed template fix is the highest-leverage change yet — 30+ pages improved. Expecting:
-- <5% count to jump significantly (was 5, embed agent says 31+ under 5%)
-- <10% count to increase substantially
-- Average to drop meaningfully
+## Uncommitted Changes on Disk
+- footer.html: +22 lines (likely mobile footer improvements)
+- main.css: +44 lines
+- wordpress-compat.css: +105/-57 lines
+- 3 collection content files: +1 each
+Need to commit these before next agent dispatch.
 
-## Remaining Known Issues
-- Collection pages (universities, corporate, healthcare) — grid layouts still WIP
-- Homepage at ~10-15% — Able Player height, contact section
-- Mobile pages generally higher diff than desktop
-- Some pages with complex WP layouts (case studies, events) need per-page work
-
-## CI Gates Now Available
-- `npm run check-links` — broken link checker
-- `npm run baseline` — capture visual baseline
-- Visual comparison test in tests/visual-comparison.spec.ts
+## Next Steps
+1. Commit WIP changes from standard-mobile agent
+2. Wait for embed-mobile and collections-v2 agents
+3. Run R9 comparison
+4. Continue iterating on worst pages
