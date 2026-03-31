@@ -236,4 +236,11 @@ WP contact structure: section 7 (heading, 50px/200px pad) -> section 8 (form car
 - Use Cases inner: 70% -> min(100%,1200px). REVERT — narrower cards caused text wrapping, section taller.
 - Net: only keeping hero-inner 64% fix.
 
-**NEXT:** Screenshot with just hero fix, then look for more wins
+**ITERATION 10 RESULT:** 14.82% with hero-inner 64% fix. Contact overlap attempts all failed (reverted).
+
+**H2 STYLE DISCOVERY from WP:**
+- Most section h2s: 40px/700/50px (matches my CSS)
+- CONTACT US h2: 24px/600/30px color #15191d (DIFFERENT — mine has 40px)
+- Media player h2: 32px/600/40px color #5a7969 (green, but this is hidden in merged why+video)
+
+**NEXT:** Fix contact h2 size, look for other small wins

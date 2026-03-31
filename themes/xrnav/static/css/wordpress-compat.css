@@ -2063,11 +2063,19 @@ article.post .entry-content p {
 
 .home-page .contact-section h2 {
   font-family: var(--font-heading);
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  color: var(--ast-global-color-1);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--ast-global-color-0);
   margin-bottom: 20px;
+}
+
+.home-page .contact-section > .section-inner > p:first-of-type {
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--ast-global-color-1);
+  font-family: var(--font-heading);
+  font-weight: 700;
 }
 
 .home-page .contact-section p {
@@ -2081,7 +2089,7 @@ article.post .entry-content p {
 
 /* --- 10. Pre-footer Map Band --- */
 .home-page .pre-footer-map {
-  min-height: 475px;
+  min-height: 460px;
   padding: 10px;
   background-image: url('/images/map-for-bottomArtboard-1%404x.webp');
   background-repeat: no-repeat;
