@@ -7,8 +7,9 @@
           <h1 class="uagb-heading-text">{{ .Title }}</h1>
         </div>
         {{ .Content }}
+        {{ $paginator := .Paginate .Pages }}
         <div class="wp-block-uagb-post-grid uagb-post-grid uagb-post__columns-3 is-grid uagb-post__columns-tablet-2 uagb-post__columns-mobile-1 uagb-post__equal-height" role="list">
-          {{ range .Pages }}
+          {{ range $paginator.Pages }}
           <article class="uagb-post__inner-wrap" role="listitem">
             <h3 class="uagb-post__title uagb-post__text">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
