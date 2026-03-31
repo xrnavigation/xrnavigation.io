@@ -405,4 +405,11 @@ WP contact structure: section 7 (heading, 50px/200px pad) -> section 8 (form car
 - themes/xrnav/static/css/wordpress-compat.css: team img 184x184 circular, step-card min-h, clients min-h, hero min-h, video-wrapper min-h, footer min-heights, map min-h adjusted, contact form card styling
 - tests/band-diff.js: new utility script
 
-**READY TO COMMIT AND REPORT.**
+**COMMITTED:** b09fa7d (CSS changes) + ffb9c58 (report).
+
+**ITERATION v2-11:** jQuery slim -> full jQuery swap.
+- Downloaded jquery-3.7.1.min.js (87533 bytes) to vendor/
+- baseof.html line 24 references `vendor/jquery.slim.min.js`, need to change to `vendor/jquery.min.js`
+- If Able Player initializes, video wrapper should render at ~536px with controls + transcript
+- This could save ~2.3% diff (bands 15-25%)
+- PENDING: swap reference and test.

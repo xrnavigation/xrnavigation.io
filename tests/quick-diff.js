@@ -25,6 +25,11 @@ const url = slug === 'home' ? 'http://localhost:1314/' : `http://localhost:1314/
     window.scrollTo(0, 0);
     await delay(200);
   });
+  // Wait for Able Player to initialize if present
+  // Wait for Able Player to fully initialize
+  await page.waitForSelector('.able-wrapper', { timeout: 5000 }).catch(() => {});
+  await page.waitForSelector('.able-controller', { timeout: 5000 }).catch(() => {});
+  await page.waitForTimeout(3000);
   await page.screenshot({ path: currentFile, fullPage: true });
   await browser.close();
 
