@@ -6,4 +6,6 @@
 
 **Observed:** All 11 files exist in `content/blog/`. Frontmatter has `slug` but no `url` override. Hugo config confirms `/blog/:slug/` permalink pattern.
 
-**Fix:** Add `url: /{slug}/` to each post's frontmatter so Hugo serves them at root-level URLs matching WordPress.
+**Fix:** Added `url: /{slug}/` to each post's frontmatter so Hugo serves them at root-level URLs matching WordPress.
+
+**Status:** DONE. All 11 posts verified via hugo build (public/{slug}/index.html exists) and hugo server (curl returns HTTP 200). Commit c793da8.
