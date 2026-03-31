@@ -412,4 +412,15 @@ WP contact structure: section 7 (heading, 50px/200px pad) -> section 8 (form car
 - baseof.html line 24 references `vendor/jquery.slim.min.js`, need to change to `vendor/jquery.min.js`
 - If Able Player initializes, video wrapper should render at ~536px with controls + transcript
 - This could save ~2.3% diff (bands 15-25%)
-- PENDING: swap reference and test.
+- Swapped jquery.slim.min.js -> jquery.min.js in baseof.html.
+- Able Player DOES initialize in headed Chrome (verified: .able-wrapper, .able-media-container present).
+- Able Player does NOT render in Playwright headless - screenshot still shows plain video element.
+- Diff unchanged at 10.83% despite jQuery swap. Committed anyway (helps real users).
+- Added .able-controller wait + 3s delay in quick-diff.js. No effect.
+
+**FINAL STATE: 10.83% diff (14.70% -> 10.83%, 26% reduction)**
+
+**COMMITS:**
+- b09fa7d: CSS fixes (footer, video-wrapper, map, contact card)
+- ffb9c58: v2 report
+- bd5d022: jQuery full + Able Player wait
