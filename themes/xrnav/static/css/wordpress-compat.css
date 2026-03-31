@@ -763,26 +763,36 @@ body li {
   margin-right: auto;
 }
 
-/* Match WP .wp-block-group padding around TOC list */
-.entry-content > h2#table-of-contents + ul {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-/* Constrain headings and content to match WP .wp-block-group layout (1200px centered, 48px inner padding) */
+/* Constrain headings to match WP .wp-block-group layout (1200px centered, 48px inner padding) */
 .entry-content > h1,
 .entry-content > h2,
 .entry-content > h3,
 .entry-content > h4,
 .entry-content > h5,
-.entry-content > h6,
-.entry-content > ul,
-.entry-content > ol {
+.entry-content > h6 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 48px;
   padding-right: 48px;
+}
+
+/* Lists — constrain to 1200px, use WP default padding-left: 40px */
+.entry-content > ul,
+.entry-content > ol {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* TOC list — match WP .wp-block-group wrapper with 48px padding */
+.entry-content > h2#table-of-contents + ul {
+  padding: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -1713,12 +1723,12 @@ article.post .entry-content p {
 }
 
 .home-page .steps-grid {
-  max-width: 70%;
+  max-width: min(70%, 1200px);
   width: 100%;
   margin: -75px auto 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 20px;
   padding: 20px;
@@ -2067,6 +2077,12 @@ article.post .entry-content p {
 .home-page .contact-form {
   margin: 0 auto;
   text-align: left;
+  background: var(--ast-global-color-4);
+  padding: 10px 50px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.44);
+  position: relative;
+  z-index: 2;
 }
 
 /* --- 10. Pre-footer Map Band --- */
@@ -2075,7 +2091,7 @@ article.post .entry-content p {
   padding: 10px;
   background-image: url('/images/map-for-bottomArtboard-1%404x.webp');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: cover;
   background-attachment: scroll;
   margin-bottom: -17px;
