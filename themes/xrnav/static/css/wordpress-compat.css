@@ -481,6 +481,30 @@ h3.uagb-heading-text {
   margin-bottom: 16px;
 }
 
+h4.uagb-heading-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+h5.uagb-heading-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+h6.uagb-heading-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25em;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
 .uagb-desc-text {
   font-size: 16px;
   line-height: 25.6px;
@@ -600,6 +624,145 @@ h3.wp-block-heading {
   margin-bottom: 16px;
 }
 
+/* h4–h6 block heading styles */
+h4.wp-block-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+h5.wp-block-heading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+h6.wp-block-heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Entry Content — Astra spacing rhythm
+   ========================================================================== */
+
+/* Astra heading margin-bottom inside entry-content */
+.entry-content :where(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: 20px;
+}
+
+/* Paragraphs inside entry-content — standard pages */
+.entry-content p {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 25.6px;
+}
+
+/* Homepage paragraphs — tighter spacing */
+.home-page .entry-content p,
+.home-page .uagb-desc-text {
+  margin-bottom: 16px;
+  line-height: 24px;
+  color: #777;
+}
+
+/* List items nested in paragraphs */
+.entry-content li > p {
+  margin-bottom: 0;
+}
+
+/* Lists — revert to browser defaults (Astra does this) */
+.entry-content ul,
+.entry-content ol {
+  padding: revert;
+  margin: revert;
+}
+
+/* Entry-content last child — no trailing margin */
+.entry-content > :last-child,
+.entry-summary > :last-child,
+.page-content > :last-child {
+  margin-bottom: 0;
+}
+
+/* Figures inside entry-content */
+.entry-content[data-ast-blocks-layout] > figure {
+  margin-bottom: 1em;
+}
+
+/* Buttons block spacing */
+.entry-content > .wp-block-buttons,
+.entry-content > .wp-block-uagb-buttons {
+  margin-bottom: 1.5em;
+}
+
+/* WP columns — no extra bottom margin */
+.entry-content .wp-block-columns {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Blockquote (Astra)
+   ========================================================================== */
+blockquote {
+  border-left: 5px solid var(--ast-global-color-6);
+  padding: 20px;
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 1.5em 1em 1.5em 3em;
+  line-height: inherit;
+  position: relative;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Pullquote decorative quote mark */
+.wp-block-pullquote blockquote::before {
+  content: "\201D";
+  font-family: "Helvetica", sans-serif;
+  display: flex;
+  transform: rotate(180deg);
+  font-size: 6rem;
+  font-style: normal;
+  line-height: 1;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Figure / Figcaption
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 13px;
+  color: var(--ast-global-color-8);
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/* ==========================================================================
+   Content Width Constraint (from WP custom CSS)
+   ========================================================================== */
+body p,
+body li {
+  max-width: 80ch;
+  overflow-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
+   WordPress Block Styles — Lists, Images
+   ========================================================================== */
 .wp-block-list {
   padding-left: 1.5em;
 }
@@ -611,6 +774,21 @@ h3.wp-block-heading {
 .wp-block-image img {
   max-width: 100%;
   height: auto;
+}
+
+/* Paragraph block background padding */
+:root :where(p.has-background) {
+  padding: 1.25em 2.375em;
+}
+
+/* Heading block background padding */
+h1:where(.wp-block-heading).has-background,
+h2:where(.wp-block-heading).has-background,
+h3:where(.wp-block-heading).has-background,
+h4:where(.wp-block-heading).has-background,
+h5:where(.wp-block-heading).has-background,
+h6:where(.wp-block-heading).has-background {
+  padding: 1.25em 2.375em;
 }
 
 /* ==========================================================================
@@ -1093,6 +1271,21 @@ article.post .entry-content p {
   }
   h3, h3.uagb-heading-text, h3.wp-block-heading {
     font-size: 20px;
+  }
+  h4, h4.uagb-heading-text, h4.wp-block-heading {
+    font-size: 20px;
+  }
+  h5, h5.uagb-heading-text, h5.wp-block-heading {
+    font-size: 18px;
+  }
+  h6, h6.uagb-heading-text, h6.wp-block-heading {
+    font-size: 16px;
+  }
+
+  /* Blockquote responsive */
+  blockquote {
+    margin-left: 1em;
+    margin-right: 0.5em;
   }
 
   /* Homepage responsive section widths */
