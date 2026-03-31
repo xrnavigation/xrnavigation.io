@@ -2077,12 +2077,6 @@ article.post .entry-content p {
 .home-page .contact-form {
   margin: 0 auto;
   text-align: left;
-  background: var(--ast-global-color-4);
-  padding: 10px 50px;
-  border-radius: 30px;
-  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.44);
-  position: relative;
-  z-index: 2;
 }
 
 /* --- 10. Pre-footer Map Band --- */
