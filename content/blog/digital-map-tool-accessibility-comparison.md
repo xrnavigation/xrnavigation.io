@@ -3,7 +3,8 @@ title: "Digital Map Tool Accessibility Comparison"
 date: 2024-08-12
 lastmod: 2025-05-21
 slug: "digital-map-tool-accessibility-comparison"
-url: /digital-map-tool-accessibility-comparison/
+aliases:
+  - /digital-map-tool-accessibility-comparison/
 draft: false
 ---
 

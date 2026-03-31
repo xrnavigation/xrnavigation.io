@@ -827,6 +827,46 @@ h6:where(.wp-block-heading).has-background {
 }
 
 /* ==========================================================================
+   Blog Hero Section
+   Matches WP Change-background container: dark bg image, centered white text
+   ========================================================================== */
+.blog-hero {
+  min-height: 60vh;
+  background-size: cover;
+  background-position: 46% 23%;
+  background-repeat: no-repeat;
+  padding-top: 6%;
+  padding-bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-hero > .uagb-container-inner-blocks-wrap {
+  max-width: min(100%, 85%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-hero h1.change-heading,
+.blog-hero h1.has-ast-global-color-4-color {
+  color: var(--ast-global-color-4) !important;
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  text-transform: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.blog-hero .has-ast-global-color-5-color {
+  color: var(--ast-global-color-5) !important;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
    UAGB Post Grid (Blog)
    ========================================================================== */
 .wp-block-uagb-post-grid.uagb-post-grid {
@@ -851,9 +891,9 @@ h6:where(.wp-block-heading).has-background {
 }
 
 .uagb-post__inner-wrap {
-  background: #f6f6f6;
+  background: #333;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.44) 10px 10px 20px -8px;
   padding: 30px 40px 10px;
@@ -868,6 +908,7 @@ h3.uagb-post__title {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 0.5rem;
+  padding-bottom: 15px;
 }
 
 h3.uagb-post__title a {
@@ -883,11 +924,13 @@ h3.uagb-post__title a:hover {
   font-size: 16px;
   color: var(--ast-global-color-4);
   line-height: 24px;
+  padding-bottom: 25px;
 }
 
 .uagb-post__text.uagb-post-grid-byline {
   font-size: 14px;
-  color: #fff;
+  color: #ccc;
+  padding-bottom: 15px;
 }
 
 .uagb-post__image img {

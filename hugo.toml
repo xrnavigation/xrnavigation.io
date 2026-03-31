@@ -2,7 +2,7 @@ baseURL = "https://xrnavigation.io/"
 languageCode = "en-us"
 title = "XR Navigation"
 theme = "xrnav"
-paginate = 10
+paginate = 20
 
 [params]
   description = "XR Navigation — Making maps accessible through audio and touch"
