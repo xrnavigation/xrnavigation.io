@@ -499,6 +499,257 @@ a:hover {
 }
 
 /* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+/* Homepage needs full-width sections — override the main-content constraint */
+body:has(.hero) #main-content {
+  max-width: none;
+  padding: 0;
+}
+
+/* Reusable inner container for homepage sections */
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.section-cta {
+  margin-top: var(--spacing-lg);
+}
+
+/* Hero
+   ========================================================================== */
+.hero {
+  background: var(--color-heading);
+  color: var(--color-white);
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-xl) 0;
+}
+
+.hero h1 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 80ch;
+  margin-bottom: var(--spacing-lg);
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-hero:hover {
+  background: var(--color-white);
+  color: var(--color-heading);
+}
+
+/* Steps Grid
+   ========================================================================== */
+.steps {
+  background: var(--color-white);
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.steps-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+.step-card {
+  padding: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-bg);
+}
+
+.step-card h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Why / Features
+   ========================================================================== */
+.why {
+  background: var(--color-bg);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.feature-card {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.feature-card h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Video Section
+   ========================================================================== */
+.video-section {
+  background: var(--color-white);
+}
+
+.video-wrapper {
+  margin-top: var(--spacing-lg);
+}
+
+.video-wrapper video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+/* Client Logos
+   ========================================================================== */
+.clients {
+  background: var(--color-bg);
+}
+
+.logo-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.logo-bar img {
+  max-height: 80px;
+  width: auto;
+}
+
+/* What Is Audiom
+   ========================================================================== */
+.what-is {
+  background: var(--color-white);
+}
+
+.what-is p {
+  max-width: 80ch;
+}
+
+/* Use Cases Grid
+   ========================================================================== */
+.use-cases {
+  background: var(--color-bg);
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.use-case-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.use-case-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.use-case-body {
+  padding: var(--spacing-lg);
+}
+
+.use-case-body h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.use-case-body a {
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  font-weight: 700;
+}
+
+/* Team Grid
+   ========================================================================== */
+.team {
+  background: var(--color-white);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.team-card h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.team-role {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+/* Contact Section
+   ========================================================================== */
+.contact-section {
+  background: var(--color-bg);
+}
+
+.contact-section .contact-form {
+  margin-top: var(--spacing-lg);
+}
+
+.form-required-note {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+/* ==========================================================================
    Responsive — Mobile First
    ========================================================================== */
 
@@ -512,6 +763,18 @@ a:hover {
   .footer-inner {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .use-cases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* >= 921px (desktop)
@@ -523,6 +786,10 @@ a:hover {
 
   .footer-inner {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

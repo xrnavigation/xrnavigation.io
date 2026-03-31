@@ -1,0 +1,167 @@
+{{ define "main" }}
+{{- $hero := .Params.hero -}}
+{{- $steps := .Params.steps -}}
+{{- $why := .Params.why -}}
+{{- $video := .Params.video -}}
+{{- $clients := .Params.clients -}}
+{{- $what := .Params.what_is -}}
+{{- $cases := .Params.use_cases -}}
+{{- $team := .Params.team -}}
+{{- $contact := .Params.contact -}}
+
+{{/* ---- Hero ---- */}}
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <h1 id="hero-heading">{{ $hero.heading }}</h1>
+    <p class="hero-text">{{ $hero.text }}</p>
+    <a href="{{ $hero.cta_url | relURL }}" class="btn btn-hero"{{ if $hero.cta_external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{ $hero.cta_text }}
+      {{ if $hero.cta_external }}<span class="sr-only">(Opens in a new tab)</span>{{ end }}
+    </a>
+  </div>
+</section>
+
+{{/* ---- Three-Step Process ---- */}}
+<section class="steps" aria-labelledby="steps-heading">
+  <h2 id="steps-heading" class="sr-only">How It Works</h2>
+  <div class="steps-grid">
+    {{- range $steps }}
+    <div class="step-card">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+{{/* ---- Why XR Navigation ---- */}}
+<section class="why" aria-labelledby="why-heading">
+  <div class="section-inner">
+    <h2 id="why-heading">{{ $why.heading }}</h2>
+    <p>{{ $why.text | markdownify }}</p>
+    <div class="features-grid">
+      {{- range $why.features }}
+      <div class="feature-card">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+      {{- end }}
+    </div>
+    <div class="section-cta">
+      <a href="{{ $why.cta_url | relURL }}" class="btn btn-primary">{{ $why.cta_text }}</a>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Video ---- */}}
+{{ with $video }}
+<section class="video-section" aria-labelledby="video-heading">
+  <div class="section-inner">
+    <h2 id="video-heading">{{ .heading }}</h2>
+    <div class="video-wrapper">
+      <video controls preload="metadata">
+        {{- range .sources }}
+        <source src="{{ .src | relURL }}" type="video/mp4">
+        {{- end }}
+        {{- range .captions }}
+        <track kind="captions" src="{{ .src | relURL }}" srclang="{{ .srclang }}" label="{{ .label }}">
+        {{- end }}
+        Your browser does not support the video element.
+      </video>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ---- Client Logos ---- */}}
+<section class="clients" aria-labelledby="clients-heading">
+  <div class="section-inner">
+    <h2 id="clients-heading">{{ $clients.heading }}</h2>
+    <p>{{ $clients.text }}</p>
+    <div class="logo-bar">
+      {{- range $clients.logos }}
+      <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy">
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- What Is Audiom ---- */}}
+<section class="what-is" aria-labelledby="what-heading">
+  <div class="section-inner">
+    <h2 id="what-heading">{{ $what.heading }}</h2>
+    <p>{{ $what.text }}</p>
+    <div class="section-cta">
+      <a href="{{ $what.cta_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        {{ $what.cta_text }}
+        <span class="sr-only">(Opens in a new tab)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Use Cases ---- */}}
+<section class="use-cases" aria-labelledby="usecases-heading">
+  <div class="section-inner">
+    <h2 id="usecases-heading">{{ $cases.heading }}</h2>
+    <div class="use-cases-grid">
+      {{- range $cases.cases }}
+      <div class="use-case-card">
+        <img src="{{ .image | relURL }}" alt="{{ .image_alt }}" loading="lazy">
+        <div class="use-case-body">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          <a href="{{ .link_url | relURL }}">{{ .link_text }}</a>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- Team ---- */}}
+<section class="team" aria-labelledby="team-heading">
+  <div class="section-inner">
+    <h2 id="team-heading">{{ $team.heading }}</h2>
+    <p>{{ $team.text }}</p>
+    <div class="team-grid">
+      {{- range $team.members }}
+      <div class="team-card">
+        <img src="{{ .image | relURL }}" alt="{{ .image_alt }}" loading="lazy">
+        <h3>{{ .name }}</h3>
+        <p class="team-role">{{ .role }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- Contact ---- */}}
+<section class="contact-section" aria-labelledby="contact-heading">
+  <div class="section-inner">
+    <h2 id="contact-heading">{{ $contact.heading }}</h2>
+    <p>{{ $contact.text }}</p>
+    <p class="form-required-note">Fields marked with an asterisk (*) are required</p>
+    <form class="contact-form" data-netlify="true" name="homepage-contact" method="POST">
+      <div class="form-group">
+        <label for="hp-contact-name">Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+        <input type="text" id="hp-contact-name" name="name" autocomplete="name" required>
+      </div>
+      <div class="form-group">
+        <label for="hp-contact-email">Email <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+        <input type="email" id="hp-contact-email" name="email" autocomplete="email" required>
+      </div>
+      <div class="form-group">
+        <label for="hp-contact-org">Organization <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+        <input type="text" id="hp-contact-org" name="organization" autocomplete="organization" required>
+      </div>
+      <div class="form-group">
+        <label for="hp-contact-message">Message <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+        <textarea id="hp-contact-message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+{{ end }}
