@@ -1,27 +1,25 @@
 # Foreman Progress — Migration
 Date: 2026-03-30
 
-## STATUS: Round 3 comparison running after full template port
-
-## What happened since last update
-1. WP CSS + HTML extraction complete (commit 633f399) — 29 CSS files, 5 page HTML snapshots, structural patterns documented
-2. Template port complete (commits 99d8b59, bf768bd, 191f202, 630b182):
-   - Consolidated WP CSS into wordpress-compat.css
-   - Rewrote ALL Hugo templates to match WP DOM structure (Astra classes, UAGB container patterns)
-   - Dual desktop/mobile headers, three-tier footer, UAGB post grid for blog
-   - Hugo builds clean: 98 pages
-3. Round 3 comparison test has run, agent is processing results
+## STATUS: Dispatching round 4 targeted fixes (header/footer, blog/collections, typography)
 
 ## Comparison History
-- Round 1: avg 43.64%, 0 matching, 22 HTTP 404s
-- Round 2: avg 43.64%, 0 matching, 0 HTTP 404s (CSS rewrite didn't help — wrong HTML structure)
-- Round 3: PENDING — template port should show significant improvement since we now use WP DOM + WP CSS
+- Round 1: avg 43.64%, median n/a, 22 HTTP 404s
+- Round 2: avg 43.64%, median 43.70%, 0 HTTP 404s (CSS rewrite alone didn't help)
+- Round 3: avg 42.17%, median 38.70% (template port helped median -5pp, but still no pages <10%)
 
-## Total Agents Dispatched: ~18
-All prep, export, scaffold, baseline, integration, comparison, CSS extraction, template port agents completed.
+## Round 3 Analysis — Four Fix Priorities
+1. **Header/footer** — mismatched on all 180 pages, est 15-25pp per page. HIGHEST LEVERAGE.
+2. **Blog pagination** — Hugo shows all posts, WP paginates. Worst page at 90%.
+3. **Collection card grids** — universities/healthcare/corporate render as flat text, not card grids. 80-86% diff.
+4. **Typography spacing** — cumulative line-height/margin/padding drift causing 5-15% height differences.
 
-## Next Steps (depends on round 3 results)
-- If avg diff drops significantly: iterate on remaining worst pages
-- If still high: investigate specific page-level issues (per-block UAGB styles are hash-keyed — may need those exact hashes)
-- Blog pagination still likely an issue (Hugo shows more posts than WP)
-- Homepage is the most complex page — may need its own iteration pass
+## Prompts Written, Ready to Dispatch
+- prompts/migration-fix-header-footer.md — committed c34bd3a
+- prompts/migration-fix-blog-collections.md — committed c34bd3a
+- prompts/migration-fix-typography.md — committed c34bd3a
+
+## Next
+1. Dispatch all 3 fix agents in parallel
+2. After all complete: run round 4 comparison
+3. Iterate until convergence
