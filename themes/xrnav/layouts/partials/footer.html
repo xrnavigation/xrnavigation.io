@@ -1,61 +1,138 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
-  {{/* Primary Footer — Logo + Links */}}
-  <div class="site-primary-footer-wrap ast-builder-grid-row-container">
+  {{/* Above Footer — Quick Links + Newsletter (2-col) */}}
+  <div class="site-above-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-2-equal ast-builder-grid-row-tablet-2-equal">
     <div class="ast-builder-grid-row-container-inner">
-      <div class="ast-builder-footer-grid-columns ast-builder-grid-row">
-        {{/* Column 1: Quick Links */}}
-        <div class="site-footer-primary-section-1 site-footer-section">
-          <aside class="footer-widget-area" role="region" aria-label="Footer Quick Links">
+      <div class="ast-builder-footer-grid-columns site-above-footer-inner-wrap ast-builder-grid-row">
+        <div class="site-footer-above-section-1 site-footer-section site-footer-section-1">
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Links">
+            <section class="widget widget_block">
+              <div class="custom-footer">
+                <h2>Quick Links</h2>
+                <ul>
+                  {{ range .Site.Menus.footer_quick }}
+                  <li>
+                    <a href="{{ .URL }}"
+                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                      {{ .Name }}
+                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
+                <h2>Learn More</h2>
+                <ul>
+                  {{ range .Site.Menus.footer_learn }}
+                  <li>
+                    <a href="{{ .URL }}"
+                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                      {{ .Name }}
+                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </section>
+          </aside>
+        </div>
+        <div class="site-footer-above-section-2 site-footer-section site-footer-section-2">
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Newsletter Signup">
             <section class="widget">
-              <h2 class="widget-title">Quick Links</h2>
-              <ul>
-                {{ range .Site.Menus.footer_quick }}
-                <li>
-                  <a href="{{ .URL }}"
-                    {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
-                    {{ .Name }}
-                    {{ if .Params.external }}<span class="sr-only">(opens in new tab)</span>{{ end }}
-                  </a>
-                </li>
-                {{ end }}
-              </ul>
+              <h2 class="widget-title">Stay Connected</h2>
+              <p>Sign up for updates on accessibility and mapping technology.</p>
+              <form class="newsletter-form" data-netlify="true" name="newsletter" method="POST">
+                <div class="form-group">
+                  <label for="newsletter-email">Email</label>
+                  <input type="email" id="newsletter-email" name="email" autocomplete="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{/* Primary Footer — Logo + Links + Contact Form (4-col) */}}
+  <div class="site-primary-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-4-equal ast-builder-grid-row-tablet-2-equal">
+    <div class="ast-builder-grid-row-container-inner">
+      <div class="ast-builder-footer-grid-columns site-primary-footer-inner-wrap ast-builder-grid-row">
+        {{/* Column 1: Logo */}}
+        <div class="site-footer-primary-section-1 site-footer-section site-footer-section-1">
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Logo">
+            <section class="widget widget_block">
+              <div class="wp-block-uagb-image wp-block-uagb-image--layout-default">
+                <figure class="wp-block-uagb-image__figure">
+                  <img src="{{ "images/cropped-Pecise-XR-LogosArtboard-2@2x.webp" | relURL }}" alt="XR Navigation" loading="lazy">
+                </figure>
+              </div>
             </section>
           </aside>
         </div>
 
-        {{/* Column 2: Learn More + Contact Form */}}
-        <div class="site-footer-primary-section-2 site-footer-section">
-          <aside class="footer-widget-area" role="region" aria-label="Footer Learn More">
+        {{/* Column 2: Quick Links */}}
+        <div class="site-footer-primary-section-2 site-footer-section site-footer-section-2">
+          <div class="footer-widget-area widget-area site-footer-focus-item ast-footer-html-1">
+            <div class="ast-header-html inner-link-style-">
+              <div class="ast-builder-html-element">
+                <h2>Quick Links</h2>
+                <ul>
+                  {{ range .Site.Menus.footer_quick }}
+                  <li>
+                    <a href="{{ .URL }}"
+                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                      {{ .Name }}
+                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{/* Column 3: More Resources */}}
+        <div class="site-footer-primary-section-3 site-footer-section site-footer-section-3">
+          <div class="footer-widget-area widget-area site-footer-focus-item ast-footer-html-2">
+            <div class="ast-header-html inner-link-style-">
+              <div class="ast-builder-html-element">
+                <h2>More Resources</h2>
+                <ul>
+                  {{ range .Site.Menus.footer_learn }}
+                  <li>
+                    <a href="{{ .URL }}"
+                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                      {{ .Name }}
+                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{/* Column 4: Contact Form */}}
+        <div class="site-footer-primary-section-4 site-footer-section site-footer-section-4">
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Contact Form">
             <section class="widget">
-              <h2 class="widget-title">Learn More</h2>
-              <ul>
-                {{ range .Site.Menus.footer_learn }}
-                <li>
-                  <a href="{{ .URL }}"
-                    {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
-                    {{ .Name }}
-                    {{ if .Params.external }}<span class="sr-only">(opens in new tab)</span>{{ end }}
-                  </a>
-                </li>
-                {{ end }}
-              </ul>
-            </section>
-            <section class="widget">
-              <h2 class="widget-title">Contact Us</h2>
               <form class="contact-form" data-netlify="true" name="contact" method="POST">
                 <div class="form-group">
-                  <label for="contact-name">Name</label>
+                  <label for="contact-name">Your Name <span aria-hidden="true">*</span></label>
                   <input type="text" id="contact-name" name="name" autocomplete="name" required>
                 </div>
                 <div class="form-group">
-                  <label for="contact-email">Email</label>
+                  <label for="contact-email">Your Email <span aria-hidden="true">*</span></label>
                   <input type="email" id="contact-email" name="email" autocomplete="email" required>
                 </div>
                 <div class="form-group">
-                  <label for="contact-message">Message</label>
+                  <label for="contact-message">Your Message <span aria-hidden="true">*</span></label>
                   <textarea id="contact-message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </section>
           </aside>
@@ -65,12 +142,14 @@
   </div>
 
   {{/* Below Footer — Copyright */}}
-  <div class="site-below-footer-wrap ast-builder-grid-row-container">
+  <div class="site-below-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-full ast-builder-grid-row-tablet-full">
     <div class="ast-builder-grid-row-container-inner">
-      <div class="ast-builder-footer-grid-columns ast-builder-grid-row ast-builder-grid-row-full">
-        <div class="site-footer-below-section-1 site-footer-section">
-          <div class="ast-footer-copyright">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+      <div class="ast-builder-footer-grid-columns site-below-footer-inner-wrap ast-builder-grid-row">
+        <div class="site-footer-below-section-1 site-footer-section site-footer-section-1">
+          <div class="ast-builder-layout-element ast-flex site-footer-focus-item ast-footer-copyright">
+            <div class="ast-footer-copyright">
+              <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>

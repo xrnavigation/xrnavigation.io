@@ -35,6 +35,26 @@
 
   /* WP block gap */
   --wp--style--block-gap: 24px;
+
+  /* WP spacing presets */
+  --wp--preset--spacing--20: 0.44rem;
+  --wp--preset--spacing--30: 0.67rem;
+  --wp--preset--spacing--40: 1rem;
+  --wp--preset--spacing--50: 1.5rem;
+  --wp--preset--spacing--60: 2.25rem;
+  --wp--preset--spacing--70: 3.38rem;
+  --wp--preset--spacing--80: 5.06rem;
+
+  /* WP font-size presets */
+  --wp--preset--font-size--small: 13px;
+  --wp--preset--font-size--medium: 20px;
+  --wp--preset--font-size--large: 36px;
+  --wp--preset--font-size--x-large: 42px;
+  --wp--preset--font-size--normal: 16px;
+  --wp--preset--font-size--huge: 42px;
+
+  /* Astra body line-height */
+  --ast-body-line-height: 1.6em;
 }
 
 /* ==========================================================================
@@ -59,6 +79,64 @@
 
 .has-text-color { }
 .has-link-color a { color: inherit; }
+
+/* ==========================================================================
+   WP Layout Flow / Constrained (block gap rhythm)
+   ========================================================================== */
+:root :where(.is-layout-flow) > :first-child { margin-block-start: 0; }
+:root :where(.is-layout-flow) > :last-child { margin-block-end: 0; }
+:root :where(.is-layout-flow) > * { margin-block-start: 24px; margin-block-end: 0; }
+
+:root :where(.is-layout-constrained) > :first-child { margin-block-start: 0; }
+:root :where(.is-layout-constrained) > :last-child { margin-block-end: 0; }
+:root :where(.is-layout-constrained) > * { margin-block-start: 24px; margin-block-end: 0; }
+
+:root :where(.is-layout-flex) { gap: 24px; }
+:root :where(.is-layout-grid) { gap: 24px; }
+
+body .is-layout-flex { display: flex; }
+.is-layout-flex { flex-wrap: wrap; align-items: center; }
+.is-layout-flex > :is(*, div) { margin: 0; }
+
+body .is-layout-grid { display: grid; }
+.is-layout-grid > :is(*, div) { margin: 0; }
+
+/* Alignfull breakout */
+.is-layout-flow > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }
+.is-layout-flow > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }
+.is-layout-flow > .aligncenter { margin-left: auto !important; margin-right: auto !important; }
+
+/* ==========================================================================
+   WP Font-Size Utility Classes
+   ========================================================================== */
+.has-small-font-size { font-size: var(--wp--preset--font-size--small) !important; }
+.has-medium-font-size { font-size: var(--wp--preset--font-size--medium) !important; }
+.has-large-font-size { font-size: var(--wp--preset--font-size--large) !important; }
+.has-x-large-font-size { font-size: var(--wp--preset--font-size--x-large) !important; }
+.has-regular-font-size { font-size: 1em; }
+.has-larger-font-size { font-size: 2.625em; }
+.has-normal-font-size { font-size: var(--wp--preset--font-size--normal); }
+.has-huge-font-size { font-size: var(--wp--preset--font-size--huge); }
+
+/* ==========================================================================
+   WP Text Alignment Utility Classes
+   ========================================================================== */
+.has-text-align-center { text-align: center; }
+.has-text-align-left { text-align: left; }
+.has-text-align-right { text-align: right; }
+
+/* ==========================================================================
+   WP Border Color Utility Classes
+   ========================================================================== */
+.has-ast-global-color-0-border-color { border-color: var(--wp--preset--color--ast-global-color-0) !important; }
+.has-ast-global-color-1-border-color { border-color: var(--wp--preset--color--ast-global-color-1) !important; }
+.has-ast-global-color-2-border-color { border-color: var(--wp--preset--color--ast-global-color-2) !important; }
+.has-ast-global-color-3-border-color { border-color: var(--wp--preset--color--ast-global-color-3) !important; }
+.has-ast-global-color-4-border-color { border-color: var(--wp--preset--color--ast-global-color-4) !important; }
+.has-ast-global-color-5-border-color { border-color: var(--wp--preset--color--ast-global-color-5) !important; }
+.has-ast-global-color-6-border-color { border-color: var(--wp--preset--color--ast-global-color-6) !important; }
+.has-ast-global-color-7-border-color { border-color: var(--wp--preset--color--ast-global-color-7) !important; }
+.has-ast-global-color-8-border-color { border-color: var(--wp--preset--color--ast-global-color-8) !important; }
 
 /* ==========================================================================
    Page Shell (Astra)
@@ -223,9 +301,19 @@ nav#ast-hf-menu-1 .main-header-menu {
   transform: scale(1.1);
 }
 
-.main-header-menu .menu-item a[aria-current="page"] {
+.main-header-menu .menu-item a[aria-current="page"],
+.main-header-menu .menu-item.current-menu-item > a {
   color: var(--ast-global-color-2);
   border-bottom: 2px solid var(--ast-global-color-2);
+}
+
+/* Nav flex-grow for Astra */
+.ast-flex-grow-1 {
+  flex-grow: 1;
+}
+
+.navigation-accessibility .main-navigation {
+  display: flex;
 }
 
 /* Mobile Header */
@@ -252,7 +340,18 @@ nav#ast-hf-menu-1 .main-header-menu {
   padding: 0.5rem;
 }
 
-.ast-mobile-menu-trigger-minimal .ast-mobile-svg {
+.mobile-menu-toggle-icon {
+  display: flex;
+  align-items: center;
+}
+
+.ahfb-svg-iconset.ast-inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ast-mobile-menu-trigger-minimal .ast-mobile-svg,
+.ast-mobile-menu-trigger-minimal .ast-menu-svg {
   width: 24px;
   height: 24px;
   fill: var(--ast-global-color-1);
@@ -629,8 +728,12 @@ h3.uagb-post__title a:hover {
 
 .site-primary-footer-wrap .ast-builder-grid-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
+}
+
+.site-primary-footer-wrap.ast-builder-grid-row-4-equal .ast-builder-grid-row {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* Below Footer (Copyright) */
@@ -729,6 +832,126 @@ h3.uagb-post__title a:hover {
   color: #111;
 }
 
+/* Above footer custom-footer widget */
+.site-above-footer-wrap .custom-footer {
+  padding: 20px 5%;
+}
+
+.site-above-footer-wrap .custom-footer h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.site-above-footer-wrap .custom-footer h2:first-child {
+  margin-top: 0;
+}
+
+.site-above-footer-wrap .custom-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-above-footer-wrap .custom-footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.site-above-footer-wrap .custom-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.site-above-footer-wrap .custom-footer a:hover {
+  color: var(--ast-global-color-2);
+  text-decoration: underline;
+}
+
+/* Primary footer HTML widget columns */
+.ast-footer-html-1 .ast-builder-html-element h2,
+.ast-footer-html-2 .ast-builder-html-element h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.ast-footer-html-1 .ast-builder-html-element ul,
+.ast-footer-html-2 .ast-builder-html-element ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ast-footer-html-1 .ast-builder-html-element ul li,
+.ast-footer-html-2 .ast-builder-html-element ul li {
+  margin-bottom: 0.5rem;
+}
+
+.ast-footer-html-1 .ast-builder-html-element a,
+.ast-footer-html-2 .ast-builder-html-element a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ast-footer-html-1 .ast-builder-html-element a:hover,
+.ast-footer-html-2 .ast-builder-html-element a:hover {
+  color: var(--ast-global-color-2);
+  text-decoration: underline;
+}
+
+/* Primary footer logo */
+.site-footer-primary-section-1 .wp-block-uagb-image__figure img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Newsletter form */
+.newsletter-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.newsletter-form .form-group label {
+  color: #fff;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.newsletter-form .form-group input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  height: 38px;
+}
+
+.newsletter-form .btn {
+  background: #eee;
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 800;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+.newsletter-form .btn:hover {
+  background: #ddd;
+  color: #111;
+}
+
 /* Footer responsive */
 @media (max-width: 921px) {
   .site-above-footer-wrap,
@@ -736,7 +959,18 @@ h3.uagb-post__title a:hover {
     padding: 30px 1rem;
   }
 
-  .site-above-footer-wrap .ast-builder-grid-row,
+  .site-above-footer-wrap .ast-builder-grid-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .site-primary-footer-wrap .ast-builder-grid-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 544px) {
   .site-primary-footer-wrap .ast-builder-grid-row {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -881,5 +1115,265 @@ article.post .entry-content p {
   }
   .wp-block-uagb-container [style*="grid-template-columns: repeat(2"] {
     grid-template-columns: 1fr !important;
+  }
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  list-style: none;
+}
+
+.pagination .page-item .page-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--ast-global-color-6);
+  border-radius: 4px;
+  color: var(--ast-global-color-2);
+  text-decoration: none;
+  font-size: 14px;
+  font-family: var(--font-body);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: var(--ast-global-color-4);
+  color: var(--ast-global-color-1);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--ast-global-color-2);
+  border-color: var(--ast-global-color-2);
+  color: #fff;
+}
+
+.pagination .page-item.disabled .page-link {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Collection Pages (Universities, Healthcare, Corporate)
+   ========================================================================== */
+.collection-page .collection-hero {
+  padding: 80px 0 2rem;
+  text-align: center;
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.collection-page .collection-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+.collection-page .collection-hero p {
+  font-size: 16px;
+  line-height: 25.6px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.collection-page .info-box-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px 40px;
+  padding: 2rem;
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.collection-page .info-box-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.collection-page .info-box-section .info-box-text {
+  flex: 1 1 50%;
+}
+
+.collection-page .info-box-section .info-box-text h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 16px;
+}
+
+.collection-page .info-box-section .info-box-text p {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #000;
+  margin-bottom: 25.6px;
+}
+
+.collection-page .info-box-section .info-box-image {
+  flex: 1 1 50%;
+}
+
+.collection-page .info-box-section .info-box-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.collection-page .feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  background-color: var(--ast-global-color-4);
+  border-radius: 8px;
+}
+
+.collection-page .feature-cards .feature-card {
+  flex: 1 1 calc(25% - 15px);
+  min-width: 200px;
+  padding: 10px;
+}
+
+.collection-page .feature-cards .feature-card h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 8px;
+}
+
+.collection-page .feature-cards .feature-card p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #777;
+}
+
+.collection-page .collection-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.collection-page .collection-cta h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 16px;
+}
+
+.collection-page .collection-cta p {
+  font-size: 16px;
+  line-height: 25.6px;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.collection-page .collection-cta .cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.collection-page .collection-cta .cta-buttons a {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.collection-page .collection-cta .cta-buttons a.btn-primary {
+  background-color: var(--ast-global-color-2);
+  color: #fff;
+}
+
+.collection-page .collection-cta .cta-buttons a.btn-primary:hover {
+  background-color: var(--ast-global-color-0);
+}
+
+.collection-page .collection-cta .cta-buttons a.btn-secondary {
+  background-color: transparent;
+  color: var(--ast-global-color-2);
+  border: 2px solid var(--ast-global-color-2);
+}
+
+.collection-page .collection-cta .cta-buttons a.btn-secondary:hover {
+  background-color: var(--ast-global-color-4);
+}
+
+.collection-page .extra-content {
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.collection-page .extra-content h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 16px;
+}
+
+.collection-page .extra-content p {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #000;
+  margin-bottom: 25.6px;
+}
+
+@media (max-width: 921px) {
+  .collection-page .info-box-section,
+  .collection-page .info-box-section.reverse {
+    flex-direction: column;
+  }
+
+  .collection-page .feature-cards .feature-card {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .collection-page .collection-hero h1,
+  .collection-page .collection-cta h2,
+  .collection-page .extra-content h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .collection-page .info-box-section .info-box-text h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 544px) {
+  .collection-page .feature-cards .feature-card {
+    flex: 1 1 100%;
   }
 }

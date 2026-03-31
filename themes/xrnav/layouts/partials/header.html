@@ -1,36 +1,40 @@
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header header-main-layout-1 ast-primary-menu-enabled ast-hide-custom-menu-mobile ast-builder-menu-toggle-icon ast-mobile-header-inline" role="banner" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead">
   {{/* Desktop Header */}}
-  <div id="ast-desktop-header">
+  <div id="ast-desktop-header" data-toggle-type="dropdown">
     <div class="ast-main-header-wrap main-header-bar-wrap">
-      <div class="ast-primary-header-bar main-header-bar">
-        <div class="site-primary-header-wrap ast-builder-grid-row-container ast-container">
+      <div class="ast-primary-header-bar ast-primary-header main-header-bar site-header-focus-item" data-section="section-primary-header-builder">
+        <div class="site-primary-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container" data-section="section-primary-header-builder">
           <div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
-            <div class="site-header-primary-section-left site-header-section ast-flex">
-              <div class="ast-builder-layout-element">
+            <div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
+              <div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
                 <div class="site-branding ast-site-identity">
-                  <a href="{{ "/" | relURL }}" class="site-logo-img" aria-label="{{ .Site.Title }} — Home">
-                    <span class="site-title">XR Navigation</span>
-                  </a>
+                  <span class="site-logo-img">
+                    <a href="{{ "/" | relURL }}" class="custom-logo-link" rel="home" aria-label="{{ .Site.Title }} — Home">
+                      <img width="83" height="47" src="{{ "images/cropped-Pecise-XR-LogosArtboard-2@2x.webp" | relURL }}" class="custom-logo" alt="XR Navigation" decoding="async">
+                    </a>
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="site-header-primary-section-right ast-grid-right-section">
-              <div class="ast-builder-menu-1">
+            <div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
+              <div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item">
                 <div class="ast-main-header-bar-alignment">
-                  <nav id="ast-hf-menu-1" class="site-navigation" aria-label="Primary">
-                    <ul class="main-header-menu ast-menu-nesting-squish">
-                      {{ range .Site.Menus.main }}
-                      <li class="menu-item">
-                        <a
-                          href="{{ .URL }}"
-                          {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}
-                          {{ if $currentPage := $.Page }}{{ if eq .URL $currentPage.RelPermalink }}aria-current="page"{{ end }}{{ end }}>
-                          {{ .Name }}
-                          {{ if .Params.external }}<span class="sr-only">(opens in new tab)</span>{{ end }}
-                        </a>
-                      </li>
-                      {{ end }}
-                    </ul>
+                  <nav id="primary-site-navigation-desktop" class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" aria-label="Primary">
+                    <div class="main-navigation">
+                      <ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex submenu-with-border stack-on-mobile">
+                        {{ range .Site.Menus.main }}
+                        <li class="menu-item{{ if $.Page }}{{ if eq .URL $.Page.RelPermalink }} current-menu-item{{ end }}{{ end }}">
+                          <a
+                            href="{{ .URL }}"
+                            {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}
+                            {{ if $.Page }}{{ if eq .URL $.Page.RelPermalink }}aria-current="page"{{ end }}{{ end }}>
+                            {{ .Name }}
+                            {{ if .Params.external }}<span class="sr-only">(opens in new tab)</span>{{ end }}
+                          </a>
+                        </li>
+                        {{ end }}
+                      </ul>
+                    </div>
                   </nav>
                   {{ partial "theme-switcher.html" . }}
                 </div>
@@ -45,28 +49,36 @@
   {{/* Mobile Header */}}
   <div id="ast-mobile-header" class="ast-mobile-header-wrap">
     <div class="ast-main-header-wrap main-header-bar-wrap">
-      <div class="ast-primary-header-bar ast-builder-grid-row-layout-default">
-        <div class="ast-builder-grid-row" style="display:flex;align-items:center;justify-content:space-between;padding:0 1rem;height:60px;">
-          <div class="site-header-primary-section-left">
-            <div class="site-branding ast-site-identity">
-              <a href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }} — Home">
-                <span class="site-title">XR Navigation</span>
-              </a>
+      <div class="ast-primary-header-bar ast-primary-header main-header-bar site-primary-header-wrap site-header-focus-item ast-builder-grid-row-layout-default ast-builder-grid-row-tablet-layout-default ast-builder-grid-row-mobile-layout-default">
+        <div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
+          <div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
+            <div class="ast-builder-layout-element ast-flex site-header-focus-item">
+              <div class="site-branding ast-site-identity">
+                <span class="site-logo-img">
+                  <a href="{{ "/" | relURL }}" class="custom-logo-link" rel="home" aria-label="{{ .Site.Title }} — Home">
+                    <img width="83" height="47" src="{{ "images/cropped-Pecise-XR-LogosArtboard-2@2x.webp" | relURL }}" class="custom-logo" alt="XR Navigation" decoding="async">
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
-          <div class="site-header-primary-section-right">
-            <div class="ast-button-wrap">
-              <button
-                class="menu-toggle main-header-menu-toggle ast-mobile-menu-trigger-minimal"
-                aria-expanded="false"
-                aria-controls="ast-mobile-site-navigation"
-                aria-label="Menu">
-                <svg class="ast-mobile-svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-                  <rect y="4" width="24" height="2"></rect>
-                  <rect y="11" width="24" height="2"></rect>
-                  <rect y="18" width="24" height="2"></rect>
-                </svg>
-              </button>
+          <div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
+            <div class="ast-builder-layout-element ast-flex site-header-focus-item">
+              <div class="ast-button-wrap">
+                <button
+                  class="menu-toggle main-header-menu-toggle ast-mobile-menu-trigger-minimal"
+                  aria-expanded="false"
+                  aria-controls="ast-mobile-site-navigation"
+                  aria-label="Main menu toggle">
+                  <span class="mobile-menu-toggle-icon">
+                    <span aria-hidden="true" class="ahfb-svg-iconset ast-inline-flex svg-baseline">
+                      <svg class="ast-mobile-svg ast-menu-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+                      </svg>
+                    </span>
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -78,11 +90,11 @@
           <div class="main-navigation">
             <ul id="ast-hf-mobile-menu" class="main-header-menu ast-menu-nesting-squish">
               {{ range .Site.Menus.main }}
-              <li class="menu-item">
+              <li class="menu-item{{ if $.Page }}{{ if eq .URL $.Page.RelPermalink }} current-menu-item{{ end }}{{ end }}">
                 <a
                   href="{{ .URL }}"
                   {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}
-                  {{ if $currentPage := $.Page }}{{ if eq .URL $currentPage.RelPermalink }}aria-current="page"{{ end }}{{ end }}>
+                  {{ if $.Page }}{{ if eq .URL $.Page.RelPermalink }}aria-current="page"{{ end }}{{ end }}>
                   {{ .Name }}
                   {{ if .Params.external }}<span class="sr-only">(opens in new tab)</span>{{ end }}
                 </a>
