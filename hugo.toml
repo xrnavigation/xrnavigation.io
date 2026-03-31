@@ -21,7 +21,7 @@ paginate = 10
 
   [[menu.main]]
     name = "Audiom Gallery"
-    url = "/audiom-gallery/"
+    url = "/gallery/"
     weight = 3
 
   [[menu.main]]
