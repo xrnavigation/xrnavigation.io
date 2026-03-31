@@ -100,18 +100,29 @@ Biggs, Brandon, et al. “[Evaluation of a non-visual auditory choropleth and tr
 
 Send your floorplan or event map to us and we will provide you a free quote!
 
-Please enable JavaScript in your browser to complete this form.
-
-Name \*
-
-Email \*
-
-Organization \*
-
-Message \*
-
-Upload Your Event Map
-
-Upload your floorplan or event map for fastest quote delivery.
-
-Submit![Loading](https://xrnavigation.io/wp-content/plugins/wpforms/assets/images/submit-spin.svg)
+<form method="POST" data-netlify="true" name="events" enctype="multipart/form-data">
+  <p>
+    <label for="events-name">Name <span aria-hidden="true">*</span></label>
+    <input type="text" id="events-name" name="name" required autocomplete="name" placeholder="Name">
+  </p>
+  <p>
+    <label for="events-email">Email <span aria-hidden="true">*</span></label>
+    <input type="email" id="events-email" name="email" required autocomplete="email" placeholder="Email">
+  </p>
+  <p>
+    <label for="events-org">Organization <span aria-hidden="true">*</span></label>
+    <input type="text" id="events-org" name="organization" required placeholder="Organization">
+  </p>
+  <p>
+    <label for="events-message">Message <span aria-hidden="true">*</span></label>
+    <textarea id="events-message" name="message" required placeholder="Message"></textarea>
+  </p>
+  <p>
+    <label for="events-map">Upload Your Event Map</label>
+    <input type="file" id="events-map" name="event-map" accept=".pdf,.png,.jpg,.jpeg,.svg">
+    <span>Upload your floorplan or event map for fastest quote delivery.</span>
+  </p>
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+</form>

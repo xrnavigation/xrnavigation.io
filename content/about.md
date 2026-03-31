@@ -132,16 +132,24 @@ James Coughlan is the principal investigator and head researcher on the project.
 
 Get in touch with us today:
 
-Fields Marked With An Asterisks (\*) Are Required
-
-Please enable JavaScript in your browser to complete this form.
-
-Name \*
-
-Email \*
-
-Organization \*
-
-Message \*
-
-Submit![Loading](https://xrnavigation.io/wp-content/plugins/wpforms/assets/images/submit-spin.svg)
+<form method="POST" data-netlify="true" name="contact-about">
+  <p>
+    <label for="about-name">Name <span aria-hidden="true">*</span></label>
+    <input type="text" id="about-name" name="name" required autocomplete="name" placeholder="Name">
+  </p>
+  <p>
+    <label for="about-email">Email <span aria-hidden="true">*</span></label>
+    <input type="email" id="about-email" name="email" required autocomplete="email" placeholder="Email">
+  </p>
+  <p>
+    <label for="about-org">Organization <span aria-hidden="true">*</span></label>
+    <input type="text" id="about-org" name="organization" required placeholder="Organization">
+  </p>
+  <p>
+    <label for="about-message">Message <span aria-hidden="true">*</span></label>
+    <textarea id="about-message" name="message" required placeholder="Message"></textarea>
+  </p>
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+</form>
