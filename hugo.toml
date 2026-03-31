@@ -70,7 +70,7 @@ paginate = 10
 
   [[menu.footer_learn]]
     name = "Evaluate Your Map"
-    url = "/evaluate/"
+    url = "/map-evaluation-tool/"
     weight = 2
 
   [[menu.footer_learn]]
