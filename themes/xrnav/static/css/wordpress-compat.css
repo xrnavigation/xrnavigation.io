@@ -1142,14 +1142,16 @@ h3.uagb-post__title a:hover {
     gap: 2rem;
   }
 
-  .site-primary-footer-wrap .ast-builder-grid-row {
+  .site-primary-footer-wrap .ast-builder-grid-row,
+  .site-primary-footer-wrap.ast-builder-grid-row-4-equal .ast-builder-grid-row {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
 
 @media (max-width: 544px) {
-  .site-primary-footer-wrap .ast-builder-grid-row {
+  .site-primary-footer-wrap .ast-builder-grid-row,
+  .site-primary-footer-wrap.ast-builder-grid-row-4-equal .ast-builder-grid-row {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
