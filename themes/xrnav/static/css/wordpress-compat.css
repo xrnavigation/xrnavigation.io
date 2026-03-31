@@ -1766,7 +1766,7 @@ article.post .entry-content p {
 /* --- 3. Why XR Navigation (2-column: text + video) --- */
 .home-page .why {
   padding: 104px 10px 160px;
-  min-height: 1030px;
+  min-height: 1257px;
 }
 
 .home-page .why .section-inner {
@@ -2053,7 +2053,7 @@ article.post .entry-content p {
 
 /* --- 9. Contact Section --- */
 .home-page .contact-section {
-  padding: 50px 10px 200px;
+  padding: 50px 10px 10px;
   text-align: center;
 }
 
@@ -2081,7 +2081,7 @@ article.post .entry-content p {
 
 /* --- 10. Pre-footer Map Band --- */
 .home-page .pre-footer-map {
-  min-height: 50vh;
+  min-height: 475px;
   padding: 10px;
   background-image: url('/images/map-for-bottomArtboard-1%404x.webp');
   background-repeat: no-repeat;
