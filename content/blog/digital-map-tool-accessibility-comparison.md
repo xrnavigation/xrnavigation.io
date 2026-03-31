@@ -326,7 +326,7 @@ Google Maps embed
 ### Sources
 
 [Audiom Accessibility Conformance Report (Opens a new tab)  
-](https://xrnavigation.io/acr)[Concept 3D Accessibility Conformance Report (Opens a new tab)  
+](/acr)[Concept 3D Accessibility Conformance Report (Opens a new tab)  
 ](https://resources.concept3d.com/vpat-request)[WCAG Map Tool Comparison (Opens a new tab)  
 ](https://github.com/Malvoz/web-maps-wcag-evaluation/blob/master/README.md)[ESRI Accessibility Conformance Report (Opens a new tab)](https://www.esri.com/content/dam/esrisites/en-us/media/legal/vpats/map-viewer-march-2022-vpat.pdf)
 

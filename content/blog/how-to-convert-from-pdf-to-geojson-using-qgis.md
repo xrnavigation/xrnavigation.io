@@ -9,9 +9,9 @@ draft: false
 
 ## Using Qgis
 
-This guide presents the steps on converting a PDF or picture map to vector data that is computer readable. vectorized data can be used for creating interactive maps, routing functionality, accessible maps, and scales better between mobile and desktop devices. Tools like  [Audiom (Opens a New Tab)](https://xrnavigation.io/), require vector data to run. [QGIS(Opens a New Tab)](https://qgis.org/) is a free and open source map creation tool that will be used in this guide. Note that [QGIS(Opens a New Tab)](https://qgis.org/) can be used to create maps from scratch, it is not only a PDF to vector data tool.
+This guide presents the steps on converting a PDF or picture map to vector data that is computer readable. vectorized data can be used for creating interactive maps, routing functionality, accessible maps, and scales better between mobile and desktop devices. Tools like  [Audiom (Opens a New Tab)](/), require vector data to run. [QGIS(Opens a New Tab)](https://qgis.org/) is a free and open source map creation tool that will be used in this guide. Note that [QGIS(Opens a New Tab)](https://qgis.org/) can be used to create maps from scratch, it is not only a PDF to vector data tool.
 
-Although it is possible to vectorize your own data, it is recommended for more complex maps that a professional cartographer from [XR Navigation(Opens a New Tab)](https://xrnavigation.io/) or any other cartography company be used. Formats like [indoor mapping data format (Opens a New Tab](https://register.apple.com/resources/imdf/)) are standardized ways of making multi-level building data that is more advanced than what this guide teaches.
+Although it is possible to vectorize your own data, it is recommended for more complex maps that a professional cartographer from [XR Navigation(Opens a New Tab)](/) or any other cartography company be used. Formats like [indoor mapping data format (Opens a New Tab](https://register.apple.com/resources/imdf/)) are standardized ways of making multi-level building data that is more advanced than what this guide teaches.
 
 ## **Setting Up Your Project**
 
@@ -70,7 +70,7 @@ Although it is possible to vectorize your own data, it is recommended for more c
 
 [Guide to converting PDF to vector data (Opens a New Tab)  
 ](https://support.app.sympheny.com/user-guide/latest/how-to-transform-pdf-files-to-geojson-and-upload-t)[Audiom — XR Navigation (Opens a New Tab)  
-](https://xrnavigation.io/)[Indoor Mapping Data Format Specification (Opens a New Tab)  
+](/)[Indoor Mapping Data Format Specification (Opens a New Tab)  
 ](https://register.apple.com/resources/imdf/)[QGIS Official Documentation (Opens](https://docs.qgis.org/latest/en/docs/index.html) [a New Tab)  
 ](https://docs.qgis.org/latest/en/docs/index.html)[GeoJSON](https://geojson.org/) [Specification](https://geojson.org/) [(Opens a New Tab)  
 ](https://geojson.org/)[EPSG.io for CRS (Opens a New Tab)](https://epsg.io/)

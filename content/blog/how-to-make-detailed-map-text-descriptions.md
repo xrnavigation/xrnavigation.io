@@ -33,7 +33,7 @@ Detailed map text descriptions provide a comprehensive description of a map. The
 
 ## Alternatives to Detailed Map Text Descriptions
 
-[Audiom is an inclusive digital map viewer (Opens in a new tab)](/home) that uses interactive alternate text to solve most of the above issues. The text experience is automatically generated from the same data powering the visual map. Any update to the visual map will automatically show on the text map. Audiom can show real-time updates and data. Resolution is as detailed as the data. The visual and non-visual interfaces are together. Despite this, text descriptions are useful in some circumstances.
+[Audiom is an inclusive digital map viewer (Opens in a new tab)](/) that uses interactive alternate text to solve most of the above issues. The text experience is automatically generated from the same data powering the visual map. Any update to the visual map will automatically show on the text map. Audiom can show real-time updates and data. Resolution is as detailed as the data. The visual and non-visual interfaces are together. Despite this, text descriptions are useful in some circumstances.
 
 ### When to Use Detailed Text Descriptions
 
@@ -99,4 +99,4 @@ The reason for this heading is to provide the distance, direction, topological i
 
 [Here’s an example of a detailed text description (Opens a new tab)](/fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific).
 
-Remember that the goal of this description is to provide the “equivalent purpose” to the visual map. This includes the primary purpose of the map, as well as any other use. A university campus map could be used for more than just routes between buildings. It can be used for evaluating the distribution of garbage cans on the campus. It could also be used to tell students where to line up for graduation. Remember to keep the text description up-to-date with the visual map. If a description seems too difficult, there are simpler dynamic options, such as [Audiom (Opens a new tab).](/home) [Please contact us if you have any questions about creating a detailed text description or want to explore other options (Opens a new tab)](/contact).
+Remember that the goal of this description is to provide the “equivalent purpose” to the visual map. This includes the primary purpose of the map, as well as any other use. A university campus map could be used for more than just routes between buildings. It can be used for evaluating the distribution of garbage cans on the campus. It could also be used to tell students where to line up for graduation. Remember to keep the text description up-to-date with the visual map. If a description seems too difficult, there are simpler dynamic options, such as [Audiom (Opens a new tab).](/) [Please contact us if you have any questions about creating a detailed text description or want to explore other options (Opens a new tab)](/contact).

@@ -31,7 +31,7 @@ You want your attendees to fully explore everything your event has to offer, ins
 
 ### Vision Rehabilitation and Assistive Technology Conference
 
-[Read the Case study from the VRATE conference to learn how audiom transformed their experience (Opens a new tab)](https://xrnavigation.io/case-study-vrate-expo-2024/).
+[Read the Case study from the VRATE conference to learn how audiom transformed their experience (Opens a new tab)](/case-study-vrate-expo-2024/).
 
 Before: A static PDF map, useless to 20% of attendees:
 

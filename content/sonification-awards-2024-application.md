@@ -41,7 +41,7 @@ The tasks this sonification facilitates include:
     
 -   Spatial audio is also employed as an optional tool for finding landmarks in the space. For example, on this map, the bathrooms, stairs to the entrance, and presentation areas all have looping spatial sounds that can be toggled on and off by pressing “p” (as in “play” and “pause”).  
     
--   Since the non-visual map experience is often new for users, we have built an interactive tutorial at: [Interactive Map Demo (Opens a new tab)](https://xrnavigation.io/audiom-demo) that is presented when the map is opened.  
+-   Since the non-visual map experience is often new for users, we have built an interactive tutorial at: [Interactive Map Demo (Opens a new tab)](/audiom-demo) that is presented when the map is opened.  
     
 -   The system is self-voicing for sighted users by default, but if the user selects the “Toggle screen reader/TTS” action, or presses “backslash” (\\), then their own personal screen reader will be used to read all text.
 
@@ -134,4 +134,4 @@ Walker, B. N., & Nees, M. A. (2011). Chapter 2: Theory of sonification. In T. He
 
 Walkera, B. N., & Wilsonc, J. (2021). SWAN 2.0: Research and development on a new system for wearable audio navigation. In _Proceedings of the WirelessRERC state of the technology forum_. Retrieved from [https://wirelessrerc.gatech.edu/sites/default/files/publications/walker\_swan2-wirelessrerc-sot2021-proceedings-v16-withalttext.pdf](https://wirelessrerc.gatech.edu/sites/default/files/publications/walker_swan2-wirelessrerc-sot2021-proceedings-v16-withalttext.pdf)
 
-XR Navigation. (n.d.). Accessibility conformance reports. Retrieved from [https://xrnavigation.io/acr/](https://xrnavigation.io/acr/)
+XR Navigation. (n.d.). Accessibility conformance reports. Retrieved from [https://xrnavigation.io/acr/](/acr/)

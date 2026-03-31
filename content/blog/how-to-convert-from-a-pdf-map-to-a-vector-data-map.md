@@ -34,7 +34,7 @@ When searching for someone with the skills to convert from a PDF to a vector dat
 
 ### Converting the PDF Map By Hand
 
-Converting a PDF by hand is tedious and time-consuming, but [here is a guide that goes step by step through the PDF to vector data conversion process using free tools (Opens a New Tab)](https://xrnavigation.io/how-to-convert-from-pdf-to-geojson-using-qgis/).
+Converting a PDF by hand is tedious and time-consuming, but [here is a guide that goes step by step through the PDF to vector data conversion process using free tools (Opens a New Tab)](/how-to-convert-from-pdf-to-geojson-using-qgis/).
 
 ## What to Do With Vector Data
 

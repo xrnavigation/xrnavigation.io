@@ -38,4 +38,4 @@ For more info on understanding ACRs, check out:
 
 [How to Interpret a VPAT (Opens in a new tab)](https://accessibility.huit.harvard.edu/interpret-vpat).
 
-If you’re looking to make sure your digital content, like maps, is accessible and includes everyone, don’t hesitate to [get in touch with us](https://xrnavigation.io/contact), especially if you’re working with digital geographic maps.
+If you’re looking to make sure your digital content, like maps, is accessible and includes everyone, don’t hesitate to [get in touch with us](/contact), especially if you’re working with digital geographic maps.

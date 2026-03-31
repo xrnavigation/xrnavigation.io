@@ -37,8 +37,8 @@ The [Web Content Accessibility Guidelines (WCAG)](https://www.google.com/url?q=
 
 We welcome your feedback on the accessibility of all XR Navigation applications. Please let us know if you encounter accessibility barriers on any XR Navigation application:
 
--   E-mail: [support@xrnavigation.io](mailto:support@xrnavigation.iosupport@xrnavigation.io)
--   [https://xrnavigation.io/contact](https://www.google.com/url?q=https://xrnavigation.io/contact&source=gmail-html&ust=1701794721889000&usg=AOvVaw3B0zUSM-jyNmKFzoxC6-Ob)
+-   E-mail: [support@xrnavigation.io](mailto:support@xrnavigation.io)
+-   [Contact us](/contact/)
 
 We try to respond to feedback within 48 hours.
 
@@ -86,11 +86,11 @@ XR Navigation Inc. assessed the accessibility of all the XR Navigation applica
 
 ## Evaluation report
 
-An evaluation report for all the XR Navigation applications is available at: [https://xrnavigation.io/ACR](https://www.google.com/url?q=https://xrnavigation.io/ACRhttps://xrnavigation.io/ACR&source=gmail-html&ust=1701794721889000&usg=AOvVaw20YXYaPI0Bi0EW0ahnvc_1).
+An evaluation report for all the XR Navigation applications is available at: [Accessibility Conformance Report](/acr/).
 
 ## Evaluation report
 
-An evaluation statement for all the XR Navigation applications is available at: [https://xrnavigation.io/Accessibility-statement](https://xrnavigation.io/Accessibility-statement).
+An evaluation statement for all the XR Navigation applications is available at: [Accessibility Statement](/accessibility-statement/).
 
 ## Formal complaints
 

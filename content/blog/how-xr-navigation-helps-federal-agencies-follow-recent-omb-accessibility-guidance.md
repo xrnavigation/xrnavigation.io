@@ -41,4 +41,4 @@ Our quality assurance process includes certified Accessibility specialists and t
 
 We provide continuous accessibility training to our team. We also champion leadership by individuals with disabilities. Currently all executives and board members of XR Navigation have a disability.
 
-Working with us means you’ll have the data and tools at your disposal to help comply to the OMB’s guidelines. [Let’s talk about how you can best meet these rules around maps](https://xrnavigation.io/contact).
+Working with us means you’ll have the data and tools at your disposal to help comply to the OMB’s guidelines. [Let’s talk about how you can best meet these rules around maps](/contact).
