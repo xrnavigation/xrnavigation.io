@@ -1,16 +1,15 @@
 {{ define "main" }}
-<article class="ast-article-single audiom-embed-page">
+<article class="ast-article-single audiom-embed-page{{ if .Params.uagb_container }} audiom-embed-contained{{ end }}{{ if eq .Params.spacers "full" }} audiom-embed-spaced{{ end }}">
   <div class="entry-content clear">
+    {{ if .Params.uagb_container }}
     <div class="wp-block-uagb-container alignfull uagb-is-root-container">
       <div class="uagb-container-inner-blocks-wrap">
-        <div class="wp-block-uagb-advanced-heading">
-          <h1 class="uagb-heading-text">{{ .Title }}</h1>
-        </div>
-        <div class="page-content">
-          {{ .Content }}
-        </div>
+        {{ .Content }}
       </div>
     </div>
+    {{ else }}
+    {{ .Content }}
+    {{ end }}
   </div>
 </article>
 {{ end }}

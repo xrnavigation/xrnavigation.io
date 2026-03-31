@@ -4,6 +4,7 @@ date: 2025-01-24
 lastmod: 2026-01-21
 slug: "csun"
 type: "audiom-embed"
+spacers: "full"
 audiom_id: 38
 draft: false
 aliases:

@@ -1292,27 +1292,91 @@ article.post .entry-content p {
 /* ==========================================================================
    Audiom Embed Page
    ========================================================================== */
-.audiom-embed-page .wp-block-uagb-container.alignfull {
+/* Audiom embed pages: flat layout matching WP structure */
+.audiom-embed-page .entry-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.audiom-embed-page .entry-content > h1 {
+  color: var(--ast-global-color-1);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  max-width: min(100%, 1200px);
+  width: 100%;
+  margin: 115px 0 0 0;
+  padding: 0;
+}
+
+.audiom-embed-page .entry-content > p {
+  max-width: min(100%, 742px);
+  margin-top: 0;
+  margin-bottom: 25.6px;
+}
+
+.audiom-embed-page .entry-content > iframe {
+  display: block;
+  border: 0;
+  width: 100%;
+  min-height: 560px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* When there are multiple iframes (e.g. YouTube embed below audiom), reduce gap */
+.audiom-embed-page .entry-content > iframe + iframe {
+  margin-top: 20px;
+}
+
+/* Full-spaced variant: pages with WP spacer blocks between all elements */
+.audiom-embed-spaced .entry-content > p {
+  margin-top: 100px;
+}
+
+.audiom-embed-spaced .entry-content > iframe {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: min(100%, 1326px);
+}
+
+.audiom-embed-spaced .entry-content > iframe + iframe {
+  margin-top: 20px;
+}
+
+/* Contained variant (audiom-demo, audiom-neighborhood-demo) uses UAGB container */
+.audiom-embed-contained .wp-block-uagb-container.alignfull {
   padding: 160px 0;
 }
 
-.audiom-embed-page .uagb-container-inner-blocks-wrap {
+.audiom-embed-contained .uagb-container-inner-blocks-wrap {
   max-width: min(100%, 1200px);
   margin: 0 auto;
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
 }
 
-.audiom-embed-page h1.uagb-heading-text {
-  color: var(--ast-global-color-1);
+.audiom-embed-contained h1 {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
 
-.audiom-embed-page iframe {
+.audiom-embed-contained .entry-content > h1 {
+  margin-top: 0;
+}
+
+.audiom-embed-contained iframe {
   display: block;
   max-width: 100%;
   border: 0;
   width: 100%;
   min-height: 560px;
-  margin-top: 2rem;
 }
 
 /* ==========================================================================

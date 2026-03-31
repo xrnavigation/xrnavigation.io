@@ -5,6 +5,7 @@ lastmod: 2025-05-02
 slug: "audiom-demo"
 type: "audiom-embed"
 audiom_id: 38
+uagb_container: true
 draft: false
 ---
 
