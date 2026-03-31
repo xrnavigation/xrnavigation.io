@@ -6,13 +6,15 @@
 /* Dark Mode (Black & White)
    ========================================================================== */
 [data-theme="dark"] {
-  --color-text: #ffffff;
-  --color-heading: #ffffff;
-  --color-bg: #000000;
-  --color-white: #111111;
-  --color-border: #333333;
-  --color-muted: #aaaaaa;
-  --color-accent: #8faf9f;
+  --ast-global-color-0: #ffffff;
+  --ast-global-color-1: #ffffff;
+  --ast-global-color-2: #8faf9f;
+  --ast-global-color-3: #ffffff;
+  --ast-global-color-4: #000000;
+  --ast-global-color-5: #111111;
+  --ast-global-color-6: #333333;
+  --ast-global-color-7: #444444;
+  --ast-global-color-8: #aaaaaa;
 }
 
 [data-theme="dark"] body {
@@ -26,15 +28,19 @@
 
 [data-theme="dark"] .site-header {
   background: #000000;
-  border-bottom-color: #333333;
 }
 
-[data-theme="dark"] .site-footer {
+[data-theme="dark"] .site-primary-footer-wrap,
+[data-theme="dark"] .site-above-footer-wrap {
   background: #000000;
-  border-top-color: #333333;
+  border-top: 1px solid #333333;
 }
 
-[data-theme="dark"] .blog-card {
+[data-theme="dark"] .site-below-footer-wrap {
+  background: #111111;
+}
+
+[data-theme="dark"] .uagb-post__inner-wrap {
   background: #111111;
   border-color: #333333;
 }
@@ -66,13 +72,15 @@
 /* High Contrast Mode
    ========================================================================== */
 [data-theme="hc"] {
-  --color-text: #0000FF;
-  --color-heading: #0000FF;
-  --color-bg: #000000;
-  --color-white: #000000;
-  --color-border: #0000FF;
-  --color-muted: #0000FF;
-  --color-accent: #0000FF;
+  --ast-global-color-0: #0000FF;
+  --ast-global-color-1: #0000FF;
+  --ast-global-color-2: #0000FF;
+  --ast-global-color-3: #0000FF;
+  --ast-global-color-4: #000000;
+  --ast-global-color-5: #000000;
+  --ast-global-color-6: #0000FF;
+  --ast-global-color-7: #0000FF;
+  --ast-global-color-8: #0000FF;
 }
 
 [data-theme="hc"] body {
@@ -82,17 +90,21 @@
 
 [data-theme="hc"] .site-header {
   background: #000000;
-  border-bottom-color: #0000FF;
 }
 
-[data-theme="hc"] .site-footer {
+[data-theme="hc"] .site-primary-footer-wrap,
+[data-theme="hc"] .site-above-footer-wrap {
   background: #000000;
-  border-top-color: #0000FF;
+  border-top: 1px solid #0000FF;
 }
 
-[data-theme="hc"] .blog-card {
+[data-theme="hc"] .site-below-footer-wrap {
   background: #000000;
-  border-color: #0000FF;
+}
+
+[data-theme="hc"] .uagb-post__inner-wrap {
+  background: #000000;
+  border: 1px solid #0000FF;
 }
 
 [data-theme="hc"] a {
@@ -132,11 +144,12 @@
   color: #000000;
 }
 
-[data-theme="hc"] .nav-item a {
+[data-theme="hc"] .main-header-menu .menu-item a,
+[data-theme="hc"] #ast-hf-mobile-menu .menu-item a {
   color: #0000FF;
 }
 
-[data-theme="hc"] .nav-item a[aria-current="page"] {
+[data-theme="hc"] .main-header-menu .menu-item a[aria-current="page"] {
   border-bottom-color: #0000FF;
 }
 

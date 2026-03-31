@@ -1,0 +1,885 @@
+/* ==========================================================================
+   WordPress Astra + UAGB Compatibility Styles
+   Consolidated from WP CSS files for visual parity with WordPress site.
+   Computed values from wp-css-spec.md, class names from structural-patterns.md
+   ========================================================================== */
+
+/* ==========================================================================
+   Astra Global Color Custom Properties
+   ========================================================================== */
+:root {
+  --ast-global-color-0: #15191d;
+  --ast-global-color-1: #04203e;
+  --ast-global-color-2: #5a7969;
+  --ast-global-color-3: #000000;
+  --ast-global-color-4: #f9fafb;
+  --ast-global-color-5: #FFFFFF;
+  --ast-global-color-6: #e2e8f0;
+  --ast-global-color-7: #cbd5e1;
+  --ast-global-color-8: #94a3b8;
+
+  /* WP Preset aliases */
+  --wp--preset--color--ast-global-color-0: var(--ast-global-color-0);
+  --wp--preset--color--ast-global-color-1: var(--ast-global-color-1);
+  --wp--preset--color--ast-global-color-2: var(--ast-global-color-2);
+  --wp--preset--color--ast-global-color-3: var(--ast-global-color-3);
+  --wp--preset--color--ast-global-color-4: var(--ast-global-color-4);
+  --wp--preset--color--ast-global-color-5: var(--ast-global-color-5);
+  --wp--preset--color--ast-global-color-6: var(--ast-global-color-6);
+  --wp--preset--color--ast-global-color-7: var(--ast-global-color-7);
+  --wp--preset--color--ast-global-color-8: var(--ast-global-color-8);
+
+  /* Typography */
+  --font-body: 'Lato', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+
+  /* WP block gap */
+  --wp--style--block-gap: 24px;
+}
+
+/* ==========================================================================
+   Astra Color Utility Classes (from inline-global-styles)
+   ========================================================================== */
+.has-ast-global-color-0-color { color: var(--wp--preset--color--ast-global-color-0) !important; }
+.has-ast-global-color-1-color { color: var(--wp--preset--color--ast-global-color-1) !important; }
+.has-ast-global-color-2-color { color: var(--wp--preset--color--ast-global-color-2) !important; }
+.has-ast-global-color-3-color { color: var(--wp--preset--color--ast-global-color-3) !important; }
+.has-ast-global-color-4-color { color: var(--wp--preset--color--ast-global-color-4) !important; }
+.has-ast-global-color-5-color { color: var(--wp--preset--color--ast-global-color-5) !important; }
+.has-ast-global-color-6-color { color: var(--wp--preset--color--ast-global-color-6) !important; }
+.has-ast-global-color-7-color { color: var(--wp--preset--color--ast-global-color-7) !important; }
+.has-ast-global-color-8-color { color: var(--wp--preset--color--ast-global-color-8) !important; }
+
+.has-ast-global-color-0-background-color { background-color: var(--wp--preset--color--ast-global-color-0) !important; }
+.has-ast-global-color-1-background-color { background-color: var(--wp--preset--color--ast-global-color-1) !important; }
+.has-ast-global-color-2-background-color { background-color: var(--wp--preset--color--ast-global-color-2) !important; }
+.has-ast-global-color-3-background-color { background-color: var(--wp--preset--color--ast-global-color-3) !important; }
+.has-ast-global-color-4-background-color { background-color: var(--wp--preset--color--ast-global-color-4) !important; }
+.has-ast-global-color-5-background-color { background-color: var(--wp--preset--color--ast-global-color-5) !important; }
+
+.has-text-color { }
+.has-link-color a { color: inherit; }
+
+/* ==========================================================================
+   Page Shell (Astra)
+   ========================================================================== */
+body.ast-hfb-header {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #000000;
+  background-color: var(--ast-global-color-4);
+}
+
+#page.hfb-header.ast-page-builder-template {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content.site-content {
+  flex: 1;
+}
+
+.ast-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#primary.content-area {
+  margin-top: 0;
+}
+
+.site-main {
+  display: block;
+}
+
+.ast-article-single {
+  display: block;
+}
+
+.entry-content.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ==========================================================================
+   Header (Astra Builder)
+   ========================================================================== */
+.site-header {
+  background: transparent;
+  position: relative;
+  z-index: 100;
+}
+
+/* Desktop Header */
+#ast-desktop-header {
+  display: block;
+}
+
+.ast-main-header-wrap.main-header-bar-wrap {
+  transition: background-color 0.5s ease;
+}
+
+.ast-primary-header-bar.main-header-bar {
+  padding: 0;
+  height: 80px;
+}
+
+.site-primary-header-wrap.ast-builder-grid-row-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 80px;
+}
+
+.ast-builder-grid-row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.ast-builder-grid-row-has-sides {
+  justify-content: space-between;
+}
+
+.site-header-primary-section-left.site-header-section.ast-flex {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-primary-section-right.ast-grid-right-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.ast-site-identity {
+  display: flex;
+  align-items: center;
+}
+
+.ast-site-identity .site-logo-img img,
+.ast-site-identity .custom-logo {
+  width: 83px;
+  height: 47px;
+}
+
+.ast-site-identity a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.site-branding .site-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--ast-global-color-1);
+  text-decoration: none;
+}
+
+.site-branding .site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navigation */
+.ast-builder-menu-1 {
+  display: flex;
+  align-items: center;
+}
+
+.ast-main-header-bar-alignment {
+  display: flex;
+  align-items: center;
+}
+
+nav.site-navigation .main-header-menu,
+nav#ast-hf-menu-1 .main-header-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.main-header-menu .menu-item a {
+  text-decoration: none;
+  color: var(--ast-global-color-1);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  padding: 0 16px;
+  transition: color 0.5s ease, transform 0.3s ease;
+}
+
+.main-header-menu .menu-item a:hover {
+  color: var(--ast-global-color-2);
+  transform: scale(1.1);
+}
+
+.main-header-menu .menu-item a[aria-current="page"] {
+  color: var(--ast-global-color-2);
+  border-bottom: 2px solid var(--ast-global-color-2);
+}
+
+/* Mobile Header */
+#ast-mobile-header.ast-mobile-header-wrap {
+  display: none;
+}
+
+.ast-mobile-header-content {
+  display: none;
+  background: var(--ast-global-color-5);
+  border-bottom: 1px solid var(--ast-global-color-6);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ast-mobile-header-content.is-open {
+  display: block;
+}
+
+.ast-button-wrap .menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.ast-mobile-menu-trigger-minimal .ast-mobile-svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--ast-global-color-1);
+}
+
+#ast-hf-mobile-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ast-hf-mobile-menu .menu-item {
+  border-bottom: 1px solid var(--ast-global-color-6);
+}
+
+#ast-hf-mobile-menu .menu-item a {
+  display: block;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: var(--ast-global-color-1);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* ==========================================================================
+   Responsive Header Breakpoints
+   ========================================================================== */
+@media (max-width: 921px) {
+  #ast-desktop-header {
+    display: none;
+  }
+  #ast-mobile-header.ast-mobile-header-wrap {
+    display: block;
+  }
+}
+
+@media (min-width: 922px) {
+  #ast-mobile-header.ast-mobile-header-wrap {
+    display: none;
+  }
+  #ast-desktop-header {
+    display: block;
+  }
+}
+
+/* Sticky header on desktop */
+@media (min-width: 922px) {
+  .ast-main-header-wrap.main-header-bar-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+    background-color: transparent;
+    z-index: 999;
+  }
+  .ast-main-header-wrap.active {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Mobile header dark blue bg */
+@media (max-width: 767px) {
+  .ast-main-header-wrap.main-header-bar-wrap {
+    background: var(--ast-global-color-1);
+  }
+  .ast-mobile-svg {
+    fill: #ffffff;
+  }
+}
+
+/* ==========================================================================
+   UAGB Container (Core Layout Pattern)
+   ========================================================================== */
+.wp-block-uagb-container {
+  display: block;
+}
+
+.wp-block-uagb-container.alignfull {
+  width: 100%;
+  max-width: 100%;
+}
+
+.wp-block-uagb-container.uagb-is-root-container {
+  /* Root containers are full-width sections */
+}
+
+.uagb-container-inner-blocks-wrap {
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   UAGB Advanced Heading
+   ========================================================================== */
+.wp-block-uagb-advanced-heading {
+  display: block;
+}
+
+.uagb-heading-text {
+  font-family: var(--font-heading);
+}
+
+h1.uagb-heading-text {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+h2.uagb-heading-text {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+h3.uagb-heading-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 16px;
+}
+
+.uagb-desc-text {
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+/* ==========================================================================
+   UAGB Info Box
+   ========================================================================== */
+.wp-block-uagb-info-box {
+  display: block;
+}
+
+.uagb-ifb-content {
+  display: block;
+}
+
+.uagb-ifb-icon-wrap svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--ast-global-color-2);
+}
+
+.uagb-ifb-title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 8px;
+}
+
+.uagb-ifb-desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #777;
+}
+
+/* ==========================================================================
+   UAGB Buttons
+   ========================================================================== */
+.wp-block-uagb-buttons.uagb-buttons__outer-wrap {
+  display: block;
+}
+
+.uagb-buttons__wrap.uagb-buttons-layout-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wp-block-uagb-buttons-child .uagb-buttons-repeater,
+.wp-block-button .wp-block-button__link {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  background: var(--ast-global-color-4);
+  color: var(--ast-global-color-0);
+  border: 1px solid var(--ast-global-color-1);
+}
+
+.wp-block-uagb-buttons-child .uagb-buttons-repeater:hover,
+.wp-block-button .wp-block-button__link:hover {
+  background: var(--ast-global-color-1);
+  color: var(--ast-global-color-5);
+}
+
+/* ==========================================================================
+   UAGB Image
+   ========================================================================== */
+.wp-block-uagb-image {
+  display: block;
+}
+
+.wp-block-uagb-image__figure {
+  margin: 0;
+}
+
+.wp-block-uagb-image__figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* ==========================================================================
+   WordPress Block Styles
+   ========================================================================== */
+.wp-block-heading {
+  font-family: var(--font-heading);
+  color: var(--ast-global-color-1);
+}
+
+h1.wp-block-heading {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+h2.wp-block-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+h3.wp-block-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  margin-bottom: 16px;
+}
+
+.wp-block-list {
+  padding-left: 1.5em;
+}
+
+.wp-block-image figure {
+  margin: 0 0 1.5em;
+}
+
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   UAGB Post Grid (Blog)
+   ========================================================================== */
+.wp-block-uagb-post-grid.uagb-post-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.uagb-post__columns-3.is-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.uagb-post__columns-tablet-2 {
+  /* Applied via media query below */
+}
+
+.uagb-post__columns-mobile-1 {
+  /* Applied via media query below */
+}
+
+.uagb-post__equal-height .uagb-post__inner-wrap {
+  height: 100%;
+}
+
+.uagb-post__inner-wrap {
+  background: #f6f6f6;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.44) 10px 10px 20px -8px;
+  padding: 30px 40px 10px;
+}
+
+.uagb-post__image-position-background .uagb-post__inner-wrap {
+  /* Background image positioning */
+}
+
+h3.uagb-post__title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h3.uagb-post__title a {
+  text-decoration: none;
+  color: var(--ast-global-color-4);
+}
+
+h3.uagb-post__title a:hover {
+  color: var(--ast-global-color-2);
+}
+
+.uagb-post__text.uagb-post__excerpt {
+  font-size: 16px;
+  color: var(--ast-global-color-4);
+  line-height: 24px;
+}
+
+.uagb-post__text.uagb-post-grid-byline {
+  font-size: 14px;
+  color: #fff;
+}
+
+.uagb-post__image img {
+  border-radius: 20px 20px 0 0;
+}
+
+/* Blog responsive */
+@media (max-width: 921px) {
+  .uagb-post__columns-3.is-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 544px) {
+  .uagb-post__columns-3.is-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Footer (Astra Builder Three-Tier)
+   ========================================================================== */
+
+/* Above Footer */
+.site-above-footer-wrap {
+  background: var(--ast-global-color-1);
+  padding: 45px 95.25px;
+}
+
+.site-above-footer-wrap .ast-builder-grid-row-container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-above-footer-wrap .ast-builder-grid-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+/* Primary Footer */
+.site-primary-footer-wrap {
+  background: var(--ast-global-color-1);
+  padding: 45px 95.25px;
+}
+
+.site-primary-footer-wrap .ast-builder-grid-row-container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-primary-footer-wrap .ast-builder-grid-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+/* Below Footer (Copyright) */
+.site-below-footer-wrap {
+  background: var(--ast-global-color-0);
+  padding: 10px 0 0;
+}
+
+.site-below-footer-wrap .ast-builder-grid-row-container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 2rem;
+}
+
+.site-below-footer-wrap .ast-builder-grid-row {
+  display: flex;
+  justify-content: center;
+}
+
+.ast-footer-copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Footer widget areas */
+.footer-widget-area {
+  color: #fff;
+}
+
+.footer-widget-area .widget-title,
+.footer-widget-area h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.footer-widget-area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-widget-area ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-widget-area a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-widget-area a:hover {
+  color: var(--ast-global-color-2);
+  text-decoration: underline;
+}
+
+/* Footer form */
+.footer-widget-area .contact-form .form-group label {
+  color: #fff;
+}
+
+.footer-widget-area .contact-form .form-group input,
+.footer-widget-area .contact-form .form-group textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  height: 38px;
+}
+
+.footer-widget-area .contact-form .form-group textarea {
+  height: auto;
+}
+
+.footer-widget-area .contact-form .btn {
+  background: #eee;
+  color: #333;
+  padding: 10px 15px;
+  font-weight: 800;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+.footer-widget-area .contact-form .btn:hover {
+  background: #ddd;
+  color: #111;
+}
+
+/* Footer responsive */
+@media (max-width: 921px) {
+  .site-above-footer-wrap,
+  .site-primary-footer-wrap {
+    padding: 30px 1rem;
+  }
+
+  .site-above-footer-wrap .ast-builder-grid-row,
+  .site-primary-footer-wrap .ast-builder-grid-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ==========================================================================
+   Blog Post (Single) Styles
+   ========================================================================== */
+article.post.ast-article-single {
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+article.post .entry-content h2.wp-block-heading,
+article.post .entry-content h3.wp-block-heading {
+  margin-top: 1.5em;
+}
+
+article.post .entry-content p {
+  color: #000;
+  line-height: 25.6px;
+  margin-bottom: 25.6px;
+}
+
+/* Single post layout */
+.ast-post-format-.single-layout-1 {
+  display: block;
+}
+
+.ast-post-format-.single-layout-1 .post-header {
+  margin-bottom: 2rem;
+}
+
+.ast-post-format-.single-layout-1 .post-header h1 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  color: var(--ast-global-color-1);
+}
+
+.ast-post-format-.single-layout-1 .post-meta {
+  color: var(--ast-global-color-8);
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+/* ==========================================================================
+   Audiom Embed Page
+   ========================================================================== */
+.audiom-embed-page .wp-block-uagb-container.alignfull {
+  padding: 160px 0;
+}
+
+.audiom-embed-page .uagb-container-inner-blocks-wrap {
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.audiom-embed-page h1.uagb-heading-text {
+  color: var(--ast-global-color-1);
+}
+
+.audiom-embed-page iframe {
+  display: block;
+  max-width: 100%;
+  border: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* ==========================================================================
+   Standard Page Content
+   ========================================================================== */
+.page-content-wrap .uagb-container-inner-blocks-wrap {
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.page-content-wrap img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   UAGB Responsive Visibility Classes
+   ========================================================================== */
+@media (max-width: 768px) {
+  .uag-hide-mob {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 921px) {
+  .uag-hide-tab {
+    display: none !important;
+  }
+}
+
+@media (min-width: 922px) {
+  .uag-hide-desktop {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   Responsive Typography (Astra breakpoints)
+   ========================================================================== */
+@media (max-width: 921px) {
+  h1, h1.uagb-heading-text, h1.wp-block-heading {
+    font-size: 30px;
+  }
+  h2, h2.uagb-heading-text, h2.wp-block-heading {
+    font-size: 25px;
+  }
+  h3, h3.uagb-heading-text, h3.wp-block-heading {
+    font-size: 20px;
+  }
+
+  /* Homepage responsive section widths */
+  .wp-block-uagb-container.alignfull .uagb-container-inner-blocks-wrap {
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Homepage hero responsive padding */
+  .Change-background {
+    padding: 80px 0 !important;
+  }
+}
+
+/* Homepage grids collapse to single column on mobile */
+@media (max-width: 544px) {
+  .wp-block-uagb-container [style*="grid-template-columns: repeat(3"] {
+    grid-template-columns: 1fr !important;
+  }
+  .wp-block-uagb-container [style*="grid-template-columns: repeat(2"] {
+    grid-template-columns: 1fr !important;
+  }
+}

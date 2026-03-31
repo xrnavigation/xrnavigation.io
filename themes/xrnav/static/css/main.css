@@ -1,35 +1,9 @@
 /* ==========================================================================
-   XR Navigation — Main Stylesheet
-   Matched to WordPress Astra computed styles (wp-css-spec.md)
+   XR Navigation — Core Styles (Reset, Focus, Accessibility)
+   Layout and component styles are in wordpress-compat.css
    ========================================================================== */
 
-/* Custom Properties
-   ========================================================================== */
-:root {
-  /* Colors — mapped from Astra global palette */
-  --color-text: #15191d;
-  --color-heading: #04203e;
-  --color-accent: #5a7969;
-  --color-black: #000000;
-  --color-bg: #f9fafb;
-  --color-white: #FFFFFF;
-  --color-border: #e2e8f0;
-  --color-muted: #94a3b8;
-  --color-gray-medium: #cbd5e1;
-
-  /* Typography */
-  --font-body: 'Lato', sans-serif;
-  --font-heading: 'Montserrat', sans-serif;
-  --font-size-base: 16px;
-
-  /* Focus styles — ported from Steven Woodson's Interactive Focus Styles */
-  --outline-color: #d01754;
-  --outline-offset: max(6px, 0.16em);
-  --outline-size: max(4px, 0.08em);
-  --outline-style: solid;
-}
-
-/* Reset & Base
+/* Reset
    ========================================================================== */
 *,
 *::before,
@@ -39,11 +13,6 @@
 
 body {
   margin: 0;
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 25.6px;
-  color: #000000;
-  background-color: var(--color-bg);
 }
 
 img {
@@ -57,10 +26,10 @@ img {
   position: absolute;
   top: -100%;
   left: 1rem;
-  background: var(--color-heading);
-  color: var(--color-white);
+  background: var(--ast-global-color-1);
+  color: var(--ast-global-color-5);
   padding: 0.5rem 1rem;
-  z-index: 1000;
+  z-index: 10000;
   text-decoration: none;
   font-weight: 700;
 }
@@ -83,10 +52,15 @@ img {
   border: 0;
 }
 
-/* Focus Styles
+/* Focus Styles (from Steven Woodson's Interactive Focus Styles)
    ========================================================================== */
+body {
+  --outline-color: #d01754;
+  --outline-offset: max(6px, 0.16em);
+  --outline-size: max(4px, 0.08em);
+  --outline-style: solid;
+}
 
-/* Base :focus for older browsers that don't support :focus-visible */
 :is(a, button, input, select, textarea, summary):focus,
 [type='checkbox']:focus + span::after,
 [type='radio']:focus + span::after {
@@ -95,7 +69,6 @@ img {
   outline-offset: var(--outline-offset, var(--outline-size));
 }
 
-/* :focus-visible for modern browsers — only shows on keyboard nav */
 :is(a, button, input, select, textarea, summary):focus-visible,
 [type='checkbox']:focus-visible + span::after,
 [type='radio']:focus-visible + span::after {
@@ -105,11 +78,11 @@ img {
   z-index: 1;
 }
 
-/* Typography
+/* Typography base
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-heading);
+  color: var(--ast-global-color-1);
   margin-top: 0;
 }
 
@@ -124,7 +97,6 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  color: var(--color-heading);
   margin-bottom: 20px;
 }
 
@@ -132,7 +104,6 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 31.2px;
-  color: var(--color-heading);
   margin-bottom: 16px;
 }
 
@@ -145,112 +116,16 @@ p {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--ast-global-color-2);
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--color-heading);
+  color: var(--ast-global-color-1);
 }
 
-/* Header — 80px, transparent, static
-   ========================================================================== */
-.site-header {
-  background: transparent;
-  position: static;
-  height: 80px;
-  z-index: 100;
-}
-
-.site-header-inner {
-  height: 80px;
-  margin: 0 auto;
-  padding: 0 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-logo {
+a:where(:not(.wp-element-button)) {
   text-decoration: none;
-  color: var(--color-heading);
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-}
-
-.site-logo img {
-  width: 83px;
-  height: 47px;
-}
-
-/* Navigation
-   ========================================================================== */
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: var(--color-heading);
-  font-family: var(--font-body);
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: capitalize;
-  letter-spacing: 0.3px;
-  padding: 0 16px;
-}
-
-.nav-item a:hover {
-  color: var(--color-accent);
-}
-
-.nav-item a[aria-current="page"] {
-  color: var(--color-accent);
-  border-bottom: 2px solid var(--color-accent);
-}
-
-/* Mobile Menu Toggle
-   ========================================================================== */
-.mobile-menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-.hamburger-icon {
-  display: block;
-  width: 24px;
-  height: 3px;
-  background: var(--color-heading);
-  position: relative;
-}
-
-.hamburger-icon::before,
-.hamburger-icon::after {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 3px;
-  background: var(--color-heading);
-  position: absolute;
-  left: 0;
-}
-
-.hamburger-icon::before {
-  top: -7px;
-}
-
-.hamburger-icon::after {
-  top: 7px;
 }
 
 /* Theme Switcher
@@ -262,533 +137,42 @@ a:hover {
 }
 
 .theme-btn {
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
+  background: var(--ast-global-color-4);
+  border: 1px solid var(--ast-global-color-6);
   padding: 0.25rem 0.75rem;
   font-family: var(--font-body);
   font-size: 0.875rem;
   cursor: pointer;
   border-radius: 4px;
-  color: var(--color-text);
+  color: var(--ast-global-color-0);
 }
 
 .theme-btn:hover {
-  background: var(--color-border);
+  background: var(--ast-global-color-6);
 }
 
 .theme-btn--active,
 .theme-btn[aria-pressed="true"] {
-  background: var(--color-accent);
-  color: var(--color-white);
-  border-color: var(--color-accent);
+  background: var(--ast-global-color-2);
+  color: var(--ast-global-color-5);
+  border-color: var(--ast-global-color-2);
 }
 
-/* Main Content
-   ========================================================================== */
-#main-content {
-  margin: 0 auto;
-}
-
-#main-content:focus {
+/* Main content focus reset */
+#main:focus,
+main:focus {
   outline: none;
 }
 
-/* Page Layouts
-   ========================================================================== */
-.page-header {
-  margin-bottom: 2rem;
-}
-
-.page-content {
-  max-width: min(100%, 1200px);
-  margin: 0 auto;
-}
-
-/* Standard page — inner content widths */
-.page-single {
-  padding: 2rem;
-}
-
-.page-single .page-content img {
-  border-radius: 20px;
-  max-width: 100%;
-}
-
-/* Audiom embed page */
-.audiom-embed-page {
-  padding: 0;
-}
-
-.audiom-embed-page .audiom-section {
-  padding: 160px 0;
-}
-
-.audiom-embed-page .audiom-section-inner {
-  max-width: min(100%, 1200px);
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.audiom-embed-page .page-header h1 {
-  font-family: var(--font-heading);
-  font-size: 40px;
-  font-weight: 800;
-  color: var(--color-heading);
-}
-
-.audiom-embed {
-  margin: 2rem 0;
-}
-
-.audiom-embed iframe {
-  display: block;
-  max-width: 100%;
-  border: 0;
-  width: 100%;
-  height: auto;
-}
-
-/* ==========================================================================
-   Homepage
-   ========================================================================== */
-
-/* Homepage needs full-width sections — no main-content constraint */
-body:has(.hero) #main-content {
-  max-width: none;
-  padding: 0;
-}
-
-/* Homepage paragraph style — line-height 24px, color #777 */
-.hero p,
-.steps p,
-.why p,
-.video-section p,
-.clients p,
-.what-is p,
-.use-cases p,
-.team p:not(.team-role),
-.contact-section p:not(.form-required-note) {
-  line-height: 24px;
-  color: #777;
-  margin-bottom: 16px;
-}
-
-/* Standard page paragraph color */
-.page-single p {
-  color: #000;
-  line-height: 25.6px;
-  margin-bottom: 25.6px;
-}
-
-/* Hero — Section 0
-   ========================================================================== */
-.hero {
-  background: var(--color-heading);
-  color: var(--color-white);
-  padding: 152px 0;
-}
-
-.hero-inner {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.hero h1 {
-  color: var(--color-white);
-  margin-bottom: 20px;
-}
-
-.hero-text {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-white);
-  max-width: 80ch;
-  margin-bottom: 2rem;
-}
-
-/* Steps Grid — Section 1
-   ========================================================================== */
-.steps {
-  padding: 10px 0;
-}
-
-.steps-grid {
-  max-width: 70%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.step-card {
-  padding: 2rem;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  background: var(--color-bg);
-}
-
-.step-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-/* Why / Features — Section 2
-   ========================================================================== */
-.why {
-  padding: 104px 0 160px;
-}
-
-.why > .section-inner {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.feature-card {
-  background: var(--color-white);
-  padding: 2rem;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-}
-
-.feature-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-/* Video Section — Section 3
-   ========================================================================== */
-.video-section {
-  padding: 0 0 100px;
-}
-
-.video-section > .section-inner {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.video-wrapper {
-  margin-top: 2rem;
-}
-
-.video-wrapper video {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 8px;
-}
-
-/* Client Logos — Section 4
-   ========================================================================== */
-.clients {
-  padding: 10px 0;
-}
-
-.clients > .section-inner {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.logo-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  margin-top: 2rem;
-}
-
-.logo-bar img {
-  max-height: 80px;
-  width: auto;
-}
-
-/* What Is Audiom — Section 5
-   ========================================================================== */
-.what-is {
-  background: var(--color-bg);
-  padding: 100px 0;
-}
-
-.what-is > .section-inner {
-  max-width: min(100%, 1200px);
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.what-is p {
-  max-width: 80ch;
-}
-
-/* Use Cases Grid — Section 6
-   ========================================================================== */
-.use-cases {
-  padding: 85px 0;
-}
-
-.use-cases > .section-inner {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.use-cases-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.use-case-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.use-case-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.use-case-body {
-  padding: 2rem;
-}
-
-.use-case-body h3 {
-  margin-bottom: 0.5rem;
-}
-
-.use-case-body a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  font-weight: 700;
-}
-
-/* Team Grid — Section 7
-   ========================================================================== */
-.team {
-  padding: 50px 0 200px;
-}
-
-.team > .section-inner {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.team-card {
+/* 404 */
+.page-404 {
   text-align: center;
+  padding: 4rem 0;
 }
 
-.team-card img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.team-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.team-role {
-  color: var(--color-muted);
-  font-style: italic;
-}
-
-/* Contact Section — Section 8
-   ========================================================================== */
-.contact-section {
-  padding: 10px 0;
-}
-
-.contact-section > .section-inner {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.contact-section .contact-form {
-  margin-top: 2rem;
-}
-
-.form-required-note {
-  color: var(--color-muted);
-  font-size: 0.875rem;
-}
-
-/* Section inner — fallback for sections not using > .section-inner */
-.section-inner {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.section-cta {
-  margin-top: 2rem;
-}
-
-/* Buttons — matched to WordPress CTA styles
-   ========================================================================== */
-.btn {
-  display: inline-block;
-  padding: 15px 20px;
-  border-radius: 4px;
-  font-family: var(--font-heading);
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.btn-primary {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-weight: 600;
-  border: 1px solid var(--color-heading);
-}
-
-.btn-primary:hover {
-  background: var(--color-heading);
-  color: var(--color-white);
-}
-
-.btn-secondary {
-  background: var(--color-white);
-  color: var(--color-heading);
-  font-weight: 700;
-  border: 1px solid #333;
-}
-
-.btn-secondary:hover {
-  background: var(--color-heading);
-  color: var(--color-white);
-}
-
-.btn-hero {
-  display: inline-block;
-  padding: 15px 20px;
-  background: var(--color-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-heading);
-  border-radius: 4px;
-  font-family: var(--font-heading);
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: capitalize;
-  letter-spacing: 0.3px;
-  cursor: pointer;
-}
-
-.btn-hero:hover {
-  background: var(--color-white);
-  color: var(--color-heading);
-}
-
-/* Blog Grid — UAGB Post Grid style
-   ========================================================================== */
-.blog-list .page-header {
-  padding: 2rem;
-  max-width: min(100%, 1200px);
-  margin: 0 auto 0;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  max-width: min(100%, 1200px);
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
-}
-
-.blog-card {
-  background: #f6f6f6;
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.44) 10px 10px 20px -8px;
-  padding: 30px 40px 10px;
-}
-
-.blog-card-image {
-  height: 261px;
-  overflow: hidden;
-}
-
-.blog-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.blog-card-body {
-  padding: 1rem 0;
-}
-
-.blog-card-title {
-  font-family: var(--font-heading);
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-}
-
-.blog-card-title a {
-  text-decoration: none;
-  color: #f9fafb;
-}
-
-.blog-card-title a:hover {
-  color: var(--color-accent);
-}
-
-.blog-card-excerpt {
-  font-size: 16px;
-  color: #f9fafb;
-  line-height: 24px;
-}
-
-.blog-card time {
-  color: #fff;
-  font-size: 14px;
-}
-
-/* Blog Post (single)
-   ========================================================================== */
-.blog-post-header {
-  margin-bottom: 2rem;
-}
-
-.blog-post-meta {
-  color: var(--color-muted);
-  margin-top: 0.5rem;
-}
-
-.blog-post-image {
-  margin: 0 0 2rem;
-}
-
-.blog-post-content {
-  max-width: min(100%, 1200px);
-  margin: 0 auto;
+/* Homepage sections — full-width override */
+.home-page #content.site-content {
+  overflow: visible;
 }
 
 /* Contact Form (shared)
@@ -814,9 +198,9 @@ body:has(.hero) #main-content {
   border: 1px solid #ccc;
   border-radius: 2px;
   font-family: var(--font-body);
-  font-size: var(--font-size-base);
-  color: var(--color-text);
-  background: var(--color-white);
+  font-size: 16px;
+  color: var(--ast-global-color-0);
+  background: var(--ast-global-color-5);
   height: 38px;
 }
 
@@ -826,249 +210,39 @@ body:has(.hero) #main-content {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: var(--color-accent);
+  border-color: var(--ast-global-color-2);
 }
 
-/* Footer — primary: #04203e bg, 2-column grid
+/* Buttons
    ========================================================================== */
-.site-footer {
-  background: var(--color-heading);
-  padding: 45px 95.25px;
-  margin-top: 0;
-}
-
-.footer-inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-}
-
-.footer-heading {
+.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 4px;
   font-family: var(--font-heading);
-  font-size: 24px;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-links a {
-  color: #fff;
   font-size: 16px;
+  cursor: pointer;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
-.footer-links a:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
+.btn-primary {
+  background: var(--ast-global-color-4);
+  color: var(--ast-global-color-0);
+  font-weight: 600;
+  border: 1px solid var(--ast-global-color-1);
 }
 
-.footer-logo {
-  text-decoration: none;
-  color: #fff;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
+.btn-primary:hover {
+  background: var(--ast-global-color-1);
+  color: var(--ast-global-color-5);
 }
 
-/* Footer form — inputs match spec */
-.site-footer .form-group input,
-.site-footer .form-group textarea {
-  padding: 6px 10px;
-  border-radius: 2px;
-  border: 1px solid #ccc;
-  height: 38px;
-}
-
-.site-footer .form-group textarea {
-  height: auto;
-}
-
-.site-footer .btn-primary {
-  background: #eee;
-  color: #333;
-  padding: 10px 15px;
-  font-weight: 800;
-  border: none;
-}
-
-.site-footer .btn-primary:hover {
-  background: #ddd;
-  color: #111;
-}
-
-.site-footer .form-group label {
-  color: #fff;
-}
-
-/* Below Footer (copyright)
-   ========================================================================== */
-.footer-bottom {
-  background: #15191d;
-  padding: 10px 0 0;
-  text-align: center;
-  color: var(--color-muted);
-  margin-top: 0;
-}
-
-.footer-bottom p {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 2rem;
-  color: #fff;
-}
-
-/* 404
-   ========================================================================== */
-.page-404 {
-  text-align: center;
-  padding: 4rem 0;
-}
-
-/* Content List
-   ========================================================================== */
-.content-list {
-  list-style: none;
-  padding: 0;
-}
-
-.content-list li {
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.content-list li a {
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
-
-/* >= 544px (small tablets)
-   ========================================================================== */
-@media (min-width: 544px) {
-  .blog-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .use-cases-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* >= 922px (desktop)
-   ========================================================================== */
-@media (min-width: 922px) {
-  .blog-grid {
-    grid-template-columns: 380px 380px 380px;
-  }
-
-  .steps-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Mobile nav (at or below 921px)
-   ========================================================================== */
+/* Mobile theme switcher */
 @media (max-width: 921px) {
-  .mobile-menu-toggle {
-    display: block;
-  }
-
-  .primary-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--color-white);
-    border-bottom: 1px solid var(--color-border);
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 200;
-  }
-
-  .primary-nav.is-open {
-    display: block;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
-
-  .nav-item a {
-    display: block;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--color-border);
-  }
-
   .theme-switcher {
     margin-left: 0;
     margin-top: 1rem;
     justify-content: center;
-  }
-
-  /* Responsive typography */
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  /* Responsive section widths */
-  .hero-inner,
-  .why > .section-inner,
-  .video-section > .section-inner,
-  .clients > .section-inner,
-  .what-is > .section-inner,
-  .use-cases > .section-inner,
-  .team > .section-inner,
-  .contact-section > .section-inner,
-  .section-inner,
-  .steps-grid {
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-
-  /* Responsive hero padding */
-  .hero {
-    padding: 80px 0;
-  }
-
-  /* Responsive footer */
-  .site-footer {
-    padding: 30px 1rem;
-  }
-
-  .footer-inner {
-    grid-template-columns: 1fr;
-    gap: 2rem;
   }
 }
