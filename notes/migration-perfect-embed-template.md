@@ -189,4 +189,40 @@ Still bad: 11 pages with special content (YouTube embeds, forms, tables, multipl
 - sonification (14.57%): Very long page with many sections
 - events (14.81%): No spacers, unique layout
 
-**NEXT:** Commit current changes, then investigate remaining outliers
+**COMMITTED:** bab7cca — template + CSS + 10 content files (spacers/container flags)
+
+**ITERATION 6: YouTube embed fix**
+3 pages have YouTube iframes (covid-map, nasa-jpl, magicmap-paloalto).
+WP wraps YouTube in `<figure class="wp-block-embed wp-embed-aspect-16-9">` with responsive sizing.
+Hugo has raw `<iframe>` — no aspect ratio, wrong dimensions.
+
+Fix: Wrapped YouTube iframes in WP-compatible figure markup in content files.
+Also wrapped audiom iframes in `.audiom-iframe-wrap` div to constrain width to 1326px.
+magicmap-paloalto has no YouTube embed — it's a long content page with images, h2/h3 sections.
+Its 41.52% is from complex multi-section layout, not YouTube.
+
+Need CSS for: `.audiom-iframe-wrap`, `.wp-block-embed.wp-embed-aspect-16-9`, `.wp-block-embed__wrapper`
+
+**ITERATION 6 RESULTS (YouTube embed fix + wisconsin iframe fix):**
+- covid-map: 27.46% -> 9.34% (YouTube now 16:9 responsive, audiom iframe wrapped to 1326px)
+- nasa-jpl: 33.94% -> 10.84% (same fix)
+- wisconsin: 53.76% -> 25.42% (fixed multi-line iframe src, now renders. Still high — ESRI dynamic content)
+- rose-quarter: 33.23% (unchanged — TWO audiom iframes + h2 headings, needs WP layout inspection)
+- peachability: 29.56% (unchanged — needs inspection)
+
+**REMAINING OUTLIERS (>10%):**
+- rose-quarter (33.23%): 2 audiom iframes with h2 headings between. Page 2091px vs 2301px = 210px short
+- peachability (29.56%): Long page, 3540px vs 3802px = 262px short
+- wisconsin (25.42%): Dynamic ESRI content, 1576 vs 1583px = 7px (mostly iframe content diff)
+- gatech (22.66%): Dynamic map content diff in iframe
+- events (14.81%): No spacers, unique layout with wp-block-heading first child
+- magicmap (41.52%): Complex multi-section page with images, h2/h3, lists
+- sonification (14.57%): Very long form page
+- audiom-demo-form (49.58%): Form-based page
+- table-vs-map (44.26%): Table content
+
+**PAGES UNDER 5% SO FAR:** 31+ standard embed pages
+**PAGES 5-10%:** audiom-demo (5.33%), covid-map (9.34%)
+
+**NEXT:** Commit YouTube/wisconsin fixes. Investigate rose-quarter and peachability (multi-iframe spacing).
+The form/table/events pages may need different templates entirely — they're not standard embeds.
