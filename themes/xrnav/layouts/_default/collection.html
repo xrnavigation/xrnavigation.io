@@ -1,9 +1,11 @@
 {{ define "main" }}
 <article class="collection-page">
   {{/* Hero section */}}
-  <section class="collection-hero">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
+  <section class="collection-hero" {{ with .Params.hero_image }}style="background-image: url('{{ . }}');"{{ end }}>
+    <div class="collection-hero-inner">
+      <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+      {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
+    </div>
   </section>
 
   {{/* Info-box sections: image + text side by side */}}

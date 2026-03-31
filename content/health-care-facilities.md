@@ -13,14 +13,14 @@ sections:
     cta:
       text: "Try Audiom"
       url: "https://www.audiom.net/"
-    image: "/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp"
+    image: "/images/DALL%25C2%25B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp"
   - heading: "Audiom: The Solution"
     paragraphs:
       - "Audiom revolutionizes the concept of healthcare facility maps with its unique cross-sensory design. Tailored for visual, auditory, and tactile users, it provides real-time updates crucial for dynamic healthcare settings. Seamlessly integrating with healthcare apps, websites, and systems, it prioritizes user feedback and continually evolves through collaboration with people with disabilities. Audiom isn't merely a tool—it's the future of accessible maps in healthcare."
     cta:
       text: "Try Audiom"
       url: "https://www.audiom.net/"
-    image: "/images/DALL%C2%B7E-2023-10-18-11.41.34-Photorealistic-image-inside-a-bustling-hospital_-A-person-in-the-center-walks-confidently-seemingly-following-audio-guidance.-Visual-cues-of-sound-wa.webp"
+    image: "/images/DALL%25C2%25B7E-2023-10-18-11.41.34-Photorealistic-image-inside-a-bustling-hospital_-A-person-in-the-center-walks-confidently-seemingly-following-audio-guidance.-Visual-cues-of-sound-wa.webp"
 features:
   - title: "Inclusivity"
     text: "Every individual seeking healthcare deserves equitable access to the facilities they need. Inclusivity in healthcare begins with accessible pre-trip planning."

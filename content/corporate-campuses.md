@@ -13,14 +13,14 @@ sections:
     cta:
       text: "Try Audiom"
       url: "https://www.audiom.net/"
-    image: "/images/DALL%C2%B7E-2023-10-17-13.20.29-Photo-taken-from-a-high-angle-of-a-Silicon-Valley-esque-corporate-campus-reminiscent-of-the-Intel-campus-in-California.-Sunlit-modern-buildings-with-.webp"
+    image: "/images/DALL%25C2%25B7E-2023-10-17-13.20.29-Photo-taken-from-a-high-angle-of-a-Silicon-Valley-esque-corporate-campus-reminiscent-of-the-Intel-campus-in-California.-Sunlit-modern-buildings-with-.webp"
   - heading: "The Solution"
     paragraphs:
       - "Audiom redefines mapping with its Web Content Accessibility Guidelines AAA compliant cross-sensory design tailored for visual, auditory, and tactile users. Offering real-time updates for dynamic corporate campuses, it integrates seamlessly into existing apps, emphasizing user-centric feedback and co-design with people with disabilities. It's not just a tool—it's the future of accessible navigation."
     cta:
       text: "Try Audiom"
       url: "https://www.audiom.net/"
-    image: "/images/DALL%C2%B7E-2023-10-17-15.06.01-Expansive-shot-of-a-person-with-headphones-confidently-walking-through-a-contemporary-corporate-setting.-From-every-corner-of-the-environment-from-t.webp"
+    image: "/images/DALL%25C2%25B7E-2023-10-17-15.06.01-Expansive-shot-of-a-person-with-headphones-confidently-walking-through-a-contemporary-corporate-setting.-From-every-corner-of-the-environment-from-t.webp"
 extra_sections:
   - heading: "Join the Movement: Embrace The Vision of Inclusive Design"
     paragraphs:
