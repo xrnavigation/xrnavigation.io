@@ -175,6 +175,7 @@ body.ast-hfb-header {
 
 .ast-article-single {
   display: block;
+  padding-top: 32px;
 }
 
 .entry-content.clear::after {
@@ -203,14 +204,14 @@ body.ast-hfb-header {
 
 .ast-primary-header-bar.main-header-bar {
   padding: 0;
-  height: 80px;
+  height: 81px;
 }
 
 .site-primary-header-wrap.ast-builder-grid-row-container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 32px;
-  height: 80px;
+  height: 81px;
 }
 
 .ast-builder-grid-row {
@@ -466,19 +467,19 @@ h1.uagb-heading-text {
 }
 
 h2.uagb-heading-text {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
   color: var(--ast-global-color-1);
   margin-bottom: 20px;
 }
 
 h3.uagb-heading-text {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 31.2px;
+  line-height: 33.8px;
   color: var(--ast-global-color-1);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 h4.uagb-heading-text {
@@ -611,17 +612,17 @@ h1.wp-block-heading {
 }
 
 h2.wp-block-heading {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
   margin-bottom: 20px;
 }
 
 h3.wp-block-heading {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 31.2px;
-  margin-bottom: 16px;
+  line-height: 33.8px;
+  margin-bottom: 20px;
 }
 
 /* h4–h6 block heading styles */
@@ -760,6 +761,28 @@ body li {
   margin-right: auto;
 }
 
+/* Match WP .wp-block-group padding around TOC list */
+.entry-content > h2#table-of-contents + ul {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Constrain headings and content to match WP .wp-block-group layout (1200px centered, 48px inner padding) */
+.entry-content > h1,
+.entry-content > h2,
+.entry-content > h3,
+.entry-content > h4,
+.entry-content > h5,
+.entry-content > h6,
+.entry-content > ul,
+.entry-content > ol {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
 /* ==========================================================================
    WordPress Block Styles — Lists, Images
    ========================================================================== */
@@ -876,8 +899,9 @@ h3.uagb-post__title a:hover {
    Footer (Astra Builder Three-Tier)
    ========================================================================== */
 
-/* Above Footer */
+/* Above Footer — hidden on WP live site */
 .site-above-footer-wrap {
+  display: none;
   background: var(--ast-global-color-1);
   padding: 45px 95.25px;
 }
@@ -895,6 +919,7 @@ h3.uagb-post__title a:hover {
 
 /* Primary Footer */
 .site-primary-footer-wrap {
+  display: grid;
   background: var(--ast-global-color-1);
   padding: 45px 95.25px;
 }
@@ -916,6 +941,7 @@ h3.uagb-post__title a:hover {
 
 /* Below Footer (Copyright) */
 .site-below-footer-wrap {
+  display: grid;
   background: var(--ast-global-color-0);
   padding: 10px 0 0;
 }
@@ -935,6 +961,10 @@ h3.uagb-post__title a:hover {
   color: #fff;
   text-align: center;
   font-size: 16px;
+}
+
+.ast-footer-copyright p {
+  margin-bottom: 0;
 }
 
 /* Footer widget areas */
@@ -1570,5 +1600,523 @@ article.post .entry-content p {
 @media (max-width: 544px) {
   .collection-page .feature-cards .feature-card {
     flex: 1 1 100%;
+  }
+}
+
+/* ==========================================================================
+   Homepage Sections
+   Matches WP Astra + UAGB container layout exactly.
+   Values from data/wp-css-spec.md and inline-uagb-style-frontend-135.css
+   ========================================================================== */
+
+/* --- Shared Section Base --- */
+.home-page .site-main > section {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+.home-page .section-inner {
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Homepage paragraph color matches WP */
+.home-page p {
+  color: #777;
+}
+
+/* --- 1. Hero Section --- */
+.home-page .hero {
+  min-height: 60vh;
+  padding: 8% 0;
+  background-image: url('/images/DALL%C2%B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp');
+  background-repeat: no-repeat;
+  background-position: 62% 12%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-clip: padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-page .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ast-global-color-0);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.home-page .hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page .hero h1 {
+  color: var(--ast-global-color-5);
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home-page .hero .hero-text {
+  color: var(--ast-global-color-5);
+  font-size: 16px;
+  line-height: 25.6px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.home-page .btn-hero {
+  background: var(--ast-global-color-4);
+  color: var(--ast-global-color-1);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.home-page .btn-hero:hover {
+  background: var(--ast-global-color-1);
+  color: var(--ast-global-color-5);
+}
+
+/* --- 2. Three-Step Process --- */
+.home-page .steps {
+  padding: 10px;
+  text-align: center;
+}
+
+.home-page .steps-grid {
+  max-width: 70%;
+  width: 100%;
+  margin: -75px auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--ast-global-color-4);
+  border-radius: 20px;
+  box-shadow: 10px 9px 20px -10px rgba(0, 0, 0, 0.44);
+  position: relative;
+  z-index: 2;
+}
+
+.home-page .step-card {
+  flex: 1;
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page .step-card h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 16px;
+}
+
+.home-page .step-card p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #777;
+}
+
+/* --- 3. Why XR Navigation --- */
+.home-page .why {
+  padding: 104px 10px 160px;
+}
+
+.home-page .why .section-inner {
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 100px;
+}
+
+.home-page .why h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+.home-page .why > .section-inner > p {
+  display: none;
+}
+
+.home-page .why .features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.home-page .why .feature-card {
+  padding: 10px 0;
+}
+
+.home-page .why .feature-card h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  color: var(--ast-global-color-1);
+}
+
+.home-page .why .feature-card p {
+  color: #777;
+}
+
+.home-page .why .section-cta {
+  margin-top: 20px;
+}
+
+/* --- 4. Video Section --- */
+.home-page .video-section {
+  padding: 0 0 100px;
+}
+
+.home-page .video-section .section-inner {
+  max-width: 70%;
+}
+
+.home-page .video-section h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home-page .video-wrapper {
+  width: 100%;
+}
+
+.home-page .video-wrapper video {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* --- 5. Client Logos --- */
+.home-page .clients {
+  padding: 10px;
+  text-align: center;
+}
+
+.home-page .clients .section-inner {
+  max-width: 80%;
+}
+
+.home-page .clients h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+.home-page .clients p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.home-page .logo-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.home-page .logo-bar img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* --- 6. What Is Audiom --- */
+.home-page .what-is {
+  padding: 100px 80px;
+  background-color: var(--ast-global-color-4);
+  text-align: center;
+}
+
+.home-page .what-is .section-inner {
+  max-width: min(100%, 1200px);
+}
+
+.home-page .what-is h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+.home-page .what-is p {
+  color: #777;
+}
+
+.home-page .what-is .section-cta {
+  margin-top: 20px;
+}
+
+/* --- 7. Use Cases --- */
+.home-page .use-cases {
+  padding: 85px 10px;
+  text-align: center;
+}
+
+.home-page .use-cases .section-inner {
+  max-width: 70%;
+}
+
+.home-page .use-cases h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 30px;
+}
+
+.home-page .use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.home-page .use-case-card {
+  background: var(--ast-global-color-5);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.44);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home-page .use-case-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-page .use-case-body {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-page .use-case-body h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 0;
+}
+
+.home-page .use-case-body p {
+  color: #777;
+  margin-bottom: 0;
+}
+
+.home-page .use-case-body a {
+  color: var(--ast-global-color-2);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* --- 8. Team --- */
+.home-page .team {
+  padding: 50px 10px 200px;
+  text-align: center;
+}
+
+.home-page .team .section-inner {
+  max-width: 70%;
+}
+
+.home-page .team h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+.home-page .team > .section-inner > p {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.home-page .team-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.home-page .team-card {
+  text-align: center;
+  flex: 0 1 300px;
+}
+
+.home-page .team-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.44);
+  margin-bottom: 16px;
+}
+
+.home-page .team-card h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ast-global-color-1);
+  margin-bottom: 8px;
+}
+
+.home-page .team-role {
+  color: #777;
+  font-size: 16px;
+}
+
+/* --- 9. Contact Section --- */
+.home-page .contact-section {
+  padding: 10px;
+  text-align: center;
+}
+
+.home-page .contact-section .section-inner {
+  max-width: 70%;
+}
+
+.home-page .contact-section h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--ast-global-color-1);
+  margin-bottom: 20px;
+}
+
+.home-page .contact-section p {
+  color: #777;
+}
+
+.home-page .contact-form {
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* --- Homepage Responsive --- */
+@media (max-width: 921px) {
+  .home-page .hero h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .home-page .steps-grid {
+    flex-direction: column;
+    margin-top: -40px;
+    max-width: 90%;
+  }
+
+  .home-page .why .section-inner {
+    flex-direction: column;
+    max-width: 90%;
+    gap: 40px;
+  }
+
+  .home-page .video-section .section-inner,
+  .home-page .clients .section-inner,
+  .home-page .use-cases .section-inner,
+  .home-page .team .section-inner,
+  .home-page .contact-section .section-inner {
+    max-width: 90%;
+  }
+
+  .home-page .use-cases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-page .hero-inner {
+    max-width: 90%;
+  }
+
+  .home-page .logo-bar img {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 544px) {
+  .home-page .hero {
+    padding: 60px 20px;
+  }
+
+  .home-page .why {
+    padding: 50px 10px 80px;
+  }
+
+  .home-page .what-is {
+    padding: 50px 20px;
+  }
+
+  .home-page .use-cases {
+    padding: 40px 10px;
+  }
+
+  .home-page .team {
+    padding: 30px 10px 100px;
   }
 }

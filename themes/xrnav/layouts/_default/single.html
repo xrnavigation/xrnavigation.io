@@ -1,11 +1,7 @@
 {{ define "main" }}
 <article class="ast-article-single page-content-wrap">
-  <div class="entry-content clear">
-    <div class="wp-block-uagb-container alignfull uagb-is-root-container">
-      <div class="uagb-container-inner-blocks-wrap">
-        {{ .Content }}
-      </div>
-    </div>
+  <div class="entry-content clear" data-ast-blocks-layout>
+    {{ .Content }}
   </div>
 </article>
 {{ end }}
