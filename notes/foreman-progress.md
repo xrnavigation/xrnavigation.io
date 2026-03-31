@@ -1,31 +1,36 @@
-# Foreman Progress — Migration Prep
+# Foreman Progress — Migration
 Date: 2026-03-30
 
-## STATUS: ALL PREP WORK COMPLETE
+## STATUS: First comparison complete. Zero pages match baseline. Major CSS/layout work needed.
 
-## Completed Agents (8 total)
-1. Playwright test suite — 44a9c52
-2. WP content export — 44a9c52, 1b1d8af (90 files, 52 audiom embeds)
-3. Media download — b3ccd4b (189 files, 396MB)
-4. Hugo scaffold — 2b16d83 (full theme, 12 layouts, CSS, JS)
-5. Redirects/forms/CSS — aa10e54 (12 redirects, form fields, focus styles)
-6. Run baseline — captured 180 screenshots (90 URLs x 2 viewports)
-7. Fix baseline — e60054d (per-page timeout, zero failures)
-8. Integration — c604f73..46bc1ed (blog.md deleted, 45 image URLs rewritten, focus styles merged, 8 redirect aliases added, Hugo builds clean: 98 pages)
+## Comparison Results
+- 180 comparisons, 0 matching (<2%), 1 minor (2-10%), 179 major (>10%)
+- Best match: privacy-policy desktop at 9.9% diff
+- 11 blog posts return 404 (22 comparisons)
+- Root cause: Hugo theme CSS is "inspired by" but not matching WordPress Astra theme
 
-## Current State
-- Hugo builds cleanly: 98 pages, 0 errors, 0 warnings
-- 180 baseline screenshots captured against live WordPress site
-- All content exported as Markdown with audiom_id frontmatter
-- All media downloaded with manifest
-- Redirects configured (aliases + _redirects file)
-- Focus styles merged into theme CSS
+## Three Categories of Problems
 
-## Remaining Work (Next Session)
-1. **Homepage template** — Build layouts/index.html with partials for hero, steps, features, logos, use cases, team, contact form. Data is in the markdown, needs layout structure.
-2. **Missing images** — ~20 WP-resized thumbnails + ~8 DALL-E images with Unicode filenames
-3. **Dead WPForms markup** — Remove spinner SVG references from contact.md, events.md, _index.md
-4. **Able Player video** — Recreate homepage video player with Able Player library
-5. **Contact page form** — Rebuild with Netlify Forms (footer form already done)
-6. **Theme switcher verification** — Dark mode + HC mode CSS/JS are in theme but untested
-7. **Playwright comparison** — Screenshot Hugo build vs WordPress baseline, iterate until match
+### 1. Missing blog posts (11 pages, 404ing)
+Blog posts exported to content/blog/ but URLs don't resolve. Need to verify Hugo routing.
+
+### 2. CSS/Layout mismatch (affects ALL pages)
+The Hugo theme was built from design tokens but doesn't replicate the actual Astra theme CSS. Header, footer, nav, typography, spacing, content width — all differ. This is the bulk of the work.
+
+### 3. Structural content gaps (4-5 pages)
+capability-statement, acr, brandon-keith-biggs, 404-2, audiom-demo-form have >85% diff suggesting missing content sections beyond just CSS.
+
+## What's Needed
+To actually match the WordPress site visually, we need to extract the real Astra CSS from the live site and replicate it in the Hugo theme — not guess at it from design tokens. This means:
+1. Capture computed styles from the WP site (header height, nav spacing, content max-width, font sizes at each breakpoint, padding/margin values, footer layout)
+2. Rewrite themes/xrnav/static/css/main.css to match those values
+3. Fix the 11 missing blog posts
+4. Fix structural content on the worst pages
+5. Re-run comparison, iterate
+
+## All Completed Agents (10 total)
+1-8: All prep agents (audit, export, media, scaffold, redirects, baseline, fix, integration)
+9: Homepage template — 35ac4d3
+10: Cleanup — c27bad8, 409a435, 05aeb03
+11: Able Player — 141f1ac
+12: Comparison — 973638d (0% match rate)
