@@ -98,4 +98,12 @@ In Playwright (screenshot context), ALL 224 element heights now match WP exactly
 
 **STAGED FOR COMMIT:** main.css (heading color, link color), quick-diff.js (size handling), notes file
 
-**NEXT:** Commit, then try to reduce content-area horizontal text-shift diffs
+**FINAL RESULT:** 0.90% diff -- TARGET MET
+
+Final fix: Split UL/OL padding rules. Non-TOC lists get padding-left:40px + margin:16px auto (matching WP defaults). TOC list keeps 48px padding. This brought 1.18% -> 0.90%.
+
+Commits:
+- 080cc1b: heading/link colors + diff script
+- 1d19454: UL/OL padding/margin fix
+
+Report written to reports/migration-perfect-page.md
