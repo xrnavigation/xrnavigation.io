@@ -16,9 +16,9 @@ University campuses are intricate mazes of lecture halls, libraries, student cen
 
 [Try Audiom](https://www.audiom.net/)
 
-![](/wp-content/uploads/2023/10/DALL·E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp)
+![](/images/DALL%C2%B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp)
 
-![Wide shot of a person with headphones amidst a modern Silicon Valley-style corporate campus, with vibrant soundwave visuals emerging as they navigate.](/wp-content/uploads/2023/10/DALL·E-2023-10-17-15.06.09-Wide-shot-capturing-a-person-with-headphones-amidst-a-modern-Silicon-Valley-esque-corporate-campus.-As-they-navigate-vibrant-soundwave-visuals-emerge-1024x585.webp)
+![Wide shot of a person with headphones amidst a modern Silicon Valley-style corporate campus, with vibrant soundwave visuals emerging as they navigate.](/images/DALL%C2%B7E-2023-10-17-15.06.09-Wide-shot-capturing-a-person-with-headphones-amidst-a-modern-Silicon-Valley-esque-corporate-campus.-As-they-navigate-vibrant-soundwave-visuals-emerge.webp)
 
 ## Audiom: The Inclusive Digital Map Solution
 
@@ -26,7 +26,7 @@ Audiom isn’t just a map; it’s a statement. It’s our answer to the call for
 
 [Try Audiom](https://www.audiom.net/)
 
-![Wide shot of a person with headphones amidst a modern Silicon Valley-style corporate campus, with vibrant soundwave visuals emerging as they navigate.](/wp-content/uploads/2023/10/DALL·E-2023-10-17-15.06.09-Wide-shot-capturing-a-person-with-headphones-amidst-a-modern-Silicon-Valley-esque-corporate-campus.-As-they-navigate-vibrant-soundwave-visuals-emerge-1024x585.webp)
+![Wide shot of a person with headphones amidst a modern Silicon Valley-style corporate campus, with vibrant soundwave visuals emerging as they navigate.](/images/DALL%C2%B7E-2023-10-17-15.06.09-Wide-shot-capturing-a-person-with-headphones-amidst-a-modern-Silicon-Valley-esque-corporate-campus.-As-they-navigate-vibrant-soundwave-visuals-emerge.webp)
 
 ### Inclusivity
 

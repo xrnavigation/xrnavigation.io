@@ -10,7 +10,7 @@ Understanding the accessibility of digital map tools is essential for creating i
 
 ## Comparison Table
 
-![Bar chart showing Audiom with 100% compliance followed by Bing Maps Embed with 57% compliance and MapBox Studio embed with 50% compliance. For more information view the second column in the below table.](https://xrnavigation.io/wp-content/uploads/2024/09/Untitled-1024x642.jpg)
+![Bar chart showing Audiom with 100% compliance followed by Bing Maps Embed with 57% compliance and MapBox Studio embed with 50% compliance. For more information view the second column in the below table.](/images/Untitled.jpg)
 
 [Download the table from Google Sheets (Opens a new tab)](https://docs.google.com/spreadsheets/d/1D3IfrSR1aKuUUiFq5TCfGnuQ4tLR75Y5q2Ai38OTHCQ/edit?usp=sharing)
 

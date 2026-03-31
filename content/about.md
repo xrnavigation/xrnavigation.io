@@ -44,7 +44,7 @@ Design and evaluation of an audio game-inspired auditory map interface
 
 The audio game laboratory: Building maps from games
 
-![A group of young people pointing at, and examining a map.](/wp-content/uploads/2024/03/cropped-view-of-kid-pointing-with-finger-at-map-ne-2023-11-27-05-17-52-utc-1024x683.webp)
+![A group of young people pointing at, and examining a map.](/images/cropped-view-of-kid-pointing-with-finger-at-map-ne-2023-11-27-05-17-52-utc.webp)
 
 ## The Problem Is Massive
 
@@ -56,17 +56,17 @@ Audiom presents spatial information in three ways: visual, audio, and tactually 
 
 [Contact Us To Learn More](#)
 
-![A woman designing a map on a desktop computer. ](/wp-content/uploads/2024/03/architect-female-drawing-with-cad-software-bim-2023-11-27-05-14-47-utc-1-1024x684.webp)
+![A woman designing a map on a desktop computer. ](/images/architect-female-drawing-with-cad-software-bim-2023-11-27-05-14-47-utc-1.webp)
 
 ## Our Partners
 
-[![Smith-Kettlewell Eye Research Institute Logo](/wp-content/uploads/2023/11/60-logo-300x65.webp)](https://www.ski.org/)
+[![Smith-Kettlewell Eye Research Institute Logo](/images/60-logo.webp)](https://www.ski.org/)
 
-[![National Federation of the Blind Logo](/wp-content/uploads/2023/11/logo-nfb-1-300x109.webp)](https://nfb.org/)
+[![National Federation of the Blind Logo](/images/logo-nfb-1.webp)](https://nfb.org/)
 
-[![Goodmaps Logo](/wp-content/uploads/2023/11/0Ms0j5pT2OWEXkHMXNOlIIsVQkTxHac3WUigss0e-300x123.webp)](https://goodmaps.com/)
+[![Goodmaps Logo](/images/0Ms0j5pT2OWEXkHMXNOlIIsVQkTxHac3WUigss0e.webp)](https://goodmaps.com/)
 
-[![Georgia Institute of Technology Logo](/wp-content/uploads/2023/11/extended-RGB-1024x231.webp)](https://www.gatech.edu/)
+[![Georgia Institute of Technology Logo](/images/extended-RGB.webp)](https://www.gatech.edu/)
 
 ## Funding
 

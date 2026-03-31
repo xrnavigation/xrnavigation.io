@@ -16,9 +16,9 @@ Healthcare facilities are intricate labyrinths of wards, clinics, labs, and corr
 
 [Try Audiom](https://www.audiom.net/)
 
-![A hospital waiting room that is a composite. it is photoreal on the left side, and a digital wireframe resembling 3d mapping.](/wp-content/uploads/2023/10/DALL·E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp)
+![A hospital waiting room that is a composite. it is photoreal on the left side, and a digital wireframe resembling 3d mapping.](/images/DALL%C2%B7E-2023-10-18-11.08.39-Close-up-perspective-inside-a-hospital-waiting-area_-The-left-part-showcases-a-photorealistic-view-with-chairs-tables-and-informational-boards.-As-i.webp)
 
-![Photorealistic image of the interior of a bustling hospital with a person in the center walking confidently, seemingly following audio guidance, with visual cues of sound waves around them.](/wp-content/uploads/2023/10/DALL·E-2023-10-18-11.41.34-Photorealistic-image-inside-a-bustling-hospital_-A-person-in-the-center-walks-confidently-seemingly-following-audio-guidance.-Visual-cues-of-sound-wa.webp)
+![Photorealistic image of the interior of a bustling hospital with a person in the center walking confidently, seemingly following audio guidance, with visual cues of sound waves around them.](/images/DALL%C2%B7E-2023-10-18-11.41.34-Photorealistic-image-inside-a-bustling-hospital_-A-person-in-the-center-walks-confidently-seemingly-following-audio-guidance.-Visual-cues-of-sound-wa.webp)
 
 ## Audiom: The Solution
 

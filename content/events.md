@@ -37,7 +37,7 @@ Before: A static PDF map, useless to 20% of attendees:
 
 A PDF map with no alt-text.
 
-![A PDF map with no alt-text.](https://xrnavigation.io/wp-content/uploads/2025/06/Untitled-1-1-1024x409.png)
+![A PDF map with no alt-text.](/images/Untitled-1-1.png)
 
 Now: 100% usability, sponsor revenue unlocked:
 
@@ -73,15 +73,15 @@ Biggs, Brandon, et al. “[Evaluation of a non-visual auditory choropleth and tr
 
 ## Events Using Audiom
 
-![Logo of VisionServe Alliance](https://xrnavigation.io/wp-content/uploads/2025/07/Vision-Serve-Alliance-3-1024x468.png)
+![Logo of VisionServe Alliance](/images/Vision-Serve-Alliance-3.png)
 
-![Logo of National Federation of the Blind](https://xrnavigation.io/wp-content/uploads/2025/07/National-Federation-of-the-Blind-1024x576.jpg)
+![Logo of National Federation of the Blind](/images/National-Federation-of-the-Blind.jpg)
 
-![Logo of Create-X from Georgia Tech](https://xrnavigation.io/wp-content/uploads/2025/07/Create-X-Georgia-Tech-3-1024x614.jpg)
+![Logo of Create-X from Georgia Tech](/images/Create-X-Georgia-Tech-3.jpg)
 
 ![Logo of M-Enabling Summit](/images/m_enabling_summit_logo.jpg)
 
-![Logo of CSUN Assistive Technology Conference](https://xrnavigation.io/wp-content/uploads/2025/07/CSUN-Assistive-Technology-Conference-1-1024x243.png)
+![Logo of CSUN Assistive Technology Conference](/images/CSUN-Assistive-Technology-Conference-1.png)
 
 ![Logo of Vision Rehabilitation and Assistive Technology Conference](/images/Annual-Vision-Rehabilitation-Assistive-Technology-Expo.jpg)
 

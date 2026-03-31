@@ -16,9 +16,9 @@ Modern corporate campuses resemble mini-cities, complete with multiple buildings
 
 [Try Audiom](https://www.audiom.net/)
 
-![A blind man lost on a corporate campus that has subpar, non accessible mapping.](/wp-content/uploads/2023/10/DALL·E-2023-10-17-13.20.29-Photo-taken-from-a-high-angle-of-a-Silicon-Valley-esque-corporate-campus-reminiscent-of-the-Intel-campus-in-California.-Sunlit-modern-buildings-with--1024x585.webp)
+![A blind man lost on a corporate campus that has subpar, non accessible mapping.](/images/DALL%C2%B7E-2023-10-17-13.20.29-Photo-taken-from-a-high-angle-of-a-Silicon-Valley-esque-corporate-campus-reminiscent-of-the-Intel-campus-in-California.-Sunlit-modern-buildings-with-.webp)
 
-![Expansive shot of a person with headphones confidently walking through a contemporary corporate setting, navigating via visible audio waveforms that emerge from every corner of the environment.](/wp-content/uploads/2023/10/DALL·E-2023-10-17-15.06.01-Expansive-shot-of-a-person-with-headphones-confidently-walking-through-a-contemporary-corporate-setting.-From-every-corner-of-the-environment-from-t-1024x585.webp)
+![Expansive shot of a person with headphones confidently walking through a contemporary corporate setting, navigating via visible audio waveforms that emerge from every corner of the environment.](/images/DALL%C2%B7E-2023-10-17-15.06.01-Expansive-shot-of-a-person-with-headphones-confidently-walking-through-a-contemporary-corporate-setting.-From-every-corner-of-the-environment-from-t.webp)
 
 ## The Solution
 

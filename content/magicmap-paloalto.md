@@ -32,11 +32,11 @@ There are three components:
 
 # Interactive 3d Tactile Map
 
-![Picture of a bronze map of the Magical Bridge playground with 3D play structures and tree](/wp-content/uploads/2024/05/bronze-2-1024x904.jpg)
+![Picture of a bronze map of the Magical Bridge playground with 3D play structures and tree](/images/bronze-2.jpg)
 
 This map has 3D models of major landmarks in the space, and uses computer vision through the [Camera Input Output (CamIO) application (opens an external site)](https://www.ski.org/project/camio) to detect where the user is pointing with their finger or stylus on the 3D model map. This allows the user to hear a name and description of the feature they are pointing to.
 
-![Picture of a hand holding a stylus pointing to a 3D feature on a 3D model map](/wp-content/uploads/2024/05/3DModelMap-1024x768.jpeg)
+![Picture of a hand holding a stylus pointing to a 3D feature on a 3D model map](/images/3DModelMap-scaled.jpeg)
 
 # Turn by Turn Wayfinding Application
 
