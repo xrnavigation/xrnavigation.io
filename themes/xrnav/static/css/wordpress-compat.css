@@ -763,7 +763,7 @@ body li {
   margin-right: auto;
 }
 
-/* Constrain headings to match WP .wp-block-group layout (1200px centered, 48px inner padding) */
+/* Constrain headings to match WP layout (1200px centered) */
 .entry-content > h1,
 .entry-content > h2,
 .entry-content > h3,
@@ -773,8 +773,8 @@ body li {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Lists — constrain to 1200px, use WP default padding-left: 40px */
@@ -1641,7 +1641,7 @@ article.post .entry-content p {
 
 /* --- 1. Hero Section --- */
 .home-page .hero {
-  min-height: 60vh;
+  min-height: 678px;
   padding: 152px 0;
   background-image: url('/images/DALL%25C2%25B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp');
   background-repeat: no-repeat;
@@ -1746,6 +1746,8 @@ article.post .entry-content p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 318px;
+  box-sizing: border-box;
 }
 
 .home-page .step-card h3 {
@@ -1837,6 +1839,8 @@ article.post .entry-content p {
 .home-page .clients {
   padding: 0 10px 100px;
   text-align: center;
+  min-height: 412px;
+  box-sizing: border-box;
 }
 
 .home-page .clients .section-inner {
@@ -2027,15 +2031,16 @@ article.post .entry-content p {
 
 .home-page .team-card {
   text-align: center;
-  flex: 0 1 300px;
+  flex: 0 1 499px;
 }
 
 .home-page .team-card img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 20px;
+  width: 184px;
+  height: 184px;
+  border-radius: 100px;
   box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.44);
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .home-page .team-card h3 {
@@ -2051,14 +2056,18 @@ article.post .entry-content p {
   font-size: 16px;
 }
 
-/* --- 9. Contact Section --- */
+/* --- 9. Contact Section with floating form card --- */
 .home-page .contact-section {
   padding: 50px 10px 10px;
   text-align: center;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
 }
 
-.home-page .contact-section .section-inner {
-  max-width: 70%;
+.home-page .contact-heading-area {
+  max-width: min(100%, 1200px);
+  margin: 0 auto 30px;
 }
 
 .home-page .contact-section h2 {
@@ -2070,7 +2079,7 @@ article.post .entry-content p {
   margin-bottom: 20px;
 }
 
-.home-page .contact-section > .section-inner > p:first-of-type {
+.home-page .contact-heading-area > p {
   font-size: 40px;
   line-height: 60px;
   color: var(--ast-global-color-1);
@@ -2082,6 +2091,24 @@ article.post .entry-content p {
   color: #777;
 }
 
+.home-page .contact-form-card {
+  max-width: 70%;
+  margin: 0 auto;
+  background: #f9fafb;
+  border-radius: 30px;
+  padding: 10px 50px 30px;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.44);
+  position: relative;
+  z-index: 44;
+  margin-bottom: -250px;
+}
+
+.home-page .contact-form-card .form-required-note {
+  color: #777;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
 .home-page .contact-form {
   margin: 0 auto;
   text-align: left;
@@ -2089,14 +2116,16 @@ article.post .entry-content p {
 
 /* --- 10. Pre-footer Map Band --- */
 .home-page .pre-footer-map {
-  min-height: 460px;
-  padding: 10px;
+  min-height: 414px;
+  padding: 250px 10px 10px;
   background-image: url('/images/map-for-bottomArtboard-1%404x.webp');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: scroll;
   margin-bottom: -17px;
+  position: relative;
+  z-index: -1;
 }
 
 /* --- Homepage Responsive --- */
