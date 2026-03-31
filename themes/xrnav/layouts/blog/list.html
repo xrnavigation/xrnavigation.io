@@ -3,7 +3,7 @@
   <div class="entry-content clear">
     {{/* Hero section with background image */}}
     {{ with .Params.hero_title }}
-    <div class="wp-block-uagb-container Change-background alignfull uagb-is-root-container blog-hero" {{ with $.Params.hero_image }}style="background-image: url('{{ . }}');"{{ end }}>
+    <div class="wp-block-uagb-container Change-background alignfull uagb-is-root-container blog-hero" {{ with $.Params.hero_image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
       <div class="uagb-container-inner-blocks-wrap">
         <div class="wp-block-uagb-container">
           <h1 class="wp-block-heading has-text-align-center change-heading has-ast-global-color-4-color has-text-color">{{ . }}</h1>
@@ -48,7 +48,7 @@
             </div>
             {{ with .Params.featured_image }}
             <div class="uagb-post__image">
-              <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+              <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $.Title }}" loading="lazy">
             </div>
             {{ end }}
           </article>

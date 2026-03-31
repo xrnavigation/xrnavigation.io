@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="collection-page">
   {{/* Hero section */}}
-  <section class="collection-hero" {{ with .Params.hero_image }}style="background-image: url('{{ . }}');"{{ end }}>
+  <section class="collection-hero" {{ with .Params.hero_image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
     <div class="collection-hero-inner">
       <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
       {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
@@ -20,7 +20,7 @@
       <div class="wp-block-uagb-buttons uagb-buttons__outer-wrap">
         <div class="uagb-buttons__wrap uagb-buttons-layout-wrap">
           <div class="wp-block-uagb-buttons-child">
-            <a class="uagb-buttons-repeater" href="{{ .url }}">{{ .text }}</a>
+            <a class="uagb-buttons-repeater" href="{{ .url | strings.TrimLeft "/" | relURL }}">{{ .text }}</a>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
     </div>
     {{ with .image }}
     <div class="info-box-image">
-      <img src="{{ . }}" alt="{{ with $section.image_alt }}{{ . }}{{ else }}{{ $section.heading }}{{ end }}" loading="lazy">
+      <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ with $section.image_alt }}{{ . }}{{ else }}{{ $section.heading }}{{ end }}" loading="lazy">
     </div>
     {{ end }}
   </section>
@@ -58,7 +58,7 @@
 
   {{/* Extra content sections (e.g. "Accessible Map Features") */}}
   {{ range .Params.extra_sections }}
-  <section class="extra-content{{ with .image }} has-bg{{ end }}" {{ with .image }}style="background-image: url('{{ . }}');"{{ end }}>
+  <section class="extra-content{{ with .image }} has-bg{{ end }}" {{ with .image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
     <h2>{{ .heading }}</h2>
     {{ range .paragraphs }}
     <p>{{ . }}</p>
@@ -68,13 +68,13 @@
 
   {{/* CTA section */}}
   {{ with .Params.cta }}
-  <section class="collection-cta{{ with .image }} has-bg{{ end }}" {{ with .image }}style="background-image: url('{{ . }}');"{{ end }}>
+  <section class="collection-cta{{ with .image }} has-bg{{ end }}" {{ with .image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
     <h2>{{ .heading }}</h2>
     {{ with .text }}<p>{{ . }}</p>{{ end }}
     {{ with .buttons }}
     <div class="cta-buttons">
       {{ range $i, $btn := . }}
-      <a href="{{ .url }}" class="{{ if eq $i 0 }}btn-primary{{ else }}btn-secondary{{ end }}">{{ .text }}</a>
+      <a href="{{ .url | strings.TrimLeft "/" | relURL }}" class="{{ if eq $i 0 }}btn-primary{{ else }}btn-secondary{{ end }}">{{ .text }}</a>
       {{ end }}
     </div>
     {{ end }}

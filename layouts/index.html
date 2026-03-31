@@ -14,7 +14,7 @@
   <div class="hero-inner">
     <h1 id="hero-heading">{{ $hero.heading }}</h1>
     <p class="hero-text">{{ $hero.text }}</p>
-    <a href="{{ $hero.cta_url | relURL }}" class="btn btn-hero"{{ if $hero.cta_external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+    <a href="{{ $hero.cta_url | strings.TrimLeft "/" | relURL }}" class="btn btn-hero"{{ if $hero.cta_external }} target="_blank" rel="noopener noreferrer"{{ end }}>
       {{ $hero.cta_text }}
       {{ if $hero.cta_external }}<span class="sr-only">(Opens in a new tab)</span>{{ end }}
     </a>
@@ -39,7 +39,7 @@
   <div class="section-inner">
     <div class="why-text">
       <h2 id="why-heading">{{ $why.heading }}</h2>
-      <p>{{ $why.text | markdownify }}</p>
+      <p>{{ $why.text | markdownify | replaceRE `href="/` (printf `href="%s` ("" | relURL)) }}</p>
       <div class="features-grid">
         {{- range $why.features }}
         <div class="feature-card">
@@ -49,18 +49,18 @@
         {{- end }}
       </div>
       <div class="section-cta">
-        <a href="{{ $why.cta_url | relURL }}" class="btn btn-primary">{{ $why.cta_text }}</a>
+        <a href="{{ $why.cta_url | strings.TrimLeft "/" | relURL }}" class="btn btn-primary">{{ $why.cta_text }}</a>
       </div>
     </div>
     {{ with $video }}
     <div class="why-video">
       <div class="video-wrapper">
-        <video id="audiom-intro" data-able-player data-root-path="/vendor/ableplayer/" preload="metadata">
+        <video id="audiom-intro" data-able-player data-root-path="{{ "vendor/ableplayer/" | relURL }}" preload="metadata">
           {{- range .sources }}
-          <source src="{{ .src | relURL }}" type="video/mp4" data-label="{{ .label }}">
+          <source src="{{ .src | strings.TrimLeft "/" | relURL }}" type="video/mp4" data-label="{{ .label }}">
           {{- end }}
           {{- range .captions }}
-          <track kind="captions" src="{{ .src | relURL }}" srclang="{{ .srclang }}" label="{{ .label }}">
+          <track kind="captions" src="{{ .src | strings.TrimLeft "/" | relURL }}" srclang="{{ .srclang }}" label="{{ .label }}">
           {{- end }}
         </video>
       </div>
@@ -76,7 +76,7 @@
     <p>{{ $clients.text }}</p>
     <div class="logo-bar">
       {{- range $clients.logos }}
-      <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy">
+      <img src="{{ .src | strings.TrimLeft "/" | relURL }}" alt="{{ .alt }}" loading="lazy">
       {{- end }}
     </div>
   </div>
@@ -88,7 +88,7 @@
     <h2 id="what-heading">{{ $what.heading }}</h2>
     <p>{{ $what.text }}</p>
     <div class="section-cta">
-      <a href="{{ $what.cta_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+      <a href="{{ $what.cta_url | strings.TrimLeft "/" | relURL }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
         {{ $what.cta_text }}
         <span class="sr-only">(Opens in a new tab)</span>
       </a>
@@ -103,11 +103,11 @@
     <div class="use-cases-grid">
       {{- range $cases.cases }}
       <div class="use-case-card">
-        <img src="{{ .image | relURL }}" alt="{{ .image_alt }}" loading="lazy">
+        <img src="{{ .image | strings.TrimLeft "/" | relURL }}" alt="{{ .image_alt }}" loading="lazy">
         <div class="use-case-body">
           <h3>{{ .title }}</h3>
           <p>{{ .text }}</p>
-          <a href="{{ .link_url | relURL }}">{{ .link_text }}</a>
+          <a href="{{ .link_url | strings.TrimLeft "/" | relURL }}">{{ .link_text }}</a>
         </div>
       </div>
       {{- end }}
@@ -123,7 +123,7 @@
     <div class="team-grid">
       {{- range $team.members }}
       <div class="team-card">
-        <img src="{{ .image | relURL }}" alt="{{ .image_alt }}" loading="lazy">
+        <img src="{{ .image | strings.TrimLeft "/" | relURL }}" alt="{{ .image_alt }}" loading="lazy">
         <h3>{{ .name }}</h3>
         <p class="team-role">{{ .role }}</p>
       </div>
