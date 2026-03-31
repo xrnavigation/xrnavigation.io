@@ -6,6 +6,7 @@ let pixelmatch;
 const slug = process.argv[2] || 'fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific';
 const baselineFile = `tests/baseline/${slug}-desktop.png`;
 const currentFile = `tests/current/quick-${slug}.png`;
+const diffFile = `tests/current/diff-${slug}.png`;
 const url = slug === 'home' ? 'http://localhost:1314/' : `http://localhost:1314/${slug}/`;
 
 (async () => {
@@ -19,8 +20,40 @@ const url = slug === 'home' ? 'http://localhost:1314/' : `http://localhost:1314/
 
   const b = PNG.sync.read(fs.readFileSync(baselineFile));
   const c = PNG.sync.read(fs.readFileSync(currentFile));
-  const w = Math.min(b.width, c.width), h = Math.min(b.height, c.height);
-  const diff = pixelmatch(b.data, c.data, null, w, h, { threshold: 0.1 });
-  const pct = (diff / (w * h) * 100).toFixed(2);
-  console.log(`${slug}: ${pct}% diff (${w}x${h}, baseline ${b.height}px, current ${c.height}px)`);
+
+  // Handle different image sizes by compositing onto max-dimension canvas
+  const w = Math.max(b.width, c.width);
+  const h = Math.max(b.height, c.height);
+
+  function expandToCanvas(img, targetW, targetH) {
+    if (img.width === targetW && img.height === targetH) return img.data;
+    // Create a new buffer filled with white (background)
+    const buf = Buffer.alloc(targetW * targetH * 4, 0);
+    for (let i = 0; i < targetW * targetH; i++) {
+      buf[i * 4 + 0] = 255; // R
+      buf[i * 4 + 1] = 255; // G
+      buf[i * 4 + 2] = 255; // B
+      buf[i * 4 + 3] = 255; // A
+    }
+    // Copy original image data row by row
+    for (let y = 0; y < img.height; y++) {
+      const srcOff = y * img.width * 4;
+      const dstOff = y * targetW * 4;
+      img.data.copy(buf, dstOff, srcOff, srcOff + img.width * 4);
+    }
+    return buf;
+  }
+
+  const bData = expandToCanvas(b, w, h);
+  const cData = expandToCanvas(c, w, h);
+
+  const diffPng = new PNG({ width: w, height: h });
+  const numDiff = pixelmatch(bData, cData, diffPng.data, w, h, { threshold: 0.1 });
+  const pct = (numDiff / (w * h) * 100).toFixed(2);
+
+  // Save diff image
+  fs.writeFileSync(diffFile, PNG.sync.write(diffPng));
+
+  console.log(`${slug}: ${pct}% diff (${w}x${h}, baseline ${b.width}x${b.height}, current ${c.width}x${c.height})`);
+  console.log(`Diff image: ${diffFile}`);
 })();

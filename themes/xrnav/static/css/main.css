@@ -83,7 +83,7 @@ body {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--ast-global-color-1);
+  color: var(--ast-global-color-2);
   margin-top: 0;
 }
 
@@ -138,16 +138,12 @@ p {
 }
 
 a {
-  color: var(--ast-global-color-2);
+  color: #0054ad;
   text-decoration: underline;
 }
 
 a:hover {
   color: var(--ast-global-color-1);
-}
-
-a:where(:not(.wp-element-button)) {
-  text-decoration: none;
 }
 
 /* Theme Switcher
