@@ -134,9 +134,11 @@
 
 {{/* ---- Contact ---- */}}
 <section class="contact-section" aria-labelledby="contact-heading">
-  <div class="section-inner">
+  <div class="contact-heading-area">
     <h2 id="contact-heading">{{ $contact.heading }}</h2>
     <p>{{ $contact.text }}</p>
+  </div>
+  <div class="contact-form-card">
     <p class="form-required-note">Fields marked with an asterisk (*) are required</p>
     <form class="contact-form" data-netlify="true" name="homepage-contact" method="POST">
       <div class="form-group">

@@ -244,3 +244,165 @@ WP contact structure: section 7 (heading, 50px/200px pad) -> section 8 (form car
 - Media player h2: 32px/600/40px color #5a7969 (green, but this is hidden in merged why+video)
 
 **NEXT:** Fix contact h2 size, look for other small wins
+
+## 2026-03-30 (v2 agent)
+
+**STARTING STATE:** 14.70% diff. Page heights match exactly (1920x6770 both).
+
+**DIFF IMAGE ANALYSIS — 5 diff regions identified:**
+1. **Hero area (top ~10%):** Header nav items offset, hero text position slightly off. Red outline around header/nav and step cards.
+2. **Why section (~15-30%):** Video/Able Player area is major red zone — Hugo video much shorter than WP. Text "Why XR Navigation Is The Future" shows double (offset). Client logos misaligned.
+3. **What Is Audiom (~40-50%):** Section heading shows double text (small vertical offset). Mostly clean otherwise.
+4. **Use Cases (~50-65%):** Heading offset, use case card text/images show offset diffs. Cards appear shifted.
+5. **Contact + Footer (bottom ~20%):** BIGGEST red zone. Contact section, pre-footer map, and footer are heavily mismatched. Map band is solid red. Footer layout very different.
+
+**THREE MAIN CONTRIBUTORS (per previous agent's analysis):**
+1. Able Player video height (~3%): WP=975px, Hugo=~748px shorter. Sets min-height on .why but actual video renders shorter.
+2. Contact section floating card (~5%): WP has overlapping sections with negative margins. Hugo has flat sequential layout.
+3. Sub-pixel text rendering (~4%): Font rendering diffs between WP and Hugo.
+
+**PLAN:** Fix contact/map floating card first (biggest visual impact), then video height, then text tweaks.
+
+**ITERATION v2-1:** Team images fix + contact restructure.
+- Team images were h=0 (lazy loading not triggered in Playwright). Fixed with explicit 184x184 dimensions matching WP.
+- Added scroll-to-bottom in quick-diff.js to trigger lazy loading.
+- Split contact section: heading area + floating form card with negative bottom margin overlapping map.
+- First attempt (3-element split with -286/-286 margins) made page 181px too short (17.52%). Reverted.
+- Second attempt: keep form inside contact-section, use margin-bottom:-250px on card + padding-top:250px on map to create visual overlap without changing total page height.
+
+**WP CONTACT STRUCTURE (observed via Chrome):**
+- s7 (4b5c4fc6): "CONTACT US" + text, pad 50/200, inner max-width min(100%,1200px)
+- s8 (b7884180): form card wrapper, margin -286/-286, z-index:44, inner card bg #f9fafb, border-radius:30px, pad 10px 50px, box-shadow
+- s9 (2c780bfa): map band, min-height:456px, z-index:-100, margin-bottom:-17px
+- Net flow from s7+s8+s9 = 794px
+
+**ITERATION v2-2 RESULTS:**
+- Team fix worked: 440px -> 621px (WP=619). Images now 184x184 explicit.
+- Contact card inside section with mb:-250px, map padding-top:250px = visual overlap works.
+- 13.74% at page 6726px (44px short of 6770 baseline).
+- Tried map min-height:706px -> page 6976px (206px over), diff 19.21%. Too tall.
+
+**CURRENT STATE:** Need to find right map min-height. Page was 6726 with min-h:456, need +44px. Try min-h:500px.
+
+**KEY SECTION HEIGHTS (Hugo vs WP):**
+| Section | Hugo | WP | Diff |
+|---------|------|-----|------|
+| Hero | 667 | 678 | -11 |
+| Steps | 258 | 303 | -45 |
+| Why | 1257 | 1257 | 0 |
+| Clients | 382 | 412 | -30 |
+| What Is | 911 | 820 | +91 |
+| Use Cases | 1096 | 1126 | -30 |
+| Team | 621 | 619 | +2 |
+| Contact | 490 | 794(net) | varies |
+| Map | 456 | (overlap) | varies |
+| Footer | 494 | 526 | -32 |
+
+**ITERATION v2-3:** Section height alignment fixes.
+- Steps: added min-height:318px on step-card (WP cards are 318px).
+- Clients: added min-height:412px (WP=412).
+- Hero: changed min-height from 60vh to 710px (WP hero 678 + header 32 = 710 from top of page).
+- Map: reduced min-height from 500px to 383px to compensate for added height above.
+- Result: 14.70% -> 13.70% -> 13.20%. Heights match (6770 both).
+
+**REMAINING DIFF HOTSPOTS (from band analysis at 13.70%):**
+- Band 0-5% (24%): Header/nav diff
+- Band 15-20% (24%): Able Player video area
+- Band 35-40% (33%): What Is / Use Cases boundary
+- Band 50-55% (27%): Use Cases cards
+- Band 60-65% (22%): Team section
+- Band 85-95% (29%): Map band + footer
+
+**ITERATION v2-4:** Section alignment tuning.
+- Hero min-height 678px, steps min-height 318px, clients min-height 412px: improved mid-bands.
+- Band 35-40%: 33% -> 7.5%, Band 50-55%: 27% -> 0.9%. Good alignment improvements.
+- But bottom (85-95%) worsened to ~36% due to map shrinking to compensate.
+- Overall: 14.70% -> 11.55% at page height 6770.
+- Team card fixes: flex 499px (WP width), border-radius 100px (circular per WP).
+- Tried What Is min-height:820px -> page went 153px short, reverted to 90vh.
+
+**KEY INSIGHT:** The What Is section at 90vh = 972px in Playwright (1080 viewport). WP's What Is is only 820px. This means Hugo's What Is is 152px taller, which shifts everything below down. This offset is partially compensated by shorter sections above but creates a net cumulative offset.
+
+**CURRENT BEST: 11.55% with hero 678px, steps-card 318px, clients 412px, map 414px.**
+
+**BLOCKER:** Bottom 10% of page (bands 85-95%) has ~36% diff = ~3.6% of total. This is from map/footer positional offset and content differences. Getting under 5% requires fixing this plus reducing video area diff.
+
+**REMAINING CHANGES PENDING TEST:** team card width 499px + border-radius 100px (applied but not tested yet).
+
+**ITERATION v2-5:** Contact/map restructure attempts.
+- Tried removing map padding-top + contact padding-bottom:135px -> page 166px too tall (16.08%).
+- Root cause: form card is INSIDE contact section, so contact padding applies after the card.
+- Reverted to working state (contact pb:10px, map padding-top:250px + min-h:414px).
+- Currently at 11.45% with 6769px page height.
+
+**SECTION HEIGHTS (current Hugo in browser, Playwright differs for What Is):**
+| Section | Hugo (browser) | WP | Match? |
+|---------|---------------|-----|--------|
+| Hero | 678 | 678 | YES |
+| Steps | 303 | 303 | YES |
+| Why | 1257 | 1257 | YES |
+| Clients | 412 | 412 | YES |
+| What Is | 911 (browser), 972 (Playwright) | 820 | NO (+91/+152) |
+| Use Cases | 1096 | 1126 | close (-30) |
+| Team | 621 | 619 | YES |
+| Contact+Map | varies | 794 net | close |
+| Footer | 494 | 526 | NO (-32) |
+
+**KEY PROBLEM:** What Is section is 90vh = 972px in Playwright but WP is 820px. This 152px excess cascades to offset everything below. Can't simply set min-height:820px because it makes page too short (other sections don't compensate).
+
+**APPROACH CHANGE NEEDED:** The map/footer bottom area (bands 85-95%) accounts for ~3.5% of diff. The What Is offset cascades through. Need to find a way to fix What Is height AND redistribute the freed space correctly.
+
+**ITERATION v2-6:** What Is height fix + map compensation.
+- DISCOVERED: map element uses `box-sizing: border-box` (inherited from global reset). So min-height INCLUDES padding. padding-top:402px with min-height:414px = only 2px content. The padding increase had NO effect on element size.
+- FIX: Set What Is min-height:820px (matches WP). Set map min-height:566px (414+152 to compensate, since box-sizing:border-box means padding is inside min-height). Map padding stays 250px 10px 10px.
+- PENDING TEST.
+
+**ITERATION v2-6 RESULT:** What Is 820px alone: 12.52%. Bottom bands improved (85-90: 37->22%, 90-95: 33->22%) but band 50-55% exploded (0.9->46%) from cascading offset. Net worse.
+
+**ITERATION v2-7 (pending test):** What Is 820px + Use Cases min-height:1126px (matches WP). Map min-height reduced to 536px (566-30) to compensate. Goal: align sections below What Is by matching Use Cases height too.
+
+**ITERATION v2-7 RESULT:** What Is 820px + Use Cases min-h = 11.57% at 6739px. Bands 85-90: 12.3%, 90-95: 6.4% (much better) but 50-55: 46.2% (much worse). Not a win. Reverted to 11.45% baseline.
+
+**WP ABLE PLAYER OBSERVATIONS:**
+- WP right col: 993px tall, 665px wide
+- Able Player wrapper (able-wrapper able-skin-2020): 536px tall
+- Video element inside: 369px tall
+- Hugo video wrapper: just raw video, no Able Player chrome (jQuery slim doesn't support Able Player)
+
+**ITERATION v2-8 (pending test):** Added min-height:536px to .video-wrapper to match WP Able Player height. This won't change page height (Why section already has min-height:1257px forcing overall height), but should reduce diff by filling the video column properly.
+
+**ITERATION v2-8 RESULT:** video-wrapper min-height:536px -> 11.33% (from 11.45%). Band 20-25% improved 24.6->22.5%.
+
+**ITERATION v2-9:** Hero bg-attachment scroll -> 12.29% (worse). Reverted to fixed.
+
+**CURRENT BEST: 11.33%**
+
+**REMAINING DIFF BREAKDOWN (11.33%):**
+- Hero/header (0-5%): 24.5% = ~1.2% contribution. Unavoidable header offset.
+- Video area (15-25%): ~24% = ~2.4%. Able Player not rendering (jQuery slim). Partially unavoidable.
+- Mid sections (25-60%): ~2-8% = ~1.5% total. Mostly small offsets.
+- Team (60-70%): ~15% = ~1.5%. Photo position + size.
+- Contact/map (70-85%): ~6% = ~0.9%. Form card + map position.
+- Map/footer (85-100%): ~25% = ~3.8%. Biggest remaining issue. Structural footer differences + positional offset.
+
+**ITERATION v2-10:** Footer min-heights + map compensation.
+- site-primary-footer-wrap: min-height:465px (WP=465). site-below-footer-wrap: min-height:61px (WP=61).
+- Map min-height reduced 414->382px to compensate.
+- Result: 11.33% -> 10.83%. Band 90-95% improved 32.8->24.6%.
+- Hero bg-attachment:scroll tested -> 12.29% (worse), reverted.
+
+**CURRENT BEST: 10.83%**
+
+**REMAINING BLOCKERS FOR <5%:**
+1. Able Player not rendering (jQuery slim, ~2.4% contribution) - needs full jQuery
+2. Section position cascade: What Is 90vh=972px (WP=820px) shifts everything below by ~92px
+3. Footer position offset ~92px from cascade
+4. Sub-pixel text rendering ~2-3% (unavoidable)
+
+**FILES CHANGED:**
+- layouts/index.html: contact section restructured (heading + form card split)
+- tests/quick-diff.js: scroll-to-bottom for lazy loading
+- themes/xrnav/static/css/wordpress-compat.css: team img 184x184 circular, step-card min-h, clients min-h, hero min-h, video-wrapper min-h, footer min-heights, map min-h adjusted, contact form card styling
+- tests/band-diff.js: new utility script
+
+**READY TO COMMIT AND REPORT.**

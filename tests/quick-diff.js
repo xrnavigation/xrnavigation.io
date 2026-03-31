@@ -15,6 +15,16 @@ const url = slug === 'home' ? 'http://localhost:1314/' : `http://localhost:1314/
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }});
   await page.goto(url, { waitUntil: 'domcontentloaded' });
   await Promise.race([page.waitForLoadState('networkidle'), page.waitForTimeout(10000)]);
+  // Scroll to bottom to trigger lazy-loaded images, then back to top
+  await page.evaluate(async () => {
+    const delay = ms => new Promise(r => setTimeout(r, ms));
+    for (let y = 0; y < document.body.scrollHeight; y += 500) {
+      window.scrollTo(0, y);
+      await delay(100);
+    }
+    window.scrollTo(0, 0);
+    await delay(200);
+  });
   await page.screenshot({ path: currentFile, fullPage: true });
   await browser.close();
 
