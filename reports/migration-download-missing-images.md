@@ -5,7 +5,7 @@
 
 ## Summary
 
-Downloaded 8 missing DALL-E image files (referenced by 9 broken links) from the live WordPress site. Fixed a bug in `check-links.js` that prevented it from finding files with percent-encoded characters in their filenames.
+The 9 "missing" DALL-E images were never actually missing from disk -- all 8 files were already committed in `b3ccd4b` (Download WordPress media library). The root cause was a bug in `check-links.js`: the `urlPath()` function called `decodeURIComponent()` which converted `%C2%B7` to the UTF-8 middle dot `·`, but the actual filenames on disk contain the literal string `%C2%B7`. Fixed by adding a raw-path fallback in `resolveInPublic()`.
 
 ## Images Downloaded
 

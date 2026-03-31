@@ -10,6 +10,6 @@
 - Downloaded all 8 unique files from xrnavigation.io/wp-content/uploads/2023/10/
 - All files have real sizes (122KB-2.2MB), no zero-byte downloads
 
-**STUCK:** check-links.js still reports 9 missing. It resolves against `public/` (Hugo build output), not `static/`. Hugo builds static/ into public/ — but the `%C2%B7` encoding in filenames may cause path resolution mismatch. The checker does `path.join(PUBLIC, urlPath)` where urlPath is URL-encoded (`%C2%B7`), but the actual file on disk has literal `%C2%B7` in the filename. Need to check if Hugo copies these correctly or if there's a URL-decoding issue.
+**ROOT CAUSE:** Images were never missing from disk. All 8 DALL-E files were committed in `b3ccd4b`. The bug was in `check-links.js` line 98: `decodeURIComponent()` converted `%C2%B7` to UTF-8 `·`, but filenames on disk contain literal `%C2%B7`. Fixed by adding raw-path fallback in `resolveInPublic()`.
 
-**NEXT:** Check public/images/ after Hugo build to see if the files appear there with the expected names.
+**RESULT:** check-links passes with 0 missing images. Committed fix in `9f64980`.
