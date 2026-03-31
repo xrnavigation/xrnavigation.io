@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="ast-hfb-header ast-page-builder-template{{ if .IsHome }} home-page{{ end }}">
+<body class="ast-hfb-header ast-page-builder-template{{ if .IsHome }} home-page{{ end }}{{ if eq .Type "audiom-embed" }} audiom-embed-body{{ end }}">
   <a class="skip-link" href="#main">Skip to main content</a>
   <div id="page" class="hfb-header ast-page-builder-template">
     {{ partial "header.html" . }}

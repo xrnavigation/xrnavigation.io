@@ -303,7 +303,7 @@ main:focus {
   }
   /* Audiom embed pages and homepage should NOT get this padding */
   .home-page .ast-container,
-  .audiom-embed-page .ast-container {
+  .audiom-embed-body .ast-container {
     padding-left: 0;
     padding-right: 0;
   }

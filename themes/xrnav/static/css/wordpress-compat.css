@@ -1100,6 +1100,16 @@ h3.uagb-post__title a:hover {
   color: #111;
 }
 
+/* Above footer section bottom margin — match WP */
+.site-above-footer-wrap .site-footer-section {
+  margin-bottom: 10px;
+}
+
+/* Above footer form (section 2) — match WP wpforms-container margin */
+.site-above-footer-wrap .site-footer-above-section-2 .contact-form {
+  margin: 24px 0;
+}
+
 /* Above footer custom-footer widget */
 .site-above-footer-wrap .custom-footer {
   padding: 20px 15.25px;
@@ -1229,6 +1239,7 @@ h3.uagb-post__title a:hover {
 
   .site-above-footer-wrap .ast-builder-grid-row-container-inner {
     max-width: none;
+    width: 100%;
   }
 
   .site-above-footer-wrap .ast-builder-grid-row {
@@ -1423,6 +1434,16 @@ article.post .entry-content p {
 
 /* Audiom Embed Mobile Responsive */
 @media (max-width: 921px) {
+  /* Match WP Astra mobile body font for embed content */
+  .audiom-embed-page .entry-content,
+  .audiom-embed-page .entry-content p {
+    font-size: 14.592px;
+    line-height: 23.3472px;
+  }
+  .audiom-embed-page .entry-content p {
+    margin-bottom: 23.3472px;
+  }
+
   /* Non-contained embed pages: reduce top margin on h1 */
   .audiom-embed-page .entry-content > h1 {
     font-size: 30px;
@@ -1451,6 +1472,9 @@ article.post .entry-content p {
     font-size: 30px;
     line-height: 42px;
     padding-bottom: 50px;
+    max-width: 338px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1597,7 +1621,7 @@ article.post .entry-content p {
    Collection Pages (Universities, Healthcare, Corporate)
    ========================================================================== */
 .collection-page .collection-hero {
-  min-height: 911px;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1645,18 +1669,19 @@ article.post .entry-content p {
   flex-direction: row;
   align-items: center;
   gap: 20px 40px;
-  padding: 190px 0;
-  max-width: min(100%, 1200px);
+  padding: 192px 0;
+  max-width: min(100%, 70%);
   margin: 0 auto;
 }
 
 .collection-page .info-box-section.reverse {
   flex-direction: row-reverse;
-  padding: 0 0 190px;
+  padding: 0 0 192px;
 }
 
 .collection-page .info-box-section .info-box-text {
-  flex: 1 1 50%;
+  flex: 0 1 45%;
+  max-width: 45%;
 }
 
 .collection-page .info-box-section .info-box-text h2 {
@@ -1676,24 +1701,40 @@ article.post .entry-content p {
 }
 
 .collection-page .info-box-section .info-box-image {
-  flex: 1 1 50%;
+  flex: 0 1 55%;
+  max-width: 55%;
 }
 
 .collection-page .info-box-section .info-box-image img {
   width: 100%;
   height: auto;
   border-radius: 20px;
+  aspect-ratio: 1024 / 585;
+  object-fit: cover;
 }
 
 .collection-page .feature-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 190px 20px;
-  max-width: min(100%, 1200px);
+  padding: 192px 20px;
+  max-width: min(100%, 70%);
   margin: 0 auto;
   background-color: var(--ast-global-color-4);
   border-radius: 8px;
+}
+
+/* Dark background variant for feature cards (health-care page) */
+.collection-page .feature-cards.dark-bg {
+  background-color: var(--ast-global-color-1);
+}
+
+.collection-page .feature-cards.dark-bg .feature-card h3 {
+  color: var(--ast-global-color-4);
+}
+
+.collection-page .feature-cards.dark-bg .feature-card p {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .collection-page .feature-cards .feature-card {
@@ -1720,8 +1761,24 @@ article.post .entry-content p {
 .collection-page .collection-cta {
   text-align: center;
   padding: 0 0 100px;
-  max-width: min(100%, 1200px);
+  max-width: none;
   margin: 0 auto;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.collection-page .collection-cta.has-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 32, 62, 0.75);
 }
 
 .collection-page .collection-cta h2 {
@@ -1731,6 +1788,13 @@ article.post .entry-content p {
   line-height: 50px;
   color: var(--ast-global-color-1);
   margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.collection-page .collection-cta.has-bg h2,
+.collection-page .collection-cta.has-bg p {
+  color: #fff;
 }
 
 .collection-page .collection-cta p {
@@ -1738,6 +1802,8 @@ article.post .entry-content p {
   line-height: 25.6px;
   max-width: 800px;
   margin: 0 auto 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .collection-page .collection-cta .cta-buttons {
@@ -1745,6 +1811,8 @@ article.post .entry-content p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .collection-page .collection-cta .cta-buttons a {
@@ -1777,10 +1845,46 @@ article.post .entry-content p {
   background-color: var(--ast-global-color-4);
 }
 
+.collection-page .collection-cta.has-bg .cta-buttons a.btn-secondary {
+  color: #fff;
+  border-color: #fff;
+}
+
+.collection-page .collection-cta.has-bg .cta-buttons a.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 .collection-page .extra-content {
-  max-width: min(100%, 1200px);
+  max-width: min(100%, 70%);
   margin: 0 auto;
   padding: 48px 20px;
+}
+
+.collection-page .extra-content.has-bg {
+  max-width: none;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.collection-page .extra-content.has-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 32, 62, 0.75);
+}
+
+.collection-page .extra-content.has-bg h2,
+.collection-page .extra-content.has-bg p {
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .collection-page .extra-content h2 {
@@ -1797,6 +1901,7 @@ article.post .entry-content p {
   line-height: 25.6px;
   color: #000;
   margin-bottom: 25.6px;
+  max-width: 800px;
 }
 
 @media (max-width: 921px) {
