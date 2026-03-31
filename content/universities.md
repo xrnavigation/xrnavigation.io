@@ -5,6 +5,8 @@ lastmod: 2024-03-12
 slug: "universities"
 draft: false
 layout: "collection"
+hero_image: "/images/DALL%25C2%25B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp"
+hero_title: "Transform Your Campus with Audiom: The Map to Inclusive Navigation"
 hero_text: "In a world where education is the gateway to the future, ensuring that every student, faculty member, and visitor can navigate your university campus is not just important—it's essential. At XR Navigation, we believe in breaking down barriers and creating a space, culture, and tools where everyone belongs. Our mission? To make your campus a beacon of inclusivity and accessibility with Audiom, our revolutionary digital inclusive map solution."
 sections:
   - heading: "The Challenge of Campus Navigation"
@@ -33,6 +35,7 @@ features:
 cta:
   heading: "Leading the Charge For Inclusive Campuses"
   text: "At XR Navigation, inclusion is more than a goal—it's a commitment to equality, opportunity, and innovation. Our dedication to making digital maps navigable by everyone is steadfast. Join us on this journey to redefine what it means to be truly accessible, one campus at a time."
+  image: "/images/blind-man-reading-2022-08-18-14-49-22-utc.webp"
   buttons:
     - text: "Contact Us"
       url: "/contact/"

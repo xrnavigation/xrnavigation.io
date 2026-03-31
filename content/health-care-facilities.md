@@ -5,6 +5,8 @@ lastmod: 2024-02-20
 slug: "health-care-facilities"
 draft: false
 layout: "collection"
+hero_image: "/images/ambulance-vehicles-on-an-hospital-parking-emergen-2021-08-26-18-12-54-utc.webp"
+hero_title: "Inclusive Digital Maps For Health Care Facilities"
 hero_text: "In the realm of healthcare, facilities are more than just buildings; they are the sanctuaries of healing and care. But for these havens to fulfill their mission, they must be navigable by everyone, including patients, staff, and visitors with diverse abilities. At XR Navigation, we're committed to ensuring that healthcare environments remain accessible to all through our innovative mapping solutions."
 sections:
   - heading: "Navigating the Hospital Maze"
@@ -21,6 +23,7 @@ sections:
       text: "Try Audiom"
       url: "https://www.audiom.net/"
     image: "/images/DALL%25C2%25B7E-2023-10-18-11.41.34-Photorealistic-image-inside-a-bustling-hospital_-A-person-in-the-center-walks-confidently-seemingly-following-audio-guidance.-Visual-cues-of-sound-wa.webp"
+features_dark: true
 features:
   - title: "Inclusivity"
     text: "Every individual seeking healthcare deserves equitable access to the facilities they need. Inclusivity in healthcare begins with accessible pre-trip planning."
@@ -32,12 +35,14 @@ features:
     text: "Position your facility as a leader in healthcare accessibility for everyone regardless of their disabilities, fostering trust and goodwill both in your community, and beyond."
 extra_sections:
   - heading: "Accessible Map Features"
+    image: "/images/young-blind-man-with-white-cane-walking-across-the-2023-10-05-23-59-55-utc-e1697653999503.webp"
     paragraphs:
       - "Audiom transforms learning healthcare facilities into an experience of comfort and assurance. It's designed for everyone – whether you're a patient on your way to an appointment, a staff member navigating the complexities of your workplace, or a visitor seeking guidance. With real-time updates and seamless integration with healthcare apps, Audiom ensures that everyone can find their way, effortlessly."
       - "Healthcare facilities are dynamic environments with evolving patient needs. Audiom allows you to update changing rooms and routes and it updates the map in real-time. In an era of digital healthcare, Audiom integrates effortlessly with healthcare apps, ensuring that the facility map is always at your fingertips."
 cta:
   heading: "Leading the Way to Inclusively Designed Healthcare Experiences"
   text: "At XR Navigation, we believe that healthcare is a universal right, and accessibility is at its core. If you're ready to redefine the way your healthcare facility is navigated, we're here to help you make it happen."
+  image: "/images/young-blind-man-with-white-cane-walking-across-the-2023-10-05-23-59-55-utc-e1697653999503.webp"
   buttons:
     - text: "Schedule an Appointment or View a Live Demo"
       url: "/contact/"
