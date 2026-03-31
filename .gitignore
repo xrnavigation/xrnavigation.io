@@ -3,8 +3,12 @@ tests/baseline/*.png
 public/
 resources/_gen/
 .hugo_build.lock
-baseline-run2.log
+*.log
+*.mov
+static/images/Intro-to-Audiom-ASL-Only.mp4
+static/images/Intro-to-Audiom-ASL-and-Audio-Description.mp4
 tests/current/
 tests/diffs/
 tests/comparison-results.json
 tests/parse-results.js
+test-results/
