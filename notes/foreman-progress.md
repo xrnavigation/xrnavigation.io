@@ -1,36 +1,40 @@
 # Foreman Progress — Migration
 Date: 2026-03-30
 
-## STATUS: First comparison complete. Zero pages match baseline. Major CSS/layout work needed.
+## STATUS: CSS rewrite didn't close the gap. Need a different approach.
 
-## Comparison Results
-- 180 comparisons, 0 matching (<2%), 1 minor (2-10%), 179 major (>10%)
-- Best match: privacy-policy desktop at 9.9% diff
-- 11 blog posts return 404 (22 comparisons)
-- Root cause: Hugo theme CSS is "inspired by" but not matching WordPress Astra theme
+## Round 2 Comparison Results
+- 180 comparisons, 0 matching (<2%), average diff 43.64%
+- Best page: 11.86% (fictional-map-description desktop)
+- 404s fixed (0 vs 22 in round 1)
+- But CSS parity actually regressed slightly — privacy-policy went from 9.9% to >10%
 
-## Three Categories of Problems
+## Root Cause Analysis
+The CSS rewrite applied correct VALUES but the HTML STRUCTURE is different. The WP site uses:
+- UAGB container blocks with percentage-based inner max-widths (70%, 80%)
+- Specific section padding per container (152px hero, 104px features, etc.)
+- Blog: UAGB Post Grid with 380px 3-column fixed layout
+- Footer: 2-column grid at specific dimensions
 
-### 1. Missing blog posts (11 pages, 404ing)
-Blog posts exported to content/blog/ but URLs don't resolve. Need to verify Hugo routing.
+The Hugo theme has different HTML structure that can't be fixed with CSS values alone. We need to match the LAYOUT PATTERNS, not just the numbers.
 
-### 2. CSS/Layout mismatch (affects ALL pages)
-The Hugo theme was built from design tokens but doesn't replicate the actual Astra theme CSS. Header, footer, nav, typography, spacing, content width — all differ. This is the bulk of the work.
+## What's Actually Needed
 
-### 3. Structural content gaps (4-5 pages)
-capability-statement, acr, brandon-keith-biggs, 404-2, audiom-demo-form have >85% diff suggesting missing content sections beyond just CSS.
+### Approach change: Extract and replicate the actual WordPress CSS
+Instead of approximating, we should:
+1. Download the actual Astra + UAGB stylesheet from the live site
+2. Adapt it for Hugo's HTML structure (or adapt Hugo's HTML to match WP's structure)
+3. OR: accept the visual differences are structural and focus on the CONTENT areas matching
 
-## What's Needed
-To actually match the WordPress site visually, we need to extract the real Astra CSS from the live site and replicate it in the Hugo theme — not guess at it from design tokens. This means:
-1. Capture computed styles from the WP site (header height, nav spacing, content max-width, font sizes at each breakpoint, padding/margin values, footer layout)
-2. Rewrite themes/xrnav/static/css/main.css to match those values
-3. Fix the 11 missing blog posts
-4. Fix structural content on the worst pages
-5. Re-run comparison, iterate
+### Specific fixable issues:
+1. **Blog page** (85-91% diff) — pagination showing all posts. Fix: limit to match WP's post count per page
+2. **Universities/Corporate/Healthcare** (75-83% diff) — missing card grid layouts
+3. **Height mismatches** — margins/padding accumulate differently
+4. **Header/footer** — structural HTML differences cause cascading layout shifts
 
-## All Completed Agents (10 total)
-1-8: All prep agents (audit, export, media, scaffold, redirects, baseline, fix, integration)
-9: Homepage template — 35ac4d3
-10: Cleanup — c27bad8, 409a435, 05aeb03
-11: Able Player — 141f1ac
-12: Comparison — 973638d (0% match rate)
+## Decision Point
+Two paths:
+A. Keep iterating CSS — diminishing returns, fundamental HTML structure mismatch
+B. Extract WP's actual compiled CSS and port Hugo templates to use WP-compatible class names — more work but would converge
+
+Need Q's input on acceptable diff threshold and whether the current visual identity is "close enough" or needs pixel-perfect matching.
