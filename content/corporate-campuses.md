@@ -54,14 +54,6 @@ Make a strong statement in corporate social responsibility. Position as a forwar
 
 The journey towards a more accessible and inclusive world is filled with challenges, but with Audiom from XR Navigation, you have a trusted ally. By embracing XR Navigation’s innovative mapping solutions, you’re not just enhancing navigation; you’re championing a cause that values every individual’s right to access and independence. Together, let’s unlock the full potential of every map to welcome, inform, and unite.
 
-[
+[Contact XR Navigation Today](/contact/)
 
-Contact XR Navigation Today
-
-](/contact/)
-
-[
-
-Learn More About Audiom
-
-](/about/)
+[Learn More About Audiom](/about/)

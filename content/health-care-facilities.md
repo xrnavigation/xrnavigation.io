@@ -52,14 +52,6 @@ Healthcare facilities are dynamic environments with evolving patient needs. Audi
 
 At XR Navigation, we believe that healthcare is a universal right, and accessibility is at its core. If you’re ready to redefine the way your healthcare facility is navigated, we’re here to help you make it happen.
 
-[
+[Schedule an appointment or view a live demo to see Audiom in action.](/contact/)
 
-Schedule an appointment or view a live demo to see Audiom in action.
-
-](/contact/)
-
-[
-
-Learn More About Audiom from XR Navigation
-
-](/about/#)
+[Learn More About Audiom from XR Navigation](/about/)

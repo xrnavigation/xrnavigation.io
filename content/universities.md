@@ -48,14 +48,6 @@ Position your institution as a pioneer in educational inclusivity and student we
 
 At XR Navigation, inclusion is more than a goal—it’s a commitment to equality, opportunity, and innovation. Our dedication to making digital maps navigable by everyone is steadfast. Join us on this journey to redefine what it means to be truly accessible, one campus at a time.
 
-[
+[Contact Us](/contact/)
 
-Contact Us
-
-](/contact/)
-
-[
-
-Learn More About The Promise of Audiom
-
-](/about/)
+[Learn More About The Promise of Audiom](/about/)
