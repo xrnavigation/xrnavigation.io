@@ -3,6 +3,7 @@ title: "How to Convert from a PDF Map to a Vector Data Map"
 date: 2024-08-17
 lastmod: 2024-10-03
 slug: "how-to-convert-from-a-pdf-map-to-a-vector-data-map"
+url: /how-to-convert-from-a-pdf-map-to-a-vector-data-map/
 draft: false
 ---
 

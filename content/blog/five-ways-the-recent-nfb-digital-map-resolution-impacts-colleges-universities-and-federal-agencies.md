@@ -3,6 +3,7 @@ title: "Five Ways the Recent NFB Digital Map Resolution Impacts Colleges, Univer
 date: 2024-07-11
 lastmod: 2024-07-11
 slug: "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies"
+url: /five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies/
 draft: false
 ---
 

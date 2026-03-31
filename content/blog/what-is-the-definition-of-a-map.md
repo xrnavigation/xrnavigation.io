@@ -3,6 +3,7 @@ title: "What is the Definition of a Map?"
 date: 2024-02-19
 lastmod: 2024-07-26
 slug: "what-is-the-definition-of-a-map"
+url: /what-is-the-definition-of-a-map/
 draft: false
 ---
 

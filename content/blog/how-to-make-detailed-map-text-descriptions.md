@@ -3,6 +3,7 @@ title: "How to Make Detailed Map Text Descriptions"
 date: 2024-08-02
 lastmod: 2025-11-01
 slug: "how-to-make-detailed-map-text-descriptions"
+url: /how-to-make-detailed-map-text-descriptions/
 draft: false
 ---
 

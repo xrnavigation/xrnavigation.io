@@ -3,6 +3,7 @@ title: "How XR Navigation Helps Federal Agencies Follow Recent OMB Accessibility
 date: 2024-02-19
 lastmod: 2024-06-24
 slug: "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance"
+url: /how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance/
 draft: false
 ---
 

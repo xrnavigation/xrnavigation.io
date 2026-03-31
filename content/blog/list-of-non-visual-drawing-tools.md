@@ -3,6 +3,7 @@ title: "List of Non-Visual Drawing Tools"
 date: 2025-02-19
 lastmod: 2025-03-09
 slug: "list-of-non-visual-drawing-tools"
+url: /list-of-non-visual-drawing-tools/
 draft: false
 ---
 
