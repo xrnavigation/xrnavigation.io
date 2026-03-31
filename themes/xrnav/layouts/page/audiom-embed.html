@@ -1,15 +1,15 @@
 {{ define "main" }}
-<article class="page-single audiom-embed-page">
-  <section class="audiom-section">
-    <div class="audiom-section-inner">
-      <header class="page-header">
-        <h1>{{ .Title }}</h1>
-      </header>
-      <div class="page-content">
-        {{ .Content }}
-      </div>
-      {{ with .Params.audiom_id }}
-      <div class="audiom-embed">
+<article class="ast-article-single audiom-embed-page">
+  <div class="entry-content clear">
+    <div class="wp-block-uagb-container alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-advanced-heading">
+          <h1 class="uagb-heading-text">{{ .Title }}</h1>
+        </div>
+        <div class="page-content">
+          {{ .Content }}
+        </div>
+        {{ with .Params.audiom_id }}
         <iframe
           src="https://www.audiom.net/embed/{{ . }}"
           width="100%"
@@ -19,9 +19,9 @@
           loading="lazy"
           allowfullscreen>
         </iframe>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
-  </section>
+  </div>
 </article>
 {{ end }}

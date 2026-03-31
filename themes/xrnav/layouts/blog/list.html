@@ -1,31 +1,37 @@
 {{ define "main" }}
-<section class="blog-list">
-  <header class="page-header">
-    <h1>{{ .Title }}</h1>
-  </header>
-  {{ .Content }}
-  <div class="blog-grid" role="list">
-    {{ range .Pages }}
-    <article class="blog-card" role="listitem">
-      {{ with .Params.featured_image }}
-      <div class="blog-card-image">
-        <img src="{{ . }}" alt="" aria-hidden="true">
+<article class="ast-article-single">
+  <div class="entry-content clear">
+    <div class="wp-block-uagb-container alignfull uagb-is-root-container" style="padding: 2rem 0;">
+      <div class="uagb-container-inner-blocks-wrap" style="max-width: min(100%, 1200px); margin: 0 auto; padding: 0 2rem;">
+        <div class="wp-block-uagb-advanced-heading">
+          <h1 class="uagb-heading-text">{{ .Title }}</h1>
+        </div>
+        {{ .Content }}
+        <div class="wp-block-uagb-post-grid uagb-post-grid uagb-post__columns-3 is-grid uagb-post__columns-tablet-2 uagb-post__columns-mobile-1 uagb-post__equal-height" role="list">
+          {{ range .Pages }}
+          <article class="uagb-post__inner-wrap" role="listitem">
+            <h3 class="uagb-post__title uagb-post__text">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            <div class="uagb-post__text uagb-post-grid-byline">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+              {{ with .Params.author }}
+              <span class="uagb-post__author"> by {{ . }}</span>
+              {{ end }}
+            </div>
+            <div class="uagb-post__text uagb-post__excerpt">
+              {{ if .Description }}
+              {{ .Description }}
+              {{ else }}
+              {{ .Summary }}
+              {{ end }}
+            </div>
+          </article>
+          {{ end }}
+        </div>
+        {{ template "_internal/pagination.html" . }}
       </div>
-      {{ end }}
-      <div class="blog-card-body">
-        <h2 class="blog-card-title">
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        {{ if .Description }}
-        <p class="blog-card-excerpt">{{ .Description }}</p>
-        {{ else }}
-        <p class="blog-card-excerpt">{{ .Summary }}</p>
-        {{ end }}
-      </div>
-    </article>
-    {{ end }}
+    </div>
   </div>
-  {{ template "_internal/pagination.html" . }}
-</section>
+</article>
 {{ end }}

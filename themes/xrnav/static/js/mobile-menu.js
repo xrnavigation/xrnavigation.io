@@ -1,12 +1,13 @@
 /**
  * Mobile Menu — hamburger toggle with Escape key + focus management
+ * Updated for Astra Builder header structure
  */
 (function () {
   'use strict';
 
   function init() {
-    var toggle = document.querySelector('.mobile-menu-toggle');
-    var nav = document.getElementById('primary-nav');
+    var toggle = document.querySelector('.menu-toggle.ast-mobile-menu-trigger-minimal');
+    var nav = document.getElementById('ast-mobile-site-navigation');
     if (!toggle || !nav) return;
 
     function openMenu() {

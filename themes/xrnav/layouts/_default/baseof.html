@@ -3,13 +3,21 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  {{ partial "header.html" . }}
-  <main id="main-content" tabindex="-1">
-    {{ block "main" . }}{{ end }}
-  </main>
-  {{ partial "footer.html" . }}
+<body class="ast-hfb-header ast-page-builder-template{{ if .IsHome }} home-page{{ end }}">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="page" class="hfb-header ast-page-builder-template">
+    {{ partial "header.html" . }}
+    <div id="content" class="site-content">
+      <div class="ast-container">
+        <div id="primary" class="content-area">
+          <main id="main" class="site-main" tabindex="-1">
+            {{ block "main" . }}{{ end }}
+          </main>
+        </div>
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
+  </div>
   <script src="{{ "js/theme-switcher.js" | relURL }}"></script>
   <script src="{{ "js/mobile-menu.js" | relURL }}"></script>
   {{ if .IsHome }}
