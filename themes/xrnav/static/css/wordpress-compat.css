@@ -162,16 +162,8 @@ body.ast-hfb-header {
 }
 
 .ast-container {
-  max-width: 1240px;
+  max-width: 100%;
   margin: 0 auto;
-}
-
-/* Desktop content flex layout (not on embed pages — they use different structure) */
-.site-content .ast-container {
-  display: flex;
-}
-.audiom-embed-body .site-content .ast-container {
-  display: block;
 }
 
 #primary.content-area {
