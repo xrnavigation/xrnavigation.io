@@ -71,7 +71,7 @@ across all page types without regressing already-tuned embed pages.
 | Page | Before | After | Change |
 |------|--------|-------|--------|
 | home | 35.94% | 28.95% | **-6.99** |
-| blog | 56.61% | 46.57% | **-10.04** |
+| blog | 56.61% | 43.09% | **-13.52** |
 | universities | 44.24% | 44.12% | -0.12 |
 | privacy-policy | 19.26% | 19.26% | 0 |
 | a11y-statement | 30.15% | 30.15% | 0 |
@@ -91,6 +91,11 @@ across all page types without regressing already-tuned embed pages.
 - **fcoi (47%)**: Short page where footer dominates diff
 - **about-audiom (47%)**: Text reflow differences from width/padding variance
 - **blog (47%)**: Card content height differences
+
+### Blog-Specific Fix (second commit)
+- Blog card excerpt font reduced to 14px/21px on mobile
+- Blog card title reduced to 18px, byline to 12px
+- Blog mobile diff: 46.57% -> 43.09%
 
 ## Files Changed
 - `themes/xrnav/static/css/wordpress-compat.css` — all responsive CSS fixes

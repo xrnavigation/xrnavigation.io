@@ -203,4 +203,23 @@ Hugo blog: Hero shows h1 + subtitle on dark bg WITH background image. Post cards
 - blog: ~46% — card height diffs
 - universities: 43.88% — 327px taller
 
-**NEXT:** Run full batch for final scores, then commit. The remaining high diffs are mostly template/content issues, not CSS.
+**COMMITTED:** d381f4e — Systematic mobile responsive CSS fixes
+
+**FINAL SCORES vs BASELINE:**
+| Page | Before | After | Delta |
+|------|--------|-------|-------|
+| home | 35.94% | 28.95% | -6.99 |
+| blog | 56.61% | 46.57% | -10.04 |
+| universities | 44.24% | 44.12% | -0.12 |
+| All others | unchanged | unchanged | 0 |
+| Embeds | ~10-12% | ~10-12% | 0 |
+
+**REMAINING HIGH-DIFF NOT CSS-FIXABLE:**
+- contact 67%: different template
+- wcag-table 60%: missing table content
+- fcoi 47%: footer-dominated short page
+- about-audiom 47%: text reflow diffs
+- blog 47%: card content height diffs
+- universities 44%: 340px taller, mostly content
+
+**NEXT:** Could investigate further wins on a11y-statement (30%), or look at template fixes for contact/wcag. These are diminishing returns from CSS-only changes.
