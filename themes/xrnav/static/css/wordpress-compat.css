@@ -162,8 +162,16 @@ body.ast-hfb-header {
 }
 
 .ast-container {
-  max-width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
+}
+
+/* Desktop content flex layout (not on embed pages — they use different structure) */
+.site-content .ast-container {
+  display: flex;
+}
+.audiom-embed-body .site-content .ast-container {
+  display: block;
 }
 
 #primary.content-area {
@@ -942,6 +950,43 @@ h3.uagb-post__title a:hover {
   .uagb-post__columns-3.is-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Blog hero mobile — reduce height to match WP compact hero */
+  .blog-hero,
+  .blog-hero.Change-background {
+    min-height: auto;
+    padding: 40px 10px !important;
+  }
+
+  /* Blog hero heading — match specificity of desktop rule */
+  .blog-hero h1.change-heading,
+  .blog-hero h1.has-ast-global-color-4-color,
+  .blog-hero h1.wp-block-heading {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  /* Blog hero subheading */
+  .blog-hero .has-ast-global-color-5-color {
+    font-size: 14.592px;
+    line-height: 23.3472px;
+  }
+
+  /* Hide blog card images at mobile — matches WP UAGB post grid mobile behavior */
+  .uagb-post__image {
+    display: none;
+  }
+
+  /* Blog card compact mobile layout */
+  .uagb-post__inner-wrap {
+    border-radius: 20px;
+    padding: 20px 25px 10px;
+  }
+
+  /* Blog grid gap reduction on mobile */
+  .uagb-post__columns-3.is-grid {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 544px) {
@@ -1521,9 +1566,21 @@ article.post .entry-content p {
 }
 
 /* ==========================================================================
-   Responsive Typography (Astra breakpoints)
+   Responsive Typography & Layout (Astra breakpoints)
    ========================================================================== */
 @media (max-width: 921px) {
+  /* Note: WP Astra sets html { font-size: 91.2% } at mobile which scales rem/em units.
+     We intentionally omit this because our CSS uses px values, and the 91.2% rule
+     causes regressions on already-tuned embed pages by shifting rem-based footer spacing. */
+
+  /* Astra block padding custom properties */
+  :root {
+    --wp--custom--ast-default-block-top-padding: 3em;
+    --wp--custom--ast-default-block-right-padding: 2em;
+    --wp--custom--ast-default-block-bottom-padding: 3em;
+    --wp--custom--ast-default-block-left-padding: 2em;
+  }
+
   h1, h1.uagb-heading-text, h1.wp-block-heading {
     font-size: 30px;
   }
@@ -1543,6 +1600,29 @@ article.post .entry-content p {
     font-size: 16px;
   }
 
+  /* Site title hidden on mobile */
+  .site-title {
+    display: none;
+  }
+  .site-header .site-description {
+    display: none;
+  }
+
+  /* Content container stacks vertically */
+  .site-content .ast-container {
+    flex-direction: column;
+  }
+
+  /* Plain container primary padding zero on mobile */
+  .ast-plain-container.ast-no-sidebar #primary,
+  .ast-plain-container #primary,
+  .ast-narrow-container #primary {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* Blockquote responsive */
   blockquote {
     margin-left: 1em;
@@ -1560,10 +1640,49 @@ article.post .entry-content p {
   .Change-background {
     padding: 80px 0 !important;
   }
+
+  /* Collection pages: stack info-box sections, reduce padding */
+  .collection-page .info-box-section,
+  .collection-page .info-box-section.reverse {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .collection-page .info-box-section .info-box-text,
+  .collection-page .info-box-section .info-box-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .collection-page .feature-cards {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .collection-page .extra-content {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .collection-page .collection-hero .collection-hero-inner {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
 
-/* Homepage grids collapse to single column on mobile */
 @media (max-width: 544px) {
+  /* Further block padding reduction at small mobile */
+  :root {
+    --wp--custom--ast-default-block-top-padding: 3em;
+    --wp--custom--ast-default-block-right-padding: 1.5em;
+    --wp--custom--ast-default-block-bottom-padding: 3em;
+    --wp--custom--ast-default-block-left-padding: 1.5em;
+  }
+
+  /* WP column collapse */
+  .wp-block-columns .wp-block-column:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* Homepage grids collapse to single column */
   .wp-block-uagb-container [style*="grid-template-columns: repeat(3"] {
     grid-template-columns: 1fr !important;
   }
@@ -1908,10 +2027,40 @@ article.post .entry-content p {
   .collection-page .info-box-section,
   .collection-page .info-box-section.reverse {
     flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  /* Hide info-box images on mobile — matches WP behavior */
+  .collection-page .info-box-section .info-box-image {
+    display: none;
+  }
+
+  .collection-page .info-box-section .info-box-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .collection-page .feature-cards {
+    padding: 40px 20px;
   }
 
   .collection-page .feature-cards .feature-card {
     flex: 1 1 calc(50% - 10px);
+  }
+
+  .collection-page .collection-hero {
+    min-height: auto;
+    padding: 40px 10px;
+  }
+
+  .collection-page .collection-cta {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .collection-page .extra-content.has-bg {
+    min-height: auto;
+    padding: 40px 20px;
   }
 
   .collection-page .collection-hero h1,
@@ -1930,6 +2079,11 @@ article.post .entry-content p {
 @media (max-width: 544px) {
   .collection-page .feature-cards .feature-card {
     flex: 1 1 100%;
+  }
+
+  .collection-page .info-box-section,
+  .collection-page .info-box-section.reverse {
+    padding: 20px 10px;
   }
 }
 
@@ -2454,10 +2608,18 @@ article.post .entry-content p {
     line-height: 40px;
   }
 
+  .home-page .hero {
+    min-height: auto;
+  }
+
   .home-page .steps-grid {
     flex-direction: column;
     margin-top: -40px;
     max-width: 90%;
+  }
+
+  .home-page .why {
+    min-height: auto;
   }
 
   .home-page .why .section-inner {
@@ -2466,11 +2628,24 @@ article.post .entry-content p {
     gap: 40px;
   }
 
+  .home-page .clients {
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
   .home-page .clients .section-inner,
   .home-page .use-cases .section-inner,
   .home-page .team .section-inner,
   .home-page .contact-section .section-inner {
     max-width: 90%;
+  }
+
+  .home-page .what-is {
+    min-height: auto;
+  }
+
+  .home-page .video-wrapper {
+    min-height: auto;
   }
 
   .home-page .use-cases-grid {
@@ -2488,6 +2663,16 @@ article.post .entry-content p {
 
   .home-page .logo-bar img {
     max-height: 60px;
+  }
+
+  .home-page .pre-footer-map {
+    min-height: auto;
+    padding-top: 100px;
+  }
+
+  .home-page .contact-form-card {
+    max-width: 95%;
+    padding: 10px 20px 20px;
   }
 }
 
@@ -2509,6 +2694,6 @@ article.post .entry-content p {
   }
 
   .home-page .team {
-    padding: 30px 10px 100px;
+    padding: 30px 10px 40px;
   }
 }
