@@ -987,6 +987,22 @@ h3.uagb-post__title a:hover {
   .uagb-post__columns-3.is-grid {
     gap: 20px;
   }
+
+  /* Blog card text sizing for mobile — match WP mobile typography */
+  .uagb-post__excerpt {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .uagb-post-grid-byline {
+    font-size: 12px;
+    padding-bottom: 8px;
+  }
+
+  h3.uagb-post__title {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
 }
 
 @media (max-width: 544px) {
