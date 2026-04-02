@@ -9,50 +9,52 @@
               <div class="custom-footer">
                 <h2>Quick Links</h2>
                 <ul>
-                  {{ range .Site.Menus.footer_quick }}
-                  <li>
-                    <a href="{{ .URL }}"
-                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
-                      {{ .Name }}
-                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
-                    </a>
-                  </li>
-                  {{ end }}
+                  <li><a href="{{ "/" | relURL }}">Home</a></li>
+                  <li><a href="{{ "/about/" | relURL }}">About</a></li>
+                  <li><a href="{{ "/blog/" | relURL }}">Blog</a></li>
+                  <li><a href="https://www.linkedin.com/company/xrnavigation/" target="_blank" rel="noopener">LinkedIn</a></li>
                 </ul>
                 <h2>Learn More</h2>
                 <ul>
-                  {{ range .Site.Menus.footer_learn }}
-                  <li>
-                    <a href="{{ .URL }}"
-                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
-                      {{ .Name }}
-                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
-                    </a>
-                  </li>
-                  {{ end }}
+                  <li><a href="{{ "/map-evaluation-tool/" | relURL }}">Evaluate Your Map</a></li>
+                  <li><a href="{{ "/accessibility-statement-2/" | relURL }}">Accessibility Statement</a></li>
+                  <li><a href="{{ "/blog/" | relURL }}">More Info</a></li>
                 </ul>
               </div>
             </section>
           </aside>
         </div>
         <div class="site-footer-above-section-2 site-footer-section site-footer-section-2">
-          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Contact Form">
-            <section class="widget">
-              <form class="contact-form" data-netlify="true" name="footer-contact-mobile" method="POST">
-                <div class="form-group">
-                  <label for="above-contact-name">Your Name <span aria-hidden="true">*</span></label>
-                  <input type="text" id="above-contact-name" name="name" placeholder="Name" autocomplete="name" required>
-                </div>
-                <div class="form-group">
-                  <label for="above-contact-email">Your Email <span aria-hidden="true">*</span></label>
-                  <input type="email" id="above-contact-email" name="email" placeholder="Email" autocomplete="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="above-contact-message">Your Message <span aria-hidden="true">*</span></label>
-                  <input type="text" id="above-contact-message" name="message" placeholder="Message" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Widget 3">
+            <section class="widget wpforms-widget">
+              <div class="wpforms-container wpforms-container-full" id="wpforms-2494">
+                <form id="wpforms-form-2494" class="wpforms-validate wpforms-form" data-formid="2494" method="post" action="{{ .RelPermalink }}" enctype="multipart/form-data">
+                  <div class="wpforms-field-container">
+                    <div id="wpforms-2494-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1">
+                      <label class="wpforms-field-label" for="wpforms-2494-field_1">Your Name <span class="wpforms-required-label">*</span></label>
+                      <input type="text" id="wpforms-2494-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="Name" autocomplete="name" required>
+                    </div>
+                    <div id="wpforms-2494-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2">
+                      <label class="wpforms-field-label" for="wpforms-2494-field_2">Your Email <span class="wpforms-required-label">*</span></label>
+                      <input type="email" id="wpforms-2494-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Email" autocomplete="email" spellcheck="false" required>
+                    </div>
+                    <div id="wpforms-2494-field_3-container" class="wpforms-field wpforms-field-text" data-field-id="3">
+                      <label class="wpforms-field-label" for="wpforms-2494-field_3">Your Message <span class="wpforms-required-label">*</span></label>
+                      <input type="text" id="wpforms-2494-field_3" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][3]" placeholder="Message" required>
+                    </div>
+                  </div>
+                  <div class="wpforms-submit-container">
+                    <input type="hidden" name="wpforms[id]" value="2494">
+                    <input type="hidden" name="page_title" value="{{ .Title }}">
+                    <input type="hidden" name="page_url" value="{{ .Permalink }}">
+                    <input type="hidden" name="url_referer" value="">
+                    <input type="hidden" name="page_id" value="{{ with .File }}{{ .UniqueID }}{{ else }}footer{{ end }}">
+                    <input type="hidden" name="wpforms[post_id]" value="{{ with .File }}{{ .UniqueID }}{{ else }}footer{{ end }}">
+                    <button type="submit" name="wpforms[submit]" id="wpforms-submit-2494" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button>
+                    <img src="{{ "vendor/ableplayer/button-icons/white/ellipsis.png" | relURL }}" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading">
+                  </div>
+                </form>
+              </div>
             </section>
           </aside>
         </div>
@@ -80,44 +82,34 @@
         {{/* Column 2: Quick Links */}}
         <div class="site-footer-primary-section-2 site-footer-section site-footer-section-2">
           <div class="footer-widget-area widget-area site-footer-focus-item ast-footer-html-1">
-            <div class="ast-header-html inner-link-style-">
-              <div class="ast-builder-html-element">
-                <h2>Quick Links</h2>
-                <ul>
-                  {{ range .Site.Menus.footer_quick }}
-                  <li>
-                    <a href="{{ .URL }}"
-                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
-                      {{ .Name }}
-                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
-                    </a>
-                  </li>
-                  {{ end }}
-                </ul>
+              <div class="ast-header-html inner-link-style-">
+                <div class="ast-builder-html-element">
+                  <h2>Quick Links</h2>
+                  <ul>
+                    <li><a href="{{ "/" | relURL }}">Home</a></li>
+                    <li><a href="{{ "/about/" | relURL }}">About</a></li>
+                    <li><a href="{{ "/blog/" | relURL }}">Blog</a></li>
+                    <li><a href="https://www.linkedin.com/company/xrnavigation/" target="_blank" rel="noopener">LinkedIn</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
           </div>
         </div>
 
         {{/* Column 3: More Resources */}}
         <div class="site-footer-primary-section-3 site-footer-section site-footer-section-3">
           <div class="footer-widget-area widget-area site-footer-focus-item ast-footer-html-2">
-            <div class="ast-header-html inner-link-style-">
-              <div class="ast-builder-html-element">
-                <h2>More Resources</h2>
-                <ul>
-                  {{ range .Site.Menus.footer_learn }}
-                  <li>
-                    <a href="{{ .URL }}"
-                      {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
-                      {{ .Name }}
-                      {{ if .Params.external }}<span class="sr-only">(Opens in new tab)</span>{{ end }}
-                    </a>
-                  </li>
-                  {{ end }}
-                </ul>
+              <div class="ast-header-html inner-link-style-">
+                <div class="ast-builder-html-element">
+                  <h2>More Resources</h2>
+                  <ul>
+                    <li><a href="{{ "/contact/" | relURL }}">Contact Us</a></li>
+                    <li><a href="{{ "/map-evaluation-tool/" | relURL }}">Evaluate Your Map</a></li>
+                    <li><a href="https://www.audiom.net/" target="_blank" rel="noopener">Audiom for Personal Use</a></li>
+                    <li><a href="{{ "/accessibility-statement/" | relURL }}">Accessibility Statement</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
           </div>
         </div>
 
@@ -154,7 +146,7 @@
         <div class="site-footer-below-section-1 site-footer-section site-footer-section-1">
           <div class="ast-builder-layout-element ast-flex site-footer-focus-item ast-footer-copyright">
             <div class="ast-footer-copyright">
-              <p>Website By <a href="https://threeonesixdigital.com/" target="_blank" rel="noopener noreferrer">@ThreeOneSixDigital</a> <span class="sr-only">(Opens in a new tab)</span></p>
+              <p>Website By <a href="https://threeonesixdigital.com/" target="_blank" rel="noopener noreferrer">@ThreeOneSixDigital (Opens in a new tab)</a></p>
             </div>
           </div>
         </div>
