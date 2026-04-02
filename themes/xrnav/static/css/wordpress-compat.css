@@ -1479,50 +1479,54 @@ h3.uagb-post__title a:hover {
    Blog Post (Single) Styles
    ========================================================================== */
 body.single-post .site-content > .ast-container {
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 body.single-post #primary.content-area.primary {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 body.single-post .ast-single-entry-banner {
   background: var(--ast-title-layout-bg);
-  padding: 56px 0 42px;
+  padding: 48px;
   text-align: center;
 }
 
 body.single-post .ast-single-entry-banner.has-banner-image {
   background-color: var(--ast-global-color-1);
-  background-image: linear-gradient(rgba(4, 32, 62, 0.72), rgba(4, 32, 62, 0.72)), var(--ast-banner-background-image);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), var(--ast-banner-background-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 58vh;
+  min-height: 603px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 body.single-post .ast-single-entry-banner .ast-container {
-  max-width: 1200px;
+  width: calc(100% - 96px);
+  max-width: none;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 body.single-post .ast-single-entry-banner.has-banner-image .ast-container {
-  max-width: min(100%, 85%);
+  max-width: none;
 }
 
 body.single-post .ast-single-entry-banner .entry-title {
-  margin: 0 auto 8px;
-  max-width: 1000px;
+  margin: 0 0 10px;
+  width: 100%;
+  max-width: none;
   color: var(--ast-global-color-1);
   text-align: center;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 body.single-post .ast-single-entry-banner.has-banner-image .entry-title,
@@ -1540,6 +1544,10 @@ body.single-post .ast-single-entry-banner .entry-meta * {
 body.single-post .ast-article-single:not(.ast-related-post) {
   background-color: var(--ast-global-color-4);
   margin: 0;
+  width: 80%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 3em;
   border-bottom: 0;
 }
@@ -1610,17 +1618,16 @@ body.single-post .post-navigation a {
 }
 
 body.single-post .ast-single-related-posts-container {
-  margin-top: 0;
-  margin-bottom: 5%;
-  padding: 0 20px;
+  margin: 32px 0 95.25px;
+  padding: 40px;
 }
 
 body.single-post .ast-related-posts-title-section,
 body.single-post .ast-related-posts-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 5%;
-  padding-right: 5%;
+  max-width: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 body.single-post .ast-related-posts-title {
@@ -1631,8 +1638,12 @@ body.single-post .ast-related-posts-title {
 body.single-post .ast-related-posts-wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 30px;
-  padding-top: 24px;
+  gap: 25px;
+  padding-top: 0;
+}
+
+body.single-post .ast-related-posts-title-section {
+  padding-bottom: 32px;
 }
 
 body.single-post .ast-related-post {
@@ -1654,14 +1665,14 @@ body.single-post .ast-related-post-featured-section img {
 }
 
 body.single-post .related-entry-header {
-  margin: 0;
-  padding: 24px 24px 12px;
+  margin: 16px 0;
+  padding: 0;
 }
 
 body.single-post .ast-related-post-title {
-  margin-bottom: 12px;
-  font-size: 26px;
-  line-height: 1.3em;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 body.single-post .ast-related-post-title a {
@@ -1670,16 +1681,15 @@ body.single-post .ast-related-post-title a {
 
 body.single-post .ast-related-post .entry-meta,
 body.single-post .ast-related-post .entry-meta * {
-  color: var(--ast-global-color-0);
-  line-height: 1.45;
+  display: none;
 }
 
 body.single-post .ast-related-post .entry-content.clear {
-  padding: 0 24px 24px;
+  padding: 0;
 }
 
 body.single-post .ast-related-post-excerpt {
-  margin-bottom: 0;
+  margin-bottom: 25.6px;
 }
 
 body.single-post .ast-related-post-cta {
@@ -1712,12 +1722,19 @@ body.single-post .ast-related-post-link {
   }
 
   body.single-post .ast-single-entry-banner {
-    padding: 40px 0 32px;
+    padding: 43.776px;
   }
 
   body.single-post .ast-single-entry-banner.has-banner-image {
     min-height: 646px;
-    padding: 40px 10px;
+    padding: 43.776px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), var(--ast-banner-background-image);
+  }
+
+  body.single-post .ast-single-entry-banner .ast-container {
+    width: calc(100% - 87.552px);
+    max-width: none;
+    margin: 0;
   }
 
   body.single-post .ast-single-entry-banner .entry-title {
@@ -1726,7 +1743,12 @@ body.single-post .ast-related-post-link {
   }
 
   body.single-post .ast-article-single:not(.ast-related-post) {
-    padding: 1.5em 18px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 37.5px 37.5px 0;
+    font-size: 14.592px;
+    line-height: 23.3472px;
   }
 
   body.single-post article.post .entry-content p,
@@ -1750,7 +1772,7 @@ body.single-post .ast-related-post-link {
   }
 
   body.single-post .post-navigation {
-    padding-top: 1.5em;
+    padding-top: 21.888px;
   }
 
   body.single-post .post-navigation .nav-links {
@@ -1764,8 +1786,8 @@ body.single-post .ast-related-post-link {
   }
 
   body.single-post .ast-single-related-posts-container {
-    margin-bottom: 40px;
-    padding: 0 36px 40px;
+    margin: 29.184px 0 18.75px;
+    padding: 36.48px;
   }
 
   body.single-post .ast-related-posts-title-section,
@@ -1776,17 +1798,23 @@ body.single-post .ast-related-post-link {
 
   body.single-post .ast-related-posts-wrapper {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding-top: 20px;
+    gap: 25px;
+    padding-top: 0;
+  }
+
+  body.single-post .ast-related-posts-title-section {
+    padding-bottom: 21.888px;
   }
 
   body.single-post .ast-related-post-title {
     font-size: 18.24px;
     line-height: 18.24px;
+    margin: 0 0 9.12px;
   }
 
   body.single-post .related-entry-header {
-    padding: 16px 0 8px;
+    margin: 14.592px 0;
+    padding: 0;
   }
 
   body.single-post .ast-related-post .entry-content.clear {
