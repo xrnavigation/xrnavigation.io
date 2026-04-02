@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="ast-article-single wp-dark-doc-page wp-acr-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container uagb-block-d963be70 alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-advanced-heading uagb-block-d694d578">
+          <h1 class="uagb-heading-text">{{ .Title }}</h1>
+        </div>
+        <p class="has-text-align-center has-ast-global-color-5-color has-text-color">{{ .Params.intro }}</p>
+        <div class="wp-block-uagb-advanced-heading uagb-block-fd59670d">
+          <h2 class="uagb-heading-text">{{ .Params.section_heading }}</h2>
+        </div>
+        <div class="wp-block-uagb-buttons uagb-buttons__outer-wrap uagb-btn__default-btn uagb-btn-tablet__default-btn uagb-btn-mobile__default-btn uagb-block-2e286b92">
+          <div class="uagb-buttons__wrap uagb-buttons-layout-wrap">
+            {{ range .Params.buttons }}
+            <div class="wp-block-uagb-buttons-child uagb-buttons__outer-wrap wp-block-button">
+              <div class="uagb-button__wrapper">
+                <a class="uagb-buttons-repeater wp-block-button__link" href="{{ .url }}" rel="follow noopener" target="_self" role="button">
+                  <div class="uagb-button__link">{{ .label }}</div>
+                </a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

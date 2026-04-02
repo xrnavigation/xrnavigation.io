@@ -1,7 +1,120 @@
 {{ define "main" }}
+{{ if eq .Type "wp-acr" }}
+<article class="ast-article-single wp-dark-doc-page wp-acr-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container uagb-block-d963be70 alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-advanced-heading uagb-block-d694d578">
+          <h1 class="uagb-heading-text">{{ .Title }}</h1>
+        </div>
+        <p class="has-text-align-center has-ast-global-color-5-color has-text-color">{{ .Params.intro }}</p>
+        <div class="wp-block-uagb-advanced-heading uagb-block-fd59670d">
+          <h2 class="uagb-heading-text">{{ .Params.section_heading }}</h2>
+        </div>
+        <div class="wp-block-uagb-buttons uagb-buttons__outer-wrap uagb-btn__default-btn uagb-btn-tablet__default-btn uagb-btn-mobile__default-btn uagb-block-2e286b92">
+          <div class="uagb-buttons__wrap uagb-buttons-layout-wrap">
+            {{ range .Params.buttons }}
+            <div class="wp-block-uagb-buttons-child uagb-buttons__outer-wrap wp-block-button">
+              <div class="uagb-button__wrapper">
+                <a class="uagb-buttons-repeater wp-block-button__link" href="{{ .url }}" rel="follow noopener" target="_self" role="button">
+                  <div class="uagb-button__link">{{ .label }}</div>
+                </a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ else if eq .Type "wp-capability" }}
+<article class="ast-article-single wp-dark-doc-page wp-capability-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container uagb-block-d963be70 alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-advanced-heading uagb-block-d694d578">
+          <h1 class="uagb-heading-text">{{ with .Params.page_heading }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+        </div>
+        <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-block-buttons-is-layout-flex">
+          <div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline is-style-outline--1">
+            <a class="wp-block-button__link has-white-color has-ast-global-color-1-background-color has-text-color has-background has-link-color has-text-align-center wp-element-button" href="{{ .Params.button_url }}" target="_blank" rel="noopener">
+              {{ .Params.button_label }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ else if eq .Type "wp-empty-table" }}
+<article class="ast-article-single wp-empty-table-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <figure class="wp-block-table is-style-regular">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range seq 15 }}
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </figure>
+  </div>
+</article>
+{{ else if eq .Type "wp-profile" }}
+<article class="ast-article-single wp-profile-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container uagb-block-99b62053 alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-container uagb-block-7e2623b4">
+          <div class="wp-block-uagb-image uagb-block-93de6087 wp-block-uagb-image--layout-default wp-block-uagb-image--effect-static wp-block-uagb-image--align-none uag-hide-tab uag-hide-mob">
+            <figure class="wp-block-uagb-image__figure">
+              <img decoding="async" src="{{ .Params.profile_image | relURL }}" alt="{{ .Title }}" class="uag-image-1030" width="845" height="553" loading="lazy">
+            </figure>
+          </div>
+        </div>
+        <div class="wp-block-uagb-container uagb-block-bb8592fb">
+          <div class="wp-block-uagb-info-box uagb-block-4a6700de uagb-infobox__content-wrap uagb-infobox-icon-above-title uagb-infobox-image-valign-top">
+            <div class="uagb-ifb-content">
+              <div class="uagb-ifb-title-wrap">
+                <h2 class="uagb-ifb-title">{{ .Params.profile_heading }}</h2>
+              </div>
+              <div class="uagb-ifb-desc">{{ .Params.bio | markdownify }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ else }}
 <article class="ast-article-single page-content-wrap">
   <div class="entry-content clear" data-ast-blocks-layout>
     {{ .Content }}
   </div>
 </article>
+{{ end }}
 {{ end }}
