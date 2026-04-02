@@ -22,6 +22,12 @@ const HUGO_BASE = 'http://localhost:1314';
 const BASELINE_DIR = path.join(__dirname, 'baseline');
 const CURRENT_DIR = path.join(__dirname, 'current');
 const DIFF_DIR = path.join(__dirname, 'diffs');
+const SLUG_FILTER = new Set(
+  (process.env.COMPARE_SLUGS ?? '')
+    .split(',')
+    .map(value => value.trim())
+    .filter(Boolean)
+);
 
 const VIEWPORTS: Record<string, { width: number; height: number }> = {
   desktop: { width: 1920, height: 1080 },
@@ -54,6 +60,42 @@ function slugToUrl(slug: string): string {
   return `/${slug}/`;
 }
 
+async function stabilizePageForScreenshot(page: import('@playwright/test').Page): Promise<void> {
+  await Promise.race([
+    page.waitForLoadState('networkidle').catch(() => {}),
+    page.waitForTimeout(8_000),
+  ]);
+
+  await page.evaluate(() => document.fonts.ready);
+
+  const requiresDeepSettle = await page.locator('iframe, .able-wrapper, .able-controller').count();
+  if (!requiresDeepSettle) {
+    await page.waitForTimeout(500);
+    return;
+  }
+
+  await page.evaluate(async () => {
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+    const getHeight = () => Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight
+    );
+
+    const currentHeight = getHeight();
+    for (let y = 0; y < currentHeight; y += 500) {
+      window.scrollTo(0, y);
+      await delay(100);
+    }
+
+    window.scrollTo(0, 0);
+    await delay(250);
+  });
+
+  await page.waitForSelector('.able-wrapper', { timeout: 5_000 }).catch(() => {});
+  await page.waitForSelector('.able-controller', { timeout: 5_000 }).catch(() => {});
+  await page.waitForTimeout(3_000);
+}
+
 test('compare Hugo screenshots against WordPress baselines', async ({ browser }) => {
   // Ensure output directories exist
   for (const dir of [CURRENT_DIR, DIFF_DIR]) {
@@ -71,6 +113,9 @@ test('compare Hugo screenshots against WordPress baselines', async ({ browser })
   for (const file of baselineFiles) {
     const parsed = parseBaselineFilename(file);
     if (parsed) {
+      if (SLUG_FILTER.size > 0 && !SLUG_FILTER.has(parsed.slug)) {
+        continue;
+      }
       tasks.push({ ...parsed, baselineFile: file });
     }
   }
@@ -113,13 +158,8 @@ test('compare Hugo screenshots against WordPress baselines', async ({ browser })
         continue;
       }
 
-      // Wait for page to settle
-      await Promise.race([
-        page.waitForLoadState('networkidle').catch(() => {}),
-        page.waitForTimeout(5_000),
-      ]);
-      await page.evaluate(() => document.fonts.ready);
-      await page.waitForTimeout(500);
+      // Wait for page to settle, including lazy content and iframe-driven height changes.
+      await stabilizePageForScreenshot(page);
 
       // Screenshot
       const currentPath = path.join(CURRENT_DIR, currentFilename);
