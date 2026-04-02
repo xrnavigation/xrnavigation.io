@@ -4,9 +4,11 @@
   {{ partial "head.html" . }}
 </head>
 {{ $isBlogSingle := and .IsPage (eq .Section "blog") }}
-<body class="ast-hfb-header{{ if not $isBlogSingle }} ast-page-builder-template{{ end }}{{ if .IsHome }} home-page{{ end }}{{ if eq .Type "audiom-embed" }} audiom-embed-body{{ end }}{{ if $isBlogSingle }} single single-post ast-separate-container ast-no-sidebar ast-single-post{{ end }}">
+{{ $isWpContact := eq .Type "wp-contact-form" }}
+{{ $usesPageBuilder := and (not $isBlogSingle) (not $isWpContact) }}
+<body class="ast-hfb-header{{ if $usesPageBuilder }} ast-page-builder-template{{ end }}{{ if .IsHome }} home-page{{ end }}{{ if eq .Type "audiom-embed" }} audiom-embed-body{{ end }}{{ if $isBlogSingle }} single single-post ast-separate-container ast-no-sidebar ast-single-post{{ end }}{{ if $isWpContact }} wp-singular page-template-default page wp-custom-logo wp-embed-responsive wp-theme-astra ast-desktop ast-plain-container ast-no-sidebar ast-single-post ast-inherit-site-logo-transparent ast-full-width-primary-header ast-normal-title-enabled wp-contact-form-body{{ end }}">
   <a class="skip-link" href="#content">Skip to content</a>
-  <div id="page" class="site hfb-header{{ if not $isBlogSingle }} ast-page-builder-template{{ end }}">
+  <div id="page" class="site hfb-header{{ if $usesPageBuilder }} ast-page-builder-template{{ end }}">
     {{ partial "header.html" . }}
     {{ block "before-content" . }}{{ end }}
     <div id="content" class="site-content">
