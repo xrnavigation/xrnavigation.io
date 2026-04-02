@@ -2952,6 +2952,76 @@ article.post .entry-content p {
   line-height: 25.6px;
 }
 
+.wp-drive-iframe-page .entry-content,
+.wp-demo-iframe-page .entry-content {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.wp-drive-iframe-page .wp-block-uagb-advanced-heading {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.wp-drive-iframe-page .uagb-heading-text {
+  color: #5a7969 !important;
+  margin-bottom: 0;
+}
+
+.wp-drive-iframe-page iframe {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  border: 0;
+}
+
+.wp-demo-iframe-page .wp-block-uagb-container.alignfull.uagb-is-root-container {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding: 160px 0;
+}
+
+.wp-demo-iframe-page .uagb-container-inner-blocks-wrap {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.wp-demo-iframe-page .wp-block-uagb-advanced-heading {
+  width: 1200px;
+  max-width: 100%;
+}
+
+.wp-demo-iframe-page .uagb-heading-text {
+  color: #5a7969 !important;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.wp-demo-iframe-page p.has-text-align-center {
+  width: 742px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25.2px;
+}
+
+.wp-demo-iframe-page iframe {
+  display: block;
+  width: 1200px;
+  max-width: 100%;
+  border: 0;
+}
+
 .wp-acr-page .uagb-block-fd59670d {
   margin-bottom: 24px;
 }
@@ -3527,6 +3597,50 @@ article.post .entry-content p {
   .wp-image-page p.has-text-align-center a {
     font-size: 11.6736px;
     line-height: 23.3472px;
+  }
+
+  .wp-drive-iframe-page .wp-block-uagb-advanced-heading {
+    width: 338px;
+  }
+
+  .wp-drive-iframe-page .uagb-heading-text {
+    font-size: 30px !important;
+    line-height: 42px !important;
+  }
+
+  .wp-demo-iframe-page .wp-block-uagb-container.alignfull.uagb-is-root-container {
+    padding: 10px 0;
+  }
+
+  .wp-demo-iframe-page .uagb-container-inner-blocks-wrap {
+    width: 375px;
+    max-width: 375px;
+    gap: 0;
+  }
+
+  .wp-demo-iframe-page .wp-block-uagb-advanced-heading {
+    width: 338px;
+    max-width: 338px;
+  }
+
+  .wp-demo-iframe-page .uagb-heading-text {
+    font-size: 30px !important;
+    line-height: 42px !important;
+    margin: 0 auto 70px;
+  }
+
+  .wp-demo-iframe-page p.has-text-align-center {
+    width: 375px;
+    max-width: 375px;
+    margin: 0 auto 44px;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .wp-demo-iframe-page iframe {
+    width: 375px;
+    max-width: 375px;
   }
 
   .wp-acr-page .uagb-buttons__wrap {

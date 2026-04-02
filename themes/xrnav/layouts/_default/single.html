@@ -77,6 +77,44 @@
     {{ with .Params.bottom_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
   </div>
 </article>
+{{ else if eq .Type "wp-drive-iframe" }}
+<article class="ast-article-single wp-drive-iframe-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    {{ with .Params.top_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
+    <div class="wp-block-uagb-advanced-heading uagb-block-8c0d7442">
+      <h1 class="uagb-heading-text">{{ .Params.page_heading }}</h1>
+    </div>
+    <iframe
+      src="{{ .Params.iframe_src }}"
+      width="100%"
+      height="{{ .Params.iframe_height }}"
+      style="border:0;"
+      title="{{ .Params.iframe_title }}">
+    </iframe>
+    <p></p>
+  </div>
+</article>
+{{ else if eq .Type "wp-demo-iframe" }}
+<article class="ast-article-single wp-demo-iframe-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container uagb-block-f8bd4d2f alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-advanced-heading uagb-block-c1c521b0">
+          <h1 class="uagb-heading-text">{{ .Params.page_heading }}</h1>
+        </div>
+        <p class="has-text-align-center">{{ .Params.intro }}</p>
+        <iframe
+          src="{{ .Params.iframe_src }}"
+          width="100%"
+          height="{{ .Params.iframe_height }}"
+          style="border:0;"
+          title="{{ .Params.iframe_title }}">
+        </iframe>
+      </div>
+    </div>
+    <p></p>
+  </div>
+</article>
 {{ else if eq .Type "wp-capability" }}
 <article class="ast-article-single wp-dark-doc-page wp-capability-page">
   <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
