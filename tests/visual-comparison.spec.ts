@@ -174,12 +174,15 @@ if (TASKS.length === 0) {
   for (const task of TASKS) {
     test(`${task.slug} (${task.viewport})`, async ({ browser }) => {
       const url = HUGO_BASE + slugToUrl(task.slug);
+      const baselinePng = PNG.sync.read(
+        fs.readFileSync(path.join(BASELINE_DIR, task.baselineFile))
+      );
       const viewport = VIEWPORTS[task.viewport];
       const currentPath = path.join(CURRENT_DIR, `${task.slug}-${task.viewport}.png`);
       const diffPath = path.join(DIFF_DIR, `${task.slug}-${task.viewport}-diff.png`);
 
       const context = await browser.newContext({
-        viewport: { width: viewport.width, height: viewport.height },
+        viewport: { width: baselinePng.width, height: viewport.height },
       });
       const page = await context.newPage();
 
@@ -209,9 +212,6 @@ if (TASKS.length === 0) {
         await stabilizePageForScreenshot(page);
         await page.screenshot({ path: currentPath, fullPage: true });
 
-        const baselinePng = PNG.sync.read(
-          fs.readFileSync(path.join(BASELINE_DIR, task.baselineFile))
-        );
         const currentPng = PNG.sync.read(fs.readFileSync(currentPath));
 
         const width = Math.min(baselinePng.width, currentPng.width);
