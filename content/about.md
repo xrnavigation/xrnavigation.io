@@ -3,7 +3,7 @@ title: "About"
 date: 2023-07-31
 lastmod: 2026-01-08
 slug: "about"
-type: "audiom-embed"
+type: "wp-about"
 audiom_id: 38
 draft: false
 ---
