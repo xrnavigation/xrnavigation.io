@@ -1729,6 +1729,26 @@ body.single-post .ast-related-post-link {
     padding: 1.5em 18px;
   }
 
+  body.single-post article.post .entry-content p,
+  body.single-post article.post .entry-content li {
+    font-size: 14.592px;
+    line-height: 23.3472px;
+  }
+
+  body.single-post article.post .entry-content p {
+    margin-bottom: 23.3472px;
+  }
+
+  body.single-post article.post .entry-content ul,
+  body.single-post article.post .entry-content ol {
+    margin: 14.592px 0;
+    padding-left: 40px;
+  }
+
+  body.single-post article.post .entry-content h2.wp-block-heading {
+    line-height: 31.25px;
+  }
+
   body.single-post .post-navigation {
     padding-top: 1.5em;
   }
@@ -1761,8 +1781,8 @@ body.single-post .ast-related-post-link {
   }
 
   body.single-post .ast-related-post-title {
-    font-size: 20px;
-    line-height: 1.3em;
+    font-size: 18.24px;
+    line-height: 18.24px;
   }
 
   body.single-post .related-entry-header {
@@ -1771,6 +1791,15 @@ body.single-post .ast-related-post-link {
 
   body.single-post .ast-related-post .entry-content.clear {
     padding: 0;
+  }
+
+  body.single-post .ast-related-post .entry-meta {
+    display: none;
+  }
+
+  body.single-post .ast-related-post-excerpt {
+    font-size: 14.592px;
+    line-height: 23.3472px;
   }
 }
 
