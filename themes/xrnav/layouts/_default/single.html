@@ -28,6 +28,55 @@
     </div>
   </div>
 </article>
+{{ else if eq .Type "wp-404" }}
+<article class="ast-article-single wp-dark-doc-page wp-404-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container uagb-block-1946462c alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-advanced-heading uagb-block-33867360">
+          <h1 class="uagb-heading-text">{{ .Title }}! Page Not Found.</h1>
+        </div>
+        <div class="wp-block-uagb-buttons uagb-buttons__outer-wrap uagb-btn__default-btn uagb-btn-tablet__default-btn uagb-btn-mobile__default-btn uagb-block-ff73b61a">
+          <div class="uagb-buttons__wrap uagb-buttons-layout-wrap">
+            {{ range $index, $button := .Params.buttons }}
+            <div class="wp-block-uagb-buttons-child uagb-buttons__outer-wrap wp-block-button{{ if eq $index 1 }} is-style-outline{{ end }}">
+              <div class="uagb-button__wrapper">
+                <a class="uagb-buttons-repeater wp-block-button__link" href="{{ $button.url }}" rel="follow noopener"{{ if $button.target }} target="{{ $button.target }}"{{ end }} role="button">
+                  <div class="uagb-button__link">{{ $button.label }}</div>
+                </a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ else if eq .Type "wp-image-page" }}
+<article class="ast-article-single wp-image-page{{ if eq .Params.image_width_mode "wide" }} wp-image-page-wide{{ end }}">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    {{ with .Params.top_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
+    <div class="wp-block-uagb-advanced-heading uagb-block-8c0d7442">
+      <h1 class="uagb-heading-text">{{ .Params.page_heading }}</h1>
+    </div>
+    {{ with .Params.mid_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
+    <figure class="wp-block-image{{ if .Params.center_image }} aligncenter{{ end }}{{ if eq .Params.image_width_mode "wide" }} size-full{{ else }} aligncenter size-full{{ end }}">
+      <img
+        decoding="async"
+        src="{{ .Params.hero_image | relURL }}"
+        alt="{{ .Params.hero_image_alt }}"
+        title="{{ .Params.hero_image_title }}"
+        width="{{ .Params.hero_image_width }}"
+        height="{{ .Params.hero_image_height }}">
+    </figure>
+    {{ with .Params.after_image_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
+    {{ with .Params.link_text }}
+    <p class="has-text-align-center"><a href="{{ $.Params.link_url }}"{{ if $.Params.link_target }} target="{{ $.Params.link_target }}" rel="noreferrer noopener"{{ end }}>{{ . }}</a></p>
+    {{ end }}
+    {{ with .Params.bottom_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
+  </div>
+</article>
 {{ else if eq .Type "wp-capability" }}
 <article class="ast-article-single wp-dark-doc-page wp-capability-page">
   <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
