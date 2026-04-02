@@ -3996,8 +3996,8 @@ body.single-post .ast-related-post-link {
   display: block;
   background: #eee;
   color: #333;
-  font-size: 14.592px;
-  line-height: 14.592px;
+  font-size: 16px;
+  line-height: 16px;
   box-sizing: border-box;
 }
 
@@ -4068,7 +4068,8 @@ body.single-post .ast-related-post-link {
   }
 
   .wp-demo-form-page .uagb-container-inner-blocks-wrap {
-    width: 90%;
+    width: 100%;
+    max-width: 337.5px;
     min-height: 625px;
     display: flex;
     align-items: center;
@@ -4078,7 +4079,8 @@ body.single-post .ast-related-post-link {
   }
 
   .wp-demo-form-page .uagb-block-7cba2e14 {
-    width: 338px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -4372,6 +4374,15 @@ body.single-post .ast-related-post-link {
     font-size: 30px !important;
     line-height: 42px !important;
     margin-bottom: 20px;
+  }
+
+  body.wp-demo-form-body,
+  body.wp-demo-form-body .site-footer,
+  body.wp-demo-form-body .site-footer *,
+  body.wp-demo-form-body #wpforms-2320,
+  body.wp-demo-form-body #wpforms-2320 * {
+    font-size: 14.592px;
+    line-height: 23.3472px;
   }
 
   .wp-demo-form-page .uagb-container-inner-blocks-wrap,
