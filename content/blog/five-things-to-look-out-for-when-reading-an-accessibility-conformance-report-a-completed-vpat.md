@@ -5,6 +5,11 @@ lastmod: 2024-06-24
 slug: "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat"
 url: /five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat/
 draft: false
+author: "Brandon Biggs"
+author_url: "/author/brandonkeithbiggs/"
+wp_id: 1733
+featured_image: "/images/DALL%25C2%25B7E-2024-02-19-15.21.24-Create-a-photo-realistic-image-depicting-a-magnifying-glass-placed-over-a-document-with-the-magnifying-glass-specifically-highlighting-the-title-Acc-1.webp"
+featured_image_alt: "Photo-realistic image showing a magnifying glass highlighting the title 'Accessibility Conformance Report' on a professional document."
 ---
 
 Understanding an Accessibility Conformance Report (ACR) is super important in today’s world. Accessibility isn’t just a nice thing to have; it’s a must. ACRs show how companies make sure their products can be used by everyone, but not all ACRs are the same. A report that’s not done well might not truly show how accessible a product is. That’s why it’s key to know what to check for once you get this report from a company who says they’re accessible.

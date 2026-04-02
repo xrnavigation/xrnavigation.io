@@ -3,10 +3,12 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="ast-hfb-header ast-page-builder-template{{ if .IsHome }} home-page{{ end }}{{ if eq .Type "audiom-embed" }} audiom-embed-body{{ end }}">
+{{ $isBlogSingle := and .IsPage (eq .Section "blog") }}
+<body class="ast-hfb-header{{ if not $isBlogSingle }} ast-page-builder-template{{ end }}{{ if .IsHome }} home-page{{ end }}{{ if eq .Type "audiom-embed" }} audiom-embed-body{{ end }}{{ if $isBlogSingle }} single single-post ast-separate-container ast-no-sidebar ast-single-post{{ end }}">
   <a class="skip-link" href="#content">Skip to content</a>
-  <div id="page" class="hfb-header ast-page-builder-template">
+  <div id="page" class="site hfb-header{{ if not $isBlogSingle }} ast-page-builder-template{{ end }}">
     {{ partial "header.html" . }}
+    {{ block "before-content" . }}{{ end }}
     <div id="content" class="site-content">
       <div class="ast-container">
         <div id="primary" class="content-area">
@@ -16,6 +18,7 @@
         </div>
       </div>
     </div>
+    {{ block "after-content" . }}{{ end }}
     {{ partial "footer.html" . }}
   </div>
   <script src="{{ "js/mobile-menu.js" | relURL }}"></script>

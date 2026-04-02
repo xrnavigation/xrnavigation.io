@@ -5,6 +5,11 @@ lastmod: 2024-06-24
 slug: "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance"
 url: /how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance/
 draft: false
+author: "Brandon Biggs"
+author_url: "/author/brandonkeithbiggs/"
+wp_id: 1716
+featured_image: "/images/A-diverse-group-of-people-including-young-and-old-individuals-and-a-person-in-a-wheelchair-are-gathered-around-a-computer.-On-the-computer-screen-t.webp"
+featured_image_alt: "Picture of a group of people of various ages and abilities gathered around a computer with an Audiom map open. One of the people is in a wheelchair."
 ---
 
 The Office of Management and Budget (OMB) has recently released a [list of five digital accessibility rules (Opens in a new tab)](https://www.whitehouse.gov/omb/briefing-room/2023/12/21/omb-releases-digital-accessibility-guidance-to-ensure-all-americans-have-ability-to-access-critical-government-resources/). These rules should help federal agencies create accessible digital content from the start. Digital accessibility should be added before a project ends. These rules are important for making sure all Americans can access government resources.

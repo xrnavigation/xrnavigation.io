@@ -5,6 +5,11 @@ lastmod: 2024-07-26
 slug: "what-is-the-definition-of-a-map"
 url: /what-is-the-definition-of-a-map/
 draft: false
+author: "Brandon Biggs"
+author_url: "/author/brandonkeithbiggs/"
+wp_id: 1730
+featured_image: "/images/DALL%25C2%25B7E-2024-02-19-14.33.46-Create-a-photo-realistic-image-that-showcases-a-tactile-map-designed-for-blind-or-visually-impaired-individuals.-The-image-should-feature-a-close-up-v.webp"
+featured_image_alt: "What is the Definition of a Map?"
 ---
 
 One of the first questions when studying data representation is to understand what exactly is meant by a particular term, in this case, a “map”. Most dictionary definitions are visual centric emphasizing a [visual representation (Opens a new tab)](https://www.merriam-webster.com/dictionary/map), [drawing (Opens a new tab)](https://www.collinsdictionary.com/us/dictionary/english/map), or [flat surface (Opens a new tab)](https://www.dictionary.com/browse/map), but I like the definition by [Wikipedia (Opens a new tab)](https://en.wikipedia.org/wiki/Map):

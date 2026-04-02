@@ -17,7 +17,7 @@ import * as path from 'path';
 import { PNG } from 'pngjs';
 import pixelmatch from 'pixelmatch';
 
-const HUGO_BASE = 'http://localhost:1314';
+const HUGO_BASE = 'http://127.0.0.1:1314';
 const BASELINE_DIR = path.join(__dirname, 'baseline');
 const CURRENT_DIR = path.join(__dirname, 'current');
 const DIFF_DIR = path.join(__dirname, 'diffs');
@@ -106,29 +106,53 @@ async function stabilizePageForScreenshot(page: Page): Promise<void> {
   ]);
 
   await page.evaluate(() => document.fonts.ready);
-
-  const requiresDeepSettle = await page.locator('iframe, .able-wrapper, .able-controller').count();
-  if (!requiresDeepSettle) {
-    await page.waitForTimeout(500);
-    return;
-  }
-
   await page.evaluate(async () => {
     const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-    const height = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
 
-    for (let y = 0; y < height; y += 500) {
-      window.scrollTo(0, y);
-      await delay(100);
+    const waitForImages = async () => {
+      const images = Array.from(document.images);
+      await Promise.all(images.map(image => {
+        if (image.complete && image.naturalWidth > 0) return Promise.resolve();
+        return new Promise<void>(resolve => {
+          const done = () => resolve();
+          image.addEventListener('load', done, { once: true });
+          image.addEventListener('error', done, { once: true });
+          setTimeout(done, 2000);
+        });
+      }));
+    };
+
+    const scrollDocument = async () => {
+      const height = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+      for (let y = 0; y < height; y += 500) {
+        window.scrollTo(0, y);
+        await delay(100);
+      }
+    };
+
+    await waitForImages();
+
+    let stablePasses = 0;
+    let previousHeight = 0;
+
+    while (stablePasses < 2) {
+      await scrollDocument();
+      window.scrollTo(0, 0);
+      await delay(300);
+
+      const currentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+      if (currentHeight === previousHeight) {
+        stablePasses += 1;
+      } else {
+        stablePasses = 0;
+        previousHeight = currentHeight;
+      }
     }
-
-    window.scrollTo(0, 0);
-    await delay(250);
   });
 
   await page.waitForSelector('.able-wrapper', { timeout: 5_000 }).catch(() => {});
   await page.waitForSelector('.able-controller', { timeout: 5_000 }).catch(() => {});
-  await page.waitForTimeout(3_000);
+  await page.waitForTimeout(1_000);
 }
 
 function cropPng(png: PNG, targetWidth: number, targetHeight: number): Buffer {

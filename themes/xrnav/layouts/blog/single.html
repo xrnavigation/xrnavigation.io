@@ -1,23 +1,84 @@
+{{ define "before-content" }}
+{{ $author := .Params.author | default "Brandon Biggs" }}
+{{ $bannerImage := "" }}
+{{ with .Params.featured_image }}
+  {{ $bannerImage = . | strings.TrimLeft "/" | relURL }}
+{{ end }}
+<section class="ast-single-entry-banner{{ if $bannerImage }} Change-background has-banner-image{{ else }} ast-banner-no-image{{ end }}" data-post-type="post" data-banner-layout="layout-2" data-banner-background-type="{{ if $bannerImage }}featured{{ else }}color{{ end }}"{{ if $bannerImage }} style="--ast-banner-background-image:url('{{ $bannerImage }}');"{{ end }}>
+  <div class="ast-container">
+    <h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
+    <div class="entry-meta">By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope itemprop="author"><a title="View all posts by {{ $author }}" href="{{ .Params.author_url | default "/author/brandonkeithbiggs/" | relURL }}" rel="author" class="url fn n" itemprop="url"><span class="author-name" itemprop="name">{{ $author }}</span></a></span> / <span class="posted-on"><span class="published" itemprop="datePublished"> {{ .Date.Format "January 2, 2006" }} </span></span></div>
+  </div>
+</section>
+{{ end }}
+
 {{ define "main" }}
-<article class="post type-post{{ with .Params.featured_image }} has-post-thumbnail{{ end }} ast-article-single">
-  <div class="ast-post-format- single-layout-1">
-    <div class="post-header">
-      <h1>{{ .Title }}</h1>
-      <div class="post-meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        {{ with .Params.author }}
-        <span class="post-author">by {{ . }}</span>
-        {{ end }}
-      </div>
-    </div>
-    {{ with .Params.featured_image }}
-    <figure class="wp-block-image">
-      <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $.Title }}">
-    </figure>
-    {{ end }}
-    <div class="entry-content clear">
+{{ $postID := .Params.wp_id | default .File.UniqueID }}
+<article class="post-{{ $postID }} post type-post status-publish format-standard{{ with .Params.featured_image }} has-post-thumbnail{{ end }} hentry category-uncategorized ast-article-single" id="post-{{ $postID }}" itemtype="https://schema.org/CreativeWork" itemscope>
+  <div class="ast-post-format- {{ if not .Params.featured_image }}ast-no-thumb{{ end }} single-layout-1">
+    <div class="entry-content clear" data-ast-blocks-layout="true" itemprop="text">
       {{ .Content }}
     </div>
   </div>
 </article>
+{{ with .PrevInSection }}
+<nav class="navigation post-navigation" aria-label="Posts">
+  <div class="nav-links">
+    <div class="nav-previous">
+      <a title="{{ .Title }}" href="{{ .RelPermalink }}" rel="prev"><span class="ast-left-arrow" aria-hidden="true">&larr;</span> Previous Post</a>
+    </div>
+  </div>
+</nav>
+{{ end }}
+{{ end }}
+
+{{ define "after-content" }}
+{{ $relatedPages := slice }}
+{{ with .Params.related_posts }}
+  {{ range . }}
+    {{ with site.GetPage (printf "/blog/%s" .) }}
+      {{ $relatedPages = $relatedPages | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if eq (len $relatedPages) 0 }}
+  {{ $relatedPages = first 3 (where (where site.RegularPages "Section" "blog") "RelPermalink" "ne" .RelPermalink) }}
+{{ end }}
+{{ if gt (len $relatedPages) 0 }}
+<div class="ast-single-related-posts-container ast-container--fallback">
+  <div class="ast-related-posts-title-section">
+    <h2 class="ast-related-posts-title"> Related Posts </h2>
+  </div>
+  <div class="ast-related-posts-wrapper">
+    {{ range $relatedPages }}
+    {{ $related := . }}
+    <article class="ast-related-post post-{{ .Params.wp_id | default .File.UniqueID }} post type-post status-publish format-standard{{ with .Params.featured_image }} has-post-thumbnail{{ end }} hentry category-uncategorized">
+      <div class="ast-related-posts-inner-section">
+        <div class="ast-related-post-content">
+          {{ with $related.Params.featured_image }}
+          <div class="ast-related-post-featured-section post-has-thumb">
+            <div class="post-thumb-img-content post-thumb">
+              <a aria-label="Read more about {{ $related.Title }}" href="{{ $related.RelPermalink }}"><img src="{{ . | strings.TrimLeft "/" | relURL }}" class="attachment-large size-large wp-post-image" alt="{{ $related.Params.featured_image_alt | default $related.Title }}" loading="lazy"></a>
+            </div>
+          </div>
+          {{ end }}
+          <header class="entry-header related-entry-header">
+            <h3 class="ast-related-post-title entry-title">
+              <a href="{{ .RelPermalink }}" target="_self" rel="bookmark noopener noreferrer">{{ .Title }}</a>
+            </h3>
+            <div class="entry-meta ast-related-cat-style--none ast-related-tag-style--none"><span class="ast-taxonomy-container cat-links default"><a href="/category/uncategorized/" rel="category tag">Uncategorized</a></span> / By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope itemprop="author"><a title="View all posts by {{ .Params.author | default "Brandon Biggs" }}" href="{{ .Params.author_url | default "/author/brandonkeithbiggs/" | relURL }}" rel="author" class="url fn n" itemprop="url"><span class="author-name" itemprop="name">{{ .Params.author | default "Brandon Biggs" }}</span></a></span></div>
+          </header>
+          <div class="entry-content clear">
+            <p class="ast-related-post-excerpt entry-content clear">{{ .Plain | htmlUnescape | truncate 150 }}</p>
+            <p class="ast-related-post-cta read-more">
+              <a class="ast-related-post-link" href="{{ .RelPermalink }}" aria-label="Related post link" target="_self" rel="bookmark noopener noreferrer"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
 {{ end }}

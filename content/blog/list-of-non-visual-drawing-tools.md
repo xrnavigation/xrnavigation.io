@@ -5,6 +5,14 @@ lastmod: 2025-03-09
 slug: "list-of-non-visual-drawing-tools"
 url: /list-of-non-visual-drawing-tools/
 draft: false
+author: "Brandon Biggs"
+author_url: "/author/brandonkeithbiggs/"
+wp_id: 2897
+featured_image: "/images/DALL%25C2%25B7E-2023-10-17-13.21.37-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-corporate-campus-with-modern-structures-and-pathways-and-the-right-side-i.webp"
+related_posts:
+  - how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance
+  - what-is-the-definition-of-a-map
+  - five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat
 ---
 
 Below are links to options for non-visual drawing tools that allow blind people to independently draw. They are useful for maps, wireframes, logos, sketches, geometry, or for fun. The physical options will require you to take a picture if you want to digitize the image. The digital options require a level of comfort with using new tools.
