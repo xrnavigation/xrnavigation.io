@@ -1,0 +1,60 @@
+{{ define "main" }}
+<article class="ast-article-single wpforms-page-shell">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container uagb-block-7c11d166 alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-container uagb-block-03ab2bbd">
+          <div class="wp-block-uagb-container uagb-block-a7309c59">
+            <div class="wp-block-group is-layout-constrained wp-container-core-group-is-layout-7db9d80f wp-block-group-is-layout-constrained wpforms-page-intro" style="padding-right:0;padding-left:0">
+              <div class="wp-block-uagb-advanced-heading uagb-block-0708a5d5">
+                <h1 class="uagb-heading-text">{{ with .Params.heading }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+              </div>
+              <p class="has-ast-global-color-5-color has-text-color" style="font-size:1em">{{ .Params.form_intro }}</p>
+            </div>
+          </div>
+
+          <div class="wp-block-uagb-container Change-background uagb-block-2cc88bdb">
+            <div class="inherit-container-width wp-block-group change-background has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-eb5e15ed wp-block-group-is-layout-constrained wpforms-contact-card" style="border-radius:20px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)">
+              <div class="wpforms-container wpforms-container-full change-heading wpforms-block wpforms-block-034eb86e-adc2-4784-b0e3-f444a257c372" id="wpforms-1610">
+                <form id="wpforms-form-1610" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="1610" method="post" action="{{ .RelPermalink }}" enctype="multipart/form-data">
+                  <div class="wpforms-field-container">
+                    <div id="wpforms-1610-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1">
+                      <label class="wpforms-field-label" for="wpforms-1610-field_1">Name <span class="wpforms-required-label">*</span></label>
+                      <input type="text" id="wpforms-1610-field_1" class="wpforms-field-large wpforms-field-required" name="name" placeholder="Name" autocomplete="name" required>
+                    </div>
+                    <div id="wpforms-1610-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2">
+                      <label class="wpforms-field-label" for="wpforms-1610-field_2">Email <span class="wpforms-required-label">*</span></label>
+                      <input type="email" id="wpforms-1610-field_2" class="wpforms-field-large wpforms-field-required" name="email" placeholder="Email" autocomplete="email" spellcheck="false" required>
+                    </div>
+                    <div id="wpforms-1610-field_3-container" class="wpforms-field wpforms-field-text" data-field-id="3">
+                      <label class="wpforms-field-label" for="wpforms-1610-field_3">Institution</label>
+                      <input type="text" id="wpforms-1610-field_3" class="wpforms-field-large" name="institution" placeholder="Institution" autocomplete="organization">
+                    </div>
+                    <div id="wpforms-1610-field_4-container" class="wpforms-field wpforms-field-text" data-field-id="4">
+                      <label class="wpforms-field-label" for="wpforms-1610-field_4">Industry</label>
+                      <input type="text" id="wpforms-1610-field_4" class="wpforms-field-large" name="industry" placeholder="Industry" autocomplete="organization-title">
+                    </div>
+                    <div id="wpforms-1610-field_5-container" class="wpforms-field wpforms-field-textarea" data-field-id="5">
+                      <label class="wpforms-field-label" for="wpforms-1610-field_5">Message</label>
+                      <textarea id="wpforms-1610-field_5" class="wpforms-field-medium" name="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="wpforms-submit-container">
+                    <input type="hidden" name="wpforms[id]" value="1610">
+                    <input type="hidden" name="page_title" value="{{ .Title }}">
+                    <input type="hidden" name="page_url" value="{{ .Permalink }}">
+                    <input type="hidden" name="url_referer" value="">
+                    <input type="hidden" name="wpforms[post_id]" value="{{ .File.UniqueID }}">
+                    <button type="submit" name="wpforms[submit]" id="wpforms-submit-1610" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button>
+                    <img src="{{ "vendor/ableplayer/button-icons/white/ellipsis.png" | relURL }}" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,39 @@
+{{ define "main" }}
+<article class="ast-article-single wpforms-page-shell wp-demo-form-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    <div class="wp-block-uagb-container Change-background uagb-block-450c520f alignfull uagb-is-root-container">
+      <div class="uagb-container-inner-blocks-wrap">
+        <div class="wp-block-uagb-container uagb-block-7cba2e14">
+          <h1 class="wp-block-heading has-text-align-center change-heading has-ast-global-color-4-color has-text-color has-link-color wp-elements-dee05117253921c2c742fb57425f4b79" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;text-transform:none">{{ with .Params.heading }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+          <div class="wpforms-container wpforms-container-full wpforms-block wpforms-block-27e0bf6f-8baa-4f9d-b249-f65fe967ad54" id="wpforms-2320">
+            <form id="wpforms-form-2320" class="wpforms-validate wpforms-form" data-formid="2320" method="post" action="{{ .RelPermalink }}" enctype="multipart/form-data">
+              <div class="wpforms-field-container">
+                <div id="wpforms-2320-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0">
+                  <label class="wpforms-field-label" for="wpforms-2320-field_0">Name <span class="wpforms-required-label">*</span></label>
+                  <input type="text" id="wpforms-2320-field_0" class="wpforms-field-large wpforms-field-required" name="name" placeholder="Name" autocomplete="name" required>
+                </div>
+                <div id="wpforms-2320-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1">
+                  <label class="wpforms-field-label" for="wpforms-2320-field_1">Email <span class="wpforms-required-label">*</span></label>
+                  <input type="email" id="wpforms-2320-field_1" class="wpforms-field-large wpforms-field-required" name="email" placeholder="Email" autocomplete="email" spellcheck="false" required>
+                </div>
+              </div>
+              <div class="wpforms-field wpforms-field-hp">
+                <label for="wpforms-2320-field-hp" class="wpforms-field-label">Name</label>
+                <input type="text" name="wpforms[hp]" id="wpforms-2320-field-hp" class="wpforms-field-medium" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="wpforms-submit-container">
+                <input type="hidden" name="wpforms[id]" value="2320">
+                <input type="hidden" name="page_title" value="{{ .Title }}">
+                <input type="hidden" name="page_url" value="{{ .Permalink }}">
+                <input type="hidden" name="url_referer" value="">
+                <input type="hidden" name="wpforms[post_id]" value="{{ .File.UniqueID }}">
+                <button type="submit" name="wpforms[submit]" id="wpforms-submit-2320" class="wpforms-submit" data-alt-text="Loading Audiom Demo..." data-submit-text="Experience The Audiom Demo Now!" aria-live="assertive" value="wpforms-submit">Experience The Audiom Demo Now!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}
