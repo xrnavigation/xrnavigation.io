@@ -1312,6 +1312,75 @@ h3.uagb-post__title a:hover {
   border-radius: 0;
 }
 
+.site-footer-primary-section-1 .uagb-block-041eade5 {
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+#wpforms-1507 {
+  margin: 0;
+}
+
+#wpforms-form-1507 .wpforms-field {
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#wpforms-form-1507 .wpforms-field-label,
+#wpforms-form-1507 .wpforms-required-label {
+  color: #fff;
+}
+
+#wpforms-form-1507 .wpforms-field input[type="text"],
+#wpforms-form-1507 .wpforms-field input[type="email"] {
+  width: 100%;
+  height: 38px;
+  padding: 6px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  box-shadow: none;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+#wpforms-form-1507 .wpforms-field input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#wpforms-form-1507 .wpforms-field input[type="text"]:focus,
+#wpforms-form-1507 .wpforms-field input[type="email"]:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #fff;
+  box-shadow: none;
+}
+
+#wpforms-submit-1507 {
+  width: 60%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #eee;
+  color: #333;
+  font-family: var(--font-body);
+  font-size: 14.592px;
+  line-height: 14.592px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#wpforms-1507 .wpforms-submit-spinner {
+  display: none !important;
+}
+
 /* Newsletter form */
 .newsletter-form .form-group {
   margin-bottom: 1rem;

@@ -1,10 +1,10 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
   {{/* Above Footer — Quick Links + Newsletter (2-col) */}}
-  <div class="site-above-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-2-equal ast-builder-grid-row-tablet-2-equal">
+  <div class="site-above-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-2-equal ast-builder-grid-row-tablet-2-equal ast-builder-grid-row-mobile-full ast-footer-row-stack ast-footer-row-tablet-inline ast-footer-row-mobile-stack">
     <div class="ast-builder-grid-row-container-inner">
       <div class="ast-builder-footer-grid-columns site-above-footer-inner-wrap ast-builder-grid-row">
         <div class="site-footer-above-section-1 site-footer-section site-footer-section-1">
-          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Links">
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Widget 1">
             <section class="widget widget_block">
               <div class="custom-footer">
                 <h2>Quick Links</h2>
@@ -51,7 +51,7 @@
                     <input type="hidden" name="page_id" value="{{ with .File }}{{ .UniqueID }}{{ else }}footer{{ end }}">
                     <input type="hidden" name="wpforms[post_id]" value="{{ with .File }}{{ .UniqueID }}{{ else }}footer{{ end }}">
                     <button type="submit" name="wpforms[submit]" id="wpforms-submit-2494" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button>
-                    <img src="{{ "vendor/ableplayer/button-icons/white/ellipsis.png" | relURL }}" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading">
+                    <img src="https://xrnavigation.io/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading">
                   </div>
                 </form>
               </div>
@@ -63,16 +63,16 @@
   </div>
 
   {{/* Primary Footer — Logo + Links + Contact Form (4-col) */}}
-  <div class="site-primary-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-4-equal ast-builder-grid-row-tablet-2-equal">
+  <div class="site-primary-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-4-equal ast-builder-grid-row-tablet-2-equal ast-builder-grid-row-mobile-full ast-footer-row-stack ast-footer-row-tablet-stack ast-footer-row-mobile-stack">
     <div class="ast-builder-grid-row-container-inner">
       <div class="ast-builder-footer-grid-columns site-primary-footer-inner-wrap ast-builder-grid-row">
         {{/* Column 1: Logo */}}
         <div class="site-footer-primary-section-1 site-footer-section site-footer-section-1">
-          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Logo">
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Widget 4">
             <section class="widget widget_block">
-              <div class="wp-block-uagb-image wp-block-uagb-image--layout-default">
+              <div class="wp-block-uagb-image uagb-block-041eade5 wp-block-uagb-image--layout-default wp-block-uagb-image--effect-zoomin wp-block-uagb-image--align-none">
                 <figure class="wp-block-uagb-image__figure">
-                  <img src="{{ "images/cropped-Pecise-XR-LogosArtboard-2@2x.webp" | relURL }}" alt="XR Navigation" loading="lazy">
+                  <img src="https://brandonkeithbiggs.a2hosted.com/audiom/wp-content/uploads/2023/09/Pecise-XR-LogosArtboard-2@2x-1024x576.webp" alt="XR Navigation Logo" width="1024" height="576" loading="lazy">
                 </figure>
               </div>
             </section>
@@ -89,7 +89,7 @@
                     <li><a href="{{ "/" | relURL }}">Home</a></li>
                     <li><a href="{{ "/about/" | relURL }}">About</a></li>
                     <li><a href="{{ "/blog/" | relURL }}">Blog</a></li>
-                    <li><a href="https://www.linkedin.com/company/xrnavigation/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/company/xrnavigation/" target="_blank" rel="noopener">LinkedIn (Opens in new tab)</a></li>
                   </ul>
                 </div>
               </div>
@@ -115,23 +115,39 @@
 
         {{/* Column 4: Contact Form */}}
         <div class="site-footer-primary-section-4 site-footer-section site-footer-section-4">
-          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Contact Form">
-            <section class="widget">
-              <form class="contact-form" data-netlify="true" name="contact" method="POST">
-                <div class="form-group">
-                  <label for="contact-name">Your Name <span aria-hidden="true">*</span></label>
-                  <input type="text" id="contact-name" name="name" autocomplete="name" required>
-                </div>
-                <div class="form-group">
-                  <label for="contact-email">Your Email <span aria-hidden="true">*</span></label>
-                  <input type="email" id="contact-email" name="email" autocomplete="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="contact-message">Your Message <span aria-hidden="true">*</span></label>
-                  <textarea id="contact-message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+          <aside class="footer-widget-area widget-area site-footer-focus-item footer-widget-area-inner" role="region" aria-label="Footer Widget 2">
+            <section class="widget wpforms-widget">
+              <div class="wpforms-container wpforms-container-full" id="wpforms-1507">
+                <form id="wpforms-form-1507" class="wpforms-validate wpforms-form" data-formid="1507" method="post" action="{{ .RelPermalink }}" enctype="multipart/form-data">
+                  <div class="wpforms-field-container">
+                    <div id="wpforms-1507-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1">
+                      <label class="wpforms-field-label" for="wpforms-1507-field_1">Your Name <span class="wpforms-required-label">*</span></label>
+                      <input type="text" id="wpforms-1507-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="Name" autocomplete="name" required>
+                    </div>
+                    <div id="wpforms-1507-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2">
+                      <label class="wpforms-field-label" for="wpforms-1507-field_2">Your Email <span class="wpforms-required-label">*</span></label>
+                      <input type="email" id="wpforms-1507-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Email" autocomplete="email" spellcheck="false" required>
+                    </div>
+                    <div id="wpforms-1507-field_3-container" class="wpforms-field wpforms-field-text" data-field-id="3">
+                      <label class="wpforms-field-label" for="wpforms-1507-field_3">Your Message <span class="wpforms-required-label">*</span></label>
+                      <input type="text" id="wpforms-1507-field_3" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][3]" placeholder="Message" required>
+                    </div>
+                  </div>
+                  <div class="wpforms-recaptcha-container wpforms-is-recaptcha wpforms-is-recaptcha-type-v3">
+                    <input type="hidden" name="wpforms[recaptcha]" value="">
+                  </div>
+                  <div class="wpforms-submit-container">
+                    <input type="hidden" name="wpforms[id]" value="1507">
+                    <input type="hidden" name="page_title" value="{{ .Title }}">
+                    <input type="hidden" name="page_url" value="{{ .Permalink }}">
+                    <input type="hidden" name="url_referer" value="">
+                    <input type="hidden" name="page_id" value="{{ with .File }}{{ .UniqueID }}{{ else }}footer{{ end }}">
+                    <input type="hidden" name="wpforms[post_id]" value="{{ with .File }}{{ .UniqueID }}{{ else }}footer{{ end }}">
+                    <button type="submit" name="wpforms[submit]" id="wpforms-submit-1507" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button>
+                    <img src="https://xrnavigation.io/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading">
+                  </div>
+                </form>
+              </div>
             </section>
           </aside>
         </div>
