@@ -3481,17 +3481,21 @@ article.post .entry-content p {
 
 .wp-demo-form-page .Change-background {
   position: relative;
-  min-height: 834px;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  padding: 80px 18.75px;
+  overflow: visible;
+  padding-top: 8% !important;
+  padding-right: 0 !important;
+  padding-bottom: 8% !important;
+  padding-left: 0 !important;
   background-color: transparent;
   background-image: url('/images/DALL%25C2%25B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp');
   background-position: 62% 12%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .wp-demo-form-page .Change-background::before {
@@ -3505,24 +3509,44 @@ article.post .entry-content p {
 .wp-demo-form-page .uagb-container-inner-blocks-wrap {
   position: relative;
   z-index: 1;
+  display: flex;
+  width: 100%;
+  max-width: 80%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+  column-gap: 0;
 }
 
 .wp-demo-form-page .uagb-block-7cba2e14 {
-  width: min(100%, 720px);
-  margin: 0 auto;
+  width: 100%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+  column-gap: 20px;
   position: relative;
   z-index: 1;
 }
 
 .wp-demo-form-page h1.wp-block-heading {
-  margin-bottom: 48px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #wpforms-2320 {
-  margin: 0;
+  width: 100%;
+  margin: 24px 0;
+}
+
+#wpforms-form-2320,
+#wpforms-form-2320 .wpforms-field-container {
+  width: 100%;
 }
 
 #wpforms-form-2320 .wpforms-field {
@@ -3576,7 +3600,7 @@ article.post .entry-content p {
 
 #wpforms-submit-2320 {
   height: 37px;
-  width: 263px;
+  width: 285px;
   margin: 0;
   padding: 10px 15px;
   border: 1px solid #ddd;
