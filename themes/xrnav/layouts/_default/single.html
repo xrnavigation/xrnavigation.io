@@ -115,6 +115,24 @@
     <p></p>
   </div>
 </article>
+{{ else if eq .Type "wp-link-download" }}
+<article class="ast-article-single wp-link-download-page">
+  <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
+    {{ with .Params.top_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
+    <h1 class="wp-block-heading">{{ .Title }}</h1>
+    {{ with .Params.mid_spacer }}<div style="height:{{ . }}px" aria-hidden="true" class="wp-block-spacer"></div>{{ end }}
+    <p class="has-text-align-center">{{ .Params.intro }}</p>
+    <div data-wp-interactive="core/file" class="wp-block-file">
+      <a id="wp-block-file--media-{{ with .File }}{{ .UniqueID }}{{ else }}fcoi{{ end }}" href="{{ .Params.file_url | relURL }}">{{ .Params.file_label }}</a>
+      <a
+        href="{{ .Params.file_url | relURL }}"
+        class="wp-block-file__button wp-element-button"
+        download
+        aria-describedby="wp-block-file--media-{{ with .File }}{{ .UniqueID }}{{ else }}fcoi{{ end }}">Download</a>
+    </div>
+    <p></p>
+  </div>
+</article>
 {{ else if eq .Type "wp-capability" }}
 <article class="ast-article-single wp-dark-doc-page wp-capability-page">
   <div class="entry-content clear" data-ast-blocks-layout itemprop="text">
