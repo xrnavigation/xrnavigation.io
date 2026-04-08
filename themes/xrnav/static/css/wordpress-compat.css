@@ -2821,25 +2821,12 @@ body.single-post .ast-related-post-link {
   }
 
   .collection-page .collection-hero {
-    min-height: auto;
-    padding: 40px 10px;
+    min-height: 100vh;
+    padding: 25% 5%;
   }
 
-  .collection-page--health-care-facilities .collection-hero {
-    min-height: 812px !important;
-  }
-
-  .collection-page--corporate-campuses .collection-hero {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
-    min-height: 812px;
-  }
-
-  .collection-page--corporate-campuses .collection-hero .collection-hero-inner {
-    width: 355px;
-    max-width: 355px;
-    margin: 0 auto;
+  .collection-page .collection-hero .collection-hero-inner {
+    max-width: min(100%, 767px);
   }
 
   .collection-page .collection-cta {
@@ -2978,9 +2965,13 @@ body.single-post .ast-related-post-link {
 }
 
 /* --- 1. Hero Section --- */
+.home-hero {
+  padding: 8% 0;
+}
+
 .home-page .hero {
   min-height: 678px;
-  padding: 152px 0;
+  padding: 8% 0;
   background-image: url('/images/DALL%25C2%25B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp');
   background-repeat: no-repeat;
   background-position: 62% 12%;
