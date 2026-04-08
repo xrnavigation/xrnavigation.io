@@ -908,7 +908,7 @@ h6:where(.wp-block-heading).has-background {
 }
 
 .uagb-post__columns-3.is-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .uagb-post__columns-tablet-2 {
@@ -926,17 +926,23 @@ h6:where(.wp-block-heading).has-background {
 .uagb-post__inner-wrap {
   background: #f6f6f6;
   border: none;
+  border-style: none;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.44) 10px 10px 20px -8px;
+  box-shadow: 10px 10px 20px -8px #00000070;
   padding: 30px 40px 10px;
   position: relative;
+  min-height: 380px;
+  text-align: left;
 }
 
 .uagb-post__image-position-background .uagb-post__inner-wrap {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .uagb-post__image-position-background .uagb-post__inner-wrap::before {
@@ -2426,12 +2432,12 @@ body.single-post .ast-related-post-link {
   grid-column: 1 / -1;
 }
 
-/* Dark background variant for feature cards (health-care page) */
+/* Dark background variant for feature cards */
 .collection-page .feature-cards.dark-bg {
-  background-color: var(--ast-global-color-1);
+  background: linear-gradient(135deg, rgb(4, 32, 62) 0%, rgb(10, 77, 127) 100%);
 }
 
-.collection-page .feature-cards .feature-cards-intro {
+.collection-page .feature-cards.dark-bg .feature-cards-intro {
   color: #fff;
 }
 
@@ -2481,6 +2487,15 @@ body.single-post .ast-related-post-link {
 
 .collection-page .feature-cards.has-intro .feature-card p {
   color: #4b5563;
+}
+
+/* Dark-bg overrides for has-intro cards (gradient bg, 20px radius, border, no shadow) */
+.collection-page .feature-cards.dark-bg.has-intro .feature-card {
+  background: var(--ast-global-color-4);
+  border-radius: 20px;
+  border: 1px solid var(--ast-global-color-0);
+  padding: 1.5rem;
+  box-shadow: none;
 }
 
 .collection-page .feature-cards .feature-card h3 {
@@ -5252,6 +5267,16 @@ body.single-post .ast-related-post-link {
 .wp-about-page .uagb-block-7fd0a09e {
   padding-top: 100px;
   padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--ast-global-color-0);
+}
+
+.wp-about-page .uagb-block-7fd0a09e > .uagb-container-inner-blocks-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .wp-about-page .uagb-block-4084160e {
@@ -5295,6 +5320,12 @@ body.single-post .ast-related-post-link {
   font-size: 40px;
   line-height: 48px;
   margin-bottom: 0;
+}
+
+.wp-about-page .uagb-block-93678eb1 .uagb-heading-text {
+  color: var(--ast-global-color-4);
+  font-weight: 800;
+  font-size: 2.5em;
 }
 
 .wp-about-page .uagb-block-ad0f8384 .uagb-heading-text,
@@ -5610,6 +5641,8 @@ body.single-post .ast-related-post-link {
   .wp-about-page .uagb-block-7fd0a09e {
     padding-top: 100px;
     padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .wp-about-page .uagb-block-4084160e,
