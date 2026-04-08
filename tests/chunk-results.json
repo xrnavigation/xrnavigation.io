@@ -1,0 +1,6153 @@
+[
+  {
+    "slug": "404-2",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 8.665364583333334,
+    "maxDiffPercent": 8.665364583333334,
+    "sections": [
+      {
+        "slug": "404-2",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "404! Page Not Found.",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 8.665364583333334,
+        "overlapDiffPercent": 8.665364583333334,
+        "wpWidth": 1920,
+        "wpHeight": 1080,
+        "hugoWidth": 1920,
+        "hugoHeight": 1080,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "404-2",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 11.820689655172414,
+    "maxDiffPercent": 11.820689655172414,
+    "sections": [
+      {
+        "slug": "404-2",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "404! Page Not Found.",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 11.820689655172414,
+        "overlapDiffPercent": 11.820689655172414,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 375,
+        "hugoHeight": 812,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "about",
+    "viewport": "desktop",
+    "totalSections": 14,
+    "matchedSections": 14,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 26.284106360927325,
+    "maxDiffPercent": 98.45822968490879,
+    "sections": [
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "About Xr Navigation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 8.77367862654321,
+        "overlapDiffPercent": 8.77367862654321,
+        "wpWidth": 1920,
+        "wpHeight": 1080,
+        "hugoWidth": 1920,
+        "hugoHeight": 1080,
+        "heightDelta": 0
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 1,
+        "heading": "Experience How Audiom Works For Yourself",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 26.03516543253409,
+        "overlapDiffPercent": 25.720867268649673,
+        "wpWidth": 1920,
+        "wpHeight": 1412,
+        "hugoWidth": 1920,
+        "hugoHeight": 1418,
+        "heightDelta": 6
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 2,
+        "heading": "Publications",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 5.007860249177245,
+        "overlapDiffPercent": 3.0943495203836933,
+        "wpWidth": 1920,
+        "wpHeight": 709,
+        "hugoWidth": 1920,
+        "hugoHeight": 695,
+        "heightDelta": -14
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 3,
+        "heading": "The Problem Is Massive",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 19.90421963276836,
+        "overlapDiffPercent": 19.79092998585573,
+        "wpWidth": 1920,
+        "wpHeight": 708,
+        "hugoWidth": 1920,
+        "hugoHeight": 707,
+        "heightDelta": -1
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 4,
+        "heading": "But We have The Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 11.012420438472418,
+        "overlapDiffPercent": 11.012420438472418,
+        "wpWidth": 1920,
+        "wpHeight": 707,
+        "hugoWidth": 1920,
+        "hugoHeight": 707,
+        "heightDelta": 0
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 5,
+        "heading": "Our Partners",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 8.501984126984127,
+        "overlapDiffPercent": 2.9566498316498318,
+        "wpWidth": 1920,
+        "wpHeight": 315,
+        "hugoWidth": 1920,
+        "hugoHeight": 297,
+        "heightDelta": -18
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 6,
+        "heading": "Our Investors:",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 4.559157580477674,
+        "overlapDiffPercent": 2.119775026624068,
+        "wpWidth": 1920,
+        "wpHeight": 313,
+        "hugoWidth": 1920,
+        "hugoHeight": 321,
+        "heightDelta": 8
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 7,
+        "heading": "Meet Our Team",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 98.45822968490879,
+        "overlapDiffPercent": 98.44273450586265,
+        "wpWidth": 1920,
+        "wpHeight": 201,
+        "hugoWidth": 1920,
+        "hugoHeight": 199,
+        "heightDelta": -2
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 8,
+        "heading": "Brandon Biggs",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 9.32493932038835,
+        "overlapDiffPercent": 9.32493932038835,
+        "wpWidth": 1920,
+        "wpHeight": 309,
+        "hugoWidth": 1920,
+        "hugoHeight": 309,
+        "heightDelta": 0
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 9,
+        "heading": "Chris Toth",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 8.46681636726547,
+        "overlapDiffPercent": 8.46681636726547,
+        "wpWidth": 1920,
+        "wpHeight": 334,
+        "hugoWidth": 1920,
+        "hugoHeight": 334,
+        "heightDelta": 0
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 10,
+        "heading": "James Coughlan",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 6.340874565972222,
+        "overlapDiffPercent": 6.340874565972222,
+        "wpWidth": 1920,
+        "wpHeight": 384,
+        "hugoWidth": 1920,
+        "hugoHeight": 384,
+        "heightDelta": 0
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 11,
+        "heading": "CONTACT US",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 13.011340311986864,
+        "overlapDiffPercent": 9.904602465986395,
+        "wpWidth": 1920,
+        "wpHeight": 392,
+        "hugoWidth": 1920,
+        "hugoHeight": 406,
+        "heightDelta": 14
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 12,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 52.87127560521415,
+        "overlapDiffPercent": 52.6065074906367,
+        "wpWidth": 1920,
+        "wpHeight": 537,
+        "hugoWidth": 1920,
+        "hugoHeight": 534,
+        "heightDelta": -3
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "sectionIndex": 13,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 95.70952711028959,
+        "overlapDiffPercent": 94.96497650036153,
+        "wpWidth": 1920,
+        "wpHeight": 541,
+        "hugoWidth": 1920,
+        "hugoHeight": 461,
+        "heightDelta": -80
+      }
+    ]
+  },
+  {
+    "slug": "about",
+    "viewport": "mobile",
+    "totalSections": 14,
+    "matchedSections": 14,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 37.99178310530693,
+    "maxDiffPercent": 92.64491725768322,
+    "sections": [
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "About Xr Navigation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 42.26603475513428,
+        "overlapDiffPercent": 39.99080459770115,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 375,
+        "hugoHeight": 844,
+        "heightDelta": 32
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 1,
+        "heading": "Experience How Audiom Works For Yourself",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 35.817966903073284,
+        "overlapDiffPercent": 35.06965620328849,
+        "wpWidth": 375,
+        "wpHeight": 1128,
+        "hugoWidth": 375,
+        "hugoHeight": 1115,
+        "heightDelta": -13
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 2,
+        "heading": "Publications",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 7.772930648769575,
+        "overlapDiffPercent": 7.306351883080382,
+        "wpWidth": 375,
+        "wpHeight": 1192,
+        "hugoWidth": 375,
+        "hugoHeight": 1186,
+        "heightDelta": -6
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 3,
+        "heading": "The Problem Is Massive",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 16.233714087919694,
+        "overlapDiffPercent": 14.457122658183103,
+        "wpWidth": 375,
+        "wpHeight": 943,
+        "hugoWidth": 375,
+        "hugoHeight": 963,
+        "heightDelta": 20
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 4,
+        "heading": "But We have The Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 19.2,
+        "overlapDiffPercent": 15.742342342342342,
+        "wpWidth": 375,
+        "wpHeight": 444,
+        "hugoWidth": 375,
+        "hugoHeight": 463,
+        "heightDelta": 19
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 5,
+        "heading": "Our Partners",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 21.076623376623377,
+        "overlapDiffPercent": 6.326011560693641,
+        "wpWidth": 375,
+        "wpHeight": 616,
+        "hugoWidth": 375,
+        "hugoHeight": 519,
+        "heightDelta": -97
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 6,
+        "heading": "Our Investors:",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 18.275054229934923,
+        "overlapDiffPercent": 5.811999999999999,
+        "wpWidth": 375,
+        "wpHeight": 400,
+        "hugoWidth": 375,
+        "hugoHeight": 461,
+        "heightDelta": 61
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 7,
+        "heading": "Meet Our Team",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 92.56311336717428,
+        "overlapDiffPercent": 92.52517006802721,
+        "wpWidth": 375,
+        "wpHeight": 197,
+        "hugoWidth": 375,
+        "hugoHeight": 196,
+        "heightDelta": -1
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 8,
+        "heading": "Brandon Biggs",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 55.942440801457195,
+        "overlapDiffPercent": 53.39576107899807,
+        "wpWidth": 375,
+        "wpHeight": 692,
+        "hugoWidth": 375,
+        "hugoHeight": 732,
+        "heightDelta": 40
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 9,
+        "heading": "Chris Toth",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 54.131297709923665,
+        "overlapDiffPercent": 53.42015503875969,
+        "wpWidth": 375,
+        "wpHeight": 645,
+        "hugoWidth": 375,
+        "hugoHeight": 655,
+        "heightDelta": 10
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 10,
+        "heading": "James Coughlan",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 49.579643765903306,
+        "overlapDiffPercent": 48.79793281653747,
+        "wpWidth": 375,
+        "wpHeight": 645,
+        "hugoWidth": 375,
+        "hugoHeight": 655,
+        "heightDelta": 10
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 11,
+        "heading": "CONTACT US",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 10.945868945868947,
+        "overlapDiffPercent": 10.945868945868947,
+        "wpWidth": 375,
+        "wpHeight": 234,
+        "hugoWidth": 375,
+        "hugoHeight": 234,
+        "heightDelta": 0
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 12,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 15.435357624831308,
+        "overlapDiffPercent": 14.278522571819424,
+        "wpWidth": 375,
+        "wpHeight": 741,
+        "hugoWidth": 375,
+        "hugoHeight": 731,
+        "heightDelta": -10
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "sectionIndex": 13,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 92.64491725768322,
+        "overlapDiffPercent": 92.35577395577396,
+        "wpWidth": 375,
+        "wpHeight": 407,
+        "hugoWidth": 375,
+        "hugoHeight": 423,
+        "heightDelta": 16
+      }
+    ]
+  },
+  {
+    "slug": "about-audiom",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 0.48911959470240945,
+    "maxDiffPercent": 0.48911959470240945,
+    "sections": [
+      {
+        "slug": "about-audiom",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "About Audiom",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 0.48911959470240945,
+        "overlapDiffPercent": 0.3221150003995844,
+        "wpWidth": 1920,
+        "wpHeight": 4178,
+        "hugoWidth": 1920,
+        "hugoHeight": 4171,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "about-audiom",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 25.29317963496638,
+    "maxDiffPercent": 25.29317963496638,
+    "sections": [
+      {
+        "slug": "about-audiom",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "About Audiom",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 25.29317963496638,
+        "overlapDiffPercent": 16.232142151881916,
+        "wpWidth": 375,
+        "wpHeight": 4164,
+        "hugoWidth": 335,
+        "hugoHeight": 4157,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "accessibility-statement",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 53.469039351851855,
+    "maxDiffPercent": 53.469039351851855,
+    "sections": [
+      {
+        "slug": "accessibility-statement",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Accessibility Statement for XR Navigation and all its applications",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 53.469039351851855,
+        "overlapDiffPercent": 53.469039351851855,
+        "wpWidth": 1920,
+        "wpHeight": 540,
+        "hugoWidth": 1920,
+        "hugoHeight": 540,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "accessibility-statement",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 46.59324894514768,
+    "maxDiffPercent": 46.59324894514768,
+    "sections": [
+      {
+        "slug": "accessibility-statement",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Accessibility Statement for XR Navigation and all its applications",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 46.59324894514768,
+        "overlapDiffPercent": 46.59324894514768,
+        "wpWidth": 375,
+        "wpHeight": 632,
+        "hugoWidth": 375,
+        "hugoHeight": 632,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "acr",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 25.484724633487655,
+    "maxDiffPercent": 25.484724633487655,
+    "sections": [
+      {
+        "slug": "acr",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Accessibility Conformance Reports",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 25.484724633487655,
+        "overlapDiffPercent": 15.287897478070175,
+        "wpWidth": 1920,
+        "wpHeight": 864,
+        "hugoWidth": 1920,
+        "hugoHeight": 760,
+        "heightDelta": -104
+      }
+    ]
+  },
+  {
+    "slug": "acr",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 24.08949771689498,
+    "maxDiffPercent": 24.08949771689498,
+    "sections": [
+      {
+        "slug": "acr",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Accessibility Conformance Reports",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 24.08949771689498,
+        "overlapDiffPercent": 14.746666666666666,
+        "wpWidth": 375,
+        "wpHeight": 650,
+        "hugoWidth": 375,
+        "hugoHeight": 730,
+        "heightDelta": 80
+      }
+    ]
+  },
+  {
+    "slug": "asa625",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.0966248075442646,
+    "maxDiffPercent": 2.0966248075442646,
+    "sections": [
+      {
+        "slug": "asa625",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Atlanta Peachtree Streets Alive Map June 2025",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.0966248075442646,
+        "overlapDiffPercent": 1.29880917733799,
+        "wpWidth": 1920,
+        "wpHeight": 866,
+        "hugoWidth": 1920,
+        "hugoHeight": 859,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "asa625",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.315242881072027,
+    "maxDiffPercent": 3.315242881072027,
+    "sections": [
+      {
+        "slug": "asa625",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Atlanta Peachtree Streets Alive Map June 2025",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.315242881072027,
+        "overlapDiffPercent": 2.6302294197031038,
+        "wpWidth": 375,
+        "wpHeight": 995,
+        "hugoWidth": 375,
+        "hugoHeight": 988,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "atia",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.4152317176870748,
+    "maxDiffPercent": 1.4152317176870748,
+    "sections": [
+      {
+        "slug": "atia",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom ATIA 2026 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.4152317176870748,
+        "overlapDiffPercent": 0.8079333504449008,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "atia",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.517991892734643,
+    "maxDiffPercent": 2.517991892734643,
+    "sections": [
+      {
+        "slug": "atia",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom ATIA 2026 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.517991892734643,
+        "overlapDiffPercent": 1.9677641894010662,
+        "wpWidth": 375,
+        "wpHeight": 1069,
+        "hugoWidth": 375,
+        "hugoHeight": 1063,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-airbus-lopa-a320-200-diagram",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.6293048469387754,
+    "maxDiffPercent": 1.6293048469387754,
+    "sections": [
+      {
+        "slug": "audiom-airbus-lopa-a320-200-diagram",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Airbus LOPA A320 200 Diagram",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.6293048469387754,
+        "overlapDiffPercent": 1.023325205338809,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-airbus-lopa-a320-200-diagram",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 27.884548454845486,
+    "maxDiffPercent": 27.884548454845486,
+    "sections": [
+      {
+        "slug": "audiom-airbus-lopa-a320-200-diagram",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Airbus LOPA A320 200 Diagram",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 27.884548454845486,
+        "overlapDiffPercent": 24.62815929758545,
+        "wpWidth": 375,
+        "wpHeight": 1111,
+        "hugoWidth": 375,
+        "hugoHeight": 1063,
+        "heightDelta": -48
+      }
+    ]
+  },
+  {
+    "slug": "audiom-airbus-lopa-a320-200-seat-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.866459776751347,
+    "maxDiffPercent": 1.866459776751347,
+    "sections": [
+      {
+        "slug": "audiom-airbus-lopa-a320-200-seat-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Airbus LOPA A320 200 Seat Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.866459776751347,
+        "overlapDiffPercent": 1.0667685292976328,
+        "wpWidth": 1920,
+        "wpHeight": 866,
+        "hugoWidth": 1920,
+        "hugoHeight": 859,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "audiom-airbus-lopa-a320-200-seat-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 30.560109852385857,
+    "maxDiffPercent": 30.560109852385857,
+    "sections": [
+      {
+        "slug": "audiom-airbus-lopa-a320-200-seat-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Airbus LOPA A320 200 Seat Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 30.560109852385857,
+        "overlapDiffPercent": 26.948934633441674,
+        "wpWidth": 375,
+        "wpHeight": 971,
+        "hugoWidth": 375,
+        "hugoHeight": 923,
+        "heightDelta": -48
+      }
+    ]
+  },
+  {
+    "slug": "audiom-airplane-aa-747-seatmap",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.7527326233183858,
+    "maxDiffPercent": 1.7527326233183858,
+    "sections": [
+      {
+        "slug": "audiom-airplane-aa-747-seatmap",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Airplane AA747 Seatmap",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.7527326233183858,
+        "overlapDiffPercent": 0.975635593220339,
+        "wpWidth": 1920,
+        "wpHeight": 892,
+        "hugoWidth": 1920,
+        "hugoHeight": 885,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "audiom-airplane-aa-747-seatmap",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.766666666666666,
+    "maxDiffPercent": 2.766666666666666,
+    "sections": [
+      {
+        "slug": "audiom-airplane-aa-747-seatmap",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Airplane AA747 Seatmap",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.766666666666666,
+        "overlapDiffPercent": 2.1652233676975943,
+        "wpWidth": 375,
+        "wpHeight": 976,
+        "hugoWidth": 375,
+        "hugoHeight": 970,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-bovine-manus-diagram",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.5117453231292517,
+    "maxDiffPercent": 1.5117453231292517,
+    "sections": [
+      {
+        "slug": "audiom-bovine-manus-diagram",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Bovine Manus Diagram",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.5117453231292517,
+        "overlapDiffPercent": 0.9050414955509924,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-bovine-manus-diagram",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.9612722170252574,
+    "maxDiffPercent": 2.9612722170252574,
+    "sections": [
+      {
+        "slug": "audiom-bovine-manus-diagram",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Bovine Manus Diagram",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.9612722170252574,
+        "overlapDiffPercent": 2.413546566321731,
+        "wpWidth": 375,
+        "wpHeight": 1069,
+        "hugoWidth": 375,
+        "hugoHeight": 1063,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-covid-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 9.184017375674056,
+    "maxDiffPercent": 9.184017375674056,
+    "sections": [
+      {
+        "slug": "audiom-covid-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom COVID-19 State Statistic Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 9.184017375674056,
+        "overlapDiffPercent": 8.52632770066385,
+        "wpWidth": 1920,
+        "wpHeight": 1669,
+        "hugoWidth": 1920,
+        "hugoHeight": 1657,
+        "heightDelta": -12
+      }
+    ]
+  },
+  {
+    "slug": "audiom-covid-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.4710975299210594,
+    "maxDiffPercent": 2.4710975299210594,
+    "sections": [
+      {
+        "slug": "audiom-covid-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom COVID-19 State Statistic Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.4710975299210594,
+        "overlapDiffPercent": 1.6445814072932718,
+        "wpWidth": 375,
+        "wpHeight": 1309,
+        "hugoWidth": 375,
+        "hugoHeight": 1298,
+        "heightDelta": -11
+      }
+    ]
+  },
+  {
+    "slug": "audiom-create-x-demo-day-map-2024",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.8110636210762332,
+    "maxDiffPercent": 1.8110636210762332,
+    "sections": [
+      {
+        "slug": "audiom-create-x-demo-day-map-2024",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Create-X Demo Day Map 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.8110636210762332,
+        "overlapDiffPercent": 1.0344279661016949,
+        "wpWidth": 1920,
+        "wpHeight": 892,
+        "hugoWidth": 1920,
+        "hugoHeight": 885,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "audiom-create-x-demo-day-map-2024",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.360382513661202,
+    "maxDiffPercent": 3.360382513661202,
+    "sections": [
+      {
+        "slug": "audiom-create-x-demo-day-map-2024",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Create-X Demo Day Map 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.360382513661202,
+        "overlapDiffPercent": 2.7626116838487973,
+        "wpWidth": 375,
+        "wpHeight": 976,
+        "hugoWidth": 375,
+        "hugoHeight": 970,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-demo",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 4.474536126409651,
+    "maxDiffPercent": 4.474536126409651,
+    "sections": [
+      {
+        "slug": "audiom-demo",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Activate “Enable sounds and skip to map” if using a screen reader, or click on the enable sounds and then the “A” avatar on the map if sighted, and Press any Key or Tap to Continue.",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 4.474536126409651,
+        "overlapDiffPercent": 4.474536126409651,
+        "wpWidth": 1920,
+        "wpHeight": 1271,
+        "hugoWidth": 1920,
+        "hugoHeight": 1271,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "audiom-demo",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 6.545045045045045,
+    "maxDiffPercent": 6.545045045045045,
+    "sections": [
+      {
+        "slug": "audiom-demo",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Activate “Enable sounds and skip to map” if using a screen reader, or click on the enable sounds and then the “A” avatar on the map if sighted, and Press any Key or Tap to Continue.",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 6.545045045045045,
+        "overlapDiffPercent": 6.545045045045045,
+        "wpWidth": 375,
+        "wpHeight": 1184,
+        "hugoWidth": 375,
+        "hugoHeight": 1184,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "audiom-demo-form",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 11.36701127819549,
+    "maxDiffPercent": 11.36701127819549,
+    "sections": [
+      {
+        "slug": "audiom-demo-form",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Sign Up and Get A Demo Of Audiom!",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 11.36701127819549,
+        "overlapDiffPercent": 11.233527861445783,
+        "wpWidth": 1920,
+        "wpHeight": 665,
+        "hugoWidth": 1920,
+        "hugoHeight": 664,
+        "heightDelta": -1
+      }
+    ]
+  },
+  {
+    "slug": "audiom-demo-form",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 29.539647396473963,
+    "maxDiffPercent": 29.539647396473963,
+    "sections": [
+      {
+        "slug": "audiom-demo-form",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Sign Up and Get A Demo Of Audiom!",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 29.539647396473963,
+        "overlapDiffPercent": 29.45287356321839,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 375,
+        "hugoHeight": 813,
+        "heightDelta": 1
+      }
+    ]
+  },
+  {
+    "slug": "audiom-human-skeleton-diagram",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.5432610544217686,
+    "maxDiffPercent": 1.5432610544217686,
+    "sections": [
+      {
+        "slug": "audiom-human-skeleton-diagram",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Human Skeleton Diagram",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.5432610544217686,
+        "overlapDiffPercent": 0.9367513689253936,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-human-skeleton-diagram",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.933333333333333,
+    "maxDiffPercent": 2.933333333333333,
+    "sections": [
+      {
+        "slug": "audiom-human-skeleton-diagram",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Human Skeleton Diagram",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.933333333333333,
+        "overlapDiffPercent": 2.3854499843211037,
+        "wpWidth": 375,
+        "wpHeight": 1069,
+        "hugoWidth": 375,
+        "hugoHeight": 1063,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-mean-sea-level-rise-map-fall-2024",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.9175967261904763,
+    "maxDiffPercent": 1.9175967261904763,
+    "sections": [
+      {
+        "slug": "audiom-mean-sea-level-rise-map-fall-2024",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Mean Sea Level Rise Map Fall 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.9175967261904763,
+        "overlapDiffPercent": 1.2119679256594724,
+        "wpWidth": 1920,
+        "wpHeight": 840,
+        "hugoWidth": 1920,
+        "hugoHeight": 834,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-mean-sea-level-rise-map-fall-2024",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.581462409886715,
+    "maxDiffPercent": 3.581462409886715,
+    "sections": [
+      {
+        "slug": "audiom-mean-sea-level-rise-map-fall-2024",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Mean Sea Level Rise Map Fall 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.581462409886715,
+        "overlapDiffPercent": 2.9819689119170985,
+        "wpWidth": 375,
+        "wpHeight": 971,
+        "hugoWidth": 375,
+        "hugoHeight": 965,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-neighborhood-demo",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 7.114610296232384,
+    "maxDiffPercent": 7.114610296232384,
+    "sections": [
+      {
+        "slug": "audiom-neighborhood-demo",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Press The “Enable sounds and skip to map” Button, and Press any Key to start.",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 7.114610296232384,
+        "overlapDiffPercent": 0.5963373345644815,
+        "wpWidth": 1920,
+        "wpHeight": 1159,
+        "hugoWidth": 1920,
+        "hugoHeight": 1083,
+        "heightDelta": -76
+      }
+    ]
+  },
+  {
+    "slug": "audiom-neighborhood-demo",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 6.185489802741558,
+    "maxDiffPercent": 6.185489802741558,
+    "sections": [
+      {
+        "slug": "audiom-neighborhood-demo",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Press The “Enable sounds and skip to map” Button, and Press any Key to start.",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 6.185489802741558,
+        "overlapDiffPercent": 3.8714628297362106,
+        "wpWidth": 375,
+        "wpHeight": 997,
+        "hugoWidth": 375,
+        "hugoHeight": 973,
+        "heightDelta": -24
+      }
+    ]
+  },
+  {
+    "slug": "audiom-numbers",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.3343962585034013,
+    "maxDiffPercent": 1.3343962585034013,
+    "sections": [
+      {
+        "slug": "audiom-numbers",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Numbers",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.3343962585034013,
+        "overlapDiffPercent": 0.7265999315537304,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-numbers",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.397922752353132,
+    "maxDiffPercent": 2.397922752353132,
+    "sections": [
+      {
+        "slug": "audiom-numbers",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Numbers",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.397922752353132,
+        "overlapDiffPercent": 1.8243552073130918,
+        "wpWidth": 375,
+        "wpHeight": 1027,
+        "hugoWidth": 375,
+        "hugoHeight": 1021,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-rat-dissection-diagram",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 10.184910381750466,
+    "maxDiffPercent": 10.184910381750466,
+    "sections": [
+      {
+        "slug": "audiom-rat-dissection-diagram",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 10.184910381750466,
+        "overlapDiffPercent": 6.484337130392633,
+        "wpWidth": 1920,
+        "wpHeight": 2063,
+        "hugoWidth": 1920,
+        "hugoHeight": 2148,
+        "heightDelta": 85
+      }
+    ]
+  },
+  {
+    "slug": "audiom-rat-dissection-diagram",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 14.441060931899642,
+    "maxDiffPercent": 14.441060931899642,
+    "sections": [
+      {
+        "slug": "audiom-rat-dissection-diagram",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 14.441060931899642,
+        "overlapDiffPercent": 11.035539654144305,
+        "wpWidth": 375,
+        "wpHeight": 2236,
+        "hugoWidth": 375,
+        "hugoHeight": 2325,
+        "heightDelta": 89
+      }
+    ]
+  },
+  {
+    "slug": "audiom-sheep-brain-diagram",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 22.311046119386873,
+    "maxDiffPercent": 22.311046119386873,
+    "sections": [
+      {
+        "slug": "audiom-sheep-brain-diagram",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 22.311046119386873,
+        "overlapDiffPercent": 18.978895784081953,
+        "wpWidth": 1920,
+        "wpHeight": 2961,
+        "hugoWidth": 1920,
+        "hugoHeight": 3088,
+        "heightDelta": 127
+      }
+    ]
+  },
+  {
+    "slug": "audiom-sheep-brain-diagram",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 13.679388706956436,
+    "maxDiffPercent": 13.679388706956436,
+    "sections": [
+      {
+        "slug": "audiom-sheep-brain-diagram",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 13.679388706956436,
+        "overlapDiffPercent": 9.95312629399586,
+        "wpWidth": 375,
+        "wpHeight": 3220,
+        "hugoWidth": 375,
+        "hugoHeight": 3359,
+        "heightDelta": 139
+      }
+    ]
+  },
+  {
+    "slug": "audiom-sole-source-justification",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 37.664189532520325,
+    "maxDiffPercent": 37.664189532520325,
+    "sections": [
+      {
+        "slug": "audiom-sole-source-justification",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 37.664189532520325,
+        "overlapDiffPercent": 4.45726246105919,
+        "wpWidth": 1920,
+        "wpHeight": 328,
+        "hugoWidth": 1920,
+        "hugoHeight": 214,
+        "heightDelta": -114
+      }
+    ]
+  },
+  {
+    "slug": "audiom-sole-source-justification",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 33.49593495934959,
+    "maxDiffPercent": 33.49593495934959,
+    "sections": [
+      {
+        "slug": "audiom-sole-source-justification",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 33.49593495934959,
+        "overlapDiffPercent": 10.491530616711167,
+        "wpWidth": 375,
+        "wpHeight": 410,
+        "hugoWidth": 335,
+        "hugoHeight": 341,
+        "heightDelta": -69
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-1",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.0748697916666667,
+    "maxDiffPercent": 1.0748697916666667,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-1",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 1",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.0748697916666667,
+        "overlapDiffPercent": 0.608974358974359,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-1",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.6982667671439338,
+    "maxDiffPercent": 1.6982667671439338,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-1",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 1",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.6982667671439338,
+        "overlapDiffPercent": 1.251778955336866,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-2",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.0821533203125,
+    "maxDiffPercent": 1.0821533203125,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-2",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 2",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.0821533203125,
+        "overlapDiffPercent": 0.6162921899529042,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-2",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.714745038934941,
+    "maxDiffPercent": 1.714745038934941,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-2",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 2",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.714745038934941,
+        "overlapDiffPercent": 1.2683320716628816,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-3",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.0803629557291667,
+    "maxDiffPercent": 1.0803629557291667,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-3",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 3",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.0803629557291667,
+        "overlapDiffPercent": 0.6144933935112507,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-3",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.6990705852800805,
+    "maxDiffPercent": 1.6990705852800805,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-3",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 3",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.6990705852800805,
+        "overlapDiffPercent": 1.25258642442594,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-4",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.0809326171875,
+    "maxDiffPercent": 1.0809326171875,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-4",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 4",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.0809326171875,
+        "overlapDiffPercent": 0.615065737833595,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-tvm-map-4",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.7380557648831954,
+    "maxDiffPercent": 1.7380557648831954,
+    "sections": [
+      {
+        "slug": "audiom-tvm-map-4",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom TVM Map 4",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.7380557648831954,
+        "overlapDiffPercent": 1.2917486752460259,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-wisconsin-geological-survey-quaternary-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 51.54072059287291,
+    "maxDiffPercent": 51.54072059287291,
+    "sections": [
+      {
+        "slug": "audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Wisconsin Geological Survey Quaternary Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 51.54072059287291,
+        "overlapDiffPercent": 51.264073897875036,
+        "wpWidth": 1920,
+        "wpHeight": 1057,
+        "hugoWidth": 1920,
+        "hugoHeight": 1051,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "audiom-wisconsin-geological-survey-quaternary-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 35.31219917012448,
+    "maxDiffPercent": 35.31219917012448,
+    "sections": [
+      {
+        "slug": "audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Wisconsin Geological Survey Quaternary Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 35.31219917012448,
+        "overlapDiffPercent": 34.93422370617696,
+        "wpWidth": 375,
+        "wpHeight": 1205,
+        "hugoWidth": 375,
+        "hugoHeight": 1198,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "blog",
+    "viewport": "desktop",
+    "totalSections": 3,
+    "matchedSections": 3,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 67.8350520985462,
+    "maxDiffPercent": 78.79091113683128,
+    "sections": [
+      {
+        "slug": "blog",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Navigating the Future: Exploring Accessibility and Innovation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 78.79091113683128,
+        "overlapDiffPercent": 78.79091113683128,
+        "wpWidth": 1920,
+        "wpHeight": 648,
+        "hugoWidth": 1920,
+        "hugoHeight": 648,
+        "heightDelta": 0
+      },
+      {
+        "slug": "blog",
+        "viewport": "desktop",
+        "sectionIndex": 1,
+        "heading": "Latest Blog Posts",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 71.55270833333333,
+        "overlapDiffPercent": 1.224681712962963,
+        "wpWidth": 1920,
+        "wpHeight": 250,
+        "hugoWidth": 1920,
+        "hugoHeight": 72,
+        "heightDelta": -178
+      },
+      {
+        "slug": "blog",
+        "viewport": "desktop",
+        "sectionIndex": 2,
+        "heading": "List of Non-Visual Drawing Tools",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 53.16153682547399,
+        "overlapDiffPercent": 33.73678215268225,
+        "wpWidth": 1920,
+        "wpHeight": 1454,
+        "hugoWidth": 1920,
+        "hugoHeight": 2057,
+        "heightDelta": 603
+      }
+    ]
+  },
+  {
+    "slug": "blog",
+    "viewport": "mobile",
+    "totalSections": 3,
+    "matchedSections": 3,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 72.29377949211911,
+    "maxDiffPercent": 85.67625570776255,
+    "sections": [
+      {
+        "slug": "blog",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Navigating the Future: Exploring Accessibility and Innovation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 85.67625570776255,
+        "overlapDiffPercent": 81.71117070895522,
+        "wpWidth": 375,
+        "wpHeight": 512,
+        "hugoWidth": 335,
+        "hugoHeight": 584,
+        "heightDelta": 72
+      },
+      {
+        "slug": "blog",
+        "viewport": "mobile",
+        "sectionIndex": 1,
+        "heading": "Latest Blog Posts",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 74.62672064777328,
+        "overlapDiffPercent": 3.8969535882232673,
+        "wpWidth": 375,
+        "wpHeight": 247,
+        "hugoWidth": 335,
+        "hugoHeight": 73,
+        "heightDelta": -174
+      },
+      {
+        "slug": "blog",
+        "viewport": "mobile",
+        "sectionIndex": 2,
+        "heading": "List of Non-Visual Drawing Tools",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 56.57836212082152,
+        "overlapDiffPercent": 44.98281861773711,
+        "wpWidth": 375,
+        "wpHeight": 3427,
+        "hugoWidth": 335,
+        "hugoHeight": 3879,
+        "heightDelta": 452
+      }
+    ]
+  },
+  {
+    "slug": "brandon-keith-biggs",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 25.647087191358025,
+    "maxDiffPercent": 25.647087191358025,
+    "sections": [
+      {
+        "slug": "brandon-keith-biggs",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Brandon Biggs",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 25.647087191358025,
+        "overlapDiffPercent": 22.11334060782412,
+        "wpWidth": 1920,
+        "wpHeight": 1080,
+        "hugoWidth": 1920,
+        "hugoHeight": 1031,
+        "heightDelta": -49
+      }
+    ]
+  },
+  {
+    "slug": "brandon-keith-biggs",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 32.725833333333334,
+    "maxDiffPercent": 32.725833333333334,
+    "sections": [
+      {
+        "slug": "brandon-keith-biggs",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Brandon Biggs",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 32.725833333333334,
+        "overlapDiffPercent": 20.464039408866995,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 375,
+        "hugoHeight": 960,
+        "heightDelta": 148
+      }
+    ]
+  },
+  {
+    "slug": "capability-statement",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 22.432303722993826,
+    "maxDiffPercent": 22.432303722993826,
+    "sections": [
+      {
+        "slug": "capability-statement",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "XR Navigation Capability Statement",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 22.432303722993826,
+        "overlapDiffPercent": 11.817776864035087,
+        "wpWidth": 1920,
+        "wpHeight": 864,
+        "hugoWidth": 1920,
+        "hugoHeight": 760,
+        "heightDelta": -104
+      }
+    ]
+  },
+  {
+    "slug": "capability-statement",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 15.106849315068493,
+    "maxDiffPercent": 15.106849315068493,
+    "sections": [
+      {
+        "slug": "capability-statement",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "XR Navigation Capability Statement",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 15.106849315068493,
+        "overlapDiffPercent": 4.658461538461538,
+        "wpWidth": 375,
+        "wpHeight": 650,
+        "hugoWidth": 375,
+        "hugoHeight": 730,
+        "heightDelta": 80
+      }
+    ]
+  },
+  {
+    "slug": "case-study-vrate-expo-2024",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 6.40372326551904,
+    "maxDiffPercent": 6.40372326551904,
+    "sections": [
+      {
+        "slug": "case-study-vrate-expo-2024",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Case Study: VRATE Expo 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 6.40372326551904,
+        "overlapDiffPercent": 6.109857404500262,
+        "wpWidth": 1920,
+        "wpHeight": 1274,
+        "hugoWidth": 1920,
+        "hugoHeight": 1278,
+        "heightDelta": 4
+      }
+    ]
+  },
+  {
+    "slug": "case-study-vrate-expo-2024",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.1411689145793193,
+    "maxDiffPercent": 3.1411689145793193,
+    "sections": [
+      {
+        "slug": "case-study-vrate-expo-2024",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Case Study: VRATE Expo 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.1411689145793193,
+        "overlapDiffPercent": 2.0083170890188433,
+        "wpWidth": 375,
+        "wpHeight": 1038,
+        "hugoWidth": 375,
+        "hugoHeight": 1026,
+        "heightDelta": -12
+      }
+    ]
+  },
+  {
+    "slug": "case-study-wisconsin-geological-survey",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 12.00301614658926,
+    "maxDiffPercent": 12.00301614658926,
+    "sections": [
+      {
+        "slug": "case-study-wisconsin-geological-survey",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Case Study: Wisconsin Geological Survey",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 12.00301614658926,
+        "overlapDiffPercent": 5.487261301636789,
+        "wpWidth": 1920,
+        "wpHeight": 1378,
+        "hugoWidth": 1920,
+        "hugoHeight": 1283,
+        "heightDelta": -95
+      }
+    ]
+  },
+  {
+    "slug": "case-study-wisconsin-geological-survey",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 24.054327808471456,
+    "maxDiffPercent": 24.054327808471456,
+    "sections": [
+      {
+        "slug": "case-study-wisconsin-geological-survey",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Case Study: Wisconsin Geological Survey",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 24.054327808471456,
+        "overlapDiffPercent": 9.016999260901699,
+        "wpWidth": 375,
+        "wpHeight": 1448,
+        "hugoWidth": 335,
+        "hugoHeight": 1353,
+        "heightDelta": -95
+      }
+    ]
+  },
+  {
+    "slug": "contact",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.1693209134615383,
+    "maxDiffPercent": 3.1693209134615383,
+    "sections": [
+      {
+        "slug": "contact",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Get In Touch!",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.1693209134615383,
+        "overlapDiffPercent": 2.2292172330097086,
+        "wpWidth": 1920,
+        "wpHeight": 1040,
+        "hugoWidth": 1920,
+        "hugoHeight": 1030,
+        "heightDelta": -10
+      }
+    ]
+  },
+  {
+    "slug": "contact",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.888573120189461,
+    "maxDiffPercent": 2.888573120189461,
+    "sections": [
+      {
+        "slug": "contact",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Get In Touch!",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.888573120189461,
+        "overlapDiffPercent": 2.715776986951364,
+        "wpWidth": 375,
+        "wpHeight": 1126,
+        "hugoWidth": 375,
+        "hugoHeight": 1124,
+        "heightDelta": -2
+      }
+    ]
+  },
+  {
+    "slug": "corporate-campuses",
+    "viewport": "desktop",
+    "totalSections": 10,
+    "matchedSections": 5,
+    "unmatchedWp": 5,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 42.573692204225075,
+    "maxDiffPercent": 74.49411275940338,
+    "sections": [
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Inclusive Digital Maps For Corporate Campuses",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 17.556086033950617,
+        "overlapDiffPercent": 17.556086033950617,
+        "wpWidth": 1920,
+        "wpHeight": 1080,
+        "hugoWidth": 1920,
+        "hugoHeight": 1080,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 1,
+        "heading": "The Challenge",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 49.815269975031214,
+        "overlapDiffPercent": 26.752972394314867,
+        "wpWidth": 1920,
+        "wpHeight": 784,
+        "hugoWidth": 1344,
+        "hugoHeight": 801,
+        "heightDelta": 17
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 2,
+        "heading": "The Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 64.19600095785441,
+        "overlapDiffPercent": 47.382636542792795,
+        "wpWidth": 1920,
+        "wpHeight": 592,
+        "hugoWidth": 1344,
+        "hugoHeight": 609,
+        "heightDelta": 17
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 3,
+        "heading": "Join the Movement: Embrace The Vision of Inclusive Design",
+        "selectorType": "wp-block-group",
+        "matchMethod": "exact_heading",
+        "diffPercent": 74.49411275940338,
+        "overlapDiffPercent": 73.43459768659237,
+        "wpWidth": 1920,
+        "wpHeight": 987,
+        "hugoWidth": 1920,
+        "hugoHeight": 1028,
+        "heightDelta": 41
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 9,
+        "heading": "Starting Your Path to Inclusive Design",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 6.806991294885744,
+        "overlapDiffPercent": 6.806991294885744,
+        "wpWidth": 1920,
+        "wpHeight": 919,
+        "hugoWidth": 1920,
+        "hugoHeight": 919,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 4,
+        "heading": "Inclusivity at Its Core:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 5,
+        "heading": "Real-Time Adaptability:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 6,
+        "heading": "Seamless Integration:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 7,
+        "heading": "Beyond Compliance:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "sectionIndex": 8,
+        "heading": "Branding and Reputation:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "corporate-campuses",
+    "viewport": "mobile",
+    "totalSections": 10,
+    "matchedSections": 5,
+    "unmatchedWp": 5,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 42.97376109127809,
+    "maxDiffPercent": 56.39025020177562,
+    "sections": [
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Inclusive Digital Maps For Corporate Campuses",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 46.49129720853859,
+        "overlapDiffPercent": 46.49129720853859,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 375,
+        "hugoHeight": 812,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 1,
+        "heading": "The Challenge",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 42.310630630630634,
+        "overlapDiffPercent": 34.3578809250451,
+        "wpWidth": 375,
+        "wpHeight": 728,
+        "hugoWidth": 335,
+        "hugoHeight": 740,
+        "heightDelta": 12
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 2,
+        "heading": "The Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 39.495440729483285,
+        "overlapDiffPercent": 30.038192085100402,
+        "wpWidth": 375,
+        "wpHeight": 658,
+        "hugoWidth": 335,
+        "hugoHeight": 637,
+        "heightDelta": -21
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 3,
+        "heading": "Join the Movement: Embrace The Vision of Inclusive Design",
+        "selectorType": "wp-block-group",
+        "matchMethod": "exact_heading",
+        "diffPercent": 56.39025020177562,
+        "overlapDiffPercent": 56.305612162380726,
+        "wpWidth": 375,
+        "wpHeight": 2065,
+        "hugoWidth": 375,
+        "hugoHeight": 2061,
+        "heightDelta": -4
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 9,
+        "heading": "Starting Your Path to Inclusive Design",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 30.181186685962373,
+        "overlapDiffPercent": 30.181186685962373,
+        "wpWidth": 375,
+        "wpHeight": 691,
+        "hugoWidth": 375,
+        "hugoHeight": 691,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 4,
+        "heading": "Inclusivity at Its Core:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 5,
+        "heading": "Real-Time Adaptability:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 6,
+        "heading": "Seamless Integration:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 7,
+        "heading": "Beyond Compliance:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "sectionIndex": 8,
+        "heading": "Branding and Reputation:",
+        "selectorType": "wp-block-group",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 0.6253085173218453,
+    "maxDiffPercent": 0.6253085173218453,
+    "sections": [
+      {
+        "slug": "covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 0.6253085173218453,
+        "overlapDiffPercent": 0.6253085173218453,
+        "wpWidth": 1920,
+        "wpHeight": 1857,
+        "hugoWidth": 1920,
+        "hugoHeight": 1857,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 41.34177353342428,
+    "maxDiffPercent": 41.34177353342428,
+    "sections": [
+      {
+        "slug": "covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 41.34177353342428,
+        "overlapDiffPercent": 15.263401303342441,
+        "wpWidth": 375,
+        "wpHeight": 2840,
+        "hugoWidth": 335,
+        "hugoHeight": 3665,
+        "heightDelta": 825
+      }
+    ]
+  },
+  {
+    "slug": "csun",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.1423746744791667,
+    "maxDiffPercent": 1.1423746744791667,
+    "sections": [
+      {
+        "slug": "csun",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom CSUN 2026 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.1423746744791667,
+        "overlapDiffPercent": 0.6767971611721612,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "csun",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.57682006330655,
+    "maxDiffPercent": 1.57682006330655,
+    "sections": [
+      {
+        "slug": "csun",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom CSUN 2026 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.57682006330655,
+        "overlapDiffPercent": 1.1435558816336513,
+        "wpWidth": 375,
+        "wpHeight": 1369,
+        "hugoWidth": 375,
+        "hugoHeight": 1363,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "csun-exhibit-hall-map-2024",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.73649201308699,
+    "maxDiffPercent": 1.73649201308699,
+    "sections": [
+      {
+        "slug": "csun-exhibit-hall-map-2024",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "CSUN Exhibit Hall Map 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.73649201308699,
+        "overlapDiffPercent": 0.9357416569654639,
+        "wpWidth": 1920,
+        "wpHeight": 866,
+        "hugoWidth": 1920,
+        "hugoHeight": 859,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "csun-exhibit-hall-map-2024",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.1418032786885246,
+    "maxDiffPercent": 3.1418032786885246,
+    "sections": [
+      {
+        "slug": "csun-exhibit-hall-map-2024",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "CSUN Exhibit Hall Map 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.1418032786885246,
+        "overlapDiffPercent": 2.542680412371134,
+        "wpWidth": 375,
+        "wpHeight": 976,
+        "hugoWidth": 375,
+        "hugoHeight": 970,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "dif25",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.6963222789115646,
+    "maxDiffPercent": 1.6963222789115646,
+    "sections": [
+      {
+        "slug": "dif25",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Disability Innovation Forum 2025 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.6963222789115646,
+        "overlapDiffPercent": 1.0907554757015743,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "dif25",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 32.53645364536454,
+    "maxDiffPercent": 32.53645364536454,
+    "sections": [
+      {
+        "slug": "dif25",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Disability Innovation Forum 2025 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 32.53645364536454,
+        "overlapDiffPercent": 32.170135746606334,
+        "wpWidth": 375,
+        "wpHeight": 1111,
+        "hugoWidth": 375,
+        "hugoHeight": 1105,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "digital-map-tool-accessibility-comparison",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 70.53875676195649,
+    "maxDiffPercent": 70.53875676195649,
+    "sections": [
+      {
+        "slug": "digital-map-tool-accessibility-comparison",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 70.53875676195649,
+        "overlapDiffPercent": 6.391428443006113,
+        "wpWidth": 1440,
+        "wpHeight": 3090,
+        "hugoWidth": 1440,
+        "hugoHeight": 9818,
+        "heightDelta": 6728
+      }
+    ]
+  },
+  {
+    "slug": "digital-map-tool-accessibility-comparison",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 67.11925509266024,
+    "maxDiffPercent": 67.11925509266024,
+    "sections": [
+      {
+        "slug": "digital-map-tool-accessibility-comparison",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 67.11925509266024,
+        "overlapDiffPercent": 7.623972811551625,
+        "wpWidth": 338,
+        "wpHeight": 3416,
+        "hugoWidth": 338,
+        "hugoHeight": 9597,
+        "heightDelta": 6181
+      }
+    ]
+  },
+  {
+    "slug": "eclipse24",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.6840897817460319,
+    "maxDiffPercent": 1.6840897817460319,
+    "sections": [
+      {
+        "slug": "eclipse24",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Eclipse 2024 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.6840897817460319,
+        "overlapDiffPercent": 0.9767810751398881,
+        "wpWidth": 1920,
+        "wpHeight": 840,
+        "hugoWidth": 1920,
+        "hugoHeight": 834,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "eclipse24",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.0788661643344097,
+    "maxDiffPercent": 3.0788661643344097,
+    "sections": [
+      {
+        "slug": "eclipse24",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Eclipse 2024 Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.0788661643344097,
+        "overlapDiffPercent": 2.448826291079812,
+        "wpWidth": 375,
+        "wpHeight": 929,
+        "hugoWidth": 375,
+        "hugoHeight": 923,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "election2024",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.7540171898355754,
+    "maxDiffPercent": 1.7540171898355754,
+    "sections": [
+      {
+        "slug": "election2024",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom 2024 U.S. Election Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.7540171898355754,
+        "overlapDiffPercent": 0.9769303201506591,
+        "wpWidth": 1920,
+        "wpHeight": 892,
+        "hugoWidth": 1920,
+        "hugoHeight": 885,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "election2024",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.5147540983606556,
+    "maxDiffPercent": 3.5147540983606556,
+    "sections": [
+      {
+        "slug": "election2024",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom 2024 U.S. Election Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.5147540983606556,
+        "overlapDiffPercent": 2.917938144329897,
+        "wpWidth": 375,
+        "wpHeight": 976,
+        "hugoWidth": 375,
+        "hugoHeight": 970,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "events",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 30.163863510520486,
+    "maxDiffPercent": 30.163863510520486,
+    "sections": [
+      {
+        "slug": "events",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 30.163863510520486,
+        "overlapDiffPercent": 6.062381508565238,
+        "wpWidth": 1920,
+        "wpHeight": 4923,
+        "hugoWidth": 1920,
+        "hugoHeight": 6622,
+        "heightDelta": 1699
+      }
+    ]
+  },
+  {
+    "slug": "events",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 16.96977343216107,
+    "maxDiffPercent": 16.96977343216107,
+    "sections": [
+      {
+        "slug": "events",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 16.96977343216107,
+        "overlapDiffPercent": 13.262822624931356,
+        "wpWidth": 375,
+        "wpHeight": 6070,
+        "hugoWidth": 375,
+        "hugoHeight": 6341,
+        "heightDelta": 271
+      }
+    ]
+  },
+  {
+    "slug": "fcoi",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 18.213303009883198,
+    "maxDiffPercent": 18.213303009883198,
+    "sections": [
+      {
+        "slug": "fcoi",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "XR Navigation Financial Conflict of Interest Policy",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 18.213303009883198,
+        "overlapDiffPercent": 3.3666733014861996,
+        "wpWidth": 1920,
+        "wpHeight": 371,
+        "hugoWidth": 1920,
+        "hugoHeight": 314,
+        "heightDelta": -57
+      }
+    ]
+  },
+  {
+    "slug": "fcoi",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 21.483880379285193,
+    "maxDiffPercent": 21.483880379285193,
+    "sections": [
+      {
+        "slug": "fcoi",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "XR Navigation Financial Conflict of Interest Policy",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 21.483880379285193,
+        "overlapDiffPercent": 2.271852416748375,
+        "wpWidth": 375,
+        "wpHeight": 457,
+        "hugoWidth": 335,
+        "hugoHeight": 411,
+        "heightDelta": -46
+      }
+    ]
+  },
+  {
+    "slug": "fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 0.25083541567507533,
+    "maxDiffPercent": 0.25083541567507533,
+    "sections": [
+      {
+        "slug": "fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 0.25083541567507533,
+        "overlapDiffPercent": 0.25083541567507533,
+        "wpWidth": 1920,
+        "wpHeight": 16808,
+        "hugoWidth": 1920,
+        "hugoHeight": 16808,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 29.311496601872534,
+    "maxDiffPercent": 29.311496601872534,
+    "sections": [
+      {
+        "slug": "fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 29.311496601872534,
+        "overlapDiffPercent": 8.241849446621947,
+        "wpWidth": 375,
+        "wpHeight": 18145,
+        "hugoWidth": 335,
+        "hugoHeight": 21041,
+        "heightDelta": 2896
+      }
+    ]
+  },
+  {
+    "slug": "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 9.137609298357859,
+    "maxDiffPercent": 9.137609298357859,
+    "sections": [
+      {
+        "slug": "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 9.137609298357859,
+        "overlapDiffPercent": 5.823662687886825,
+        "wpWidth": 1440,
+        "wpHeight": 1508,
+        "hugoWidth": 1440,
+        "hugoHeight": 1563,
+        "heightDelta": 55
+      }
+    ]
+  },
+  {
+    "slug": "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 16.910593251266615,
+    "maxDiffPercent": 16.910593251266615,
+    "sections": [
+      {
+        "slug": "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 16.910593251266615,
+        "overlapDiffPercent": 14.883139317528457,
+        "wpWidth": 338,
+        "wpHeight": 2295,
+        "hugoWidth": 338,
+        "hugoHeight": 2351,
+        "heightDelta": 56
+      }
+    ]
+  },
+  {
+    "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 5.216429412579662,
+    "maxDiffPercent": 5.216429412579662,
+    "sections": [
+      {
+        "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 5.216429412579662,
+        "overlapDiffPercent": 2.417941449151334,
+        "wpWidth": 1440,
+        "wpHeight": 1558,
+        "hugoWidth": 1440,
+        "hugoHeight": 1604,
+        "heightDelta": 46
+      }
+    ]
+  },
+  {
+    "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 18.274656308684403,
+    "maxDiffPercent": 18.274656308684403,
+    "sections": [
+      {
+        "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 18.274656308684403,
+        "overlapDiffPercent": 16.269126402149052,
+        "wpWidth": 338,
+        "wpHeight": 2608,
+        "hugoWidth": 338,
+        "hugoHeight": 2672,
+        "heightDelta": 64
+      }
+    ]
+  },
+  {
+    "slug": "gallery",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 26.88443736869748,
+    "maxDiffPercent": 26.88443736869748,
+    "sections": [
+      {
+        "slug": "gallery",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 26.88443736869748,
+        "overlapDiffPercent": 3.3920671408743925,
+        "wpWidth": 1920,
+        "wpHeight": 1904,
+        "hugoWidth": 1920,
+        "hugoHeight": 1441,
+        "heightDelta": -463
+      }
+    ]
+  },
+  {
+    "slug": "gallery",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 28.721501814166274,
+    "maxDiffPercent": 28.721501814166274,
+    "sections": [
+      {
+        "slug": "gallery",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 28.721501814166274,
+        "overlapDiffPercent": 11.86883148294076,
+        "wpWidth": 375,
+        "wpHeight": 2113,
+        "hugoWidth": 335,
+        "hugoHeight": 1913,
+        "heightDelta": -200
+      }
+    ]
+  },
+  {
+    "slug": "gatech",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 48.05575042517007,
+    "maxDiffPercent": 48.05575042517007,
+    "sections": [
+      {
+        "slug": "gatech",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Georgia Tech Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 48.05575042517007,
+        "overlapDiffPercent": 47.73576531485284,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "gatech",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 36.45550358590584,
+    "maxDiffPercent": 36.45550358590584,
+    "sections": [
+      {
+        "slug": "gatech",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Georgia Tech Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 36.45550358590584,
+        "overlapDiffPercent": 36.09683286296645,
+        "wpWidth": 375,
+        "wpHeight": 1069,
+        "hugoWidth": 375,
+        "hugoHeight": 1063,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "gavilan-gilroy",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 30.401351686507933,
+    "maxDiffPercent": 30.401351686507933,
+    "sections": [
+      {
+        "slug": "gavilan-gilroy",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Gilroy Campus Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 30.401351686507933,
+        "overlapDiffPercent": 29.900641986410868,
+        "wpWidth": 1920,
+        "wpHeight": 840,
+        "hugoWidth": 1920,
+        "hugoHeight": 834,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "gavilan-gilroy",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.530176625328824,
+    "maxDiffPercent": 2.530176625328824,
+    "sections": [
+      {
+        "slug": "gavilan-gilroy",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Gilroy Campus Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.530176625328824,
+        "overlapDiffPercent": 1.866363980325388,
+        "wpWidth": 375,
+        "wpHeight": 887,
+        "hugoWidth": 375,
+        "hugoHeight": 881,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "gavilan-hollister",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.6595982142857142,
+    "maxDiffPercent": 1.6595982142857142,
+    "sections": [
+      {
+        "slug": "gavilan-hollister",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Gavilan Hollister Campus",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.6595982142857142,
+        "overlapDiffPercent": 0.952113309352518,
+        "wpWidth": 1920,
+        "wpHeight": 840,
+        "hugoWidth": 1920,
+        "hugoHeight": 834,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "gavilan-hollister",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.8055974165769646,
+    "maxDiffPercent": 2.8055974165769646,
+    "sections": [
+      {
+        "slug": "gavilan-hollister",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Gavilan Hollister Campus",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.8055974165769646,
+        "overlapDiffPercent": 2.1737811484290357,
+        "wpWidth": 375,
+        "wpHeight": 929,
+        "hugoWidth": 375,
+        "hugoHeight": 923,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "health-care-facilities",
+    "viewport": "desktop",
+    "totalSections": 6,
+    "matchedSections": 6,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 46.473946376240654,
+    "maxDiffPercent": 63.588789682539684,
+    "sections": [
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Inclusive Digital Maps For Health Care Facilities",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 27.88478973765432,
+        "overlapDiffPercent": 27.88478973765432,
+        "wpWidth": 1920,
+        "wpHeight": 1080,
+        "hugoWidth": 1920,
+        "hugoHeight": 1080,
+        "heightDelta": 0
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "sectionIndex": 1,
+        "heading": "Navigating the Hospital Maze",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 48.39738087806908,
+        "overlapDiffPercent": 24.683495049805636,
+        "wpWidth": 1920,
+        "wpHeight": 784,
+        "hugoWidth": 1344,
+        "hugoHeight": 801,
+        "heightDelta": 17
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "sectionIndex": 2,
+        "heading": "Audiom: The Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 63.588789682539684,
+        "overlapDiffPercent": 46.490282134813384,
+        "wpWidth": 1920,
+        "wpHeight": 592,
+        "hugoWidth": 1344,
+        "hugoHeight": 609,
+        "heightDelta": 17
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "sectionIndex": 3,
+        "heading": "Inclusivity",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 42.63549679487179,
+        "overlapDiffPercent": 36.80181850282486,
+        "wpWidth": 1920,
+        "wpHeight": 650,
+        "hugoWidth": 1920,
+        "hugoHeight": 590,
+        "heightDelta": -60
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "sectionIndex": 4,
+        "heading": "Accessible Map Features",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 48.0666258614436,
+        "overlapDiffPercent": 48.0666258614436,
+        "wpWidth": 1920,
+        "wpHeight": 919,
+        "hugoWidth": 1920,
+        "hugoHeight": 919,
+        "heightDelta": 0
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "sectionIndex": 5,
+        "heading": "Leading the Way to Inclusively Designed Healthcare Experiences",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 48.27059530286543,
+        "overlapDiffPercent": 48.27059530286543,
+        "wpWidth": 1920,
+        "wpHeight": 919,
+        "hugoWidth": 1920,
+        "hugoHeight": 919,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "health-care-facilities",
+    "viewport": "mobile",
+    "totalSections": 6,
+    "matchedSections": 6,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 45.35695091105589,
+    "maxDiffPercent": 57.63415435139573,
+    "sections": [
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Inclusive Digital Maps For Health Care Facilities",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 57.63415435139573,
+        "overlapDiffPercent": 52.57554591574149,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 335,
+        "hugoHeight": 812,
+        "heightDelta": 0
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "sectionIndex": 1,
+        "heading": "Navigating the Hospital Maze",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 23.823600344530576,
+        "overlapDiffPercent": 23.7250539025442,
+        "wpWidth": 375,
+        "wpHeight": 773,
+        "hugoWidth": 375,
+        "hugoHeight": 774,
+        "heightDelta": 1
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "sectionIndex": 2,
+        "heading": "Audiom: The Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 45.3919218819352,
+        "overlapDiffPercent": 33.37088144184737,
+        "wpWidth": 375,
+        "wpHeight": 751,
+        "hugoWidth": 335,
+        "hugoHeight": 689,
+        "heightDelta": -62
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "sectionIndex": 3,
+        "heading": "Inclusivity",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 47.67248545303408,
+        "overlapDiffPercent": 41.35129595468351,
+        "wpWidth": 375,
+        "wpHeight": 801,
+        "hugoWidth": 335,
+        "hugoHeight": 802,
+        "heightDelta": 1
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "sectionIndex": 4,
+        "heading": "Accessible Map Features",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 48.61076388888889,
+        "overlapDiffPercent": 41.5616362631288,
+        "wpWidth": 375,
+        "wpHeight": 768,
+        "hugoWidth": 335,
+        "hugoHeight": 756,
+        "heightDelta": -12
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "sectionIndex": 5,
+        "heading": "Leading the Way to Inclusively Designed Healthcare Experiences",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 49.00877954655089,
+        "overlapDiffPercent": 42.9202756118107,
+        "wpWidth": 375,
+        "wpHeight": 691,
+        "hugoWidth": 335,
+        "hugoHeight": 691,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "home",
+    "viewport": "desktop",
+    "totalSections": 10,
+    "matchedSections": 8,
+    "unmatchedWp": 2,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 12.312006824682793,
+    "maxDiffPercent": 24.853210034013607,
+    "sections": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Welcome to XR Navigation with Audiom: The World’s First Inclusive Digital Map",
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 16.35003671071953,
+        "overlapDiffPercent": 15.97990412979351,
+        "wpWidth": 1920,
+        "wpHeight": 681,
+        "hugoWidth": 1920,
+        "hugoHeight": 678,
+        "heightDelta": -3
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 1,
+        "heading": "Step One",
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 4.96265076754386,
+        "overlapDiffPercent": 4.648996149614962,
+        "wpWidth": 1920,
+        "wpHeight": 304,
+        "hugoWidth": 1920,
+        "hugoHeight": 303,
+        "heightDelta": -1
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 2,
+        "heading": "Why XR Navigation Is The Future",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 14.337945482246953,
+        "overlapDiffPercent": 14.269797467515247,
+        "wpWidth": 1920,
+        "wpHeight": 1258,
+        "hugoWidth": 1920,
+        "hugoHeight": 1257,
+        "heightDelta": -1
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 3,
+        "heading": "Our Clients",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 6.066888619854722,
+        "overlapDiffPercent": 5.838895631067961,
+        "wpWidth": 1920,
+        "wpHeight": 413,
+        "hugoWidth": 1920,
+        "hugoHeight": 412,
+        "heightDelta": -1
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 4,
+        "heading": "What Is Audiom?",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.5638810380267216,
+        "overlapDiffPercent": 3.4646669238683128,
+        "wpWidth": 1920,
+        "wpHeight": 973,
+        "hugoWidth": 1920,
+        "hugoHeight": 972,
+        "heightDelta": -1
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 5,
+        "heading": "Audiom Use Cases",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 23.527420876887337,
+        "overlapDiffPercent": 22.102465986394556,
+        "wpWidth": 1920,
+        "wpHeight": 1127,
+        "hugoWidth": 1920,
+        "hugoHeight": 1148,
+        "heightDelta": 21
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 6,
+        "heading": "Meet Our Team",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 4.834021068169619,
+        "overlapDiffPercent": 4.680527553763441,
+        "wpWidth": 1920,
+        "wpHeight": 620,
+        "hugoWidth": 1920,
+        "hugoHeight": 621,
+        "heightDelta": 1
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 7,
+        "heading": "CONTACT US",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 24.853210034013607,
+        "overlapDiffPercent": 6.066512542517007,
+        "wpWidth": 1920,
+        "wpHeight": 392,
+        "hugoWidth": 1920,
+        "hugoHeight": 490,
+        "heightDelta": 98
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 8,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "sectionIndex": 9,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "home",
+    "viewport": "mobile",
+    "totalSections": 10,
+    "matchedSections": 8,
+    "unmatchedWp": 2,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 45.41526966983929,
+    "maxDiffPercent": 70.38253687315634,
+    "sections": [
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Welcome to XR Navigation with Audiom: The World’s First Inclusive Digital Map",
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 35.22908496732027,
+        "overlapDiffPercent": 34.91001642036125,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 375,
+        "hugoHeight": 816,
+        "heightDelta": 4
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 1,
+        "heading": "Step One",
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 36.43199477636304,
+        "overlapDiffPercent": 10.847619047619048,
+        "wpWidth": 375,
+        "wpHeight": 728,
+        "hugoWidth": 375,
+        "hugoHeight": 1021,
+        "heightDelta": 293
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 2,
+        "heading": "Why XR Navigation Is The Future",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 42.91861821444594,
+        "overlapDiffPercent": 9.954423213021938,
+        "wpWidth": 375,
+        "wpHeight": 942,
+        "hugoWidth": 375,
+        "hugoHeight": 1486,
+        "heightDelta": 544
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 3,
+        "heading": "Our Clients",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 37.02390390390391,
+        "overlapDiffPercent": 12.401670843776106,
+        "wpWidth": 375,
+        "wpHeight": 555,
+        "hugoWidth": 375,
+        "hugoHeight": 399,
+        "heightDelta": -156
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 4,
+        "heading": "What Is Audiom?",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 39.26375227686703,
+        "overlapDiffPercent": 24.13151308304892,
+        "wpWidth": 375,
+        "wpHeight": 732,
+        "hugoWidth": 375,
+        "hugoHeight": 586,
+        "heightDelta": -146
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 5,
+        "heading": "Audiom Use Cases",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 55.24859593467278,
+        "overlapDiffPercent": 46.1121675155631,
+        "wpWidth": 375,
+        "wpHeight": 2837,
+        "hugoWidth": 375,
+        "hugoHeight": 2356,
+        "heightDelta": -481
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 6,
+        "heading": "Meet Our Team",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 46.82367041198502,
+        "overlapDiffPercent": 24.23649946638207,
+        "wpWidth": 375,
+        "wpHeight": 937,
+        "hugoWidth": 375,
+        "hugoHeight": 1335,
+        "heightDelta": 398
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 7,
+        "heading": "CONTACT US",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 70.38253687315634,
+        "overlapDiffPercent": 11.927017543859648,
+        "wpWidth": 375,
+        "wpHeight": 190,
+        "hugoWidth": 375,
+        "hugoHeight": 565,
+        "heightDelta": 375
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 8,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "sectionIndex": 9,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 7.809086937527304,
+    "maxDiffPercent": 7.809086937527304,
+    "sections": [
+      {
+        "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 7.809086937527304,
+        "overlapDiffPercent": 5.007877560207067,
+        "wpWidth": 1440,
+        "wpHeight": 1481,
+        "hugoWidth": 1440,
+        "hugoHeight": 1526,
+        "heightDelta": 45
+      }
+    ]
+  },
+  {
+    "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 14.956856683096184,
+    "maxDiffPercent": 14.956856683096184,
+    "sections": [
+      {
+        "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 14.956856683096184,
+        "overlapDiffPercent": 13.700243526740369,
+        "wpWidth": 338,
+        "wpHeight": 2301,
+        "hugoWidth": 338,
+        "hugoHeight": 2335,
+        "heightDelta": 34
+      }
+    ]
+  },
+  {
+    "slug": "how-to-convert-from-pdf-to-geojson-using-qgis",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 10.848877583979329,
+    "maxDiffPercent": 10.848877583979329,
+    "sections": [
+      {
+        "slug": "how-to-convert-from-pdf-to-geojson-using-qgis",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 10.848877583979329,
+        "overlapDiffPercent": 5.4187012764499265,
+        "wpWidth": 1440,
+        "wpHeight": 3891,
+        "hugoWidth": 1440,
+        "hugoHeight": 4128,
+        "heightDelta": 237
+      }
+    ]
+  },
+  {
+    "slug": "how-to-convert-from-pdf-to-geojson-using-qgis",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 21.29373449642096,
+    "maxDiffPercent": 21.29373449642096,
+    "sections": [
+      {
+        "slug": "how-to-convert-from-pdf-to-geojson-using-qgis",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 21.29373449642096,
+        "overlapDiffPercent": 16.80742395425812,
+        "wpWidth": 338,
+        "wpHeight": 4421,
+        "hugoWidth": 338,
+        "hugoHeight": 4673,
+        "heightDelta": 252
+      }
+    ]
+  },
+  {
+    "slug": "how-to-make-detailed-map-text-descriptions",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 7.656063507924612,
+    "maxDiffPercent": 7.656063507924612,
+    "sections": [
+      {
+        "slug": "how-to-make-detailed-map-text-descriptions",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 7.656063507924612,
+        "overlapDiffPercent": 5.24153350992623,
+        "wpWidth": 1440,
+        "wpHeight": 3901,
+        "hugoWidth": 1440,
+        "hugoHeight": 4003,
+        "heightDelta": 102
+      }
+    ]
+  },
+  {
+    "slug": "how-to-make-detailed-map-text-descriptions",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 13.837057919705854,
+    "maxDiffPercent": 13.837057919705854,
+    "sections": [
+      {
+        "slug": "how-to-make-detailed-map-text-descriptions",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 13.837057919705854,
+        "overlapDiffPercent": 13.372529723553312,
+        "wpWidth": 338,
+        "wpHeight": 6121,
+        "hugoWidth": 338,
+        "hugoHeight": 6154,
+        "heightDelta": 33
+      }
+    ]
+  },
+  {
+    "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 12.521080590562422,
+    "maxDiffPercent": 12.521080590562422,
+    "sections": [
+      {
+        "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 12.521080590562422,
+        "overlapDiffPercent": 4.556773683976327,
+        "wpWidth": 1440,
+        "wpHeight": 7491,
+        "hugoWidth": 1440,
+        "hugoHeight": 8173,
+        "heightDelta": 682
+      }
+    ]
+  },
+  {
+    "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 17.52231100124572,
+    "maxDiffPercent": 17.52231100124572,
+    "sections": [
+      {
+        "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 17.52231100124572,
+        "overlapDiffPercent": 12.331407497827616,
+        "wpWidth": 338,
+        "wpHeight": 11440,
+        "hugoWidth": 338,
+        "hugoHeight": 12160,
+        "heightDelta": 720
+      }
+    ]
+  },
+  {
+    "slug": "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 10.889932334155441,
+    "maxDiffPercent": 10.889932334155441,
+    "sections": [
+      {
+        "slug": "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 10.889932334155441,
+        "overlapDiffPercent": 5.512137061624086,
+        "wpWidth": 1440,
+        "wpHeight": 1757,
+        "hugoWidth": 1440,
+        "hugoHeight": 1657,
+        "heightDelta": -100
+      }
+    ]
+  },
+  {
+    "slug": "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 19.39090959728179,
+    "maxDiffPercent": 19.39090959728179,
+    "sections": [
+      {
+        "slug": "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 19.39090959728179,
+        "overlapDiffPercent": 14.859538167377556,
+        "wpWidth": 338,
+        "wpHeight": 2762,
+        "hugoWidth": 338,
+        "hugoHeight": 2615,
+        "heightDelta": -147
+      }
+    ]
+  },
+  {
+    "slug": "implementation",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 28.341782513786764,
+    "maxDiffPercent": 28.341782513786764,
+    "sections": [
+      {
+        "slug": "implementation",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Implementation Process",
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 28.341782513786764,
+        "overlapDiffPercent": 9.868045520231213,
+        "wpWidth": 1920,
+        "wpHeight": 2176,
+        "hugoWidth": 1920,
+        "hugoHeight": 1730,
+        "heightDelta": -446
+      }
+    ]
+  },
+  {
+    "slug": "implementation",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 34.98835564261617,
+    "maxDiffPercent": 34.98835564261617,
+    "sections": [
+      {
+        "slug": "implementation",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Implementation Process",
+        "selectorType": "uagb-root",
+        "matchMethod": "position",
+        "diffPercent": 34.98835564261617,
+        "overlapDiffPercent": 16.010752567231666,
+        "wpWidth": 375,
+        "wpHeight": 2654,
+        "hugoWidth": 335,
+        "hugoHeight": 3063,
+        "heightDelta": 409
+      }
+    ]
+  },
+  {
+    "slug": "ipst",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.731217824967825,
+    "maxDiffPercent": 1.731217824967825,
+    "sections": [
+      {
+        "slug": "ipst",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Institute of Paper Science and Technology Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.731217824967825,
+        "overlapDiffPercent": 1.1587783171521036,
+        "wpWidth": 1920,
+        "wpHeight": 1036,
+        "hugoWidth": 1920,
+        "hugoHeight": 1030,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "ipst",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.4282628262826282,
+    "maxDiffPercent": 3.4282628262826282,
+    "sections": [
+      {
+        "slug": "ipst",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Institute of Paper Science and Technology Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.4282628262826282,
+        "overlapDiffPercent": 2.903891402714932,
+        "wpWidth": 375,
+        "wpHeight": 1111,
+        "hugoWidth": 375,
+        "hugoHeight": 1105,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "jernigan-institute",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.557944002650762,
+    "maxDiffPercent": 1.557944002650762,
+    "sections": [
+      {
+        "slug": "jernigan-institute",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Jernigan Institute NFB Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.557944002650762,
+        "overlapDiffPercent": 0.8681598264931598,
+        "wpWidth": 1920,
+        "wpHeight": 1006,
+        "hugoWidth": 1920,
+        "hugoHeight": 999,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "jernigan-institute",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.052394022567856,
+    "maxDiffPercent": 3.052394022567856,
+    "sections": [
+      {
+        "slug": "jernigan-institute",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Jernigan Institute NFB Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.052394022567856,
+        "overlapDiffPercent": 2.4275015346838553,
+        "wpWidth": 375,
+        "wpHeight": 1093,
+        "hugoWidth": 375,
+        "hugoHeight": 1086,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "list-of-non-visual-drawing-tools",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 9.219902228850774,
+    "maxDiffPercent": 9.219902228850774,
+    "sections": [
+      {
+        "slug": "list-of-non-visual-drawing-tools",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 9.219902228850774,
+        "overlapDiffPercent": 5.410947077613745,
+        "wpWidth": 1440,
+        "wpHeight": 1287,
+        "hugoWidth": 1440,
+        "hugoHeight": 1341,
+        "heightDelta": 54
+      }
+    ]
+  },
+  {
+    "slug": "list-of-non-visual-drawing-tools",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 11.174412223363273,
+    "maxDiffPercent": 11.174412223363273,
+    "sections": [
+      {
+        "slug": "list-of-non-visual-drawing-tools",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 11.174412223363273,
+        "overlapDiffPercent": 9.933831388494044,
+        "wpWidth": 338,
+        "wpHeight": 2148,
+        "hugoWidth": 338,
+        "hugoHeight": 2178,
+        "heightDelta": 30
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-1",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.0076497395833333,
+    "maxDiffPercent": 1.0076497395833333,
+    "sections": [
+      {
+        "slug": "lske-map-1",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 1",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.0076497395833333,
+        "overlapDiffPercent": 0.5414377289377289,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-1",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.4352172820899272,
+    "maxDiffPercent": 1.4352172820899272,
+    "sections": [
+      {
+        "slug": "lske-map-1",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 1",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.4352172820899272,
+        "overlapDiffPercent": 0.9875346959374212,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-2",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.0118408203125,
+    "maxDiffPercent": 1.0118408203125,
+    "sections": [
+      {
+        "slug": "lske-map-2",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 2",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.0118408203125,
+        "overlapDiffPercent": 0.5456485478806907,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-2",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.4348153730218538,
+    "maxDiffPercent": 1.4348153730218538,
+    "sections": [
+      {
+        "slug": "lske-map-2",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 2",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.4348153730218538,
+        "overlapDiffPercent": 0.9871309613928841,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-3",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.0132649739583333,
+    "maxDiffPercent": 1.0132649739583333,
+    "sections": [
+      {
+        "slug": "lske-map-3",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 3",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.0132649739583333,
+        "overlapDiffPercent": 0.5470794086865516,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-3",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.228636021100226,
+    "maxDiffPercent": 1.228636021100226,
+    "sections": [
+      {
+        "slug": "lske-map-3",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 3",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.228636021100226,
+        "overlapDiffPercent": 0.78001514004542,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-4",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.010986328125,
+    "maxDiffPercent": 1.010986328125,
+    "sections": [
+      {
+        "slug": "lske-map-4",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 4",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.010986328125,
+        "overlapDiffPercent": 0.5447900313971742,
+        "wpWidth": 1920,
+        "wpHeight": 1280,
+        "hugoWidth": 1920,
+        "hugoHeight": 1274,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "lske-map-4",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.385380557648832,
+    "maxDiffPercent": 1.385380557648832,
+    "sections": [
+      {
+        "slug": "lske-map-4",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "LSKE Map 4",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.385380557648832,
+        "overlapDiffPercent": 0.9374716124148372,
+        "wpWidth": 375,
+        "wpHeight": 1327,
+        "hugoWidth": 375,
+        "hugoHeight": 1321,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "magicmap-paloalto",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 37.862606875146405,
+    "maxDiffPercent": 37.862606875146405,
+    "sections": [
+      {
+        "slug": "magicmap-paloalto",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 37.862606875146405,
+        "overlapDiffPercent": 27.838810867791075,
+        "wpWidth": 1920,
+        "wpHeight": 3676,
+        "hugoWidth": 1920,
+        "hugoHeight": 4269,
+        "heightDelta": 593
+      }
+    ]
+  },
+  {
+    "slug": "magicmap-paloalto",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 51.880926749356426,
+    "maxDiffPercent": 51.880926749356426,
+    "sections": [
+      {
+        "slug": "magicmap-paloalto",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 51.880926749356426,
+        "overlapDiffPercent": 43.636842105263156,
+        "wpWidth": 375,
+        "wpHeight": 3648,
+        "hugoWidth": 375,
+        "hugoHeight": 4273,
+        "heightDelta": 625
+      }
+    ]
+  },
+  {
+    "slug": "map-evaluation-tool",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 80.61350964436407,
+    "maxDiffPercent": 80.61350964436407,
+    "sections": [
+      {
+        "slug": "map-evaluation-tool",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Introduction",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 80.61350964436407,
+        "overlapDiffPercent": 80.22005688806888,
+        "wpWidth": 1920,
+        "wpHeight": 542,
+        "hugoWidth": 1920,
+        "hugoHeight": 553,
+        "heightDelta": 11
+      }
+    ]
+  },
+  {
+    "slug": "map-evaluation-tool",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 94.43741648106904,
+    "maxDiffPercent": 94.43741648106904,
+    "sections": [
+      {
+        "slug": "map-evaluation-tool",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Introduction",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 94.43741648106904,
+        "overlapDiffPercent": 87.11603273952817,
+        "wpWidth": 375,
+        "wpHeight": 651,
+        "hugoWidth": 335,
+        "hugoHeight": 1347,
+        "heightDelta": 696
+      }
+    ]
+  },
+  {
+    "slug": "mes24",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.8959617899850523,
+    "maxDiffPercent": 1.8959617899850523,
+    "sections": [
+      {
+        "slug": "mes24",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom M-Enabling 2024 Exhibit Hall Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.8959617899850523,
+        "overlapDiffPercent": 1.1199976459510357,
+        "wpWidth": 1920,
+        "wpHeight": 892,
+        "hugoWidth": 1920,
+        "hugoHeight": 885,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "mes24",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 25.92272429600524,
+    "maxDiffPercent": 25.92272429600524,
+    "sections": [
+      {
+        "slug": "mes24",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom M-Enabling 2024 Exhibit Hall Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 25.92272429600524,
+        "overlapDiffPercent": 22.257044673539518,
+        "wpWidth": 375,
+        "wpHeight": 1018,
+        "hugoWidth": 375,
+        "hugoHeight": 970,
+        "heightDelta": -48
+      }
+    ]
+  },
+  {
+    "slug": "nasa-jpl-campus-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.845739991702967,
+    "maxDiffPercent": 3.845739991702967,
+    "sections": [
+      {
+        "slug": "nasa-jpl-campus-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "NASA JPL Campus Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.845739991702967,
+        "overlapDiffPercent": 3.725921599169263,
+        "wpWidth": 1920,
+        "wpHeight": 1607,
+        "hugoWidth": 1920,
+        "hugoHeight": 1605,
+        "heightDelta": -2
+      }
+    ]
+  },
+  {
+    "slug": "nasa-jpl-campus-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.4962102351313968,
+    "maxDiffPercent": 1.4962102351313968,
+    "sections": [
+      {
+        "slug": "nasa-jpl-campus-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "NASA JPL Campus Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.4962102351313968,
+        "overlapDiffPercent": 1.4962102351313968,
+        "wpWidth": 375,
+        "wpHeight": 1205,
+        "hugoWidth": 375,
+        "hugoHeight": 1205,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "nfb",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.0604446935724963,
+    "maxDiffPercent": 2.0604446935724963,
+    "sections": [
+      {
+        "slug": "nfb",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom NFB Jernigan Institute and Riverside Park Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.0604446935724963,
+        "overlapDiffPercent": 1.2857815442561205,
+        "wpWidth": 1920,
+        "wpHeight": 892,
+        "hugoWidth": 1920,
+        "hugoHeight": 885,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "nfb",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 30.439496855345915,
+    "maxDiffPercent": 30.439496855345915,
+    "sections": [
+      {
+        "slug": "nfb",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom NFB Jernigan Institute and Riverside Park Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 30.439496855345915,
+        "overlapDiffPercent": 27.140184453227935,
+        "wpWidth": 375,
+        "wpHeight": 1060,
+        "hugoWidth": 375,
+        "hugoHeight": 1012,
+        "heightDelta": -48
+      }
+    ]
+  },
+  {
+    "slug": "nfb24",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.720433987682833,
+    "maxDiffPercent": 1.720433987682833,
+    "sections": [
+      {
+        "slug": "nfb24",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "NFB Exhibit Hall Map 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.720433987682833,
+        "overlapDiffPercent": 0.9195527745440435,
+        "wpWidth": 1920,
+        "wpHeight": 866,
+        "hugoWidth": 1920,
+        "hugoHeight": 859,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "nfb24",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.38224043715847,
+    "maxDiffPercent": 2.38224043715847,
+    "sections": [
+      {
+        "slug": "nfb24",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "NFB Exhibit Hall Map 2024",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.38224043715847,
+        "overlapDiffPercent": 1.7784192439862543,
+        "wpWidth": 375,
+        "wpHeight": 976,
+        "hugoWidth": 375,
+        "hugoHeight": 970,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "nfb25",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 5.355948625782473,
+    "maxDiffPercent": 5.355948625782473,
+    "sections": [
+      {
+        "slug": "nfb25",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 5.355948625782473,
+        "overlapDiffPercent": 3.4579685473411157,
+        "wpWidth": 1920,
+        "wpHeight": 3408,
+        "hugoWidth": 1920,
+        "hugoHeight": 3341,
+        "heightDelta": -67
+      }
+    ]
+  },
+  {
+    "slug": "nfb25",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 21.34037834311807,
+    "maxDiffPercent": 21.34037834311807,
+    "sections": [
+      {
+        "slug": "nfb25",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 21.34037834311807,
+        "overlapDiffPercent": 5.374389880251738,
+        "wpWidth": 375,
+        "wpHeight": 3804,
+        "hugoWidth": 335,
+        "hugoHeight": 4088,
+        "heightDelta": 284
+      }
+    ]
+  },
+  {
+    "slug": "peachability-walk-june-22-2025",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 18.919986263736263,
+    "maxDiffPercent": 18.919986263736263,
+    "sections": [
+      {
+        "slug": "peachability-walk-june-22-2025",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 18.919986263736263,
+        "overlapDiffPercent": 18.52204754601227,
+        "wpWidth": 1920,
+        "wpHeight": 3276,
+        "hugoWidth": 1920,
+        "hugoHeight": 3260,
+        "heightDelta": -16
+      }
+    ]
+  },
+  {
+    "slug": "peachability-walk-june-22-2025",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 29.913945286435993,
+    "maxDiffPercent": 29.913945286435993,
+    "sections": [
+      {
+        "slug": "peachability-walk-june-22-2025",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 29.913945286435993,
+        "overlapDiffPercent": 20.989383193638513,
+        "wpWidth": 375,
+        "wpHeight": 3102,
+        "hugoWidth": 375,
+        "hugoHeight": 3497,
+        "heightDelta": 395
+      }
+    ]
+  },
+  {
+    "slug": "privacy-policy",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 4.442798238354221,
+    "maxDiffPercent": 4.442798238354221,
+    "sections": [
+      {
+        "slug": "privacy-policy",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 4.442798238354221,
+        "overlapDiffPercent": 4.216305700402939,
+        "wpWidth": 1920,
+        "wpHeight": 8438,
+        "hugoWidth": 1920,
+        "hugoHeight": 8458,
+        "heightDelta": 20
+      }
+    ]
+  },
+  {
+    "slug": "privacy-policy",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 40.9311312825685,
+    "maxDiffPercent": 40.9311312825685,
+    "sections": [
+      {
+        "slug": "privacy-policy",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 40.9311312825685,
+        "overlapDiffPercent": 14.286867671773507,
+        "wpWidth": 375,
+        "wpHeight": 12238,
+        "hugoWidth": 335,
+        "hugoHeight": 15864,
+        "heightDelta": 3626
+      }
+    ]
+  },
+  {
+    "slug": "rose-quarter-and-sunset-maps",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 16.341842723004696,
+    "maxDiffPercent": 16.341842723004696,
+    "sections": [
+      {
+        "slug": "rose-quarter-and-sunset-maps",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 16.341842723004696,
+        "overlapDiffPercent": 10.70761926237723,
+        "wpWidth": 1920,
+        "wpHeight": 1775,
+        "hugoWidth": 1920,
+        "hugoHeight": 1663,
+        "heightDelta": -112
+      }
+    ]
+  },
+  {
+    "slug": "rose-quarter-and-sunset-maps",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 22.160500446827523,
+    "maxDiffPercent": 22.160500446827523,
+    "sections": [
+      {
+        "slug": "rose-quarter-and-sunset-maps",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 22.160500446827523,
+        "overlapDiffPercent": 17.328777524677296,
+        "wpWidth": 375,
+        "wpHeight": 1865,
+        "hugoWidth": 375,
+        "hugoHeight": 1756,
+        "heightDelta": -109
+      }
+    ]
+  },
+  {
+    "slug": "ski-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.9191903957528957,
+    "maxDiffPercent": 1.9191903957528957,
+    "sections": [
+      {
+        "slug": "ski-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom 2318 Fillmore St. – Smith-Kettlewell Eye Research Institute Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.9191903957528957,
+        "overlapDiffPercent": 1.3478458737864079,
+        "wpWidth": 1920,
+        "wpHeight": 1036,
+        "hugoWidth": 1920,
+        "hugoHeight": 1030,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "ski-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 20.573277545327755,
+    "maxDiffPercent": 20.573277545327755,
+    "sections": [
+      {
+        "slug": "ski-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom 2318 Fillmore St. – Smith-Kettlewell Eye Research Institute Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 20.573277545327755,
+        "overlapDiffPercent": 17.24940424295263,
+        "wpWidth": 375,
+        "wpHeight": 1195,
+        "hugoWidth": 375,
+        "hugoHeight": 1147,
+        "heightDelta": -48
+      }
+    ]
+  },
+  {
+    "slug": "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 31.830192430025445,
+    "maxDiffPercent": 31.830192430025445,
+    "sections": [
+      {
+        "slug": "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Sonification Award 2026 Application of Audiom Wisconsin Geological Survey Quaternary Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 31.830192430025445,
+        "overlapDiffPercent": 23.246714295946138,
+        "wpWidth": 1920,
+        "wpHeight": 2620,
+        "hugoWidth": 1920,
+        "hugoHeight": 2327,
+        "heightDelta": -293
+      }
+    ]
+  },
+  {
+    "slug": "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 23.304186046511628,
+    "maxDiffPercent": 23.304186046511628,
+    "sections": [
+      {
+        "slug": "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Sonification Award 2026 Application of Audiom Wisconsin Geological Survey Quaternary Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 23.304186046511628,
+        "overlapDiffPercent": 14.322621902478016,
+        "wpWidth": 375,
+        "wpHeight": 2795,
+        "hugoWidth": 375,
+        "hugoHeight": 2502,
+        "heightDelta": -293
+      }
+    ]
+  },
+  {
+    "slug": "sonification-awards-2024-application",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 20.62393302095819,
+    "maxDiffPercent": 20.62393302095819,
+    "sections": [
+      {
+        "slug": "sonification-awards-2024-application",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 20.62393302095819,
+        "overlapDiffPercent": 5.996365122381383,
+        "wpWidth": 1920,
+        "wpHeight": 7749,
+        "hugoWidth": 1920,
+        "hugoHeight": 9177,
+        "heightDelta": 1428
+      }
+    ]
+  },
+  {
+    "slug": "sonification-awards-2024-application",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 21.302857142857142,
+    "maxDiffPercent": 21.302857142857142,
+    "sections": [
+      {
+        "slug": "sonification-awards-2024-application",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 21.302857142857142,
+        "overlapDiffPercent": 15.73690727656785,
+        "wpWidth": 375,
+        "wpHeight": 13729,
+        "hugoWidth": 375,
+        "hugoHeight": 14700,
+        "heightDelta": 971
+      }
+    ]
+  },
+  {
+    "slug": "table-vs-map-example",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 35.78721257338552,
+    "maxDiffPercent": 35.78721257338552,
+    "sections": [
+      {
+        "slug": "table-vs-map-example",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 35.78721257338552,
+        "overlapDiffPercent": 5.8458124103299856,
+        "wpWidth": 1920,
+        "wpHeight": 1394,
+        "hugoWidth": 1920,
+        "hugoHeight": 2044,
+        "heightDelta": 650
+      }
+    ]
+  },
+  {
+    "slug": "table-vs-map-example",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 35.030643761929554,
+    "maxDiffPercent": 35.030643761929554,
+    "sections": [
+      {
+        "slug": "table-vs-map-example",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 35.030643761929554,
+        "overlapDiffPercent": 6.6521067065569675,
+        "wpWidth": 375,
+        "wpHeight": 1337,
+        "hugoWidth": 375,
+        "hugoHeight": 1921,
+        "heightDelta": 584
+      }
+    ]
+  },
+  {
+    "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 6.438483547925608,
+    "maxDiffPercent": 6.438483547925608,
+    "sections": [
+      {
+        "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 6.438483547925608,
+        "overlapDiffPercent": 5.628427128427129,
+        "wpWidth": 1440,
+        "wpHeight": 2310,
+        "hugoWidth": 1440,
+        "hugoHeight": 2330,
+        "heightDelta": 20
+      }
+    ]
+  },
+  {
+    "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 11.917925017173019,
+    "maxDiffPercent": 11.917925017173019,
+    "sections": [
+      {
+        "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 11.917925017173019,
+        "overlapDiffPercent": 11.850601138205255,
+        "wpWidth": 338,
+        "wpHeight": 3925,
+        "hugoWidth": 338,
+        "hugoHeight": 3928,
+        "heightDelta": 3
+      }
+    ]
+  },
+  {
+    "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.3998496035001367,
+    "maxDiffPercent": 2.3998496035001367,
+    "sections": [
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregon, and Idaho",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.3998496035001367,
+        "overlapDiffPercent": 0.2727717239452361,
+        "wpWidth": 1920,
+        "wpHeight": 1219,
+        "hugoWidth": 1920,
+        "hugoHeight": 1193,
+        "heightDelta": -26
+      }
+    ]
+  },
+  {
+    "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 28.537630077207115,
+    "maxDiffPercent": 28.537630077207115,
+    "sections": [
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregon, and Idaho",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 28.537630077207115,
+        "overlapDiffPercent": 19.02627535107338,
+        "wpWidth": 375,
+        "wpHeight": 981,
+        "hugoWidth": 335,
+        "hugoHeight": 993,
+        "heightDelta": 12
+      }
+    ]
+  },
+  {
+    "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho-old",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 0.34870218579234974,
+    "maxDiffPercent": 0.34870218579234974,
+    "sections": [
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho-old",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregan, and Idaho",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 0.34870218579234974,
+        "overlapDiffPercent": 0.34870218579234974,
+        "wpWidth": 1920,
+        "wpHeight": 1220,
+        "hugoWidth": 1920,
+        "hugoHeight": 1220,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho-old",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 35.16867239732569,
+    "maxDiffPercent": 35.16867239732569,
+    "sections": [
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho-old",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregan, and Idaho",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 35.16867239732569,
+        "overlapDiffPercent": 21.464306375101238,
+        "wpWidth": 375,
+        "wpHeight": 645,
+        "hugoWidth": 335,
+        "hugoHeight": 698,
+        "heightDelta": 53
+      }
+    ]
+  },
+  {
+    "slug": "tvm1",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.5835785687593422,
+    "maxDiffPercent": 1.5835785687593422,
+    "sections": [
+      {
+        "slug": "tvm1",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Table vs. Map 1",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.5835785687593422,
+        "overlapDiffPercent": 0.8051435969868173,
+        "wpWidth": 1920,
+        "wpHeight": 892,
+        "hugoWidth": 1920,
+        "hugoHeight": 885,
+        "heightDelta": -7
+      }
+    ]
+  },
+  {
+    "slug": "tvm1",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.1314207650273223,
+    "maxDiffPercent": 2.1314207650273223,
+    "sections": [
+      {
+        "slug": "tvm1",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Table vs. Map 1",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.1314207650273223,
+        "overlapDiffPercent": 1.5260481099656358,
+        "wpWidth": 375,
+        "wpHeight": 976,
+        "hugoWidth": 375,
+        "hugoHeight": 970,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "universities",
+    "viewport": "desktop",
+    "totalSections": 6,
+    "matchedSections": 5,
+    "unmatchedWp": 1,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 41.92236174820498,
+    "maxDiffPercent": 68.14914309031556,
+    "sections": [
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Transform Your Campus with Audiom: The Map to Inclusive Navigation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 19.19478202160494,
+        "overlapDiffPercent": 19.19478202160494,
+        "wpWidth": 1920,
+        "wpHeight": 1080,
+        "hugoWidth": 1920,
+        "hugoHeight": 1080,
+        "heightDelta": 0
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "sectionIndex": 1,
+        "heading": "The Challenge of Campus Navigation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 48.07574662813102,
+        "overlapDiffPercent": 25.564336813611753,
+        "wpWidth": 1920,
+        "wpHeight": 862,
+        "hugoWidth": 1344,
+        "hugoHeight": 865,
+        "heightDelta": 3
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "sectionIndex": 2,
+        "heading": "Audiom: The Inclusive Digital Map Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 64.75307377049181,
+        "overlapDiffPercent": 48.11625241312741,
+        "wpWidth": 1920,
+        "wpHeight": 592,
+        "hugoWidth": 1344,
+        "hugoHeight": 610,
+        "heightDelta": 18
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "sectionIndex": 4,
+        "heading": "Inclusivity",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 9.439063230481533,
+        "overlapDiffPercent": 2.314753530005043,
+        "wpWidth": 1920,
+        "wpHeight": 713,
+        "hugoWidth": 1920,
+        "hugoHeight": 661,
+        "heightDelta": -52
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "sectionIndex": 5,
+        "heading": "Leading the Charge For Inclusive Campuses",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 68.14914309031556,
+        "overlapDiffPercent": 68.14914309031556,
+        "wpWidth": 1920,
+        "wpHeight": 919,
+        "hugoWidth": 1920,
+        "hugoHeight": 919,
+        "heightDelta": 0
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "sectionIndex": 3,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "universities",
+    "viewport": "mobile",
+    "totalSections": 6,
+    "matchedSections": 5,
+    "unmatchedWp": 1,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 63.14132033035344,
+    "maxDiffPercent": 100,
+    "sections": [
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Transform Your Campus with Audiom: The Map to Inclusive Navigation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 54.67159277504105,
+        "overlapDiffPercent": 45.06467661691542,
+        "wpWidth": 375,
+        "wpHeight": 812,
+        "hugoWidth": 335,
+        "hugoHeight": 750,
+        "heightDelta": -62
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "sectionIndex": 1,
+        "heading": "The Challenge of Campus Navigation",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 65.31874298540966,
+        "overlapDiffPercent": 31.442326891930865,
+        "wpWidth": 375,
+        "wpHeight": 959,
+        "hugoWidth": 235,
+        "hugoHeight": 1188,
+        "heightDelta": 229
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "sectionIndex": 2,
+        "heading": "Audiom: The Inclusive Digital Map Solution",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0,
+        "error": "missing screenshot"
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "sectionIndex": 4,
+        "heading": "Inclusivity",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 27.79911752908143,
+        "overlapDiffPercent": 17.28696419380928,
+        "wpWidth": 375,
+        "wpHeight": 831,
+        "hugoWidth": 335,
+        "hugoHeight": 812,
+        "heightDelta": -19
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "sectionIndex": 5,
+        "heading": "Leading the Charge For Inclusive Campuses",
+        "selectorType": "uagb-root",
+        "matchMethod": "exact_heading",
+        "diffPercent": 67.91714836223507,
+        "overlapDiffPercent": 63.98226260004326,
+        "wpWidth": 375,
+        "wpHeight": 692,
+        "hugoWidth": 335,
+        "hugoHeight": 690,
+        "heightDelta": -2
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "sectionIndex": 3,
+        "heading": null,
+        "selectorType": "uagb-root",
+        "matchMethod": "unmatched_wp",
+        "diffPercent": 100,
+        "overlapDiffPercent": 100,
+        "wpWidth": 0,
+        "wpHeight": 0,
+        "hugoWidth": 0,
+        "hugoHeight": 0,
+        "heightDelta": 0
+      }
+    ]
+  },
+  {
+    "slug": "vrate24",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.572172619047619,
+    "maxDiffPercent": 1.572172619047619,
+    "sections": [
+      {
+        "slug": "vrate24",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Vrate 2024 Exhibit Hall Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.572172619047619,
+        "overlapDiffPercent": 0.9658410335386721,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "vrate24",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 2.6030558154038044,
+    "maxDiffPercent": 2.6030558154038044,
+    "sections": [
+      {
+        "slug": "vrate24",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Vrate 2024 Exhibit Hall Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 2.6030558154038044,
+        "overlapDiffPercent": 2.0533082470994044,
+        "wpWidth": 375,
+        "wpHeight": 1069,
+        "hugoWidth": 375,
+        "hugoHeight": 1063,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "vsa25",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.6755420918367347,
+    "maxDiffPercent": 1.6755420918367347,
+    "sections": [
+      {
+        "slug": "vsa25",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "AudiomVision Serve Alliance 2024 Hotel Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.6755420918367347,
+        "overlapDiffPercent": 1.0698472792607803,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "vsa25",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.1385538553855388,
+    "maxDiffPercent": 3.1385538553855388,
+    "sections": [
+      {
+        "slug": "vsa25",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "AudiomVision Serve Alliance 2024 Hotel Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.1385538553855388,
+        "overlapDiffPercent": 2.612609351432881,
+        "wpWidth": 375,
+        "wpHeight": 1111,
+        "hugoWidth": 375,
+        "hugoHeight": 1105,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "wcag-map-comparison-table",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 38.701719576719576,
+    "maxDiffPercent": 38.701719576719576,
+    "sections": [
+      {
+        "slug": "wcag-map-comparison-table",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 38.701719576719576,
+        "overlapDiffPercent": 11.831240487062406,
+        "wpWidth": 1920,
+        "wpHeight": 315,
+        "hugoWidth": 1920,
+        "hugoHeight": 219,
+        "heightDelta": -96
+      }
+    ]
+  },
+  {
+    "slug": "wcag-map-comparison-table",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 45.102652825836216,
+    "maxDiffPercent": 45.102652825836216,
+    "sections": [
+      {
+        "slug": "wcag-map-comparison-table",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 45.102652825836216,
+        "overlapDiffPercent": 18.90547263681592,
+        "wpWidth": 375,
+        "wpHeight": 289,
+        "hugoWidth": 335,
+        "hugoHeight": 219,
+        "heightDelta": -70
+      }
+    ]
+  },
+  {
+    "slug": "wcvi",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.7507440476190477,
+    "maxDiffPercent": 1.7507440476190477,
+    "sections": [
+      {
+        "slug": "wcvi",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Audiom Vision Ireland: The Wayfinding Centre Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.7507440476190477,
+        "overlapDiffPercent": 1.1455124914442163,
+        "wpWidth": 1920,
+        "wpHeight": 980,
+        "hugoWidth": 1920,
+        "hugoHeight": 974,
+        "heightDelta": -6
+      }
+    ]
+  },
+  {
+    "slug": "wcvi",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 27.33229257010697,
+    "maxDiffPercent": 27.33229257010697,
+    "sections": [
+      {
+        "slug": "wcvi",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Audiom Vision Ireland: The Wayfinding Centre Map",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 27.33229257010697,
+        "overlapDiffPercent": 24.175686274509804,
+        "wpWidth": 375,
+        "wpHeight": 1153,
+        "hugoWidth": 375,
+        "hugoHeight": 1105,
+        "heightDelta": -48
+      }
+    ]
+  },
+  {
+    "slug": "what-is-the-definition-of-a-map",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 9.298728278895378,
+    "maxDiffPercent": 9.298728278895378,
+    "sections": [
+      {
+        "slug": "what-is-the-definition-of-a-map",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 9.298728278895378,
+        "overlapDiffPercent": 5.528448988021479,
+        "wpWidth": 1440,
+        "wpHeight": 2959,
+        "hugoWidth": 1440,
+        "hugoHeight": 3082,
+        "heightDelta": 123
+      }
+    ]
+  },
+  {
+    "slug": "what-is-the-definition-of-a-map",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 14.969792650788126,
+    "maxDiffPercent": 14.969792650788126,
+    "sections": [
+      {
+        "slug": "what-is-the-definition-of-a-map",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": null,
+        "selectorType": "whole-page",
+        "matchMethod": "position",
+        "diffPercent": 14.969792650788126,
+        "overlapDiffPercent": 14.772839127764051,
+        "wpWidth": 338,
+        "wpHeight": 4749,
+        "hugoWidth": 338,
+        "hugoHeight": 4760,
+        "heightDelta": 11
+      }
+    ]
+  },
+  {
+    "slug": "wisconsin-geological-survey-press-release",
+    "viewport": "desktop",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 1.8851835492736553,
+    "maxDiffPercent": 1.8851835492736553,
+    "sections": [
+      {
+        "slug": "wisconsin-geological-survey-press-release",
+        "viewport": "desktop",
+        "sectionIndex": 0,
+        "heading": "Wisconsin Geological Survey Press Release",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 1.8851835492736553,
+        "overlapDiffPercent": 1.4207347140039448,
+        "wpWidth": 1920,
+        "wpHeight": 849,
+        "hugoWidth": 1920,
+        "hugoHeight": 845,
+        "heightDelta": -4
+      }
+    ]
+  },
+  {
+    "slug": "wisconsin-geological-survey-press-release",
+    "viewport": "mobile",
+    "totalSections": 1,
+    "matchedSections": 1,
+    "unmatchedWp": 0,
+    "unmatchedHugo": 0,
+    "avgDiffPercent": 3.423825136612022,
+    "maxDiffPercent": 3.423825136612022,
+    "sections": [
+      {
+        "slug": "wisconsin-geological-survey-press-release",
+        "viewport": "mobile",
+        "sectionIndex": 0,
+        "heading": "Wisconsin Geological Survey Press Release",
+        "selectorType": "whole-page",
+        "matchMethod": "exact_heading",
+        "diffPercent": 3.423825136612022,
+        "overlapDiffPercent": 2.248672566371681,
+        "wpWidth": 375,
+        "wpHeight": 915,
+        "hugoWidth": 375,
+        "hugoHeight": 904,
+        "heightDelta": -11
+      }
+    ]
+  }
+]

@@ -12,3 +12,10 @@ tests/diffs/
 tests/comparison-results.json
 tests/parse-results.js
 test-results/
+
+# Chunk compare build artifacts
+tools/chunk-compare/.hypothesis/
+tools/chunk-compare/.venv/
+tools/chunk-compare/src/*.egg-info/
+tools/chunk-compare/uv.lock
+**/__pycache__/

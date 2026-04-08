@@ -1,0 +1,2376 @@
+[
+  {
+    "component": "blog-index",
+    "totalInstances": 4,
+    "matchedInstances": 4,
+    "unmatchedInstances": 0,
+    "avgDiff": 77.66164895642511,
+    "minDiff": 71.55270833333333,
+    "maxDiff": 85.67625570776255,
+    "desktopAvg": 75.1718097350823,
+    "mobileAvg": 80.15148817776792,
+    "best": {
+      "component": "blog-index",
+      "slug": "blog",
+      "viewport": "desktop",
+      "heading": "Latest Blog Posts",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 71.55270833333333,
+      "overlapDiffPercent": 1.224681712962963,
+      "heightDelta": -178,
+      "wpWidth": 1920,
+      "wpHeight": 250,
+      "hugoWidth": 1920,
+      "hugoHeight": 72
+    },
+    "worst": {
+      "component": "blog-index",
+      "slug": "blog",
+      "viewport": "mobile",
+      "heading": "Navigating the Future: Exploring Accessibility and Innovation",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 85.67625570776255,
+      "overlapDiffPercent": 81.71117070895522,
+      "heightDelta": 72,
+      "wpWidth": 375,
+      "wpHeight": 512,
+      "hugoWidth": 335,
+      "hugoHeight": 584
+    },
+    "instances": [
+      {
+        "slug": "blog",
+        "viewport": "desktop",
+        "heading": "Latest Blog Posts",
+        "diff": 71.6
+      },
+      {
+        "slug": "blog",
+        "viewport": "mobile",
+        "heading": "Latest Blog Posts",
+        "diff": 74.6
+      },
+      {
+        "slug": "blog",
+        "viewport": "desktop",
+        "heading": "Navigating the Future: Exploring Accessibility and Innovation",
+        "diff": 78.8
+      },
+      {
+        "slug": "blog",
+        "viewport": "mobile",
+        "heading": "Navigating the Future: Exploring Accessibility and Innovation",
+        "diff": 85.7
+      }
+    ]
+  },
+  {
+    "component": "info-box",
+    "totalInstances": 12,
+    "matchedInstances": 12,
+    "unmatchedInstances": 0,
+    "avgDiff": 54.59721653867555,
+    "minDiff": 23.823600344530576,
+    "maxDiff": 100,
+    "desktopAvg": 56.4710436486862,
+    "mobileAvg": 52.72338942866489,
+    "best": {
+      "component": "info-box",
+      "slug": "health-care-facilities",
+      "viewport": "mobile",
+      "heading": "Navigating the Hospital Maze",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 23.823600344530576,
+      "overlapDiffPercent": 23.7250539025442,
+      "heightDelta": 1,
+      "wpWidth": 375,
+      "wpHeight": 773,
+      "hugoWidth": 375,
+      "hugoHeight": 774
+    },
+    "worst": {
+      "component": "info-box",
+      "slug": "universities",
+      "viewport": "mobile",
+      "heading": "Audiom: The Inclusive Digital Map Solution",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 100,
+      "overlapDiffPercent": 100,
+      "heightDelta": 0,
+      "wpWidth": 0,
+      "wpHeight": 0,
+      "hugoWidth": 0,
+      "hugoHeight": 0
+    },
+    "instances": [
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "heading": "Navigating the Hospital Maze",
+        "diff": 23.8
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "heading": "The Solution",
+        "diff": 39.5
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "heading": "The Challenge",
+        "diff": 42.3
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "heading": "Audiom: The Solution",
+        "diff": 45.4
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "heading": "The Challenge of Campus Navigation",
+        "diff": 48.1
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "heading": "Navigating the Hospital Maze",
+        "diff": 48.4
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "heading": "The Challenge",
+        "diff": 49.8
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "heading": "Audiom: The Solution",
+        "diff": 63.6
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "heading": "The Solution",
+        "diff": 64.2
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "heading": "Audiom: The Inclusive Digital Map Solution",
+        "diff": 64.8
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "heading": "The Challenge of Campus Navigation",
+        "diff": 65.3
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "heading": "Audiom: The Inclusive Digital Map Solution",
+        "diff": 100
+      }
+    ]
+  },
+  {
+    "component": "cta",
+    "totalInstances": 8,
+    "matchedInstances": 8,
+    "unmatchedInstances": 0,
+    "avgDiff": 50.15227590549926,
+    "minDiff": 6.806991294885744,
+    "maxDiff": 74.49411275940338,
+    "desktopAvg": 49.43021061186753,
+    "mobileAvg": 50.874341199130996,
+    "best": {
+      "component": "cta",
+      "slug": "corporate-campuses",
+      "viewport": "desktop",
+      "heading": "Starting Your Path to Inclusive Design",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 6.806991294885744,
+      "overlapDiffPercent": 6.806991294885744,
+      "heightDelta": 0,
+      "wpWidth": 1920,
+      "wpHeight": 919,
+      "hugoWidth": 1920,
+      "hugoHeight": 919
+    },
+    "worst": {
+      "component": "cta",
+      "slug": "corporate-campuses",
+      "viewport": "desktop",
+      "heading": "Join the Movement: Embrace The Vision of Inclusive Design",
+      "selectorType": "wp-block-group",
+      "matchMethod": "exact_heading",
+      "diffPercent": 74.49411275940338,
+      "overlapDiffPercent": 73.43459768659237,
+      "heightDelta": 41,
+      "wpWidth": 1920,
+      "wpHeight": 987,
+      "hugoWidth": 1920,
+      "hugoHeight": 1028
+    },
+    "instances": [
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "heading": "Starting Your Path to Inclusive Design",
+        "diff": 6.8
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "heading": "Starting Your Path to Inclusive Design",
+        "diff": 30.2
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "heading": "Leading the Way to Inclusively Designed Healthcare Experiences",
+        "diff": 48.3
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "heading": "Leading the Way to Inclusively Designed Healthcare Experiences",
+        "diff": 49
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "heading": "Join the Movement: Embrace The Vision of Inclusive Design",
+        "diff": 56.4
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "heading": "Leading the Charge For Inclusive Campuses",
+        "diff": 67.9
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "heading": "Leading the Charge For Inclusive Campuses",
+        "diff": 68.1
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "heading": "Join the Movement: Embrace The Vision of Inclusive Design",
+        "diff": 74.5
+      }
+    ]
+  },
+  {
+    "component": "accessibility-statement",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 50.03114414849976,
+    "minDiff": 46.59324894514768,
+    "maxDiff": 53.469039351851855,
+    "desktopAvg": 53.469039351851855,
+    "mobileAvg": 46.59324894514768,
+    "best": {
+      "component": "accessibility-statement",
+      "slug": "accessibility-statement",
+      "viewport": "mobile",
+      "heading": "Accessibility Statement for XR Navigation and all its applications",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 46.59324894514768,
+      "overlapDiffPercent": 46.59324894514768,
+      "heightDelta": 0,
+      "wpWidth": 375,
+      "wpHeight": 632,
+      "hugoWidth": 375,
+      "hugoHeight": 632
+    },
+    "worst": {
+      "component": "accessibility-statement",
+      "slug": "accessibility-statement",
+      "viewport": "desktop",
+      "heading": "Accessibility Statement for XR Navigation and all its applications",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 53.469039351851855,
+      "overlapDiffPercent": 53.469039351851855,
+      "heightDelta": 0,
+      "wpWidth": 1920,
+      "wpHeight": 540,
+      "hugoWidth": 1920,
+      "hugoHeight": 540
+    },
+    "instances": [
+      {
+        "slug": "accessibility-statement",
+        "viewport": "mobile",
+        "heading": "Accessibility Statement for XR Navigation and all its applications",
+        "diff": 46.6
+      },
+      {
+        "slug": "accessibility-statement",
+        "viewport": "desktop",
+        "heading": "Accessibility Statement for XR Navigation and all its applications",
+        "diff": 53.5
+      }
+    ]
+  },
+  {
+    "component": "team",
+    "totalInstances": 12,
+    "matchedInstances": 12,
+    "unmatchedInstances": 0,
+    "avgDiff": 40.40316396565327,
+    "minDiff": 4.834021068169619,
+    "maxDiff": 98.45822968490879,
+    "desktopAvg": 25.51199469967708,
+    "mobileAvg": 55.29433323162947,
+    "best": {
+      "component": "team",
+      "slug": "home",
+      "viewport": "desktop",
+      "heading": "Meet Our Team",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 4.834021068169619,
+      "overlapDiffPercent": 4.680527553763441,
+      "heightDelta": 1,
+      "wpWidth": 1920,
+      "wpHeight": 620,
+      "hugoWidth": 1920,
+      "hugoHeight": 621
+    },
+    "worst": {
+      "component": "team",
+      "slug": "about",
+      "viewport": "desktop",
+      "heading": "Meet Our Team",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 98.45822968490879,
+      "overlapDiffPercent": 98.44273450586265,
+      "heightDelta": -2,
+      "wpWidth": 1920,
+      "wpHeight": 201,
+      "hugoWidth": 1920,
+      "hugoHeight": 199
+    },
+    "instances": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "Meet Our Team",
+        "diff": 4.8
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "James Coughlan",
+        "diff": 6.3
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "Chris Toth",
+        "diff": 8.5
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "Brandon Biggs",
+        "diff": 9.3
+      },
+      {
+        "slug": "brandon-keith-biggs",
+        "viewport": "desktop",
+        "heading": "Brandon Biggs",
+        "diff": 25.6
+      },
+      {
+        "slug": "brandon-keith-biggs",
+        "viewport": "mobile",
+        "heading": "Brandon Biggs",
+        "diff": 32.7
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "Meet Our Team",
+        "diff": 46.8
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "James Coughlan",
+        "diff": 49.6
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "Chris Toth",
+        "diff": 54.1
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "Brandon Biggs",
+        "diff": 55.9
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "Meet Our Team",
+        "diff": 92.6
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "Meet Our Team",
+        "diff": 98.5
+      }
+    ]
+  },
+  {
+    "component": "use-cases",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 39.388008405780056,
+    "minDiff": 23.527420876887337,
+    "maxDiff": 55.24859593467278,
+    "desktopAvg": 23.527420876887337,
+    "mobileAvg": 55.24859593467278,
+    "best": {
+      "component": "use-cases",
+      "slug": "home",
+      "viewport": "desktop",
+      "heading": "Audiom Use Cases",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 23.527420876887337,
+      "overlapDiffPercent": 22.102465986394556,
+      "heightDelta": 21,
+      "wpWidth": 1920,
+      "wpHeight": 1127,
+      "hugoWidth": 1920,
+      "hugoHeight": 1148
+    },
+    "worst": {
+      "component": "use-cases",
+      "slug": "home",
+      "viewport": "mobile",
+      "heading": "Audiom Use Cases",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 55.24859593467278,
+      "overlapDiffPercent": 46.1121675155631,
+      "heightDelta": -481,
+      "wpWidth": 375,
+      "wpHeight": 2837,
+      "hugoWidth": 375,
+      "hugoHeight": 2356
+    },
+    "instances": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "Audiom Use Cases",
+        "diff": 23.5
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "Audiom Use Cases",
+        "diff": 55.2
+      }
+    ]
+  },
+  {
+    "component": "feature-cards",
+    "totalInstances": 16,
+    "matchedInstances": 6,
+    "unmatchedInstances": 10,
+    "avgDiff": 37.370592126300224,
+    "minDiff": 9.439063230481533,
+    "maxDiff": 48.61076388888889,
+    "desktopAvg": 33.38039529559898,
+    "mobileAvg": 41.36078895700147,
+    "best": {
+      "component": "feature-cards",
+      "slug": "universities",
+      "viewport": "desktop",
+      "heading": "Inclusivity",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 9.439063230481533,
+      "overlapDiffPercent": 2.314753530005043,
+      "heightDelta": -52,
+      "wpWidth": 1920,
+      "wpHeight": 713,
+      "hugoWidth": 1920,
+      "hugoHeight": 661
+    },
+    "worst": {
+      "component": "feature-cards",
+      "slug": "health-care-facilities",
+      "viewport": "mobile",
+      "heading": "Accessible Map Features",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 48.61076388888889,
+      "overlapDiffPercent": 41.5616362631288,
+      "heightDelta": -12,
+      "wpWidth": 375,
+      "wpHeight": 768,
+      "hugoWidth": 335,
+      "hugoHeight": 756
+    },
+    "instances": [
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "heading": "Inclusivity",
+        "diff": 9.4
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "heading": "Inclusivity",
+        "diff": 27.8
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "heading": "Inclusivity",
+        "diff": 42.6
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "heading": "Inclusivity",
+        "diff": 47.7
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "heading": "Accessible Map Features",
+        "diff": 48.1
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "heading": "Accessible Map Features",
+        "diff": 48.6
+      }
+    ]
+  },
+  {
+    "component": "unknown",
+    "totalInstances": 20,
+    "matchedInstances": 20,
+    "unmatchedInstances": 0,
+    "avgDiff": 35.680271392148065,
+    "minDiff": 2.888573120189461,
+    "maxDiff": 95.70952711028959,
+    "desktopAvg": 35.92554140364214,
+    "mobileAvg": 35.43500138065398,
+    "best": {
+      "component": "unknown",
+      "slug": "contact",
+      "viewport": "mobile",
+      "heading": "Get In Touch!",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 2.888573120189461,
+      "overlapDiffPercent": 2.715776986951364,
+      "heightDelta": -2,
+      "wpWidth": 375,
+      "wpHeight": 1126,
+      "hugoWidth": 375,
+      "hugoHeight": 1124
+    },
+    "worst": {
+      "component": "unknown",
+      "slug": "about",
+      "viewport": "desktop",
+      "heading": null,
+      "selectorType": "uagb-root",
+      "matchMethod": "position",
+      "diffPercent": 95.70952711028959,
+      "overlapDiffPercent": 94.96497650036153,
+      "heightDelta": -80,
+      "wpWidth": 1920,
+      "wpHeight": 541,
+      "hugoWidth": 1920,
+      "hugoHeight": 461
+    },
+    "instances": [
+      {
+        "slug": "contact",
+        "viewport": "mobile",
+        "heading": "Get In Touch!",
+        "diff": 2.9
+      },
+      {
+        "slug": "contact",
+        "viewport": "desktop",
+        "heading": "Get In Touch!",
+        "diff": 3.2
+      },
+      {
+        "slug": "audiom-demo",
+        "viewport": "desktop",
+        "heading": "Activate “Enable sounds and skip to map” if using a screen reader, or click on the enable sounds and then the “A” avatar on the map if sighted, and Press any Key or Tap to Continue.",
+        "diff": 4.5
+      },
+      {
+        "slug": "audiom-neighborhood-demo",
+        "viewport": "mobile",
+        "heading": "Press The “Enable sounds and skip to map” Button, and Press any Key to start.",
+        "diff": 6.2
+      },
+      {
+        "slug": "audiom-demo",
+        "viewport": "mobile",
+        "heading": "Activate “Enable sounds and skip to map” if using a screen reader, or click on the enable sounds and then the “A” avatar on the map if sighted, and Press any Key or Tap to Continue.",
+        "diff": 6.5
+      },
+      {
+        "slug": "audiom-neighborhood-demo",
+        "viewport": "desktop",
+        "heading": "Press The “Enable sounds and skip to map” Button, and Press any Key to start.",
+        "diff": 7.1
+      },
+      {
+        "slug": "audiom-demo-form",
+        "viewport": "desktop",
+        "heading": "Sign Up and Get A Demo Of Audiom!",
+        "diff": 11.4
+      },
+      {
+        "slug": "capability-statement",
+        "viewport": "mobile",
+        "heading": "XR Navigation Capability Statement",
+        "diff": 15.1
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 15.4
+      },
+      {
+        "slug": "capability-statement",
+        "viewport": "desktop",
+        "heading": "XR Navigation Capability Statement",
+        "diff": 22.4
+      },
+      {
+        "slug": "implementation",
+        "viewport": "desktop",
+        "heading": "Audiom Implementation Process",
+        "diff": 28.3
+      },
+      {
+        "slug": "audiom-demo-form",
+        "viewport": "mobile",
+        "heading": "Sign Up and Get A Demo Of Audiom!",
+        "diff": 29.5
+      },
+      {
+        "slug": "implementation",
+        "viewport": "mobile",
+        "heading": "Audiom Implementation Process",
+        "diff": 35
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 52.9
+      },
+      {
+        "slug": "blog",
+        "viewport": "desktop",
+        "heading": "List of Non-Visual Drawing Tools",
+        "diff": 53.2
+      },
+      {
+        "slug": "blog",
+        "viewport": "mobile",
+        "heading": "List of Non-Visual Drawing Tools",
+        "diff": 56.6
+      },
+      {
+        "slug": "map-evaluation-tool",
+        "viewport": "desktop",
+        "heading": "Introduction",
+        "diff": 80.6
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 92.6
+      },
+      {
+        "slug": "map-evaluation-tool",
+        "viewport": "mobile",
+        "heading": "Introduction",
+        "diff": 94.4
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 95.7
+      }
+    ]
+  },
+  {
+    "component": "hero",
+    "totalInstances": 8,
+    "matchedInstances": 8,
+    "unmatchedInstances": 0,
+    "avgDiff": 34.37647797577813,
+    "minDiff": 16.35003671071953,
+    "maxDiff": 57.63415435139573,
+    "desktopAvg": 20.246423625982352,
+    "mobileAvg": 48.506532325573914,
+    "best": {
+      "component": "hero",
+      "slug": "home",
+      "viewport": "desktop",
+      "heading": "Welcome to XR Navigation with Audiom: The World’s First Inclusive Digital Map",
+      "selectorType": "uagb-root",
+      "matchMethod": "position",
+      "diffPercent": 16.35003671071953,
+      "overlapDiffPercent": 15.97990412979351,
+      "heightDelta": -3,
+      "wpWidth": 1920,
+      "wpHeight": 681,
+      "hugoWidth": 1920,
+      "hugoHeight": 678
+    },
+    "worst": {
+      "component": "hero",
+      "slug": "health-care-facilities",
+      "viewport": "mobile",
+      "heading": "Inclusive Digital Maps For Health Care Facilities",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 57.63415435139573,
+      "overlapDiffPercent": 52.57554591574149,
+      "heightDelta": 0,
+      "wpWidth": 375,
+      "wpHeight": 812,
+      "hugoWidth": 335,
+      "hugoHeight": 812
+    },
+    "instances": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "Welcome to XR Navigation with Audiom: The World’s First Inclusive Digital Map",
+        "diff": 16.4
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "desktop",
+        "heading": "Inclusive Digital Maps For Corporate Campuses",
+        "diff": 17.6
+      },
+      {
+        "slug": "universities",
+        "viewport": "desktop",
+        "heading": "Transform Your Campus with Audiom: The Map to Inclusive Navigation",
+        "diff": 19.2
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "desktop",
+        "heading": "Inclusive Digital Maps For Health Care Facilities",
+        "diff": 27.9
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "Welcome to XR Navigation with Audiom: The World’s First Inclusive Digital Map",
+        "diff": 35.2
+      },
+      {
+        "slug": "corporate-campuses",
+        "viewport": "mobile",
+        "heading": "Inclusive Digital Maps For Corporate Campuses",
+        "diff": 46.5
+      },
+      {
+        "slug": "universities",
+        "viewport": "mobile",
+        "heading": "Transform Your Campus with Audiom: The Map to Inclusive Navigation",
+        "diff": 54.7
+      },
+      {
+        "slug": "health-care-facilities",
+        "viewport": "mobile",
+        "heading": "Inclusive Digital Maps For Health Care Facilities",
+        "diff": 57.6
+      }
+    ]
+  },
+  {
+    "component": "contact-form",
+    "totalInstances": 4,
+    "matchedInstances": 4,
+    "unmatchedInstances": 0,
+    "avgDiff": 29.798239041256437,
+    "minDiff": 10.945868945868947,
+    "maxDiff": 70.38253687315634,
+    "desktopAvg": 18.932275173000235,
+    "mobileAvg": 40.664202909512646,
+    "best": {
+      "component": "contact-form",
+      "slug": "about",
+      "viewport": "mobile",
+      "heading": "CONTACT US",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 10.945868945868947,
+      "overlapDiffPercent": 10.945868945868947,
+      "heightDelta": 0,
+      "wpWidth": 375,
+      "wpHeight": 234,
+      "hugoWidth": 375,
+      "hugoHeight": 234
+    },
+    "worst": {
+      "component": "contact-form",
+      "slug": "home",
+      "viewport": "mobile",
+      "heading": "CONTACT US",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 70.38253687315634,
+      "overlapDiffPercent": 11.927017543859648,
+      "heightDelta": 375,
+      "wpWidth": 375,
+      "wpHeight": 190,
+      "hugoWidth": 375,
+      "hugoHeight": 565
+    },
+    "instances": [
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "CONTACT US",
+        "diff": 10.9
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "CONTACT US",
+        "diff": 13
+      },
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "CONTACT US",
+        "diff": 24.9
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "CONTACT US",
+        "diff": 70.4
+      }
+    ]
+  },
+  {
+    "component": "why-section",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 28.628281848346447,
+    "minDiff": 14.337945482246953,
+    "maxDiff": 42.91861821444594,
+    "desktopAvg": 14.337945482246953,
+    "mobileAvg": 42.91861821444594,
+    "best": {
+      "component": "why-section",
+      "slug": "home",
+      "viewport": "desktop",
+      "heading": "Why XR Navigation Is The Future",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 14.337945482246953,
+      "overlapDiffPercent": 14.269797467515247,
+      "heightDelta": -1,
+      "wpWidth": 1920,
+      "wpHeight": 1258,
+      "hugoWidth": 1920,
+      "hugoHeight": 1257
+    },
+    "worst": {
+      "component": "why-section",
+      "slug": "home",
+      "viewport": "mobile",
+      "heading": "Why XR Navigation Is The Future",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 42.91861821444594,
+      "overlapDiffPercent": 9.954423213021938,
+      "heightDelta": 544,
+      "wpWidth": 375,
+      "wpHeight": 942,
+      "hugoWidth": 375,
+      "hugoHeight": 1486
+    },
+    "instances": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "Why XR Navigation Is The Future",
+        "diff": 14.3
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "Why XR Navigation Is The Future",
+        "diff": 42.9
+      }
+    ]
+  },
+  {
+    "component": "acr",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 24.787111175191317,
+    "minDiff": 24.08949771689498,
+    "maxDiff": 25.484724633487655,
+    "desktopAvg": 25.484724633487655,
+    "mobileAvg": 24.08949771689498,
+    "best": {
+      "component": "acr",
+      "slug": "acr",
+      "viewport": "mobile",
+      "heading": "Accessibility Conformance Reports",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 24.08949771689498,
+      "overlapDiffPercent": 14.746666666666666,
+      "heightDelta": 80,
+      "wpWidth": 375,
+      "wpHeight": 650,
+      "hugoWidth": 375,
+      "hugoHeight": 730
+    },
+    "worst": {
+      "component": "acr",
+      "slug": "acr",
+      "viewport": "desktop",
+      "heading": "Accessibility Conformance Reports",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 25.484724633487655,
+      "overlapDiffPercent": 15.287897478070175,
+      "heightDelta": -104,
+      "wpWidth": 1920,
+      "wpHeight": 864,
+      "hugoWidth": 1920,
+      "hugoHeight": 760
+    },
+    "instances": [
+      {
+        "slug": "acr",
+        "viewport": "mobile",
+        "heading": "Accessibility Conformance Reports",
+        "diff": 24.1
+      },
+      {
+        "slug": "acr",
+        "viewport": "desktop",
+        "heading": "Accessibility Conformance Reports",
+        "diff": 25.5
+      }
+    ]
+  },
+  {
+    "component": "client-logos",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 21.545396261879315,
+    "minDiff": 6.066888619854722,
+    "maxDiff": 37.02390390390391,
+    "desktopAvg": 6.066888619854722,
+    "mobileAvg": 37.02390390390391,
+    "best": {
+      "component": "client-logos",
+      "slug": "home",
+      "viewport": "desktop",
+      "heading": "Our Clients",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 6.066888619854722,
+      "overlapDiffPercent": 5.838895631067961,
+      "heightDelta": -1,
+      "wpWidth": 1920,
+      "wpHeight": 413,
+      "hugoWidth": 1920,
+      "hugoHeight": 412
+    },
+    "worst": {
+      "component": "client-logos",
+      "slug": "home",
+      "viewport": "mobile",
+      "heading": "Our Clients",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 37.02390390390391,
+      "overlapDiffPercent": 12.401670843776106,
+      "heightDelta": -156,
+      "wpWidth": 375,
+      "wpHeight": 555,
+      "hugoWidth": 375,
+      "hugoHeight": 399
+    },
+    "instances": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "Our Clients",
+        "diff": 6.1
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "Our Clients",
+        "diff": 37
+      }
+    ]
+  },
+  {
+    "component": "what-is",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 21.413816657446876,
+    "minDiff": 3.5638810380267216,
+    "maxDiff": 39.26375227686703,
+    "desktopAvg": 3.5638810380267216,
+    "mobileAvg": 39.26375227686703,
+    "best": {
+      "component": "what-is",
+      "slug": "home",
+      "viewport": "desktop",
+      "heading": "What Is Audiom?",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 3.5638810380267216,
+      "overlapDiffPercent": 3.4646669238683128,
+      "heightDelta": -1,
+      "wpWidth": 1920,
+      "wpHeight": 973,
+      "hugoWidth": 1920,
+      "hugoHeight": 972
+    },
+    "worst": {
+      "component": "what-is",
+      "slug": "home",
+      "viewport": "mobile",
+      "heading": "What Is Audiom?",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 39.26375227686703,
+      "overlapDiffPercent": 24.13151308304892,
+      "heightDelta": -146,
+      "wpWidth": 375,
+      "wpHeight": 732,
+      "hugoWidth": 375,
+      "hugoHeight": 586
+    },
+    "instances": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "What Is Audiom?",
+        "diff": 3.6
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "What Is Audiom?",
+        "diff": 39.3
+      }
+    ]
+  },
+  {
+    "component": "steps",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 20.697322771953452,
+    "minDiff": 4.96265076754386,
+    "maxDiff": 36.43199477636304,
+    "desktopAvg": 4.96265076754386,
+    "mobileAvg": 36.43199477636304,
+    "best": {
+      "component": "steps",
+      "slug": "home",
+      "viewport": "desktop",
+      "heading": "Step One",
+      "selectorType": "uagb-root",
+      "matchMethod": "position",
+      "diffPercent": 4.96265076754386,
+      "overlapDiffPercent": 4.648996149614962,
+      "heightDelta": -1,
+      "wpWidth": 1920,
+      "wpHeight": 304,
+      "hugoWidth": 1920,
+      "hugoHeight": 303
+    },
+    "worst": {
+      "component": "steps",
+      "slug": "home",
+      "viewport": "mobile",
+      "heading": "Step One",
+      "selectorType": "uagb-root",
+      "matchMethod": "position",
+      "diffPercent": 36.43199477636304,
+      "overlapDiffPercent": 10.847619047619048,
+      "heightDelta": 293,
+      "wpWidth": 375,
+      "wpHeight": 728,
+      "hugoWidth": 375,
+      "hugoHeight": 1021
+    },
+    "instances": [
+      {
+        "slug": "home",
+        "viewport": "desktop",
+        "heading": "Step One",
+        "diff": 5
+      },
+      {
+        "slug": "home",
+        "viewport": "mobile",
+        "heading": "Step One",
+        "diff": 36.4
+      }
+    ]
+  },
+  {
+    "component": "about-section",
+    "totalInstances": 14,
+    "matchedInstances": 14,
+    "unmatchedInstances": 0,
+    "avgDiff": 17.459772149172302,
+    "minDiff": 4.559157580477674,
+    "maxDiff": 42.26603475513428,
+    "desktopAvg": 11.970640869565303,
+    "mobileAvg": 22.94890342877931,
+    "best": {
+      "component": "about-section",
+      "slug": "about",
+      "viewport": "desktop",
+      "heading": "Our Investors:",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 4.559157580477674,
+      "overlapDiffPercent": 2.119775026624068,
+      "heightDelta": 8,
+      "wpWidth": 1920,
+      "wpHeight": 313,
+      "hugoWidth": 1920,
+      "hugoHeight": 321
+    },
+    "worst": {
+      "component": "about-section",
+      "slug": "about",
+      "viewport": "mobile",
+      "heading": "About Xr Navigation",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 42.26603475513428,
+      "overlapDiffPercent": 39.99080459770115,
+      "heightDelta": 32,
+      "wpWidth": 375,
+      "wpHeight": 812,
+      "hugoWidth": 375,
+      "hugoHeight": 844
+    },
+    "instances": [
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "Our Investors:",
+        "diff": 4.6
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "Publications",
+        "diff": 5
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "Publications",
+        "diff": 7.8
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "Our Partners",
+        "diff": 8.5
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "About Xr Navigation",
+        "diff": 8.8
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "But We have The Solution",
+        "diff": 11
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "The Problem Is Massive",
+        "diff": 16.2
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "Our Investors:",
+        "diff": 18.3
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "But We have The Solution",
+        "diff": 19.2
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "The Problem Is Massive",
+        "diff": 19.9
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "Our Partners",
+        "diff": 21.1
+      },
+      {
+        "slug": "about",
+        "viewport": "desktop",
+        "heading": "Experience How Audiom Works For Yourself",
+        "diff": 26
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "Experience How Audiom Works For Yourself",
+        "diff": 35.8
+      },
+      {
+        "slug": "about",
+        "viewport": "mobile",
+        "heading": "About Xr Navigation",
+        "diff": 42.3
+      }
+    ]
+  },
+  {
+    "component": "embed-page",
+    "totalInstances": 96,
+    "matchedInstances": 96,
+    "unmatchedInstances": 0,
+    "avgDiff": 13.58770416588852,
+    "minDiff": 0.25083541567507533,
+    "maxDiff": 70.53875676195649,
+    "desktopAvg": 10.258105508521474,
+    "mobileAvg": 16.917302823255564,
+    "best": {
+      "component": "embed-page",
+      "slug": "fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific",
+      "viewport": "desktop",
+      "heading": null,
+      "selectorType": "whole-page",
+      "matchMethod": "position",
+      "diffPercent": 0.25083541567507533,
+      "overlapDiffPercent": 0.25083541567507533,
+      "heightDelta": 0,
+      "wpWidth": 1920,
+      "wpHeight": 16808,
+      "hugoWidth": 1920,
+      "hugoHeight": 16808
+    },
+    "worst": {
+      "component": "embed-page",
+      "slug": "digital-map-tool-accessibility-comparison",
+      "viewport": "desktop",
+      "heading": null,
+      "selectorType": "whole-page",
+      "matchMethod": "position",
+      "diffPercent": 70.53875676195649,
+      "overlapDiffPercent": 6.391428443006113,
+      "heightDelta": 6728,
+      "wpWidth": 1440,
+      "wpHeight": 3090,
+      "hugoWidth": 1440,
+      "hugoHeight": 9818
+    },
+    "instances": [
+      {
+        "slug": "fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 0.3
+      },
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho-old",
+        "viewport": "desktop",
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregan, and Idaho",
+        "diff": 0.3
+      },
+      {
+        "slug": "covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 0.6
+      },
+      {
+        "slug": "lske-map-1",
+        "viewport": "desktop",
+        "heading": "LSKE Map 1",
+        "diff": 1
+      },
+      {
+        "slug": "lske-map-4",
+        "viewport": "desktop",
+        "heading": "LSKE Map 4",
+        "diff": 1
+      },
+      {
+        "slug": "lske-map-2",
+        "viewport": "desktop",
+        "heading": "LSKE Map 2",
+        "diff": 1
+      },
+      {
+        "slug": "lske-map-3",
+        "viewport": "desktop",
+        "heading": "LSKE Map 3",
+        "diff": 1
+      },
+      {
+        "slug": "audiom-tvm-map-1",
+        "viewport": "desktop",
+        "heading": "Audiom TVM Map 1",
+        "diff": 1.1
+      },
+      {
+        "slug": "audiom-tvm-map-3",
+        "viewport": "desktop",
+        "heading": "Audiom TVM Map 3",
+        "diff": 1.1
+      },
+      {
+        "slug": "audiom-tvm-map-4",
+        "viewport": "desktop",
+        "heading": "Audiom TVM Map 4",
+        "diff": 1.1
+      },
+      {
+        "slug": "audiom-tvm-map-2",
+        "viewport": "desktop",
+        "heading": "Audiom TVM Map 2",
+        "diff": 1.1
+      },
+      {
+        "slug": "csun",
+        "viewport": "desktop",
+        "heading": "Audiom CSUN 2026 Map",
+        "diff": 1.1
+      },
+      {
+        "slug": "lske-map-3",
+        "viewport": "mobile",
+        "heading": "LSKE Map 3",
+        "diff": 1.2
+      },
+      {
+        "slug": "audiom-numbers",
+        "viewport": "desktop",
+        "heading": "Audiom Numbers",
+        "diff": 1.3
+      },
+      {
+        "slug": "lske-map-4",
+        "viewport": "mobile",
+        "heading": "LSKE Map 4",
+        "diff": 1.4
+      },
+      {
+        "slug": "atia",
+        "viewport": "desktop",
+        "heading": "Audiom ATIA 2026 Map",
+        "diff": 1.4
+      },
+      {
+        "slug": "lske-map-2",
+        "viewport": "mobile",
+        "heading": "LSKE Map 2",
+        "diff": 1.4
+      },
+      {
+        "slug": "lske-map-1",
+        "viewport": "mobile",
+        "heading": "LSKE Map 1",
+        "diff": 1.4
+      },
+      {
+        "slug": "nasa-jpl-campus-map",
+        "viewport": "mobile",
+        "heading": "NASA JPL Campus Map",
+        "diff": 1.5
+      },
+      {
+        "slug": "audiom-bovine-manus-diagram",
+        "viewport": "desktop",
+        "heading": "Audiom Bovine Manus Diagram",
+        "diff": 1.5
+      },
+      {
+        "slug": "audiom-human-skeleton-diagram",
+        "viewport": "desktop",
+        "heading": "Audiom Human Skeleton Diagram",
+        "diff": 1.5
+      },
+      {
+        "slug": "csun",
+        "viewport": "mobile",
+        "heading": "Audiom CSUN 2026 Map",
+        "diff": 1.6
+      },
+      {
+        "slug": "audiom-airbus-lopa-a320-200-diagram",
+        "viewport": "desktop",
+        "heading": "Audiom Airbus LOPA A320 200 Diagram",
+        "diff": 1.6
+      },
+      {
+        "slug": "audiom-tvm-map-1",
+        "viewport": "mobile",
+        "heading": "Audiom TVM Map 1",
+        "diff": 1.7
+      },
+      {
+        "slug": "audiom-tvm-map-3",
+        "viewport": "mobile",
+        "heading": "Audiom TVM Map 3",
+        "diff": 1.7
+      },
+      {
+        "slug": "audiom-tvm-map-2",
+        "viewport": "mobile",
+        "heading": "Audiom TVM Map 2",
+        "diff": 1.7
+      },
+      {
+        "slug": "nfb24",
+        "viewport": "desktop",
+        "heading": "NFB Exhibit Hall Map 2024",
+        "diff": 1.7
+      },
+      {
+        "slug": "csun-exhibit-hall-map-2024",
+        "viewport": "desktop",
+        "heading": "CSUN Exhibit Hall Map 2024",
+        "diff": 1.7
+      },
+      {
+        "slug": "audiom-tvm-map-4",
+        "viewport": "mobile",
+        "heading": "Audiom TVM Map 4",
+        "diff": 1.7
+      },
+      {
+        "slug": "wcvi",
+        "viewport": "desktop",
+        "heading": "Audiom Vision Ireland: The Wayfinding Centre Map",
+        "diff": 1.8
+      },
+      {
+        "slug": "audiom-airplane-aa-747-seatmap",
+        "viewport": "desktop",
+        "heading": "Audiom Airplane AA747 Seatmap",
+        "diff": 1.8
+      },
+      {
+        "slug": "audiom-create-x-demo-day-map-2024",
+        "viewport": "desktop",
+        "heading": "Audiom Create-X Demo Day Map 2024",
+        "diff": 1.8
+      },
+      {
+        "slug": "audiom-airbus-lopa-a320-200-seat-map",
+        "viewport": "desktop",
+        "heading": "Audiom Airbus LOPA A320 200 Seat Map",
+        "diff": 1.9
+      },
+      {
+        "slug": "audiom-mean-sea-level-rise-map-fall-2024",
+        "viewport": "desktop",
+        "heading": "Audiom Mean Sea Level Rise Map Fall 2024",
+        "diff": 1.9
+      },
+      {
+        "slug": "ski-map",
+        "viewport": "desktop",
+        "heading": "Audiom 2318 Fillmore St. – Smith-Kettlewell Eye Research Institute Map",
+        "diff": 1.9
+      },
+      {
+        "slug": "nfb",
+        "viewport": "desktop",
+        "heading": "Audiom NFB Jernigan Institute and Riverside Park Map",
+        "diff": 2.1
+      },
+      {
+        "slug": "asa625",
+        "viewport": "desktop",
+        "heading": "Audiom Atlanta Peachtree Streets Alive Map June 2025",
+        "diff": 2.1
+      },
+      {
+        "slug": "nfb24",
+        "viewport": "mobile",
+        "heading": "NFB Exhibit Hall Map 2024",
+        "diff": 2.4
+      },
+      {
+        "slug": "audiom-numbers",
+        "viewport": "mobile",
+        "heading": "Audiom Numbers",
+        "diff": 2.4
+      },
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho",
+        "viewport": "desktop",
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregon, and Idaho",
+        "diff": 2.4
+      },
+      {
+        "slug": "audiom-covid-map",
+        "viewport": "mobile",
+        "heading": "Audiom COVID-19 State Statistic Map",
+        "diff": 2.5
+      },
+      {
+        "slug": "atia",
+        "viewport": "mobile",
+        "heading": "Audiom ATIA 2026 Map",
+        "diff": 2.5
+      },
+      {
+        "slug": "audiom-airplane-aa-747-seatmap",
+        "viewport": "mobile",
+        "heading": "Audiom Airplane AA747 Seatmap",
+        "diff": 2.8
+      },
+      {
+        "slug": "audiom-human-skeleton-diagram",
+        "viewport": "mobile",
+        "heading": "Audiom Human Skeleton Diagram",
+        "diff": 2.9
+      },
+      {
+        "slug": "audiom-bovine-manus-diagram",
+        "viewport": "mobile",
+        "heading": "Audiom Bovine Manus Diagram",
+        "diff": 3
+      },
+      {
+        "slug": "csun-exhibit-hall-map-2024",
+        "viewport": "mobile",
+        "heading": "CSUN Exhibit Hall Map 2024",
+        "diff": 3.1
+      },
+      {
+        "slug": "asa625",
+        "viewport": "mobile",
+        "heading": "Audiom Atlanta Peachtree Streets Alive Map June 2025",
+        "diff": 3.3
+      },
+      {
+        "slug": "audiom-create-x-demo-day-map-2024",
+        "viewport": "mobile",
+        "heading": "Audiom Create-X Demo Day Map 2024",
+        "diff": 3.4
+      },
+      {
+        "slug": "audiom-mean-sea-level-rise-map-fall-2024",
+        "viewport": "mobile",
+        "heading": "Audiom Mean Sea Level Rise Map Fall 2024",
+        "diff": 3.6
+      },
+      {
+        "slug": "nasa-jpl-campus-map",
+        "viewport": "desktop",
+        "heading": "NASA JPL Campus Map",
+        "diff": 3.8
+      },
+      {
+        "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 5.2
+      },
+      {
+        "slug": "nfb25",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 5.4
+      },
+      {
+        "slug": "how-to-make-detailed-map-text-descriptions",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 7.7
+      },
+      {
+        "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 7.8
+      },
+      {
+        "slug": "audiom-covid-map",
+        "viewport": "desktop",
+        "heading": "Audiom COVID-19 State Statistic Map",
+        "diff": 9.2
+      },
+      {
+        "slug": "what-is-the-definition-of-a-map",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 9.3
+      },
+      {
+        "slug": "audiom-rat-dissection-diagram",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 10.2
+      },
+      {
+        "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 12.5
+      },
+      {
+        "slug": "audiom-sheep-brain-diagram",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 13.7
+      },
+      {
+        "slug": "how-to-make-detailed-map-text-descriptions",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 13.8
+      },
+      {
+        "slug": "audiom-rat-dissection-diagram",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 14.4
+      },
+      {
+        "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 15
+      },
+      {
+        "slug": "what-is-the-definition-of-a-map",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 15
+      },
+      {
+        "slug": "rose-quarter-and-sunset-maps",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 16.3
+      },
+      {
+        "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 17.5
+      },
+      {
+        "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 18.3
+      },
+      {
+        "slug": "peachability-walk-june-22-2025",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 18.9
+      },
+      {
+        "slug": "ski-map",
+        "viewport": "mobile",
+        "heading": "Audiom 2318 Fillmore St. – Smith-Kettlewell Eye Research Institute Map",
+        "diff": 20.6
+      },
+      {
+        "slug": "sonification-awards-2024-application",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 20.6
+      },
+      {
+        "slug": "sonification-awards-2024-application",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 21.3
+      },
+      {
+        "slug": "nfb25",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 21.3
+      },
+      {
+        "slug": "rose-quarter-and-sunset-maps",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 22.2
+      },
+      {
+        "slug": "audiom-sheep-brain-diagram",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 22.3
+      },
+      {
+        "slug": "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "mobile",
+        "heading": "Sonification Award 2026 Application of Audiom Wisconsin Geological Survey Quaternary Map",
+        "diff": 23.3
+      },
+      {
+        "slug": "wcvi",
+        "viewport": "mobile",
+        "heading": "Audiom Vision Ireland: The Wayfinding Centre Map",
+        "diff": 27.3
+      },
+      {
+        "slug": "audiom-airbus-lopa-a320-200-diagram",
+        "viewport": "mobile",
+        "heading": "Audiom Airbus LOPA A320 200 Diagram",
+        "diff": 27.9
+      },
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho",
+        "viewport": "mobile",
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregon, and Idaho",
+        "diff": 28.5
+      },
+      {
+        "slug": "fictional-map-description-of-first-floor-of-the-aquarium-of-the-pacific",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 29.3
+      },
+      {
+        "slug": "peachability-walk-june-22-2025",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 29.9
+      },
+      {
+        "slug": "nfb",
+        "viewport": "mobile",
+        "heading": "Audiom NFB Jernigan Institute and Riverside Park Map",
+        "diff": 30.4
+      },
+      {
+        "slug": "audiom-airbus-lopa-a320-200-seat-map",
+        "viewport": "mobile",
+        "heading": "Audiom Airbus LOPA A320 200 Seat Map",
+        "diff": 30.6
+      },
+      {
+        "slug": "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "desktop",
+        "heading": "Sonification Award 2026 Application of Audiom Wisconsin Geological Survey Quaternary Map",
+        "diff": 31.8
+      },
+      {
+        "slug": "audiom-sole-source-justification",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 33.5
+      },
+      {
+        "slug": "table-vs-map-example",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 35
+      },
+      {
+        "slug": "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho-old",
+        "viewport": "mobile",
+        "heading": "This is a COVID statistic map showing total cases over Washington, Oregan, and Idaho",
+        "diff": 35.2
+      },
+      {
+        "slug": "audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "mobile",
+        "heading": "Audiom Wisconsin Geological Survey Quaternary Map",
+        "diff": 35.3
+      },
+      {
+        "slug": "table-vs-map-example",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 35.8
+      },
+      {
+        "slug": "audiom-sole-source-justification",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 37.7
+      },
+      {
+        "slug": "magicmap-paloalto",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 37.9
+      },
+      {
+        "slug": "wcag-map-comparison-table",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 38.7
+      },
+      {
+        "slug": "covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 41.3
+      },
+      {
+        "slug": "wcag-map-comparison-table",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 45.1
+      },
+      {
+        "slug": "audiom-wisconsin-geological-survey-quaternary-map",
+        "viewport": "desktop",
+        "heading": "Audiom Wisconsin Geological Survey Quaternary Map",
+        "diff": 51.5
+      },
+      {
+        "slug": "magicmap-paloalto",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 51.9
+      },
+      {
+        "slug": "digital-map-tool-accessibility-comparison",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 67.1
+      },
+      {
+        "slug": "digital-map-tool-accessibility-comparison",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 70.5
+      }
+    ]
+  },
+  {
+    "component": "blog-post",
+    "totalInstances": 10,
+    "matchedInstances": 10,
+    "unmatchedInstances": 0,
+    "avgDiff": 12.722237957877468,
+    "minDiff": 6.438483547925608,
+    "maxDiff": 21.29373449642096,
+    "desktopAvg": 9.306960998653803,
+    "mobileAvg": 16.137514917101132,
+    "best": {
+      "component": "blog-post",
+      "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
+      "viewport": "desktop",
+      "heading": null,
+      "selectorType": "whole-page",
+      "matchMethod": "position",
+      "diffPercent": 6.438483547925608,
+      "overlapDiffPercent": 5.628427128427129,
+      "heightDelta": 20,
+      "wpWidth": 1440,
+      "wpHeight": 2310,
+      "hugoWidth": 1440,
+      "hugoHeight": 2330
+    },
+    "worst": {
+      "component": "blog-post",
+      "slug": "how-to-convert-from-pdf-to-geojson-using-qgis",
+      "viewport": "mobile",
+      "heading": null,
+      "selectorType": "whole-page",
+      "matchMethod": "position",
+      "diffPercent": 21.29373449642096,
+      "overlapDiffPercent": 16.80742395425812,
+      "heightDelta": 252,
+      "wpWidth": 338,
+      "wpHeight": 4421,
+      "hugoWidth": 338,
+      "hugoHeight": 4673
+    },
+    "instances": [
+      {
+        "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 6.4
+      },
+      {
+        "slug": "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 9.1
+      },
+      {
+        "slug": "list-of-non-visual-drawing-tools",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 9.2
+      },
+      {
+        "slug": "how-to-convert-from-pdf-to-geojson-using-qgis",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 10.8
+      },
+      {
+        "slug": "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 10.9
+      },
+      {
+        "slug": "list-of-non-visual-drawing-tools",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 11.2
+      },
+      {
+        "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 11.9
+      },
+      {
+        "slug": "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 16.9
+      },
+      {
+        "slug": "how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 19.4
+      },
+      {
+        "slug": "how-to-convert-from-pdf-to-geojson-using-qgis",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 21.3
+      }
+    ]
+  },
+  {
+    "component": "standard-page",
+    "totalInstances": 40,
+    "matchedInstances": 40,
+    "unmatchedInstances": 0,
+    "avgDiff": 12.024238566914946,
+    "minDiff": 0.48911959470240945,
+    "maxDiff": 48.05575042517007,
+    "desktopAvg": 9.7876495578622,
+    "mobileAvg": 14.260827575967696,
+    "best": {
+      "component": "standard-page",
+      "slug": "about-audiom",
+      "viewport": "desktop",
+      "heading": "About Audiom",
+      "selectorType": "whole-page",
+      "matchMethod": "exact_heading",
+      "diffPercent": 0.48911959470240945,
+      "overlapDiffPercent": 0.3221150003995844,
+      "heightDelta": -7,
+      "wpWidth": 1920,
+      "wpHeight": 4178,
+      "hugoWidth": 1920,
+      "hugoHeight": 4171
+    },
+    "worst": {
+      "component": "standard-page",
+      "slug": "gatech",
+      "viewport": "desktop",
+      "heading": "Audiom Georgia Tech Map",
+      "selectorType": "whole-page",
+      "matchMethod": "exact_heading",
+      "diffPercent": 48.05575042517007,
+      "overlapDiffPercent": 47.73576531485284,
+      "heightDelta": -6,
+      "wpWidth": 1920,
+      "wpHeight": 980,
+      "hugoWidth": 1920,
+      "hugoHeight": 974
+    },
+    "instances": [
+      {
+        "slug": "about-audiom",
+        "viewport": "desktop",
+        "heading": "About Audiom",
+        "diff": 0.5
+      },
+      {
+        "slug": "jernigan-institute",
+        "viewport": "desktop",
+        "heading": "Audiom Jernigan Institute NFB Map",
+        "diff": 1.6
+      },
+      {
+        "slug": "vrate24",
+        "viewport": "desktop",
+        "heading": "Audiom Vrate 2024 Exhibit Hall Map",
+        "diff": 1.6
+      },
+      {
+        "slug": "tvm1",
+        "viewport": "desktop",
+        "heading": "Audiom Table vs. Map 1",
+        "diff": 1.6
+      },
+      {
+        "slug": "gavilan-hollister",
+        "viewport": "desktop",
+        "heading": "Gavilan Hollister Campus",
+        "diff": 1.7
+      },
+      {
+        "slug": "vsa25",
+        "viewport": "desktop",
+        "heading": "AudiomVision Serve Alliance 2024 Hotel Map",
+        "diff": 1.7
+      },
+      {
+        "slug": "eclipse24",
+        "viewport": "desktop",
+        "heading": "Audiom Eclipse 2024 Map",
+        "diff": 1.7
+      },
+      {
+        "slug": "dif25",
+        "viewport": "desktop",
+        "heading": "Audiom Disability Innovation Forum 2025 Map",
+        "diff": 1.7
+      },
+      {
+        "slug": "ipst",
+        "viewport": "desktop",
+        "heading": "Audiom Institute of Paper Science and Technology Map",
+        "diff": 1.7
+      },
+      {
+        "slug": "election2024",
+        "viewport": "desktop",
+        "heading": "Audiom 2024 U.S. Election Map",
+        "diff": 1.8
+      },
+      {
+        "slug": "wisconsin-geological-survey-press-release",
+        "viewport": "desktop",
+        "heading": "Wisconsin Geological Survey Press Release",
+        "diff": 1.9
+      },
+      {
+        "slug": "mes24",
+        "viewport": "desktop",
+        "heading": "Audiom M-Enabling 2024 Exhibit Hall Map",
+        "diff": 1.9
+      },
+      {
+        "slug": "tvm1",
+        "viewport": "mobile",
+        "heading": "Audiom Table vs. Map 1",
+        "diff": 2.1
+      },
+      {
+        "slug": "gavilan-gilroy",
+        "viewport": "mobile",
+        "heading": "Gilroy Campus Map",
+        "diff": 2.5
+      },
+      {
+        "slug": "vrate24",
+        "viewport": "mobile",
+        "heading": "Audiom Vrate 2024 Exhibit Hall Map",
+        "diff": 2.6
+      },
+      {
+        "slug": "gavilan-hollister",
+        "viewport": "mobile",
+        "heading": "Gavilan Hollister Campus",
+        "diff": 2.8
+      },
+      {
+        "slug": "jernigan-institute",
+        "viewport": "mobile",
+        "heading": "Audiom Jernigan Institute NFB Map",
+        "diff": 3.1
+      },
+      {
+        "slug": "eclipse24",
+        "viewport": "mobile",
+        "heading": "Audiom Eclipse 2024 Map",
+        "diff": 3.1
+      },
+      {
+        "slug": "vsa25",
+        "viewport": "mobile",
+        "heading": "AudiomVision Serve Alliance 2024 Hotel Map",
+        "diff": 3.1
+      },
+      {
+        "slug": "case-study-vrate-expo-2024",
+        "viewport": "mobile",
+        "heading": "Case Study: VRATE Expo 2024",
+        "diff": 3.1
+      },
+      {
+        "slug": "wisconsin-geological-survey-press-release",
+        "viewport": "mobile",
+        "heading": "Wisconsin Geological Survey Press Release",
+        "diff": 3.4
+      },
+      {
+        "slug": "ipst",
+        "viewport": "mobile",
+        "heading": "Audiom Institute of Paper Science and Technology Map",
+        "diff": 3.4
+      },
+      {
+        "slug": "election2024",
+        "viewport": "mobile",
+        "heading": "Audiom 2024 U.S. Election Map",
+        "diff": 3.5
+      },
+      {
+        "slug": "privacy-policy",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 4.4
+      },
+      {
+        "slug": "case-study-vrate-expo-2024",
+        "viewport": "desktop",
+        "heading": "Case Study: VRATE Expo 2024",
+        "diff": 6.4
+      },
+      {
+        "slug": "case-study-wisconsin-geological-survey",
+        "viewport": "desktop",
+        "heading": "Case Study: Wisconsin Geological Survey",
+        "diff": 12
+      },
+      {
+        "slug": "events",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 17
+      },
+      {
+        "slug": "fcoi",
+        "viewport": "desktop",
+        "heading": "XR Navigation Financial Conflict of Interest Policy",
+        "diff": 18.2
+      },
+      {
+        "slug": "fcoi",
+        "viewport": "mobile",
+        "heading": "XR Navigation Financial Conflict of Interest Policy",
+        "diff": 21.5
+      },
+      {
+        "slug": "case-study-wisconsin-geological-survey",
+        "viewport": "mobile",
+        "heading": "Case Study: Wisconsin Geological Survey",
+        "diff": 24.1
+      },
+      {
+        "slug": "about-audiom",
+        "viewport": "mobile",
+        "heading": "About Audiom",
+        "diff": 25.3
+      },
+      {
+        "slug": "mes24",
+        "viewport": "mobile",
+        "heading": "Audiom M-Enabling 2024 Exhibit Hall Map",
+        "diff": 25.9
+      },
+      {
+        "slug": "gallery",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 26.9
+      },
+      {
+        "slug": "gallery",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 28.7
+      },
+      {
+        "slug": "events",
+        "viewport": "desktop",
+        "heading": null,
+        "diff": 30.2
+      },
+      {
+        "slug": "gavilan-gilroy",
+        "viewport": "desktop",
+        "heading": "Gilroy Campus Map",
+        "diff": 30.4
+      },
+      {
+        "slug": "dif25",
+        "viewport": "mobile",
+        "heading": "Audiom Disability Innovation Forum 2025 Map",
+        "diff": 32.5
+      },
+      {
+        "slug": "gatech",
+        "viewport": "mobile",
+        "heading": "Audiom Georgia Tech Map",
+        "diff": 36.5
+      },
+      {
+        "slug": "privacy-policy",
+        "viewport": "mobile",
+        "heading": null,
+        "diff": 40.9
+      },
+      {
+        "slug": "gatech",
+        "viewport": "desktop",
+        "heading": "Audiom Georgia Tech Map",
+        "diff": 48.1
+      }
+    ]
+  },
+  {
+    "component": "error-page",
+    "totalInstances": 2,
+    "matchedInstances": 2,
+    "unmatchedInstances": 0,
+    "avgDiff": 10.243027119252874,
+    "minDiff": 8.665364583333334,
+    "maxDiff": 11.820689655172414,
+    "desktopAvg": 8.665364583333334,
+    "mobileAvg": 11.820689655172414,
+    "best": {
+      "component": "error-page",
+      "slug": "404-2",
+      "viewport": "desktop",
+      "heading": "404! Page Not Found.",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 8.665364583333334,
+      "overlapDiffPercent": 8.665364583333334,
+      "heightDelta": 0,
+      "wpWidth": 1920,
+      "wpHeight": 1080,
+      "hugoWidth": 1920,
+      "hugoHeight": 1080
+    },
+    "worst": {
+      "component": "error-page",
+      "slug": "404-2",
+      "viewport": "mobile",
+      "heading": "404! Page Not Found.",
+      "selectorType": "uagb-root",
+      "matchMethod": "exact_heading",
+      "diffPercent": 11.820689655172414,
+      "overlapDiffPercent": 11.820689655172414,
+      "heightDelta": 0,
+      "wpWidth": 375,
+      "wpHeight": 812,
+      "hugoWidth": 375,
+      "hugoHeight": 812
+    },
+    "instances": [
+      {
+        "slug": "404-2",
+        "viewport": "desktop",
+        "heading": "404! Page Not Found.",
+        "diff": 8.7
+      },
+      {
+        "slug": "404-2",
+        "viewport": "mobile",
+        "heading": "404! Page Not Found.",
+        "diff": 11.8
+      }
+    ]
+  },
+  {
+    "component": "unmatched",
+    "totalInstances": 6,
+    "matchedInstances": 0,
+    "unmatchedInstances": 6,
+    "avgDiff": null,
+    "minDiff": null,
+    "maxDiff": null,
+    "desktopAvg": null,
+    "mobileAvg": null,
+    "best": null,
+    "worst": null,
+    "instances": []
+  }
+]
