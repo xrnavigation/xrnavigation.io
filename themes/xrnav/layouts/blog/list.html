@@ -27,7 +27,7 @@
     {{/* Post grid */}}
     <div class="wp-block-uagb-container alignfull uagb-is-root-container" style="padding: 2rem 0;">
       <div class="uagb-container-inner-blocks-wrap" style="max-width: min(100%, 1200px); margin: 0 auto; padding: 0 2rem;">
-        <div class="wp-block-uagb-post-grid uagb-post-grid uagb-post__image-position-background uagb-post__columns-3 is-grid uagb-post__columns-tablet-2 uagb-post__columns-mobile-1 uagb-post__equal-height" role="list">
+        <div class="wp-block-uagb-post-grid uagb-post-grid custom-border-radius uagb-post__image-position-background uagb-post__image-enabled uagb-post__items uagb-post__columns-3 is-grid uagb-post__columns-tablet-2 uagb-post__columns-mobile-1 uagb-post__equal-height" role="list">
           {{ range .Pages }}
           <article class="uagb-post__inner-wrap" role="listitem"{{ with .Params.featured_image }} style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
             {{ with .Params.featured_image }}
