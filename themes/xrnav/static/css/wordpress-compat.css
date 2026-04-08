@@ -1073,11 +1073,134 @@ h3.uagb-post__title a:hover {
   .uagb-post__columns-mobile-1.is-grid,
   .uagb-post__columns-3.is-grid {
     grid-template-columns: 1fr;
+    width: calc(100% + 4rem + 2.5px);
+    margin-left: calc(-2rem - 1.25px);
+    margin-right: calc(-2rem - 1.25px);
+    gap: 30px;
   }
 
-  /* Blog heading section — override inline padding at mobile */
+  /* Blog hero — WP keeps full-bleed width, 60vh min-height, and thin mobile padding */
+  .blog-hero,
+  .blog-hero.Change-background {
+    width: calc(100% + 40px);
+    max-width: none;
+    margin-left: -20px;
+    margin-right: -20px;
+    min-height: 60vh;
+    padding: 6px 0 3px;
+    justify-content: normal;
+    align-items: normal;
+  }
+
+  .blog-hero > .uagb-container-inner-blocks-wrap {
+    width: 100%;
+    max-width: min(100%, 767px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Blog heading section — keep the WP 100px vertical rhythm and full-bleed width */
   .entry-content > .wp-block-uagb-container[style*="padding: 100px"] {
-    padding: 40px 0 !important;
+    width: calc(100% + 40px);
+    max-width: none;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 100px 0 !important;
+  }
+
+  .entry-content > .wp-block-uagb-container[style*="padding: 100px"] > .uagb-container-inner-blocks-wrap {
+    width: 100%;
+    max-width: min(100%, 767px);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Blog cards — WP uses separate image blocks, white text, and compact padding */
+  .uagb-post__inner-wrap {
+    display: block;
+    min-height: auto;
+    padding: 30px 40px 10px;
+    background: transparent;
+  }
+
+  .uagb-post__image-position-background .uagb-post__inner-wrap {
+    display: block;
+    justify-content: normal;
+    background: transparent;
+    background-image: none !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .uagb-post__image-position-background .uagb-post__image {
+    display: block;
+    position: absolute;
+    inset: 0;
+    padding: 0 0 15px;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .uagb-post__image-position-background .uagb-post__image a,
+  .uagb-post__image-position-background .uagb-post__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .uagb-post__image-position-background .uagb-post__image img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .uagb-post__image-position-background .uagb-post__inner-wrap::before {
+    border-radius: 10px;
+  }
+
+  .uagb-post__image {
+    display: block;
+  }
+
+  h3.uagb-post__title {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 4px;
+    margin: 0;
+    color: var(--ast-global-color-4);
+  }
+
+  h3.uagb-post__title a,
+  .uagb-post__text.uagb-post__title {
+    color: var(--ast-global-color-4);
+  }
+
+  .uagb-post__text.uagb-post-grid-byline {
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--ast-global-color-5);
+  }
+
+  .uagb-post__text.uagb-post__excerpt {
+    font-size: 14.592px;
+    line-height: 21.888px;
+    color: var(--ast-global-color-4);
+  }
+
+  /* Blog heading text should stay at the WP mobile scale */
+  .blog-hero h1.change-heading,
+  .blog-hero h1.has-ast-global-color-4-color,
+  .blog-hero h1.wp-block-heading {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .blog-hero .has-ast-global-color-5-color {
+    font-size: 14.592px;
+    line-height: 23.3472px;
   }
 }
 
@@ -3619,6 +3742,226 @@ body.single-post .ast-related-post-link {
 
   .home-page .team {
     padding: 30px 10px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* WP uses a distinct mobile breakpoint at 767px for the homepage sections. */
+  .home-page .hero {
+    min-height: 100vh;
+    padding: 25% 5%;
+  }
+
+  .home-page .hero-inner {
+    max-width: min(100%, 337.5px);
+    gap: 20px;
+  }
+
+  .home-page .hero h1 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 0;
+  }
+
+  .home-page .hero .hero-text {
+    max-width: 337.5px;
+    font-size: 14.592px;
+    line-height: 23.3472px;
+    margin-bottom: 0;
+  }
+
+  .home-page .btn-hero {
+    display: flex;
+    width: 320.625px;
+    max-width: 100%;
+    min-height: 46.5938px;
+    margin-top: 0;
+    font-size: 14.592px;
+    line-height: 14.592px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-page .steps-grid {
+    max-width: calc(100% - 20px);
+    margin: -75px auto 0;
+    padding: 20px;
+    background: var(--ast-global-color-4);
+    box-shadow: 10px 9px 20px -10px rgba(0, 0, 0, 0.44);
+    gap: 20px;
+  }
+
+  .home-page .step-card {
+    min-height: 0;
+    padding: 24px 0 0;
+  }
+
+  .home-page .step-card h3 {
+    font-size: 21.888px;
+    line-height: 28.4544px;
+    margin-bottom: 16px;
+  }
+
+  .home-page .step-card p {
+    font-size: 14.592px;
+    line-height: 23.3472px;
+  }
+
+  .home-page .why {
+    padding: 64px 24px;
+    min-height: auto;
+  }
+
+  .home-page .why .section-inner {
+    max-width: min(100%, 327px);
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .home-page .why h2 {
+    font-size: 36.48px;
+    line-height: 45.6px;
+    max-width: 90%;
+  }
+
+  .home-page .why p {
+    font-size: 14.592px;
+    line-height: 21.888px;
+  }
+
+  .home-page .why-video,
+  .home-page .video-wrapper {
+    display: none;
+  }
+
+  .home-page .what-is {
+    padding: 10px;
+    min-height: 90vh;
+  }
+
+  .home-page .what-is .section-inner {
+    max-width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .home-page .what-is h2 {
+    max-width: 90%;
+    font-size: 36.48px;
+    line-height: 45.6px;
+    margin-bottom: 0;
+  }
+
+  .home-page .what-is p {
+    max-width: 335px;
+    font-size: 14.592px;
+    line-height: 21.888px;
+  }
+
+  .home-page .what-is .section-cta {
+    margin-top: 0;
+  }
+
+  .home-page .what-is .section-cta .btn {
+    display: inline-flex;
+    max-width: 308.766px;
+    padding: 15px 20px;
+    font-size: 14.592px;
+    line-height: 14.592px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-page .use-cases {
+    padding: 50px 24px 64px;
+  }
+
+  .home-page .use-cases .section-inner {
+    max-width: min(100%, 327px);
+    margin: 0 auto;
+  }
+
+  .home-page .use-cases h2 {
+    font-size: 36.48px;
+    line-height: 45.6px;
+    margin-bottom: 15px;
+    max-width: 90%;
+  }
+
+  .home-page .use-cases-grid {
+    gap: 20px;
+  }
+
+  .home-page .use-case-card img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .home-page .use-case-body {
+    padding: 40px 34px;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .home-page .use-case-body p {
+    font-size: 14.592px;
+    line-height: 23.3472px;
+    text-align: left;
+  }
+
+  .home-page .use-case-body a {
+    display: inline-flex;
+    padding: 10px 14px;
+    line-height: 14.592px;
+    background: var(--ast-global-color-4);
+    border-radius: 3px;
+  }
+
+  .home-page .clients {
+    padding: 64px 32px 32px;
+  }
+
+  .home-page .clients .section-inner {
+    max-width: min(100%, 426px);
+    margin: 0 auto;
+  }
+
+  .home-page .clients h2 {
+    max-width: 90%;
+  }
+
+  .home-page .logo-bar {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .home-page .logo-bar img {
+    max-height: 80px;
+  }
+
+  .home-page .contact-section {
+    padding: 50px 10px 10px;
+  }
+
+  .home-page .contact-section h2 {
+    font-size: 21.888px;
+    line-height: 27.36px;
+    margin-bottom: 0;
+    max-width: 90%;
+  }
+
+  .home-page .contact-form-card {
+    max-width: 95%;
+    padding: 10px 20px 20px;
+    margin-bottom: -250px;
+  }
+
+  .home-page .contact-form {
+    max-width: 255px;
   }
 }
 
