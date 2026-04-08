@@ -1,0 +1,112 @@
+<article class="collection-page collection-page--{{ .Slug }}{{ if .Params.mobile_hide_section_images }} mobile-hide-section-images{{ end }}">
+  <section class="collection-hero" {{ with .Params.hero_image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
+    <div class="collection-hero-inner">
+      <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+      {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </section>
+
+  {{ range $i, $section := .Params.sections }}
+  <section class="info-box-section{{ if eq (mod $i 2) 1 }} reverse{{ end }}{{ if .image_mode }} info-box-section-{{ .image_mode }}{{ end }}{{ if .mobile_image_only }} info-box-section-mobile-image-only{{ end }}{{ if .mobile_panel_image }} info-box-section-panel-mobile-image{{ end }}">
+    <div class="info-box-section-inner">
+      <div class="info-box-text">
+        <h2>{{ .heading }}</h2>
+        {{ range .paragraphs }}
+        <p>{{ . }}</p>
+        {{ end }}
+        {{ with .cta }}
+        <div class="wp-block-uagb-buttons uagb-buttons__outer-wrap">
+          <div class="uagb-buttons__wrap uagb-buttons-layout-wrap">
+            <div class="wp-block-uagb-buttons-child">
+              <a class="uagb-buttons-repeater" href="{{ .url | strings.TrimLeft "/" | relURL }}">{{ .text }}</a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ if eq .image_mode "panel" }}
+      <div class="info-box-image is-panel" aria-hidden="true">
+        <div class="info-box-image-panel"></div>
+        {{ if and .mobile_panel_image .image }}
+        <img class="info-box-image-mobile-asset" src="{{ $section.image | strings.TrimLeft "/" | relURL }}" alt="{{ with $section.image_alt }}{{ . }}{{ else }}{{ $section.heading }}{{ end }}" loading="lazy">
+        {{ end }}
+      </div>
+      {{ else if .image }}
+      <div class="info-box-image">
+        <img src="{{ $section.image | strings.TrimLeft "/" | relURL }}" alt="{{ with $section.image_alt }}{{ . }}{{ else }}{{ $section.heading }}{{ end }}" loading="lazy">
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.features }}
+  {{ $hasIntro := or $.Params.features_heading $.Params.features_text }}
+  <section class="feature-cards{{ with $.Params.features_dark }} dark-bg{{ end }}{{ if $hasIntro }} has-intro{{ end }}{{ if eq (len .) 5 }} feature-cards-five{{ end }}">
+    <div class="feature-cards-inner">
+      {{ if $hasIntro }}
+      <div class="feature-cards-intro">
+        {{ with $.Params.features_heading }}
+        <div class="feature-cards-heading">
+          <h2>{{ . }}</h2>
+        </div>
+        {{ end }}
+        {{ with $.Params.features_text }}
+        <div class="feature-cards-text">
+          <p>{{ . }}</p>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      <div class="feature-cards-grid">
+        {{ range . }}
+        <div class="feature-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ range .Params.extra_sections }}
+  <section class="extra-content{{ if and .image (ne .style "dark-panel") }} has-bg{{ end }}{{ with .style }} extra-content-{{ . }}{{ end }}" {{ if and .image (ne .style "dark-panel") }}style="background-image: url('{{ .image | strings.TrimLeft "/" | relURL }}');"{{ end }}>
+    <div class="extra-content-inner">
+      <h2>{{ .heading }}</h2>
+      {{ if and (eq .style "dark-panel") (gt (len .paragraphs) 1) }}
+      {{ with index .paragraphs 0 }}
+      <p>{{ . }}</p>
+      {{ end }}
+      <div class="extra-content-items">
+        {{ range after 1 .paragraphs }}
+        <div class="extra-content-item">
+          <p>{{ . }}</p>
+        </div>
+        {{ end }}
+      </div>
+      {{ else }}
+      {{ range .paragraphs }}
+      <p>{{ . }}</p>
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.cta }}
+  <section class="collection-cta{{ if and .image (ne .style "solid-dark") }} has-bg{{ end }}{{ with .style }} collection-cta-{{ . }}{{ end }}" {{ if and .image (ne .style "solid-dark") }}style="background-image: url('{{ .image | strings.TrimLeft "/" | relURL }}');"{{ end }}>
+    <div class="collection-cta-inner">
+      <h2>{{ .heading }}</h2>
+      {{ with .text }}<p>{{ . }}</p>{{ end }}
+      {{ with .buttons }}
+      <div class="cta-buttons">
+        {{ range $i, $btn := . }}
+        <a href="{{ .url | strings.TrimLeft "/" | relURL }}" class="{{ if eq $i 0 }}btn-primary{{ else }}btn-secondary{{ end }}">{{ .text }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</article>

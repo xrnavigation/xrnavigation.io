@@ -2280,18 +2280,26 @@ body.single-post .ast-related-post-link {
 }
 
 .collection-page .info-box-section {
+  width: 100%;
+  max-width: none;
+  padding: 192px 0;
+}
+
+.collection-page .info-box-section.reverse {
+  padding: 0 0 192px;
+}
+
+.collection-page .info-box-section-inner {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px 40px;
-  padding: 192px 0;
   max-width: min(100%, 70%);
   margin: 0 auto;
 }
 
-.collection-page .info-box-section.reverse {
+.collection-page .info-box-section.reverse .info-box-section-inner {
   flex-direction: row-reverse;
-  padding: 0 0 192px;
 }
 
 .collection-page .info-box-section .info-box-text {
@@ -2658,8 +2666,13 @@ body.single-post .ast-related-post-link {
 @media (max-width: 921px) {
   .collection-page .info-box-section,
   .collection-page .info-box-section.reverse {
-    flex-direction: column;
     padding: 40px 20px;
+  }
+
+  .collection-page .info-box-section-inner,
+  .collection-page .info-box-section.reverse .info-box-section-inner {
+    flex-direction: column;
+    max-width: 100%;
   }
 
   .collection-page .info-box-section .info-box-image {
