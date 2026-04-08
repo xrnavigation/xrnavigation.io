@@ -1068,9 +1068,16 @@ h3.uagb-post__title a:hover {
   }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 767px) {
+  /* Single-column post grid on mobile — matches uagb-post__columns-mobile-1 */
+  .uagb-post__columns-mobile-1.is-grid,
   .uagb-post__columns-3.is-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Blog heading section — override inline padding at mobile */
+  .entry-content > .wp-block-uagb-container[style*="padding: 100px"] {
+    padding: 40px 0 !important;
   }
 }
 
@@ -2182,8 +2189,7 @@ body.single-post .ast-related-post-link {
   }
 
   /* Homepage hero responsive padding */
-  .home-page .Change-background,
-  .blog-hero.Change-background {
+  .home-page .Change-background {
     padding: 80px 0 !important;
   }
 
