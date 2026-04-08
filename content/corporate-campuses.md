@@ -23,6 +23,7 @@ sections:
       text: "Try Audiom"
       url: "https://www.audiom.net/"
     image: "/images/DALL%25C2%25B7E-2023-10-17-15.06.01-Expansive-shot-of-a-person-with-headphones-confidently-walking-through-a-contemporary-corporate-setting.-From-every-corner-of-the-environment-from-t.webp"
+features_dark: true
 features_heading: "Join the Movement: Embrace The Vision of Inclusive Design"
 features_text: "Choosing Audiom is more than adopting a tool; it's about aligning with a vision where every person, regardless of their abilities, can independently learn and navigate with confidence and dignity. It's a commitment to building a more inclusive world, one map at a time. Whether you're looking to transform your corporate campus or elevate your digital platform, Audiom is your partner in this journey towards inclusivity."
 features:
