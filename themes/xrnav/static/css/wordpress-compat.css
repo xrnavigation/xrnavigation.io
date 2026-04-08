@@ -5013,7 +5013,8 @@ body.single-post .ast-related-post-link {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 80px;
+  row-gap: 80px;
+  column-gap: 80px;
   justify-content: center;
   position: relative;
 }
@@ -5100,6 +5101,7 @@ body.single-post .ast-related-post-link {
 .wp-about-page .uagb-block-b49613d3 > .uagb-container-inner-blocks-wrap {
   width: min(100%, 60%);
   max-width: min(100%, 60%);
+  row-gap: 0;
   column-gap: 40px;
 }
 
