@@ -16,7 +16,7 @@
     {{ end }}
 
     {{/* "Latest Blog Posts" heading */}}
-    <div class="wp-block-uagb-container alignfull uagb-is-root-container" style="padding: 2rem 0 0;">
+    <div class="wp-block-uagb-container alignfull uagb-is-root-container" style="padding: 100px 0;">
       <div class="uagb-container-inner-blocks-wrap" style="max-width: min(100%, 1200px); margin: 0 auto; padding: 0 2rem;">
         <div class="wp-block-uagb-advanced-heading">
           <h2 class="uagb-heading-text">Latest Blog Posts</h2>
@@ -29,15 +29,21 @@
       <div class="uagb-container-inner-blocks-wrap" style="max-width: min(100%, 1200px); margin: 0 auto; padding: 0 2rem;">
         <div class="wp-block-uagb-post-grid uagb-post-grid uagb-post__image-position-background uagb-post__columns-3 is-grid uagb-post__columns-tablet-2 uagb-post__columns-mobile-1 uagb-post__equal-height" role="list">
           {{ range .Pages }}
-          <article class="uagb-post__inner-wrap" role="listitem">
+          <article class="uagb-post__inner-wrap" role="listitem"{{ with .Params.featured_image }} style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
+            {{ with .Params.featured_image }}
+            <div class="uagb-post__image">
+              <a href="{{ $.RelPermalink }}"><img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $.Title }}" loading="lazy"></a>
+            </div>
+            {{ end }}
+            <a class="uagb-post__link-complete-box" href="{{ .RelPermalink }}"></a>
             <h3 class="uagb-post__title uagb-post__text">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h3>
             <div class="uagb-post__text uagb-post-grid-byline">
               {{ with .Params.author }}
-              <span class="uagb-post__author">{{ . }}</span>
+              <span class="uagb-post__author"><span class="dashicons-admin-users dashicons"></span>{{ . }}</span>
               {{ end }}
-              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+              <time class="uagb-post__date" datetime="{{ .Date.Format "2006-01-02" }}"><span class="dashicons-calendar dashicons"></span>{{ .Date.Format "January 2, 2006" }}</time>
             </div>
             <div class="uagb-post__text uagb-post__excerpt">
               {{ if .Description }}
@@ -46,11 +52,6 @@
               {{ .Summary | plainify | truncate 120 }}
               {{ end }}
             </div>
-            {{ with .Params.featured_image }}
-            <div class="uagb-post__image">
-              <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $.Title }}" loading="lazy">
-            </div>
-            {{ end }}
           </article>
           {{ end }}
         </div>

@@ -855,14 +855,27 @@ h6:where(.wp-block-heading).has-background {
   background-size: cover;
   background-position: 46% 23%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-top: 6%;
   padding-bottom: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.blog-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ast-global-color-0);
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 .blog-hero > .uagb-container-inner-blocks-wrap {
+  position: relative;
+  z-index: 1;
   max-width: min(100%, 85%);
   margin: 0 auto;
   text-align: center;
@@ -911,16 +924,43 @@ h6:where(.wp-block-heading).has-background {
 }
 
 .uagb-post__inner-wrap {
-  background: #333;
+  background: #f6f6f6;
   border: none;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.44) 10px 10px 20px -8px;
   padding: 30px 40px 10px;
+  position: relative;
 }
 
 .uagb-post__image-position-background .uagb-post__inner-wrap {
-  /* Background image positioning */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.uagb-post__image-position-background .uagb-post__inner-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.uagb-post__image-position-background .uagb-post__inner-wrap > * {
+  position: relative;
+  z-index: 1;
+}
+
+.uagb-post__image-position-background .uagb-post__image {
+  display: none;
+}
+
+.uagb-post__link-complete-box {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 
 h3.uagb-post__title {
