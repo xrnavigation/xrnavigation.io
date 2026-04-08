@@ -17,6 +17,7 @@ sections:
       url: "https://www.audiom.net/"
     image: "/images/DALL%25C2%25B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp"
   - heading: "Audiom: The Inclusive Digital Map Solution"
+    mobile_image_only: true
     paragraphs:
       - "Audiom isn't just a map; it's a statement. It's our answer to the call for a truly inclusive navigation tool that serves everyone, regardless of their physical abilities. With Audiom, we're not just enhancing the way people navigate campuses; we're shaping a future where every individual has the freedom to explore both space and geographic information, without limitations."
     cta:

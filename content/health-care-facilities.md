@@ -35,6 +35,7 @@ features:
     text: "Position your facility as a leader in healthcare accessibility for everyone regardless of their disabilities, fostering trust and goodwill both in your community, and beyond."
 extra_sections:
   - heading: "Accessible Map Features"
+    style: "dark-panel"
     image: "/images/young-blind-man-with-white-cane-walking-across-the-2023-10-05-23-59-55-utc-e1697653999503.webp"
     paragraphs:
       - "Audiom transforms learning healthcare facilities into an experience of comfort and assurance. It's designed for everyone – whether you're a patient on your way to an appointment, a staff member navigating the complexities of your workplace, or a visitor seeking guidance. With real-time updates and seamless integration with healthcare apps, Audiom ensures that everyone can find their way, effortlessly."
