@@ -3449,7 +3449,7 @@ body.single-post .ast-related-post-link {
 
 /* --- 7. Use Cases --- */
 .home-page .use-cases {
-  padding: 100px 10px;
+  padding: 100px 80px;
   text-align: center;
   background-color: var(--ast-global-color-4);
 }
@@ -3608,7 +3608,7 @@ body.single-post .ast-related-post-link {
 }
 
 .home-page .contact-section p {
-  color: #777;
+  color: #04203e;
 }
 
 .home-page .contact-form-card {
@@ -3687,6 +3687,10 @@ body.single-post .ast-related-post-link {
     max-width: 90%;
   }
 
+  .home-page .team {
+    padding: 64px 24px;
+  }
+
   .home-page .what-is {
     min-height: auto;
   }
@@ -3741,7 +3745,7 @@ body.single-post .ast-related-post-link {
   }
 
   .home-page .team {
-    padding: 30px 10px 40px;
+    padding: 64px 24px;
   }
 }
 
