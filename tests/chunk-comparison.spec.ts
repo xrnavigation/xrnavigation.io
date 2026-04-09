@@ -41,6 +41,20 @@ const VIEWPORTS: Record<string, { width: number; height: number }> = {
   mobile: { width: 375, height: 812 },
 };
 
+const STYLE_DIFF_THRESHOLD = 5; // only capture style diffs for sections above this % diff
+
+const STYLE_PROPERTIES = [
+  'padding-top', 'padding-right', 'padding-bottom', 'padding-left',
+  'margin-top', 'margin-right', 'margin-bottom', 'margin-left',
+  'width', 'max-width', 'min-height',
+  'display', 'flex-direction', 'justify-content', 'align-items',
+  'gap', 'row-gap', 'column-gap', 'grid-template-columns',
+  'background-color', 'background-image', 'background-position',
+  'background-size', 'background-attachment',
+  'font-size', 'font-weight', 'line-height', 'color', 'text-align',
+  'border-radius', 'box-shadow', 'opacity',
+];
+
 // --- Types ---
 
 interface SectionInfo {
@@ -50,6 +64,20 @@ interface SectionInfo {
   selectorType: 'uagb-root' | 'wp-block-group' | 'heading-split' | 'whole-page';
   /** CSS selector to re-locate this section */
   locator: string;
+}
+
+interface StyleCapture {
+  container: Record<string, string>;
+  heading?: Record<string, string>;
+  firstParagraph?: Record<string, string>;
+  innerWrapper?: Record<string, string>;
+}
+
+interface StyleDiff {
+  element: string;
+  property: string;
+  wp: string;
+  hugo: string;
 }
 
 interface ChunkResult {
@@ -66,6 +94,7 @@ interface ChunkResult {
   hugoWidth: number;
   hugoHeight: number;
   heightDelta: number;
+  styleDiffs?: StyleDiff[];
   error?: string;
 }
 
@@ -215,33 +244,30 @@ async function screenshotSections(
   side: 'wp' | 'hugo',
   slug: string,
   viewport: string,
-): Promise<{ sections: SectionInfo[]; screenshots: Map<number, Buffer> }> {
+): Promise<{ sections: SectionInfo[]; screenshots: Map<number, Buffer>; styles: Map<number, StyleCapture> }> {
   const sections: SectionInfo[] = await page.evaluate(findSectionsScript);
   const screenshots = new Map<number, Buffer>();
+  const styles = new Map<number, StyleCapture>();
 
   const entryContent = page.locator('.entry-content').first();
   const hasEntry = await entryContent.count() > 0;
   const container = hasEntry ? entryContent : page.locator('main#main').first();
 
   if (sections.length === 0 || sections[0].selectorType === 'whole-page') {
-    // Screenshot entire content area
     const dir = path.join(CHUNK_DIR, slug);
     fs.mkdirSync(dir, { recursive: true });
     const p = path.join(dir, `${side}-${viewport}-whole.png`);
     await container.screenshot({ path: p });
     screenshots.set(0, fs.readFileSync(p));
-    return { sections, screenshots };
+    return { sections, screenshots, styles };
   }
 
   if (sections[0].selectorType === 'heading-split') {
-    // For heading-split pages, screenshot the whole content area
-    // Chunk-level comparison not possible without wrapper elements
     const dir = path.join(CHUNK_DIR, slug);
     fs.mkdirSync(dir, { recursive: true });
     const p = path.join(dir, `${side}-${viewport}-whole.png`);
     await container.screenshot({ path: p });
     screenshots.set(0, fs.readFileSync(p));
-    // Override to single whole-page for comparison
     sections.length = 0;
     sections.push({
       index: 0,
@@ -250,16 +276,14 @@ async function screenshotSections(
       selectorType: 'whole-page',
       locator: '',
     });
-    return { sections, screenshots };
+    return { sections, screenshots, styles };
   }
 
   // Screenshot each section independently — find the actual DOM elements
-  // Try UAGB root containers first, then <section> elements
   const uagbSelector = '.wp-block-uagb-container.alignfull.uagb-is-root-container, .wp-block-group.alignfull';
   let sectionLocators = container.locator(uagbSelector);
 
   if (await sectionLocators.count() === 0) {
-    // Fallback: Hugo <section> elements
     sectionLocators = container.locator('section');
   }
 
@@ -271,20 +295,41 @@ async function screenshotSections(
   for (let i = 0; i < count; i++) {
     const section = sectionLocators.nth(i);
     try {
-      // Scroll into view first to ensure rendering
       await section.scrollIntoViewIfNeeded({ timeout: 3000 });
       await page.waitForTimeout(200);
 
       const p = path.join(dir, `${side}-${viewport}-section-${i}.png`);
       await section.screenshot({ path: p });
       screenshots.set(i, fs.readFileSync(p));
+
+      // Capture computed styles for this section
+      const styleCapture = await section.evaluate((el, props) => {
+        const getStyles = (element: Element): Record<string, string> => {
+          const cs = getComputedStyle(element);
+          const result: Record<string, string> = {};
+          for (const prop of props) {
+            result[prop] = cs.getPropertyValue(prop);
+          }
+          return result;
+        };
+        const containerStyles = getStyles(el);
+        const headingEl = el.querySelector('h1, h2, h3');
+        const paraEl = el.querySelector('p');
+        const innerWrapEl = el.querySelector(':scope > div');
+        return {
+          container: containerStyles,
+          heading: headingEl ? getStyles(headingEl) : undefined,
+          firstParagraph: paraEl ? getStyles(paraEl) : undefined,
+          innerWrapper: innerWrapEl ? getStyles(innerWrapEl) : undefined,
+        };
+      }, STYLE_PROPERTIES);
+      styles.set(i, styleCapture);
     } catch {
-      // Section might be hidden or zero-size
       console.log(`  [${side}] Could not screenshot section ${i} for ${slug}`);
     }
   }
 
-  return { sections, screenshots };
+  return { sections, screenshots, styles };
 }
 
 // --- Matching ---
@@ -399,6 +444,57 @@ function diffScreenshots(wpBuf: Buffer, hugoBuf: Buffer): {
   };
 }
 
+// --- Style Diffing ---
+
+function normalizeStyleValue(value: string): string {
+  // Round sub-pixel values to nearest integer
+  return value.replace(/(\d+\.\d+)px/g, (_, num) => Math.round(parseFloat(num)) + 'px');
+}
+
+function isNoisyDiff(property: string, wpVal: string, hugoVal: string): boolean {
+  // background-image diffs that are just domain/encoding differences (same filename)
+  if (property === 'background-image') {
+    const extractFile = (v: string) => {
+      const m = v.match(/url\(["']?(.+?)["']?\)/);
+      if (!m) return '';
+      try { return decodeURIComponent(decodeURIComponent(m[1].replace(/.*\//, ''))); } catch { return m[1].replace(/.*\//, ''); }
+    };
+    if (extractFile(wpVal) === extractFile(hugoVal)) return true;
+  }
+  // Zero box-shadow vs none — visually identical
+  if (property === 'box-shadow') {
+    const isZero = (v: string) => v === 'none' || /0px 0px 0px 0px/.test(v);
+    if (isZero(wpVal) && isZero(hugoVal)) return true;
+  }
+  // max-width viewport-width vs none on full-width sections (both render full-width)
+  if (property === 'max-width') {
+    const isViewport = (v: string) => v === '1920px' || v === '375px' || v === 'none';
+    if (isViewport(wpVal) && isViewport(hugoVal)) return true;
+  }
+  return false;
+}
+
+function diffStyles(wpStyles: StyleCapture, hugoStyles: StyleCapture): StyleDiff[] {
+  const diffs: StyleDiff[] = [];
+  const elements: Array<keyof StyleCapture> = ['container', 'heading', 'firstParagraph', 'innerWrapper'];
+
+  for (const element of elements) {
+    const wpObj = wpStyles[element];
+    const hugoObj = hugoStyles[element];
+    if (!wpObj || !hugoObj) continue;
+
+    for (const prop of STYLE_PROPERTIES) {
+      const wpVal = normalizeStyleValue(wpObj[prop] ?? '');
+      const hugoVal = normalizeStyleValue(hugoObj[prop] ?? '');
+      if (wpVal !== hugoVal && !isNoisyDiff(prop, wpVal, hugoVal)) {
+        diffs.push({ element, property: prop, wp: wpVal, hugo: hugoVal });
+      }
+    }
+  }
+
+  return diffs;
+}
+
 // --- Summary ---
 
 function writeChunkSummary(summary: PageChunkSummary): void {
@@ -497,12 +593,23 @@ if (TASKS.length === 0) {
         }
 
         const diff = diffScreenshots(wpBuf, hugoBuf);
+
+        // Compare computed styles for sections above the threshold
+        let styleDiffs: StyleDiff[] | undefined;
+        const wpStyle = wpResult.styles.get(pair.wp);
+        const hugoStyle = hugoResult.styles.get(pair.hugo);
+        if (diff.diffPercent > STYLE_DIFF_THRESHOLD && wpStyle && hugoStyle) {
+          styleDiffs = diffStyles(wpStyle, hugoStyle);
+          if (styleDiffs.length === 0) styleDiffs = undefined;
+        }
+
         chunkResults.push({
           slug: task.slug, viewport: task.viewport,
           sectionIndex: pair.wp,
           heading: wpSection.heading, selectorType: wpSection.selectorType,
           matchMethod: pair.method,
           ...diff,
+          styleDiffs,
         });
       }
 
@@ -558,6 +665,15 @@ if (TASKS.length === 0) {
         const label = r.heading ? `"${r.heading}"` : `section ${r.sectionIndex}`;
         const status = r.matchMethod.startsWith('unmatched') ? r.matchMethod : `${r.diffPercent.toFixed(1)}%`;
         console.log(`  [${r.selectorType}] ${label}: ${status}`);
+        if (r.styleDiffs?.length) {
+          const shown = r.styleDiffs.slice(0, 12);
+          for (const sd of shown) {
+            console.log(`      ${sd.element}.${sd.property}: ${sd.wp} → ${sd.hugo}`);
+          }
+          if (r.styleDiffs.length > 12) {
+            console.log(`      ... and ${r.styleDiffs.length - 12} more`);
+          }
+        }
       }
     });
   }
