@@ -5267,6 +5267,10 @@ body.single-post .ast-related-post-link {
   position: relative;
 }
 
+.wp-about-page .uagb-block-5f4b1139 p {
+  color: #000;
+}
+
 .wp-about-page .uagb-block-5f4b1139 > .uagb-container-inner-blocks-wrap {
   width: min(100%, 70%);
   max-width: min(100%, 70%);
@@ -5399,6 +5403,10 @@ body.single-post .ast-related-post-link {
   position: relative;
 }
 
+.wp-about-page .uagb-block-4f510e9f p {
+  color: #000;
+}
+
 .wp-about-page .uagb-block-e3ee6a34,
 .wp-about-page .uagb-block-99b62053 {
   padding: 100px 0;
@@ -5484,6 +5492,13 @@ body.single-post .ast-related-post-link {
 .wp-about-page .uagb-block-55dd86c5 h3,
 .wp-about-page .uagb-block-b49613d3 h3 {
   margin-bottom: 20px;
+  color: #f9fafb;
+}
+
+.wp-about-page .uagb-block-4084160e p,
+.wp-about-page .uagb-block-55dd86c5 p,
+.wp-about-page .uagb-block-b49613d3 p {
+  color: #f9fafb;
 }
 
 .wp-about-page .uagb-block-f30302f6 a {
@@ -5538,6 +5553,15 @@ body.single-post .ast-related-post-link {
   padding: 100px 80px;
 }
 
+.wp-about-page .uagb-block-11b39758 {
+  background-color: #f9fafb;
+}
+
+.wp-about-page .uagb-block-11b39758 h2,
+.wp-about-page .uagb-block-8f7c6a5b h2 {
+  font-weight: 800;
+}
+
 .wp-about-page .uagb-block-11b39758 > .uagb-container-inner-blocks-wrap,
 .wp-about-page .uagb-block-8f7c6a5b > .uagb-container-inner-blocks-wrap,
 .wp-about-page .uagb-block-7fd0a09e > .uagb-container-inner-blocks-wrap,
@@ -5551,6 +5575,9 @@ body.single-post .ast-related-post-link {
   max-width: min(100%, 70%);
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .wp-about-page .uagb-block-11b39758 > .uagb-container-inner-blocks-wrap,
@@ -5719,7 +5746,7 @@ body.single-post .ast-related-post-link {
 }
 
 .wp-about-page .uagb-block-4b5c4fc6 {
-  min-height: 391px;
+  min-height: 0;
   padding-top: 50px;
   padding-bottom: 200px;
   padding-right: 10px;
@@ -5728,6 +5755,15 @@ body.single-post .ast-related-post-link {
   column-gap: 20px;
   display: flex;
   position: relative;
+}
+
+.wp-about-page .uagb-block-4b5c4fc6 h2 {
+  color: #15191d;
+}
+
+.wp-about-page .uagb-block-4b5c4fc6 p {
+  color: #04203e;
+  font-weight: 700;
 }
 
 .wp-about-page .uagb-block-46f09306 {
@@ -5831,12 +5867,12 @@ body.single-post .ast-related-post-link {
 }
 
 .wp-about-page .uagb-block-2c780bfa {
-  min-height: 459.5px;
+  min-height: 540px;
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 0;
   padding-left: 10px;
-  background-color: #15191d;
+  background-color: transparent;
   background-image: url('/wp-content/uploads/2023/08/map-for-bottomArtboard-1@4x.webp');
   background-size: cover;
   background-position: center;
@@ -5845,6 +5881,17 @@ body.single-post .ast-related-post-link {
   position: relative;
   row-gap: 20px;
   column-gap: 20px;
+}
+
+.wp-about-page .uagb-block-2c780bfa > .uagb-container-inner-blocks-wrap {
+  width: min(100%, 1200px);
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 @media (max-width: 921px) {
