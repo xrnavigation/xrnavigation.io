@@ -3578,7 +3578,7 @@ body.single-post .ast-related-post-link {
 
 /* --- 9. Contact Section with floating form card --- */
 .home-page .contact-section {
-  padding: 50px 10px 10px;
+  padding: 50px 10px 200px;
   text-align: center;
   position: relative;
   overflow: visible;
@@ -3586,8 +3586,13 @@ body.single-post .ast-related-post-link {
 }
 
 .home-page .contact-heading-area {
-  max-width: min(100%, 1200px);
-  margin: 0 auto 30px;
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .home-page .contact-section h2 {
@@ -3596,10 +3601,11 @@ body.single-post .ast-related-post-link {
   font-weight: 600;
   line-height: 30px;
   color: var(--ast-global-color-0);
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .home-page .contact-heading-area > p {
+  margin: 0;
   font-size: 40px;
   line-height: 60px;
   color: var(--ast-global-color-1);
@@ -3607,40 +3613,134 @@ body.single-post .ast-related-post-link {
   font-weight: 700;
 }
 
-.home-page .contact-section p {
+.home-page .contact-section p,
+.home-page .contact-heading-area .form-required-note {
   color: #04203e;
 }
 
+.home-page .contact-heading-area .form-required-note {
+  font-family: var(--font-body);
+  font-size: 14.592px;
+  line-height: 23.3472px;
+  font-weight: 400;
+}
+
+.home-page .contact-form-section {
+  margin-top: -276px;
+  margin-bottom: -286px;
+  padding: 10px;
+  position: relative;
+  z-index: 44;
+}
+
+.home-page .contact-form-shell {
+  width: min(100%, 70%);
+  max-width: min(100%, 70%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .home-page .contact-form-card {
-  max-width: 70%;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   background: #f9fafb;
   border-radius: 30px;
-  padding: 10px 50px 30px;
+  padding: 10px 50px;
   box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.44);
   position: relative;
-  z-index: 44;
-  margin-bottom: -250px;
-}
-
-.home-page .contact-form-card .form-required-note {
-  color: #777;
-  margin-bottom: 10px;
-  text-align: left;
+  box-sizing: border-box;
 }
 
 .home-page .contact-form {
-  margin: 0 auto;
+  width: min(100%, 1233px);
+  margin: 24px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    "name message"
+    "email message"
+    "org message"
+    "button .";
+  column-gap: 20px;
+  row-gap: 20px;
   text-align: left;
+}
+
+.home-page .contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.home-page .contact-form .form-group:nth-child(1) { grid-area: name; }
+.home-page .contact-form .form-group:nth-child(2) { grid-area: email; }
+.home-page .contact-form .form-group:nth-child(3) { grid-area: org; }
+.home-page .contact-form .form-group-message { grid-area: message; }
+
+.home-page .contact-form .form-group label {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: #000;
+  font-size: 14.592px;
+  line-height: 18.9696px;
+}
+
+.home-page .contact-form .form-group input,
+.home-page .contact-form .form-group textarea {
+  width: 100%;
+  padding: 30px 10px;
+  border: 1px solid #04203e;
+  border-radius: 10px;
+  background: #fff;
+  color: #15191d;
+  font-size: 16px;
+  line-height: 20.8px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home-page .contact-form .form-group input {
+  min-height: 82px;
+}
+
+.home-page .contact-form .form-group textarea {
+  min-height: 286px;
+  resize: none;
+}
+
+.home-page .contact-form > .btn {
+  grid-area: button;
+  display: block;
+  justify-self: start;
+  margin: 20px 0 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #04203e;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.home-page .contact-form > .btn:hover,
+.home-page .contact-form > .btn:focus {
+  background: #04203e;
+  color: #fff;
 }
 
 /* --- 10. Pre-footer Map Band --- */
 .home-page .pre-footer-map {
-  min-height: 382px;
-  padding: 250px 10px 10px;
+  min-height: 456px;
+  padding: 10px 10px 0;
   background-image: url('/images/map-for-bottomArtboard-1%404x.webp');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
   background-attachment: scroll;
   margin-bottom: -17px;
@@ -3717,13 +3817,64 @@ body.single-post .ast-related-post-link {
   }
 
   .home-page .pre-footer-map {
-    min-height: auto;
-    padding-top: 100px;
+    min-height: 422px;
+    margin-top: -50px;
+    padding-top: 10px;
+  }
+
+  .home-page .contact-section {
+    padding: 0;
+  }
+
+  .home-page .contact-heading-area {
+    width: min(100%, calc(100% - 37.5px));
+    max-width: 90%;
+  }
+
+  .home-page .contact-form-section {
+    margin: 0 15px 0;
+    padding: 10px 0;
+  }
+
+  .home-page .contact-form-shell {
+    width: 100%;
+    max-width: 375px;
   }
 
   .home-page .contact-form-card {
-    max-width: 95%;
+    max-width: 100%;
     padding: 10px 20px 20px;
+  }
+
+  .home-page .contact-form {
+    width: 275px;
+    max-width: 100%;
+    margin: 24px auto 0;
+    display: block;
+  }
+
+  .home-page .contact-form .form-group {
+    padding: 10px 1px;
+  }
+
+  .home-page .contact-form .form-group input,
+  .home-page .contact-form .form-group textarea {
+    padding: 6px 10px;
+    box-shadow: none;
+  }
+
+  .home-page .contact-form .form-group input {
+    min-height: 70px;
+  }
+
+  .home-page .contact-form .form-group textarea {
+    min-height: 193px;
+  }
+
+  .home-page .contact-form > .btn {
+    margin-top: 20px;
+    font-size: 14.592px;
+    line-height: 14.592px;
   }
 }
 
@@ -3948,7 +4099,7 @@ body.single-post .ast-related-post-link {
   }
 
   .home-page .contact-section {
-    padding: 50px 10px 10px;
+    padding: 0;
   }
 
   .home-page .contact-section h2 {
@@ -3958,10 +4109,13 @@ body.single-post .ast-related-post-link {
     max-width: 90%;
   }
 
+  .home-page .contact-heading-area > p {
+    font-size: 36.48px;
+    line-height: 55px;
+  }
+
   .home-page .contact-form-card {
-    max-width: 95%;
     padding: 10px 20px 20px;
-    margin-bottom: -250px;
   }
 
   .home-page .contact-form {

@@ -137,28 +137,33 @@
   <div class="contact-heading-area">
     <h2 id="contact-heading">{{ $contact.heading }}</h2>
     <p>{{ $contact.text }}</p>
-  </div>
-  <div class="contact-form-card">
     <p class="form-required-note">Fields marked with an asterisk (*) are required</p>
-    <form class="contact-form" data-netlify="true" name="homepage-contact" method="POST">
-      <div class="form-group">
-        <label for="hp-contact-name">Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-        <input type="text" id="hp-contact-name" name="name" autocomplete="name" required>
-      </div>
-      <div class="form-group">
-        <label for="hp-contact-email">Email <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-        <input type="email" id="hp-contact-email" name="email" autocomplete="email" required>
-      </div>
-      <div class="form-group">
-        <label for="hp-contact-org">Organization <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-        <input type="text" id="hp-contact-org" name="organization" autocomplete="organization" required>
-      </div>
-      <div class="form-group">
-        <label for="hp-contact-message">Message <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-        <textarea id="hp-contact-message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+  </div>
+</section>
+
+<section class="contact-form-section" aria-label="Contact form">
+  <div class="contact-form-shell">
+    <div class="contact-form-card">
+      <form class="contact-form" data-netlify="true" name="homepage-contact" method="POST">
+        <div class="form-group">
+          <label for="hp-contact-name">Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+          <input type="text" id="hp-contact-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label for="hp-contact-email">Email <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+          <input type="email" id="hp-contact-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="hp-contact-org">Organization <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+          <input type="text" id="hp-contact-org" name="organization" autocomplete="organization" required>
+        </div>
+        <div class="form-group form-group-message">
+          <label for="hp-contact-message">Message <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+          <textarea id="hp-contact-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
 
