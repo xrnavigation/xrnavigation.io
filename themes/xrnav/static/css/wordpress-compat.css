@@ -2575,6 +2575,8 @@ body.single-post .ast-related-post-link {
   .collection-page.collection-page--corporate-campuses .feature-cards.dark-bg.has-intro .feature-card {
     padding: 16px;
     text-align: center;
+    width: 364px;
+    max-width: 100%;
   }
 
   .collection-page.collection-page--corporate-campuses .feature-cards.dark-bg.has-intro .feature-card h3 {
