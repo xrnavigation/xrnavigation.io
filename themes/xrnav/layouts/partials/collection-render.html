@@ -1,5 +1,6 @@
+{{ $wpChunkedFeatures := eq .Slug "corporate-campuses" }}
 <article class="collection-page collection-page--{{ .Slug }}{{ if .Params.mobile_hide_section_images }} mobile-hide-section-images{{ end }}">
-  <section class="collection-hero" {{ with .Params.hero_image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
+  <section class="collection-hero{{ if $wpChunkedFeatures }} wp-block-group alignfull{{ end }}" {{ with .Params.hero_image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
     <div class="collection-hero-inner">
       <h1>{{ with .Params.hero_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
       {{ with .Params.hero_text }}<p>{{ . }}</p>{{ end }}
@@ -7,7 +8,7 @@
   </section>
 
   {{ range $i, $section := .Params.sections }}
-  <section class="info-box-section{{ if eq (mod $i 2) 1 }} reverse{{ end }}{{ if .image_mode }} info-box-section-{{ .image_mode }}{{ end }}{{ if .mobile_image_only }} info-box-section-mobile-image-only{{ end }}{{ if .mobile_panel_image }} info-box-section-panel-mobile-image{{ end }}">
+  <section class="info-box-section{{ if $wpChunkedFeatures }} wp-block-group alignfull{{ end }}{{ if eq (mod $i 2) 1 }} reverse{{ end }}{{ if .image_mode }} info-box-section-{{ .image_mode }}{{ end }}{{ if .mobile_image_only }} info-box-section-mobile-image-only{{ end }}{{ if .mobile_panel_image }} info-box-section-panel-mobile-image{{ end }}">
     <div class="info-box-section-inner">
       <div class="info-box-text">
         <h2>{{ .heading }}</h2>
@@ -42,7 +43,7 @@
 
   {{ with .Params.features }}
   {{ $hasIntro := or $.Params.features_heading $.Params.features_text }}
-  <section class="feature-cards{{ with $.Params.features_dark }} dark-bg{{ end }}{{ if $hasIntro }} has-intro{{ end }}{{ if eq (len .) 5 }} feature-cards-five{{ end }}">
+  <section class="feature-cards{{ if $wpChunkedFeatures }} wp-block-group alignfull{{ end }}{{ with $.Params.features_dark }} dark-bg{{ end }}{{ if $hasIntro }} has-intro{{ end }}{{ if eq (len .) 5 }} feature-cards-five{{ end }}">
     <div class="feature-cards-inner">
       {{ if $hasIntro }}
       <div class="feature-cards-intro">
@@ -60,7 +61,7 @@
       {{ end }}
       <div class="feature-cards-grid">
         {{ range . }}
-        <div class="feature-card">
+        <div class="feature-card{{ if $wpChunkedFeatures }} wp-block-group alignfull{{ end }}">
           <h3>{{ .title }}</h3>
           <p>{{ .text }}</p>
         </div>
@@ -95,7 +96,7 @@
   {{ end }}
 
   {{ with .Params.cta }}
-  <section class="collection-cta{{ if and .image (ne .style "solid-dark") }} has-bg{{ end }}{{ with .style }} collection-cta-{{ . }}{{ end }}" {{ if and .image (ne .style "solid-dark") }}style="background-image: url('{{ .image | strings.TrimLeft "/" | relURL }}');"{{ end }}>
+  <section class="collection-cta{{ if $wpChunkedFeatures }} wp-block-group alignfull{{ end }}{{ if and .image (ne .style "solid-dark") }} has-bg{{ end }}{{ with .style }} collection-cta-{{ . }}{{ end }}" {{ if and .image (ne .style "solid-dark") }}style="background-image: url('{{ .image | strings.TrimLeft "/" | relURL }}');"{{ end }}>
     <div class="collection-cta-inner">
       <h2>{{ .heading }}</h2>
       {{ with .text }}<p>{{ . }}</p>{{ end }}
