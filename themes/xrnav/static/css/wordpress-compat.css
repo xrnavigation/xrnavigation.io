@@ -3048,6 +3048,10 @@ body.single-post .ast-related-post-link {
     gap: 24px;
   }
 
+  .collection-page--corporate-campuses .feature-cards .feature-cards-grid > .feature-card:nth-child(4) {
+    margin-top: 170px;
+  }
+
   .collection-page--corporate-campuses .feature-cards.dark-bg.has-intro .feature-card {
     padding: 15px;
     text-align: center;
