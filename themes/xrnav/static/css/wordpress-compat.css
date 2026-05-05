@@ -2566,6 +2566,13 @@ body.single-post .ast-related-post-link {
   grid-column: 1 / -1;
 }
 
+@media (min-width: 768px) {
+  .collection-page--corporate-campuses .feature-cards.feature-cards-five.has-intro .feature-cards-grid > :first-child {
+    justify-self: start;
+    width: calc((100% - 20px) / 2);
+  }
+}
+
 /* Dark background variant for feature cards */
 .collection-page .feature-cards.dark-bg {
   background: linear-gradient(135deg, rgb(4, 32, 62) 0%, rgb(10, 77, 127) 100%);
