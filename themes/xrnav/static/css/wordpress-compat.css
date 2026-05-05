@@ -3043,21 +3043,36 @@ body.single-post .ast-related-post-link {
   }
 
   .collection-page .collection-cta {
-    min-height: auto;
-    padding: 40px 20px;
+    width: calc(100% + 40px);
+    max-width: none;
+    margin-left: -20px;
+    margin-right: -20px;
+    min-height: 690px;
+    padding: 0 0 100px;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: normal;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align: start;
+    font-size: 15px;
+    line-height: 23px;
   }
 
   .collection-page--health-care-facilities .collection-cta {
-    padding-bottom: 104px;
+    padding-bottom: 100px;
   }
 
   .collection-page--corporate-campuses .collection-cta {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
     margin-top: 21px;
-    min-height: 690px;
-    padding-bottom: 100px;
+    padding: 40px 20px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .collection-page--corporate-campuses .collection-cta .collection-cta-inner {
@@ -3113,7 +3128,7 @@ body.single-post .ast-related-post-link {
 
   .collection-page--universities .collection-cta {
     margin-top: -65px;
-    padding-bottom: 92px;
+    padding-bottom: 20px;
   }
 
   .collection-page .collection-cta .collection-cta-inner,
