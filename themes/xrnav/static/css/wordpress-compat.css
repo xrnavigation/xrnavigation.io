@@ -2586,6 +2586,8 @@ body.single-post .ast-related-post-link {
 
   .collection-page.collection-page--corporate-campuses .feature-cards.dark-bg.has-intro .feature-card p {
     color: #000;
+    margin-bottom: 20px;
+    line-height: 26px;
   }
 }
 
@@ -3060,6 +3062,7 @@ body.single-post .ast-related-post-link {
     font-size: 15px;
     line-height: 23px;
     color: #000;
+    margin-bottom: 20px;
   }
 
   .collection-page .collection-hero {
