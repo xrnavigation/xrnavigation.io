@@ -3028,6 +3028,21 @@ body.single-post .ast-related-post-link {
     gap: 24px;
   }
 
+  .collection-page--corporate-campuses .feature-cards.dark-bg.has-intro .feature-card {
+    padding: 15px;
+  }
+
+  .collection-page--corporate-campuses .feature-cards.has-intro .feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .collection-page--corporate-campuses .feature-cards.has-intro .feature-card p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
   .collection-page .collection-hero {
     width: calc(100% + 40px);
     min-height: 100vh;
