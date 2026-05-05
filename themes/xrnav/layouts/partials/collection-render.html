@@ -71,7 +71,7 @@
   {{ end }}
 
   {{ range .Params.extra_sections }}
-  <section class="extra-content{{ if and .image (ne .style "dark-panel") }} has-bg{{ end }}{{ with .style }} extra-content-{{ . }}{{ end }}" {{ if and .image (ne .style "dark-panel") }}style="background-image: url('{{ .image | strings.TrimLeft "/" | relURL }}');"{{ end }}>
+  <section class="extra-content{{ with .image }} has-bg{{ end }}{{ with .style }} extra-content-{{ . }}{{ end }}" {{ with .image }}style="background-image: url('{{ . | strings.TrimLeft "/" | relURL }}');"{{ end }}>
     <div class="extra-content-inner">
       <h2>{{ .heading }}</h2>
       {{ if and (eq .style "dark-panel") (gt (len .paragraphs) 1) }}
