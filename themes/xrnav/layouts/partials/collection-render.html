@@ -62,7 +62,7 @@
       <div class="feature-cards-grid">
         {{ range . }}
         <div class="feature-card{{ if $wpChunkedFeatures }} wp-block-group alignfull{{ end }}">
-          <h3>{{ .title }}</h3>
+          <h3>{{ .title }}{{ if $wpChunkedFeatures }}:{{ end }}</h3>
           <p>{{ .text }}</p>
         </div>
         {{ end }}
