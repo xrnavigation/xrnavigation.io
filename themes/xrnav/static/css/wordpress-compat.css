@@ -144,8 +144,8 @@ body .is-layout-grid { display: grid; }
 body.ast-hfb-header {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 25.6px;
+  font-size: 1rem;
+  line-height: 1.6em;
   letter-spacing: 0.3px;
   color: #000000;
   background-color: var(--ast-global-color-4);
@@ -1079,13 +1079,10 @@ h3.uagb-post__title a:hover {
     gap: 30px;
   }
 
-  /* Blog hero — WP keeps full-bleed width, 60vh min-height, and thin mobile padding */
+  /* Blog hero — WP keeps 60vh min-height and thin mobile padding. Width is
+     naturally full-bleed now that .ast-container has 0 lateral padding. */
   .blog-hero,
   .blog-hero.Change-background {
-    width: calc(100% + 40px);
-    max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
     min-height: 60vh;
     padding: 6px 0 3px;
     justify-content: normal;
@@ -1102,12 +1099,10 @@ h3.uagb-post__title a:hover {
     gap: 20px;
   }
 
-  /* Blog heading section — keep the WP 100px vertical rhythm and full-bleed width */
+  /* Blog heading section — keep the WP 100px vertical rhythm. The .alignfull
+     section is full-bleed naturally now that .ast-container has 0 lateral
+     padding on mobile (matching WP), so no negative-margin escape is needed. */
   .entry-content > .wp-block-uagb-container[style*="padding: 100px"] {
-    width: calc(100% + 40px);
-    max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
     padding: 100px 0 !important;
   }
 
@@ -2244,9 +2239,12 @@ body.single-post .ast-related-post-link {
    Responsive Typography & Layout (Astra breakpoints)
    ========================================================================== */
 @media (max-width: 921px) {
-  /* Note: WP Astra sets html { font-size: 91.2% } at mobile which scales rem/em units.
-     We intentionally omit this because our CSS uses px values, and the 91.2% rule
-     causes regressions on already-tuned embed pages by shifting rem-based footer spacing. */
+  /* Astra mobile root font-size shift — scales every rem/em unit downstream so 1rem on
+     mobile becomes 14.592px instead of 16px. Inline em-based sizing (e.g. h2 2.5em on
+     blog/list.html) ends up 36.48px instead of 40px, matching WP. */
+  html {
+    font-size: 91.2%;
+  }
 
   /* Astra block padding custom properties */
   :root {
@@ -2882,10 +2880,6 @@ body.single-post .ast-related-post-link {
 @media (max-width: 921px) {
   .collection-page .info-box-section,
   .collection-page .info-box-section.reverse {
-    width: calc(100% + 40px);
-    max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
     display: flex;
     flex-direction: column;
     gap: 20px 40px;
@@ -3012,10 +3006,6 @@ body.single-post .ast-related-post-link {
   }
 
   .collection-page--health-care-facilities > .info-box-section:nth-of-type(2) {
-    width: calc(100% + 40px);
-    max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
     padding: 50px 24px 8px;
   }
 
@@ -3032,9 +3022,6 @@ body.single-post .ast-related-post-link {
   }
 
   .collection-page--corporate-campuses .feature-cards {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
     padding: 118px 0 95px;
   }
 
@@ -3074,10 +3061,7 @@ body.single-post .ast-related-post-link {
   }
 
   .collection-page .collection-hero {
-    width: calc(100% + 40px);
     min-height: 100vh;
-    margin-left: -20px;
-    margin-right: -20px;
     padding: 10px;
     justify-content: normal;
     align-items: normal;
@@ -3095,10 +3079,6 @@ body.single-post .ast-related-post-link {
   }
 
   .collection-page .collection-cta {
-    width: calc(100% + 40px);
-    max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
     min-height: 690px;
     padding: 0 0 100px;
     flex-direction: row;
@@ -6775,10 +6755,6 @@ body.single-post .ast-related-post-link {
   }
 
   .wp-accessibility-page {
-    width: calc(100% + 40px);
-    max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
     font-size: 14.592px;
     line-height: 23.3472px;
   }

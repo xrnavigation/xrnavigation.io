@@ -296,15 +296,4 @@ main:focus {
     line-height: 20.8px;
   }
 
-  /* Mobile content padding — match WP ast-container 20px padding */
-  .ast-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  /* Audiom embed pages and homepage should NOT get this padding */
-  .home-page .ast-container,
-  .audiom-embed-body .ast-container {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
