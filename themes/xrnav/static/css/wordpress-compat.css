@@ -461,6 +461,29 @@ nav#ast-hf-menu-1 .main-header-menu {
   max-width: 100%;
 }
 
+/* Background-image hero overlay — WP UAGB uses a ::before with rgb(21,25,29) at
+   0.8 opacity over the section's background-image to produce the dark, low-
+   contrast hero treatment. Without it the raw image renders bright. Applies to
+   any UAGB root container that supplies a background-image inline. WP relies on
+   the inner-blocks-wrap being position:relative to stack above the ::before, so
+   that's set here as well. */
+.wp-block-uagb-container.uagb-is-root-container[style*="background-image"] {
+  position: relative;
+}
+
+.wp-block-uagb-container.uagb-is-root-container[style*="background-image"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(21, 25, 29);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.wp-block-uagb-container.uagb-is-root-container[style*="background-image"] > .uagb-container-inner-blocks-wrap {
+  position: relative;
+}
+
 .wp-block-uagb-container.uagb-is-root-container {
   /* Root containers are full-width sections */
 }
@@ -581,16 +604,15 @@ h6.uagb-heading-text {
 .wp-block-button .wp-block-button__link {
   display: inline-block;
   padding: 15px 20px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-family: var(--font-heading);
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  text-transform: capitalize;
   letter-spacing: 0.3px;
   background: var(--ast-global-color-4);
-  color: var(--ast-global-color-0);
+  color: var(--ast-global-color-1);
   border: 1px solid var(--ast-global-color-1);
 }
 
@@ -1105,6 +1127,18 @@ h3.uagb-post__title a:hover {
   .entry-content > .wp-block-uagb-container[style*="padding: 100px"] {
     padding: 100px 0 !important;
   }
+
+  /* Map evaluation tool hero — WP shrinks the inner content wrap from 70%
+     desktop down to min(100%, 767px) on mobile, and stacks contents column. */
+  .map-eval-hero > .uagb-container-inner-blocks-wrap {
+    max-width: min(100%, 767px) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
 
   .entry-content > .wp-block-uagb-container[style*="padding: 100px"] > .uagb-container-inner-blocks-wrap {
     width: 100%;

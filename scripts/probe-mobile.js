@@ -27,8 +27,12 @@ const WP = `https://xrnavigation.io/${slug}/`;
 
 (async () => {
   const browser = await chromium.launch();
+  const vpArg = process.argv[4];
+  const viewport = vpArg === 'desktop'
+    ? { width: 1920, height: 1080 }
+    : { width: 375, height: 812 };
   for (const [label, url] of [['hugo', HUGO], ['wp', WP]]) {
-    const ctx = await browser.newContext({ viewport: { width: 375, height: 812 } });
+    const ctx = await browser.newContext({ viewport });
     const page = await ctx.newPage();
     try {
       await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });

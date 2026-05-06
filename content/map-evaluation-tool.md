@@ -14,14 +14,14 @@ draft: false
 }
 </style>
 
-<div class="wp-block-uagb-container alignfull uagb-is-root-container map-eval-hero" style="background-image: url('/images/map-eval-hero.webp'); background-size: cover; background-position: 62% 12%; background-repeat: no-repeat; padding: 100px 10px;">
-<div class="uagb-container-inner-blocks-wrap" style="max-width: 70%; margin: 0 auto;">
+<div class="wp-block-uagb-container alignfull uagb-is-root-container map-eval-hero" style="background-image: url('/images/map-eval-hero.webp'); background-size: cover; background-position: 62% 12%; background-repeat: no-repeat; background-attachment: fixed; padding: 100px 10px; display: flex; gap: 20px;">
+<div class="uagb-container-inner-blocks-wrap" style="max-width: 70%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; width: 100%;">
 <div class="wp-block-uagb-container" style="padding: 10px;">
 <div class="wp-block-uagb-advanced-heading" style="text-align: center;">
-<h1 class="uagb-heading-text" style="color: rgb(249, 250, 251); margin-bottom: 0;">Introduction</h1>
+<h1 class="uagb-heading-text" style="color: rgb(249, 250, 251); margin-bottom: 0; font-size: 2.5em;">Introduction</h1>
 </div>
 <div class="wp-block-buttons is-content-justification-center is-layout-flex" style="justify-content: center; display: flex; margin: 20px 0;">
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://docs.google.com/document/d/1f005gPHJ7TmgFK0rLQ0K_zfkRg2U-6AZ//export?format=docx" style="background-color: var(--ast-global-color-4); color: var(--ast-global-color-0); padding: 15px 20px; border-radius: 4px; text-decoration: none; font-family: var(--font-heading); font-size: 16px;">Download this map evaluation tool as a word file</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://docs.google.com/document/d/1f005gPHJ7TmgFK0rLQ0K_zfkRg2U-6AZ//export?format=docx" style="background-color: var(--ast-global-color-4); color: var(--ast-global-color-1); padding: 15px 20px; border-radius: 6px; text-decoration: none; font-family: var(--font-heading); font-size: 16px;">Download this map evaluation tool as a word file</a></div>
 </div>
 <p class="has-text-align-center has-ast-global-color-4-color has-text-color" style="text-align: center; color: rgb(249, 250, 251);">This is a tool to help you quickly evaluate your web map for some of the most common accessibility issues. This is not a comprehensive evaluation or a <a href="https://www.itic.org/policy/accessibility/vpat" style="color: rgb(249, 250, 251);">Voluntary Product Accessibility Template</a> (VPAT), but a way to find some of the <a href="https://github.com/Malvoz/web-maps-wcag-evaluation/blob/master/README.md" style="color: rgb(249, 250, 251);">most common issues present in maps</a>. This is based on the <a href="https://www.w3.org/TR/WCAG21/" style="color: rgb(249, 250, 251);">Web Content Accessibility Guidelines</a> (WCAG). If issues are found as part of this evaluation, it can help make the case for a more accessible solution, such as <a href="/" style="color: rgb(249, 250, 251);">Audiom from XR Navigation</a>. This evaluation is based on <a href="https://github.com/Malvoz/web-maps-wcag-evaluation/blob/master/README.md" style="color: rgb(249, 250, 251);">this map evaluation framework</a>.</p>
 </div>
