@@ -2289,7 +2289,7 @@ body.single-post .ast-related-post-link {
   }
 
   h1, h1.uagb-heading-text, h1.wp-block-heading {
-    font-size: 30px;
+    font-size: 2.5em;
   }
   h2, h2.uagb-heading-text, h2.wp-block-heading {
     font-size: 25px;
@@ -3097,14 +3097,7 @@ body.single-post .ast-related-post-link {
   .collection-page .collection-hero {
     min-height: 100vh;
     padding: 10px;
-    justify-content: normal;
-    align-items: normal;
     gap: 20px;
-    row-gap: 20px;
-    column-gap: 20px;
-    text-align: start;
-    font-size: 15px;
-    line-height: 23px;
     background-attachment: fixed;
   }
 
@@ -3115,15 +3108,7 @@ body.single-post .ast-related-post-link {
   .collection-page .collection-cta {
     min-height: 690px;
     padding: 0 0 100px;
-    flex-direction: row;
-    justify-content: normal;
-    align-items: normal;
     gap: 20px;
-    row-gap: 20px;
-    column-gap: 20px;
-    text-align: start;
-    font-size: 15px;
-    line-height: 23px;
   }
 
   .collection-page--health-care-facilities .collection-cta {
@@ -3217,8 +3202,8 @@ body.single-post .ast-related-post-link {
   .collection-page .collection-hero h1,
   .collection-page .collection-cta h2,
   .collection-page .extra-content h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 2.5em;
+    line-height: 1.4;
   }
 
   .collection-page .info-box-section .info-box-text h2 {

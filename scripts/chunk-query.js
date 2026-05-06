@@ -29,6 +29,16 @@ const fs = require('fs');
 const path = require('path');
 
 const RESULTS_PATH = path.resolve(__dirname, '..', 'tests', 'chunk-results.json');
+const CHUNKS_DIR = path.resolve(__dirname, '..', 'tests', 'chunks');
+
+// Path of the wp/hugo PNG saved by chunk-comparison.spec.ts for one section.
+function chunkPngs(slug, viewport, index) {
+  const dir = path.join(CHUNKS_DIR, slug);
+  return {
+    wp: path.join(dir, `wp-${viewport}-section-${index}.png`),
+    hugo: path.join(dir, `hugo-${viewport}-section-${index}.png`),
+  };
+}
 
 function loadResults() {
   return JSON.parse(fs.readFileSync(RESULTS_PATH, 'utf8'));
@@ -59,6 +69,11 @@ function flatten(results) {
 function fmtRow(x) {
   const heading = x.heading ? x.heading.slice(0, 45) : '<null>';
   const dims = `${x.wpW}x${x.wpH} → ${x.hugoW}x${x.hugoH}`;
+  const pngs = chunkPngs(x.page, x.viewport, x.index);
+  // Show PNG paths so they can be read for a visual verification.
+  // Use ./relative paths so they paste into Read tool calls cleanly.
+  const wpRel = path.relative(process.cwd(), pngs.wp).replace(/\\/g, '/');
+  const hugoRel = path.relative(process.cwd(), pngs.hugo).replace(/\\/g, '/');
   return [
     x.diff.toFixed(1).padStart(5) + '%',
     x.viewport.padEnd(7),
@@ -66,6 +81,8 @@ function fmtRow(x) {
     `[${x.index}]`.padStart(4),
     heading.padEnd(45),
     dims,
+    '\n        wp:   ' + wpRel,
+    '\n        hugo: ' + hugoRel,
   ].join('  ');
 }
 
