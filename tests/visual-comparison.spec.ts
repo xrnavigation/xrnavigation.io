@@ -48,6 +48,7 @@ interface ComparisonResult {
   slug: string;
   viewport: string;
   diffPercent: number;
+  overlapDiffPercent: number;
   totalPixels: number;
   diffPixels: number;
   error?: string;
@@ -55,6 +56,7 @@ interface ComparisonResult {
   baselineHeight: number;
   currentWidth: number;
   currentHeight: number;
+  heightDelta: number;
 }
 
 initializeRunArtifacts();
@@ -221,6 +223,7 @@ if (TASKS.length === 0) {
             slug: task.slug,
             viewport: task.viewport,
             diffPercent: 100,
+            overlapDiffPercent: 100,
             totalPixels: 0,
             diffPixels: 0,
             error: `HTTP ${response?.status() ?? 'no response'}`,
@@ -228,6 +231,7 @@ if (TASKS.length === 0) {
             baselineHeight: 0,
             currentWidth: 0,
             currentHeight: 0,
+            heightDelta: 0,
           };
           persistResult(result);
           return;
@@ -257,7 +261,8 @@ if (TASKS.length === 0) {
         );
 
         const overlapArea = width * height;
-        let diffPercent = (diffPixels / overlapArea) * 100;
+        const overlapDiffPercent = (diffPixels / overlapArea) * 100;
+        let diffPercent = overlapDiffPercent;
 
         if (sizeMismatch) {
           const maxWidth = Math.max(baselinePng.width, currentPng.width);
@@ -276,12 +281,14 @@ if (TASKS.length === 0) {
           slug: task.slug,
           viewport: task.viewport,
           diffPercent,
+          overlapDiffPercent,
           totalPixels: overlapArea,
           diffPixels,
           baselineWidth: baselinePng.width,
           baselineHeight: baselinePng.height,
           currentWidth: currentPng.width,
           currentHeight: currentPng.height,
+          heightDelta: currentPng.height - baselinePng.height,
         };
         persistResult(result);
 
@@ -294,6 +301,7 @@ if (TASKS.length === 0) {
           slug: task.slug,
           viewport: task.viewport,
           diffPercent: 100,
+          overlapDiffPercent: 100,
           totalPixels: 0,
           diffPixels: 0,
           error: String(error),
@@ -301,6 +309,7 @@ if (TASKS.length === 0) {
           baselineHeight: 0,
           currentWidth: 0,
           currentHeight: 0,
+          heightDelta: 0,
         };
         persistResult(result);
       } finally {

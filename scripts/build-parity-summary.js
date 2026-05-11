@@ -82,17 +82,27 @@ function avg(values) {
 
 function summarizeFamily(name, entries) {
   const diffs = entries.map((entry) => entry.diffPercent);
+  const overlapDiffs = entries.map((entry) => entry.overlapDiffPercent ?? entry.diffPercent);
+  const absHeightDeltas = entries.map((entry) => Math.abs(entry.heightDelta ?? 0));
   const desktop = entries.filter((entry) => entry.viewport === 'desktop').map((entry) => entry.diffPercent);
   const mobile = entries.filter((entry) => entry.viewport === 'mobile').map((entry) => entry.diffPercent);
 
   const uniqueSlugs = Array.from(new Set(entries.map((entry) => entry.slug))).sort();
   const sorted = [...entries].sort((a, b) => b.diffPercent - a.diffPercent);
+  const structural = [...entries].sort(
+    (a, b) => (b.overlapDiffPercent ?? b.diffPercent) - (a.overlapDiffPercent ?? a.diffPercent)
+  );
+  const heightDriven = [...entries].sort(
+    (a, b) => Math.abs(b.heightDelta ?? 0) - Math.abs(a.heightDelta ?? 0)
+  );
 
   return {
     family: name,
     comparisons: entries.length,
     pages: uniqueSlugs.length,
     avgDiff: avg(diffs),
+    avgOverlapDiff: avg(overlapDiffs),
+    avgAbsHeightDelta: avg(absHeightDeltas),
     avgDesktop: desktop.length ? avg(desktop) : null,
     avgMobile: mobile.length ? avg(mobile) : null,
     worst: sorted.slice(0, 5).map((entry) => ({
@@ -100,10 +110,22 @@ function summarizeFamily(name, entries) {
       viewport: entry.viewport,
       diffPercent: entry.diffPercent,
     })),
+    worstStructural: structural.slice(0, 5).map((entry) => ({
+      slug: entry.slug,
+      viewport: entry.viewport,
+      diffPercent: entry.diffPercent,
+      overlapDiffPercent: entry.overlapDiffPercent ?? entry.diffPercent,
+    })),
+    worstHeightDelta: heightDriven.slice(0, 5).map((entry) => ({
+      slug: entry.slug,
+      viewport: entry.viewport,
+      diffPercent: entry.diffPercent,
+      heightDelta: entry.heightDelta ?? 0,
+    })),
   };
 }
 
-const results = JSON.parse(fs.readFileSync(comparisonPath, 'utf8'));
+const results = JSON.parse(fs.readFileSync(comparisonPath, 'utf8')).filter((result) => !result.error);
 const enriched = results.map((result) => {
   const filePath = findContentFile(result.slug);
   const frontmatter = filePath ? parseFrontmatter(fs.readFileSync(filePath, 'utf8')) : {};
@@ -129,10 +151,37 @@ const worstOverall = [...enriched]
     diffPercent: entry.diffPercent,
   }));
 
+const worstStructural = [...enriched]
+  .sort((a, b) => (b.overlapDiffPercent ?? b.diffPercent) - (a.overlapDiffPercent ?? a.diffPercent))
+  .slice(0, 20)
+  .map((entry) => ({
+    slug: entry.slug,
+    viewport: entry.viewport,
+    family: entry.family,
+    filePath: entry.filePath,
+    diffPercent: entry.diffPercent,
+    overlapDiffPercent: entry.overlapDiffPercent ?? entry.diffPercent,
+  }));
+
+const worstHeightDelta = [...enriched]
+  .sort((a, b) => Math.abs(b.heightDelta ?? 0) - Math.abs(a.heightDelta ?? 0))
+  .slice(0, 20)
+  .map((entry) => ({
+    slug: entry.slug,
+    viewport: entry.viewport,
+    family: entry.family,
+    filePath: entry.filePath,
+    diffPercent: entry.diffPercent,
+    heightDelta: entry.heightDelta ?? 0,
+  }));
+
 const summary = {
   generatedFrom: 'tests/comparison-results.json',
+  comparisons: enriched.length,
   families,
   worstOverall,
+  worstStructural,
+  worstHeightDelta,
 };
 
 process.stdout.write(JSON.stringify(summary, null, 2));

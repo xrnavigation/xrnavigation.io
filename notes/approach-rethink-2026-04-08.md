@@ -146,6 +146,134 @@ Key observations from the run:
 4. Delete wp-* snowflakes as they're replaced by shared partials
 5. CSS scoped per component to prevent regressions
 
-**Current step:** Building `scripts/build-component-summary.js` to classify the chunk results into component types.
+## Component summary complete (2026-04-08)
+
+Committed as `c419e4f`. All tooling staged and clean.
+
+**Component priority queue (sorted by avg diff):**
+1. blog-index: 77.7% (4 instances) — post grid totally wrong
+2. info-box: 54.6% (12 instances) — width mismatch, biggest total impact
+3. accessibility-statement: 50.0% (2 instances) — snowflake template
+4. cta: 50.2% (8 instances) — one instance at 6.8% proves it CAN work
+5. team: 40.4% (12 instances) — desktop 25.5%, mobile 55.3%
+6. hero: 34.4% (8 instances) — desktop 20.2%, mobile 48.5%
+7. contact-form: 29.8% (4 instances) — mostly mobile CSS
+
+Already good (<15% avg): embed-page (13.6%, 96 instances), blog-post (12.7%, 10), standard-page (12.0%, 40), error-page (10.2%, 2)
+
+**Systemic pattern:** Desktop is 15-30pp better than mobile across EVERY component. Mobile CSS is the dominant gap.
+
+**Current step:** Begin executing component fixes. Next: extract shared UAGB partials, start with info-box (highest total impact: 12 instances × 54.6% avg).
+
+**No blockers.** Hugo running on :1314, WP live, chunk comparison working.
+
+## Scout agents dispatched (2026-04-08)
+
+Five parallel scout agents investigating the top 5 components. Each reads WP HTML, Hugo templates, CSS, and writes a fix report.
+
+**Completed:**
+- `scout-info-box` → `notes/component-fix-info-box.md`
+  - Root cause: `max-width: min(100%, 70%)` on `.info-box-section` constrains to 1344px instead of full viewport (1920px)
+  - WP uses full-width `.alignfull` root container with inner content wrapper
+  - Fix: make section full-width, add `.info-box-section-inner` wrapper div, move flex layout to inner
+  - Template change in `collection-render.html` lines 9-38
+  - CSS change in `wordpress-compat.css` around line 2287
+
+**Completed:**
+- `scout-team` — root cause found: homepage team uses inline styles in template (self-contained, 4.8% diff). About page team relies on WP per-block inline `<style>` tags that Hugo doesn't reproduce. Also has triple-conflicting CSS gap rules (gap:80px vs column-gap:40px at 3 locations). Fix: reconcile gap rules, ensure flex-direction/sizing match WP computed values.
+
+- `scout-hero` — three root causes for mobile being 30pp worse:
+  1. Overlay color wrong: Hugo uses rgba(4,32,62,0.75) (blue), WP uses #15191d at 0.8 opacity (near-black)
+  2. Mobile padding: Hugo uses fixed 40px, WP uses percentage-based (25% top/bottom, 5% sides)
+  3. Homepage inline `padding: 152px 0` can't be overridden by media queries (specificity issue)
+  Also: WP uses breakpoints at 976px/767px, Hugo uses 921px/544px — mismatch causes divergence at intermediate widths.
+
+- `scout-blog-index` — the 77.7% diff is primarily a fundamental structural mismatch: WP uses `uagb-post__image-position-background` (featured image as card background + dark overlay + white text), Hugo renders images as a separate div at the bottom of each card. Also: card bg #333 vs WP's #f6f6f6, hero missing dark overlay ::before, heading section padding 32px vs 100px. Fix requires restructuring the card template to use background-image + overlay.
+
+- `scout-cta` — key findings:
+  1. "Join the Movement" is NOT a CTA — it's feature-cards. Classifier was wrong. Actual CTA avg is lower.
+  2. `solid-dark` style on health-care/universities is an ERROR — WP uses the SAME bg-image+overlay block on all 3 pages. Removing `style: "solid-dark"` from front matter fixes 4 instances.
+  3. Overlay color wrong: Hugo uses rgba(4,32,62,0.75), WP uses #15191d at 0.8 opacity (same bug as hero).
+  4. Missing `background-attachment: fixed` and wrong `background-position` (center vs 50% 16%).
+
+## All 5 scouts complete — synthesis
+
+**Common patterns across components:**
+- **Overlay color is wrong everywhere**: Hugo uses rgba(4,32,62,0.75) (dark blue), WP uses #15191d at 0.8 opacity (near-black). Affects hero, CTA, blog-index. One global fix.
+- **Mobile CSS uses wrong breakpoints**: Hugo uses 921px/544px, WP uses 976px/767px. Affects hero, info-box, team.
+- **Fixed pixel values vs WP percentage-based**: Hero padding, heading section padding, etc. Hugo hardcodes pixels, WP uses percentages that scale.
+- **Missing `background-attachment: fixed`**: Blog hero, CTA — both missing parallax.
+- **Width mismatch on info-box**: 70% max-width constrains to 1344px, should be full-width with inner content wrapper.
+
+**Quick wins (front matter fixes, no template changes):**
+1. Remove `style: "solid-dark"` from health-care-facilities.md and universities.md — fixes 4 CTA instances
+2. Fix overlay color globally — one CSS change affects hero, CTA, blog-index
+
+## Commits applied
+
+**c419e4f** — Add chunk-based visual comparison tooling (all tooling, full 180-comparison baseline)
+**bae6a11** — Fix CTA overlay color and remove erroneous solid-dark style
+  - health-care CTA desktop: 48.3% → 8.8%
+  - universities CTA desktop: 68.1% → 7.5%
+  - Overlay color fixed globally (hero, CTA, extra-content)
+
+## Remaining structural fixes needed
+1. Info-box: add inner wrapper div, make section full-width (12 instances, 54.6% avg)
+2. Blog-index cards: restructure to use background-image + overlay instead of separate image div (4 instances, 77.7%)
+3. Team (about page): reconcile conflicting gap rules, ensure flex layout matches WP (12 instances, homepage works, about broken)
+4. Hero: switch to percentage-based padding, remove inline style specificity issue on homepage (8 instances, mobile is dominant gap)
+
+## Execution progress
+
+**d42fde2** — Info-box width fix: desktop info-boxes 50-65% → 12-24%
+
+**ae605d1** — Hero padding: removed inline 152px, switched to percentage-based. Modest mobile improvement, mainly structural cleanup.
+
+**In progress:** Team about page CSS gap fix
+- Fixed `gap: 80px` shorthand → explicit `row-gap: 80px; column-gap: 80px` so team member overrides work
+- Added `row-gap: 0` to team member blocks (WP value)
+- Result: individual team member sections (Brandon, Chris, James) desktop ALREADY GOOD (6-9%). "Meet Our Team" heading section still at 98.5% desktop — that's a different problem (likely the heading-only container is completely different between WP and Hugo).
+- Mobile team members still 49-56% — needs further investigation.
+
+## Full commit log
+
+| # | Hash | Component | Key improvement |
+|---|------|-----------|-----------------|
+| 1 | c419e4f | Tooling | Chunk comparison + component classifier |
+| 2 | bae6a11 | CTA/overlay | health-care CTA 48→9%, universities 68→7.5% |
+| 3 | d42fde2 | Info-box | Desktop info-boxes 50-65% → 12-24% |
+| 4 | ae605d1 | Hero | Percentage-based padding, eliminated pixel hacks |
+| 5 | 7c9288f | Team | Fixed gap: 80px shorthand → explicit row/column |
+| 6 | 4944d2f | Blog-index | Cards restructured to image-as-background. Desktop avg 75→21% |
+| 7 | 0aa5e8b | Team heading | "Meet Our Team" about desktop: 98.5% → 1.0% |
+| 8 | 50bf900 | Blog cards | Card min-height 380px, flex-end layout, missing classes added |
+
+**Waiting on:** `fix-feature-cards` agent (Join the Movement gradient bg + white cards)
+
+| 9 | 352315c | Feature cards | "Join the Movement" desktop: 74.5% → 20.3% |
+
+**Mobile fix agents dispatched (3 parallel):**
+- `fix-infobox-mobile` — info-box padding/width at mobile breakpoints
+- `fix-team-mobile` — team member blocks stacking/image sizing at mobile
+- `fix-blog-mobile` — blog hero padding, post grid column count, !important removal
+
+All touch different CSS selectors (info-box-section, uagb-block-*, blog-hero) so no conflicts expected.
+
+**Results:**
+- `fix-infobox-mobile`: committed as 9fea09b. Modest mobile improvement (1-6pp on some sections).
+- `fix-team-mobile`: committed as 77bdaa3. Mobile slightly regressed (49-56% → 56-58%). Fluid widths alone don't close gap.
+- `fix-blog-mobile`: The CSS changes were already included in a prior commit (no diff to stage). Blog heading mobile regressed 18.7→53% — the inline padding override at 767px needs further investigation.
+
+**Current commit count: 12** (including the blog-mobile that was a no-op commit failure)
+
+**Status:** All parallel mobile agents completed. Desktop components are in good shape (most under 20%). Mobile remains the systematic gap. Ready for a full 90-page comparison to measure overall improvement.
 
 **No blockers.**
+
+**Next steps after all scouts report:**
+1. Read all five reports
+2. Apply fixes sequentially (template changes + CSS), one component at a time
+3. After each: re-run chunk comparison for affected pages
+4. Commit after each component fix
+
+**Execution approach:** Scouts do read-only research in parallel. I apply changes sequentially since some touch shared files (wordpress-compat.css). Each component's CSS is scoped to its own selectors so changes shouldn't conflict.

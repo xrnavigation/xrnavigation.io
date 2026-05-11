@@ -1,4 +1,5 @@
 node_modules/
+tests
 tests/baseline/*.png
 public/
 resources/_gen/
