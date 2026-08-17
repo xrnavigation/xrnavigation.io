@@ -19,7 +19,7 @@ import * as path from 'path';
 import { PNG } from 'pngjs';
 import pixelmatch from 'pixelmatch';
 
-const HUGO_BASE = 'http://127.0.0.1:1314';
+const HUGO_BASE = process.env.HUGO_BASE ?? 'http://127.0.0.1:1314';
 const WP_BASE = 'https://xrnavigation.io';
 
 const BASELINE_DIR = path.join(__dirname, 'baseline');
@@ -501,10 +501,21 @@ function writeChunkSummary(summary: PageChunkSummary): void {
   const resultPath = path.join(RUN_DIR, `${summary.slug}-${summary.viewport}.json`);
   fs.writeFileSync(resultPath, JSON.stringify(summary, null, 2));
 
-  // Aggregate all results
-  const allResults = fs.readdirSync(RUN_DIR)
+  // Aggregate this run's results, merged over any prior summary so scoped
+  // runs (COMPARE_SLUGS=...) update their slugs without dropping the rest.
+  const runResults = fs.readdirSync(RUN_DIR)
     .filter(f => f.endsWith('.json'))
-    .map(f => JSON.parse(fs.readFileSync(path.join(RUN_DIR, f), 'utf8')) as PageChunkSummary)
+    .map(f => JSON.parse(fs.readFileSync(path.join(RUN_DIR, f), 'utf8')) as PageChunkSummary);
+  let previous: PageChunkSummary[] = [];
+  if (fs.existsSync(CHUNK_SUMMARY_PATH)) {
+    try {
+      previous = JSON.parse(fs.readFileSync(CHUNK_SUMMARY_PATH, 'utf8')) as PageChunkSummary[];
+    } catch { previous = []; }
+  }
+  const merged = new Map<string, PageChunkSummary>();
+  for (const r of previous) merged.set(`${r.slug}|${r.viewport}`, r);
+  for (const r of runResults) merged.set(`${r.slug}|${r.viewport}`, r);
+  const allResults = [...merged.values()]
     .sort((a, b) => a.slug.localeCompare(b.slug) || a.viewport.localeCompare(b.viewport));
   fs.writeFileSync(CHUNK_SUMMARY_PATH, JSON.stringify(allResults, null, 2));
 }
