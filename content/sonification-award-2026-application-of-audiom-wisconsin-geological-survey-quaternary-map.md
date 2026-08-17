@@ -1,13 +1,13 @@
 ---
 title: "Sonification Award 2026 Application of Audiom Wisconsin Geological Survey Quaternary Map"
 date: 2025-12-17
-lastmod: 2026-01-09
+lastmod: 2026-04-29
 slug: "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map"
 type: "audiom-embed"
 audiom_id: 38
-draft: false
 aliases:
   - /sonification
+draft: false
 ---
 
 # Sonification Award 2026 Application of Audiom Wisconsin Geological Survey Quaternary Map
@@ -32,7 +32,7 @@ WaterBodies.type=esri&WaterBodies.url=https://services5.arcgis.com/hYFYGk4BynrIa
 MapEdges.type=esri&MapEdges.url=https://services5.arcgis.com/hYFYGk4BynrIaicK/arcgis/rest/services/Map_Edges_Q500/FeatureServer/0&MapEdges.name=Map%20Edges&MapEdges.rules=/rules/UW-Rules.json&
 MapOverview.type=esri&MapOverview.url=https://services5.arcgis.com/hYFYGk4BynrIaicK/arcgis/rest/services/OverviewAreas_Q500/FeatureServer/0&MapOverview.name=Map%20Overview&MapOverview.rules=/rules/UW-Rules.json&MapOverview.visible=false&
 center=-88.7879,43.7844&zoom=7&soundpack=quat_survey&stepsize=3mi&
-visualbaselayer0=https://data.wgnhs.wisc.edu/accessible-statewide-quaternary/Q500_PNG_175dpi_WebMercator.png&
-visualbaselayerposition0=[[-92.9379002,47.1168906],[-86.6631554,47.1168906],[-86.6631554,42.4231201],[-92.9379002,42.4231201]]" width="100%" height="700" style="border:0" title="Audiom Wisconsin Geological Survey Quaternary Map"></iframe>
+visualbaselayer1=https://data.wgnhs.wisc.edu/accessible-statewide-quaternary/Q500_PNG_175dpi_WebMercator.png&
+visualbaselayerposition0=[[-92.9379002,47.1168906],[-86.6631554,47.1168906],[-86.6631554,42.4231201],[-92.9379002,42.4231201]]&visualStyle=geology" width="100%" height="700" style="border:0" title="Audiom Wisconsin Geological Survey Quaternary Map"></iframe>
 
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSosDNPGupGZHE4rHx78ELM41fE7-leaUphN8l5BxHfNc_aRig8XXpx2N-wmjDovg/pub?embedded=true" style="width:100%; height:1200px; border:none;"></iframe>

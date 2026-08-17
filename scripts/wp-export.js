@@ -117,7 +117,7 @@ function buildFrontmatter(item, audiomId) {
   lines.push(`lastmod: ${item.modified.split("T")[0]}`);
   lines.push(`slug: "${item.slug}"`);
   if (audiomId) {
-    lines.push(`layout: "audiom-embed"`);
+    lines.push(`type: "audiom-embed"`);
     lines.push(`audiom_id: ${audiomId}`);
   }
   lines.push(`draft: false`);

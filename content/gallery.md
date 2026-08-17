@@ -1,7 +1,7 @@
 ---
 title: "Audiom Gallery"
 date: 2025-06-21
-lastmod: 2025-07-15
+lastmod: 2026-08-06
 slug: "gallery"
 draft: false
 ---
@@ -12,7 +12,7 @@ Below are a range of different diagrams and maps we have represented with Audiom
 
 ## Tutorial Intro Demo
 
-If you haven’t experienced Audiom before, please first complete [the interactive Audiom tutorial (Opens in a new tab)](/magicmap-paloalto/).
+If you haven’t experienced Audiom before, please first complete [the interactive Audiom tutorial (Opens in a new tab)](/audiom-demo).
 
 ## **Thematic**
 
