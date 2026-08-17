@@ -15,7 +15,7 @@ async function main() {
     process.exit(1);
   }
 
-  const url = `https://xrnavigation.io/${slug}/`;
+  const url = slug === "home" ? "https://xrnavigation.io/" : `https://xrnavigation.io/${slug}/`;
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage({
     viewport: { width: 1440, height: 900 },
