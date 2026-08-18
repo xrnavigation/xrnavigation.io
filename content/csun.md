@@ -3,6 +3,7 @@ title: "Audiom CSUN 2026 Map"
 date: 2025-01-24
 lastmod: 2026-01-21
 slug: "csun"
+wp_id: 2878
 type: "audiom-embed"
 spacers: "full"
 audiom_id: 38

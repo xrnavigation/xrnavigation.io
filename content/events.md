@@ -3,6 +3,7 @@ title: "Audiom Event Maps"
 date: 2025-09-28
 lastmod: 2025-09-28
 slug: "events"
+wp_id: 2962
 type: "audiom-embed"
 audiom_id: 70
 draft: false

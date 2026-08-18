@@ -3,6 +3,7 @@ title: "Audiom Institute of Paper Science and Technology Map"
 date: 2025-02-23
 lastmod: 2025-02-23
 slug: "ipst"
+wp_id: 2902
 type: "audiom-embed"
 audiom_id: 38
 draft: false

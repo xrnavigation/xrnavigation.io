@@ -3,6 +3,7 @@ title: "Gavilan Hollister Campus"
 date: 2025-07-01
 lastmod: 2025-07-24
 slug: "gavilan-hollister"
+wp_id: 3025
 type: "audiom-embed"
 audiom_id: 38
 draft: false

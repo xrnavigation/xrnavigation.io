@@ -3,6 +3,7 @@ title: "LSKE Map 2"
 date: 2026-01-20
 lastmod: 2026-01-20
 slug: "lske-map-2"
+wp_id: 3322
 type: "audiom-embed"
 spacers: "full"
 audiom_id: 38

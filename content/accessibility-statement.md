@@ -3,6 +3,7 @@ title: "Accessibility Statement"
 date: 2023-12-04
 lastmod: 2024-06-24
 slug: "accessibility-statement"
+wp_id: 1399
 type: "wp-accessibility-statement"
 draft: false
 ---

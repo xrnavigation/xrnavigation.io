@@ -3,6 +3,7 @@ title: "NFB Exhibit Hall Map 2024"
 date: 2024-06-27
 lastmod: 2024-06-27
 slug: "nfb24"
+wp_id: 2570
 type: "audiom-embed"
 audiom_id: 38
 draft: false

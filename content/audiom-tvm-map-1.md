@@ -3,6 +3,7 @@ title: "Audiom TVM Map 1"
 date: 2026-01-20
 lastmod: 2026-01-20
 slug: "audiom-tvm-map-1"
+wp_id: 3309
 type: "audiom-embed"
 spacers: "full"
 audiom_id: 38

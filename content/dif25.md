@@ -3,6 +3,7 @@ title: "Audiom Disability Innovation Forum 2025 Map"
 date: 2025-09-14
 lastmod: 2025-09-14
 slug: "dif25"
+wp_id: 3141
 type: "audiom-embed"
 audiom_id: 38
 draft: false

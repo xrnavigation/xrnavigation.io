@@ -3,6 +3,7 @@ title: "COVID statistic text map showing total cases over Washington, Oregon, an
 date: 2026-01-26
 lastmod: 2026-01-26
 slug: "covid-statistic-text-map-showing-total-cases-over-washington-oregon-and-idaho"
+wp_id: 3331
 draft: false
 ---
 

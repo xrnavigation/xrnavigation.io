@@ -3,6 +3,7 @@ title: "XR Navigation Financial Conflict of Interest Policy"
 date: 2025-09-15
 lastmod: 2025-09-17
 slug: "fcoi"
+wp_id: 3147
 type: "wp-link-download"
 top_spacer: 100
 mid_spacer: 28

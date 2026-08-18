@@ -3,6 +3,7 @@ title: "Audiom Bovine Manus Diagram"
 date: 2025-02-02
 lastmod: 2025-02-02
 slug: "audiom-bovine-manus-diagram"
+wp_id: 2891
 type: "audiom-embed"
 audiom_id: 38
 draft: false

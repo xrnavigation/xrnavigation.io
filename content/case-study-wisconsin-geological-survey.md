@@ -3,6 +3,7 @@ title: "Case Study: Wisconsin Geological Survey"
 date: 2025-12-28
 lastmod: 2026-01-08
 slug: "case-study-wisconsin-geological-survey"
+wp_id: 3249
 draft: false
 ---
 

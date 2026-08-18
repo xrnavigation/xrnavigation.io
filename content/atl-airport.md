@@ -3,6 +3,7 @@ title: "Atlanta  Hartsfield-Jackson Atlanta International Airport Audiom Map"
 date: 2026-06-24
 lastmod: 2026-08-12
 slug: "atl-airport"
+wp_id: 3485
 type: "audiom-embed"
 audiom_id: 38
 draft: false

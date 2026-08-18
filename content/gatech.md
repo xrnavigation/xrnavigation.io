@@ -3,6 +3,7 @@ title: "Audiom Georgia Tech Map"
 date: 2025-02-13
 lastmod: 2025-02-13
 slug: "gatech"
+wp_id: 2895
 type: "audiom-embed"
 audiom_id: 38
 draft: false

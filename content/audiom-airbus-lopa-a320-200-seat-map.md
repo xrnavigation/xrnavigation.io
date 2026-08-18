@@ -3,6 +3,7 @@ title: "Audiom Airbus LOPA A320 200 Seat Map"
 date: 2025-07-12
 lastmod: 2025-07-12
 slug: "audiom-airbus-lopa-a320-200-seat-map"
+wp_id: 3062
 type: "audiom-embed"
 audiom_id: 38
 draft: false

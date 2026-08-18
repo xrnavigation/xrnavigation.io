@@ -3,6 +3,7 @@ title: "Audiom Jernigan Institute NFB Map"
 date: 2025-03-07
 lastmod: 2025-03-18
 slug: "jernigan-institute"
+wp_id: 2909
 type: "audiom-embed"
 audiom_id: 38
 draft: false

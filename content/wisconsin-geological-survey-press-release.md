@@ -3,6 +3,7 @@ title: "Wisconsin Geological Survey Press Release"
 date: 2025-12-28
 lastmod: 2025-12-28
 slug: "wisconsin-geological-survey-press-release"
+wp_id: 3252
 type: "wp-file"
 top_spacer: "115px"
 file_url: "/images/Wisconsin_Geological_Survey_Press_Release.pdf"

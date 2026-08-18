@@ -3,6 +3,7 @@ title: "Audiom Vision Ireland: The Wayfinding Centre Map"
 date: 2025-01-27
 lastmod: 2026-04-22
 slug: "wcvi"
+wp_id: 2881
 type: "audiom-embed"
 audiom_id: 38
 draft: false

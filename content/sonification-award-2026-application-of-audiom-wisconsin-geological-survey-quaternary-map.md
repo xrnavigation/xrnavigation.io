@@ -3,6 +3,7 @@ title: "Sonification Award 2026 Application of Audiom Wisconsin Geological Surve
 date: 2025-12-17
 lastmod: 2026-04-29
 slug: "sonification-award-2026-application-of-audiom-wisconsin-geological-survey-quaternary-map"
+wp_id: 3241
 type: "audiom-embed"
 audiom_id: 38
 aliases:

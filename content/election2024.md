@@ -3,6 +3,7 @@ title: "Audiom 2024 U.S. Election Map"
 date: 2024-11-06
 lastmod: 2026-06-15
 slug: "election2024"
+wp_id: 2844
 type: "audiom-embed"
 audiom_id: 38
 draft: false

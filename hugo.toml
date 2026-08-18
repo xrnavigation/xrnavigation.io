@@ -30,7 +30,7 @@ paginate = 20
     weight = 4
 
   [[menu.main]]
-    name = "Audiom For Personal Use"
+    name = "Audiom For Personal Use (Navigates to a new website)"
     url = "https://www.audiom.net/"
     weight = 5
     [menu.main.params]

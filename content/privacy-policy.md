@@ -3,6 +3,7 @@ title: "Privacy Policy"
 date: 2022-07-22
 lastmod: 2024-06-20
 slug: "privacy-policy"
+wp_id: 3
 draft: false
 ---
 

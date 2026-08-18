@@ -3,6 +3,7 @@ title: "Audiom Neighborhood Demo"
 date: 2025-07-04
 lastmod: 2025-07-06
 slug: "audiom-neighborhood-demo"
+wp_id: 3051
 type: "wp-demo-iframe"
 page_heading: "Press The “Enable sounds and skip to map” Button, and Press any Key to start."
 intro: "Note: If using a screen reader, this tutorial is self-voicing, so disable speech. In other maps, or after the tutorial finishes, press “backslash” to use your own screen reader."

@@ -3,6 +3,7 @@ title: "Capability Statement"
 date: 2024-12-11
 lastmod: 2024-12-12
 slug: "capability-statement"
+wp_id: 2855
 type: "wp-capability"
 page_heading: "XR Navigation Capability Statement"
 button_label: "Download the capability statement in Word."

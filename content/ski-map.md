@@ -3,6 +3,7 @@ title: "Audiom 2318 Fillmore St. – Smith-Kettlewell Eye Research Institute Map
 date: 2025-01-31
 lastmod: 2025-08-06
 slug: "ski-map"
+wp_id: 2888
 type: "audiom-embed"
 audiom_id: 38
 draft: false

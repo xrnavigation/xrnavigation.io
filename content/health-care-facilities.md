@@ -3,6 +3,7 @@ title: "Health Care Facilities"
 date: 2023-07-31
 lastmod: 2024-02-20
 slug: "health-care-facilities"
+wp_id: 209
 draft: false
 layout: "collection"
 hero_image: "/images/ambulance-vehicles-on-an-hospital-parking-emergen-2021-08-26-18-12-54-utc.webp"

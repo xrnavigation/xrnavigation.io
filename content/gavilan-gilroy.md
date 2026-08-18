@@ -3,6 +3,7 @@ title: "Gilroy Campus Map"
 date: 2025-07-01
 lastmod: 2025-08-29
 slug: "gavilan-gilroy"
+wp_id: 3030
 type: "audiom-embed"
 audiom_id: 38
 draft: false

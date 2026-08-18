@@ -11,6 +11,11 @@
 {{/* Stylesheets */}}
 <link rel="stylesheet" href="{{ "css/wordpress-compat.css" | relURL }}">
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+{{/* Per-page UAGB block CSS ported from live (scripts/port-page-blocks.py) */}}
+{{ $slug := replaceRE "/" "-" (strings.Trim .RelPermalink "/") }}
+{{ if and (not .IsHome) (fileExists (printf "static/css/blocks/%s.css" $slug)) }}
+<link rel="stylesheet" href="{{ printf "css/blocks/%s.css" $slug | relURL }}">
+{{ end }}
 {{ if .IsHome }}
 <link rel="stylesheet" href="{{ "css/home-exact.css" | relURL }}">
 <link rel="stylesheet" href="{{ "vendor/ableplayer/ableplayer.min.css" | relURL }}">

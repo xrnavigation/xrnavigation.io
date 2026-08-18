@@ -3,6 +3,7 @@ title: "Case Study: VRATE Expo 2024"
 date: 2025-09-28
 lastmod: 2025-09-28
 slug: "case-study-vrate-expo-2024"
+wp_id: 3167
 type: "wp-file"
 top_spacer: "115px"
 file_image: "/images/Untitled-1-1-1024x409.png"

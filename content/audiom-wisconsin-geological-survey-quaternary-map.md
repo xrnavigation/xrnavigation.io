@@ -3,6 +3,7 @@ title: "Audiom Wisconsin Geological Survey Quaternary Map"
 date: 2025-10-14
 lastmod: 2026-08-03
 slug: "audiom-wisconsin-geological-survey-quaternary-map"
+wp_id: 3193
 type: "audiom-embed"
 audiom_id: 38
 draft: false

@@ -3,6 +3,7 @@ title: "Corporate Campuses"
 date: 2023-07-31
 lastmod: 2024-03-12
 slug: "corporate-campuses"
+wp_id: 205
 draft: false
 layout: "collection"
 hero_image: "/images/DALL%25C2%25B7E-2023-10-17-13.21.37-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-corporate-campus-with-modern-structures-and-pathways-and-the-right-side-i.webp"

@@ -3,6 +3,7 @@ title: "Audiom Airplane AA747 Seatmap"
 date: 2024-08-29
 lastmod: 2024-08-29
 slug: "audiom-airplane-aa-747-seatmap"
+wp_id: 2755
 type: "audiom-embed"
 audiom_id: 38
 draft: false

@@ -3,6 +3,7 @@ title: "This is a COVID statistic map showing total cases over Washington, Orego
 date: 2025-08-29
 lastmod: 2026-01-26
 slug: "this-is-a-covid-statistic-map-showing-total-cases-over-washington-oregan-and-idaho"
+wp_id: 3133
 type: "wp-image-page"
 page_heading: "This is a COVID statistic map showing total cases over Washington, Oregon, and Idaho"
 hero_image: "/images/covid_cases_new.jpg"

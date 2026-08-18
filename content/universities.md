@@ -3,6 +3,7 @@ title: "Universities"
 date: 2023-07-31
 lastmod: 2024-03-12
 slug: "universities"
+wp_id: 207
 draft: false
 layout: "collection"
 hero_image: "/images/DALL%25C2%25B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp"
