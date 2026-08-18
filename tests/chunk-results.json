@@ -9002,7 +9002,7 @@
     "matchedSections": 10,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 10.54127406600053,
+    "avgDiffPercent": 10.606886265181279,
     "maxDiffPercent": 23.5734140917603,
     "sections": [
       {
@@ -9012,8 +9012,8 @@
         "heading": "Make all maps on your site usable to everyone",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 8.594870071684587,
-        "overlapDiffPercent": 8.171698173868313,
+        "diffPercent": 9.250992063492063,
+        "overlapDiffPercent": 8.830857767489713,
         "wpWidth": 1920,
         "wpHeight": 651,
         "hugoWidth": 1920,
@@ -9370,8 +9370,8 @@
     "matchedSections": 10,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 14.697736486328685,
-    "maxDiffPercent": 35.70377668308703,
+    "avgDiffPercent": 15.014977865639029,
+    "maxDiffPercent": 38.87619047619047,
     "sections": [
       {
         "slug": "home",
@@ -9380,8 +9380,8 @@
         "heading": "Make all maps on your site usable to everyone",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 35.70377668308703,
-        "overlapDiffPercent": 35.70377668308703,
+        "diffPercent": 38.87619047619047,
+        "overlapDiffPercent": 38.87619047619047,
         "wpWidth": 375,
         "wpHeight": 812,
         "hugoWidth": 375,

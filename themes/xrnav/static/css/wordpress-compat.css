@@ -10486,3 +10486,6 @@ body.page-id-1399 .wp-block-uagb-container.uagb-block-450c520f .uagb-container__
 }
 @media only screen and (max-width: 767px){body.page-id-1399 .uagb-block-041eade5.wp-block-uagb-image .wp-block-uagb-image__figure img{width: 1024px;height: auto;}body.page-id-1399 .uagb-block-041eade5.wp-block-uagb-image{margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;}
 }
+
+/* WP global-styles: block buttons use 1em line-height. */
+.wp-block-button .wp-block-button__link,.wp-block-search .wp-block-search__button{line-height:1em}
