@@ -1,6 +1,6 @@
 ---
 title: "Five Things to Look Out for When Reading an Accessibility Conformance Report (A Completed VPAT)"
-date: 2024-02-19
+date: 2024-02-19T21:49:33
 lastmod: 2024-06-24
 slug: "five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat"
 url: /five-things-to-look-out-for-when-reading-an-accessibility-conformance-report-a-completed-vpat/

@@ -1,6 +1,7 @@
 ---
 title: "The First Three Questions to Ask Before Considering Any Digital System for Your Business"
-date: 2024-07-18
+date: 2024-07-18T16:04:02
+author: "Brandon Biggs"
 lastmod: 2024-07-18
 slug: "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business"
 url: /the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business/

@@ -1,6 +1,6 @@
 ---
 title: "List of Non-Visual Drawing Tools"
-date: 2025-02-19
+date: 2025-02-19T16:48:40
 lastmod: 2025-03-09
 slug: "list-of-non-visual-drawing-tools"
 url: /list-of-non-visual-drawing-tools/
@@ -8,7 +8,6 @@ draft: false
 author: "Brandon Biggs"
 author_url: "/author/brandonkeithbiggs/"
 wp_id: 2897
-featured_image: "/images/DALL%25C2%25B7E-2023-10-17-13.21.37-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-corporate-campus-with-modern-structures-and-pathways-and-the-right-side-i.webp"
 related_posts:
   - how-xr-navigation-helps-federal-agencies-follow-recent-omb-accessibility-guidance
   - what-is-the-definition-of-a-map

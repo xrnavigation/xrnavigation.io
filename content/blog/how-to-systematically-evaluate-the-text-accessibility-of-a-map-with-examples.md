@@ -1,6 +1,7 @@
 ---
 title: "How to Systematically Evaluate The Text Accessibility of a Map With Examples"
-date: 2024-07-26
+date: 2024-07-26T19:36:38
+author: "Brandon Biggs"
 lastmod: 2024-07-26
 slug: "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples"
 url: /how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples/

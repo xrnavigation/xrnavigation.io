@@ -1,6 +1,7 @@
 ---
 title: "Digital Map Tool Accessibility Comparison"
-date: 2024-08-12
+date: 2024-08-12T06:00:00
+author: "Brandon Biggs"
 lastmod: 2025-05-21
 slug: "digital-map-tool-accessibility-comparison"
 aliases:

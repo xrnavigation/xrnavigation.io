@@ -1,6 +1,7 @@
 ---
 title: "How to Convert from PDF to Geojson Using QGIS"
-date: 2024-10-03
+date: 2024-10-03T18:20:34
+author: "Nikita Alimbayev"
 lastmod: 2024-10-04
 slug: "how-to-convert-from-pdf-to-geojson-using-qgis"
 url: /how-to-convert-from-pdf-to-geojson-using-qgis/
