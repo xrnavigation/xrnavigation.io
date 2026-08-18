@@ -172,8 +172,8 @@
     "matchedSections": 14,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 13.384862356120928,
-    "maxDiffPercent": 33.48667364990689,
+    "avgDiffPercent": 8.711671806992683,
+    "maxDiffPercent": 26.83648627075351,
     "sections": [
       {
         "slug": "about",
@@ -182,8 +182,8 @@
         "heading": "About Xr Navigation",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 8.774112654320989,
-        "overlapDiffPercent": 8.774112654320989,
+        "diffPercent": 8.960165895061728,
+        "overlapDiffPercent": 8.960165895061728,
         "wpWidth": 1920,
         "wpHeight": 1080,
         "hugoWidth": 1920,
@@ -191,10 +191,10 @@
         "heightDelta": 0,
         "styleDiffs": [
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
+            "element": "heading",
+            "property": "width",
+            "wp": "1025px",
+            "hugo": "440px"
           },
           {
             "element": "heading",
@@ -204,8 +204,20 @@
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
+            "property": "margin-right",
+            "wp": "141px",
+            "hugo": "513px"
+          },
+          {
+            "element": "firstParagraph",
+            "property": "margin-left",
+            "wp": "141px",
+            "hugo": "513px"
+          },
+          {
+            "element": "firstParagraph",
+            "property": "width",
+            "wp": "742px",
             "hugo": "0px"
           },
           {
@@ -244,13 +256,13 @@
         "heading": "Publications",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 15.897978373295722,
-        "overlapDiffPercent": 3.825268817204301,
+        "diffPercent": 10.956709956709958,
+        "overlapDiffPercent": 3.295721673718853,
         "wpWidth": 1920,
         "wpHeight": 709,
         "hugoWidth": 1920,
-        "hugoHeight": 620,
-        "heightDelta": -89,
+        "hugoHeight": 770,
+        "heightDelta": 61,
         "styleDiffs": [
           {
             "element": "heading",
@@ -267,20 +279,14 @@
         "heading": "The Problem Is Massive",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 25.153256704980844,
-        "overlapDiffPercent": 17.22457627118644,
+        "diffPercent": 26.83648627075351,
+        "overlapDiffPercent": 19.086114053672315,
         "wpWidth": 1920,
         "wpHeight": 708,
         "hugoWidth": 1920,
         "hugoHeight": 783,
         "heightDelta": 75,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
           {
             "element": "heading",
             "property": "width",
@@ -298,12 +304,6 @@
             "property": "width",
             "wp": "516px",
             "hugo": "456px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       },
@@ -314,20 +314,14 @@
         "heading": "But We have The Solution",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 13.299825174825175,
-        "overlapDiffPercent": 12.318776520509193,
+        "diffPercent": 11.34622668997669,
+        "overlapDiffPercent": 10.343072253653936,
         "wpWidth": 1920,
         "wpHeight": 707,
         "hugoWidth": 1920,
         "hugoHeight": 715,
         "heightDelta": 8,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
           {
             "element": "heading",
             "property": "width",
@@ -345,12 +339,6 @@
             "property": "width",
             "wp": "516px",
             "hugo": "456px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       },
@@ -361,8 +349,8 @@
         "heading": "Our Partners",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 12.607473544973544,
-        "overlapDiffPercent": 3.068148474178404,
+        "diffPercent": 12.607804232804233,
+        "overlapDiffPercent": 3.0685152582159625,
         "wpWidth": 1920,
         "wpHeight": 315,
         "hugoWidth": 1920,
@@ -370,10 +358,10 @@
         "heightDelta": -31,
         "styleDiffs": [
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
+            "element": "heading",
+            "property": "width",
+            "wp": "396px",
+            "hugo": "278px"
           },
           {
             "element": "heading",
@@ -392,12 +380,6 @@
             "property": "text-align",
             "wp": "start",
             "hugo": "center"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       },
@@ -438,20 +420,14 @@
         "heading": "Brandon Biggs",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 9.489448489751888,
-        "overlapDiffPercent": 9.489448489751888,
+        "diffPercent": 8.563410194174757,
+        "overlapDiffPercent": 8.563410194174757,
         "wpWidth": 1920,
         "wpHeight": 309,
         "hugoWidth": 1920,
         "hugoHeight": 309,
         "heightDelta": 0,
         "styleDiffs": [
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "801px",
-            "hugo": "803px"
-          },
           {
             "element": "heading",
             "property": "max-width",
@@ -467,20 +443,14 @@
         "heading": "Chris Toth",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 8.831711576846308,
-        "overlapDiffPercent": 8.831711576846308,
+        "diffPercent": 8.26503243512974,
+        "overlapDiffPercent": 8.26503243512974,
         "wpWidth": 1920,
         "wpHeight": 334,
         "hugoWidth": 1920,
         "hugoHeight": 334,
         "heightDelta": 0,
         "styleDiffs": [
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "801px",
-            "hugo": "803px"
-          },
           {
             "element": "heading",
             "property": "max-width",
@@ -496,20 +466,14 @@
         "heading": "James Coughlan",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 6.421847873263889,
-        "overlapDiffPercent": 6.177518494342907,
+        "diffPercent": 5.943739149305555,
+        "overlapDiffPercent": 5.698161444734551,
         "wpWidth": 1920,
         "wpHeight": 384,
         "hugoWidth": 1920,
         "hugoHeight": 383,
         "heightDelta": -1,
         "styleDiffs": [
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "801px",
-            "hugo": "803px"
-          },
           {
             "element": "heading",
             "property": "max-width",
@@ -525,8 +489,8 @@
         "heading": "CONTACT US",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 17.31996704931973,
-        "overlapDiffPercent": 11.68781221616712,
+        "diffPercent": 11.67623299319728,
+        "overlapDiffPercent": 5.659627611262489,
         "wpWidth": 1920,
         "wpHeight": 392,
         "hugoWidth": 1920,
@@ -560,8 +524,8 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 33.48667364990689,
-        "overlapDiffPercent": 33.11300327715356,
+        "diffPercent": 5.520057417752947,
+        "overlapDiffPercent": 4.989271223470661,
         "wpWidth": 1920,
         "wpHeight": 537,
         "hugoWidth": 1920,
@@ -575,13 +539,21 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 30.384030345040046,
-        "overlapDiffPercent": 30.384030345040046,
+        "diffPercent": 5.565792513863217,
+        "overlapDiffPercent": 5.565792513863217,
         "wpWidth": 1920,
         "wpHeight": 541,
         "hugoWidth": 1920,
         "hugoHeight": 541,
-        "heightDelta": 0
+        "heightDelta": 0,
+        "styleDiffs": [
+          {
+            "element": "container",
+            "property": "margin-bottom",
+            "wp": "0px",
+            "hugo": "-17px"
+          }
+        ]
       }
     ]
   },
@@ -592,8 +564,8 @@
     "matchedSections": 14,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 15.656829694660063,
-    "maxDiffPercent": 36.76847290640394,
+    "avgDiffPercent": 16.257600555401744,
+    "maxDiffPercent": 35.269622331691295,
     "sections": [
       {
         "slug": "about",
@@ -602,8 +574,8 @@
         "heading": "About Xr Navigation",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 36.76847290640394,
-        "overlapDiffPercent": 36.76847290640394,
+        "diffPercent": 35.269622331691295,
+        "overlapDiffPercent": 35.269622331691295,
         "wpWidth": 375,
         "wpHeight": 812,
         "hugoWidth": 375,
@@ -611,16 +583,16 @@
         "heightDelta": 0,
         "styleDiffs": [
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "line-height",
             "wp": "51px",
             "hugo": "46px"
+          },
+          {
+            "element": "firstParagraph",
+            "property": "margin-right",
+            "wp": "0px",
+            "hugo": "168px"
           },
           {
             "element": "firstParagraph",
@@ -630,8 +602,14 @@
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
+            "property": "margin-left",
+            "wp": "0px",
+            "hugo": "168px"
+          },
+          {
+            "element": "firstParagraph",
+            "property": "width",
+            "wp": "335px",
             "hugo": "0px"
           },
           {
@@ -670,13 +648,13 @@
         "heading": "Publications",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 14.539149888143177,
-        "overlapDiffPercent": 8.060168471720818,
+        "diffPercent": 23.01811391223156,
+        "overlapDiffPercent": 7.776733780760627,
         "wpWidth": 375,
         "wpHeight": 1192,
         "hugoWidth": 375,
-        "hugoHeight": 1108,
-        "heightDelta": -84,
+        "hugoHeight": 1428,
+        "heightDelta": 236,
         "styleDiffs": [
           {
             "element": "heading",
@@ -714,12 +692,6 @@
         "heightDelta": 93,
         "styleDiffs": [
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "max-width",
             "wp": "100%",
@@ -742,12 +714,6 @@
             "property": "line-height",
             "wp": "23px",
             "hugo": "26px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       },
@@ -767,12 +733,6 @@
         "heightDelta": 44,
         "styleDiffs": [
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "max-width",
             "wp": "100%",
@@ -795,12 +755,6 @@
             "property": "line-height",
             "wp": "23px",
             "hugo": "26px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       },
@@ -811,25 +765,19 @@
         "heading": "Our Partners",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 25.676623376623375,
-        "overlapDiffPercent": 5.014107883817427,
+        "diffPercent": 20.44848484848485,
+        "overlapDiffPercent": 7.013788741302973,
         "wpWidth": 375,
         "wpHeight": 616,
         "hugoWidth": 375,
-        "hugoHeight": 482,
-        "heightDelta": -134,
+        "hugoHeight": 527,
+        "heightDelta": -89,
         "styleDiffs": [
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
+            "element": "heading",
+            "property": "width",
+            "wp": "280px",
+            "hugo": "229px"
           }
         ]
       },
@@ -840,25 +788,19 @@
         "heading": "Our Investors:",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 5.060883534136546,
-        "overlapDiffPercent": 1.5006666666666666,
+        "diffPercent": 18.495072463768118,
+        "overlapDiffPercent": 6.269333333333334,
         "wpWidth": 375,
         "wpHeight": 400,
         "hugoWidth": 375,
-        "hugoHeight": 415,
-        "heightDelta": 15,
+        "hugoHeight": 460,
+        "heightDelta": 60,
         "styleDiffs": [
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
+            "element": "heading",
+            "property": "width",
+            "wp": "280px",
+            "hugo": "249px"
           }
         ]
       },
@@ -869,31 +811,19 @@
         "heading": "Meet Our Team",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 27.909641873278236,
-        "overlapDiffPercent": 11.442301184433164,
+        "diffPercent": 27.749794238683126,
+        "overlapDiffPercent": 10.879187817258883,
         "wpWidth": 375,
         "wpHeight": 197,
         "hugoWidth": 375,
-        "hugoHeight": 242,
-        "heightDelta": 45,
+        "hugoHeight": 243,
+        "heightDelta": 46,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
           {
             "element": "heading",
             "property": "width",
             "wp": "320px",
             "hugo": "270px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       },
@@ -904,8 +834,8 @@
         "heading": "Brandon Biggs",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 7.4006676204101085,
-        "overlapDiffPercent": 6.463969171483622,
+        "diffPercent": 7.735622317596566,
+        "overlapDiffPercent": 6.802312138728324,
         "wpWidth": 375,
         "wpHeight": 692,
         "hugoWidth": 375,
@@ -919,8 +849,8 @@
         "heading": "Chris Toth",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 11.882797345584482,
-        "overlapDiffPercent": 10.789870801033592,
+        "diffPercent": 11.633690658499233,
+        "overlapDiffPercent": 10.53767441860465,
         "wpWidth": 375,
         "wpHeight": 645,
         "hugoWidth": 375,
@@ -934,8 +864,8 @@
         "heading": "James Coughlan",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 8.747728432873915,
-        "overlapDiffPercent": 7.615917312661499,
+        "diffPercent": 8.266666666666667,
+        "overlapDiffPercent": 7.128888888888889,
         "wpWidth": 375,
         "wpHeight": 645,
         "hugoWidth": 375,
@@ -949,14 +879,20 @@
         "heading": "CONTACT US",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 11.585185185185185,
-        "overlapDiffPercent": 11.585185185185185,
+        "diffPercent": 12.124216524216525,
+        "overlapDiffPercent": 12.124216524216525,
         "wpWidth": 375,
         "wpHeight": 234,
         "hugoWidth": 375,
         "hugoHeight": 234,
         "heightDelta": 0,
         "styleDiffs": [
+          {
+            "element": "container",
+            "property": "padding-top",
+            "wp": "50px",
+            "hugo": "0px"
+          },
           {
             "element": "container",
             "property": "min-height",
@@ -1026,8 +962,8 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 13.372559604138551,
-        "overlapDiffPercent": 12.1875056999544,
+        "diffPercent": 10.921817363922628,
+        "overlapDiffPercent": 9.703237574099408,
         "wpWidth": 375,
         "wpHeight": 741,
         "hugoWidth": 375,
@@ -1041,13 +977,21 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 10.194266994266995,
-        "overlapDiffPercent": 10.194266994266995,
+        "diffPercent": 5.8856674856674855,
+        "overlapDiffPercent": 5.8856674856674855,
         "wpWidth": 375,
         "wpHeight": 407,
         "hugoWidth": 375,
         "hugoHeight": 407,
-        "heightDelta": 0
+        "heightDelta": 0,
+        "styleDiffs": [
+          {
+            "element": "container",
+            "property": "margin-bottom",
+            "wp": "0px",
+            "hugo": "-5px"
+          }
+        ]
       }
     ]
   },
@@ -3524,7 +3468,7 @@
     "matchedSections": 3,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 14.084469992728538,
+    "avgDiffPercent": 14.089104980725798,
     "maxDiffPercent": 21.425879756992206,
     "sections": [
       {
@@ -3534,8 +3478,8 @@
         "heading": "Navigating the Future: Exploring Accessibility and Innovation",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 16.343155221193413,
-        "overlapDiffPercent": 16.343155221193413,
+        "diffPercent": 16.357060185185183,
+        "overlapDiffPercent": 16.357060185185183,
         "wpWidth": 1920,
         "wpHeight": 648,
         "hugoWidth": 1920,
@@ -3549,34 +3493,10 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "max-width",
             "wp": "100%",
             "hugo": "none"
-          },
-          {
-            "element": "heading",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -3623,12 +3543,6 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "padding-right",
             "wp": "4px",
@@ -3654,12 +3568,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -3675,7 +3583,7 @@
     "matchedSections": 3,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 25.84600686234064,
+    "avgDiffPercent": 26.588545965749308,
     "maxDiffPercent": 44.21523198132477,
     "sections": [
       {
@@ -3685,13 +3593,13 @@
         "heading": "Navigating the Future: Exploring Accessibility and Innovation",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 25.810144927536232,
-        "overlapDiffPercent": 20.014062499999998,
+        "diffPercent": 28.037762237762237,
+        "overlapDiffPercent": 19.6046875,
         "wpWidth": 375,
         "wpHeight": 512,
         "hugoWidth": 375,
-        "hugoHeight": 552,
-        "heightDelta": 40,
+        "hugoHeight": 572,
+        "heightDelta": 60,
         "styleDiffs": [
           {
             "element": "container",
@@ -3700,22 +3608,10 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "max-width",
             "wp": "100%",
             "hugo": "none"
-          },
-          {
-            "element": "heading",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "heading",
@@ -3731,21 +3627,9 @@
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "23px",
             "hugo": "26px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -3777,12 +3661,6 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "margin-bottom",
             "wp": "0px",
@@ -3793,12 +3671,6 @@
             "property": "line-height",
             "wp": "46px",
             "hugo": "40px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -3830,12 +3702,6 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "padding-right",
             "wp": "4px",
@@ -3858,12 +3724,6 @@
             "property": "color",
             "wp": "rgb(249, 250, 251)",
             "hugo": "rgb(0, 0, 0)"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -9592,8 +9452,8 @@
     "matchedSections": 10,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 33.08993907548778,
-    "maxDiffPercent": 68.70792577675489,
+    "avgDiffPercent": 14.385184299143194,
+    "maxDiffPercent": 54.08017852411235,
     "sections": [
       {
         "slug": "home",
@@ -9602,8 +9462,8 @@
         "heading": "Make all maps on your site usable to everyone",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 23.89680939580133,
-        "overlapDiffPercent": 23.544479809670783,
+        "diffPercent": 18.987295186891963,
+        "overlapDiffPercent": 18.612236368312757,
         "wpWidth": 1920,
         "wpHeight": 651,
         "hugoWidth": 1920,
@@ -9617,22 +9477,16 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
+            "element": "heading",
+            "property": "width",
+            "wp": "1229px",
+            "hugo": "999px"
           },
           {
             "element": "heading",
             "property": "max-width",
             "wp": "100%",
             "hugo": "none"
-          },
-          {
-            "element": "heading",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "firstParagraph",
@@ -9642,21 +9496,9 @@
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "26px",
             "hugo": "24px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -9688,22 +9530,10 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "max-width",
             "wp": "100%",
             "hugo": "none"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -9720,8 +9550,8 @@
         "heading": "Return on investment of an accessible map",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 10.40408744433025,
-        "overlapDiffPercent": 10.40408744433025,
+        "diffPercent": 9.166720195272353,
+        "overlapDiffPercent": 9.166720195272353,
         "wpWidth": 1920,
         "wpHeight": 973,
         "hugoWidth": 1920,
@@ -9735,16 +9565,16 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "margin-bottom",
             "wp": "0px",
             "hugo": "20px"
+          },
+          {
+            "element": "heading",
+            "property": "width",
+            "wp": "1044px",
+            "hugo": "962px"
           },
           {
             "element": "heading",
@@ -9766,21 +9596,9 @@
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "26px",
             "hugo": "24px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -9797,63 +9615,13 @@
         "heading": "Step One – Send us one feature layer",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 68.70792577675489,
-        "overlapDiffPercent": 4.250660211267605,
+        "diffPercent": 2.9395906690140845,
+        "overlapDiffPercent": 1.903358540925267,
         "wpWidth": 1920,
         "wpHeight": 284,
         "hugoWidth": 1920,
-        "hugoHeight": 869,
-        "heightDelta": 585,
-        "styleDiffs": [
-          {
-            "element": "container",
-            "property": "max-width",
-            "wp": "1920px",
-            "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "357px",
-            "hugo": "366px"
-          },
-          {
-            "element": "heading",
-            "property": "max-width",
-            "wp": "100%",
-            "hugo": "none"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "width",
-            "wp": "357px",
-            "hugo": "366px"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "line-height",
-            "wp": "26px",
-            "hugo": "24px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          }
-        ]
+        "hugoHeight": 281,
+        "heightDelta": -3
       },
       {
         "slug": "home",
@@ -9862,8 +9630,8 @@
         "heading": "A real deployment",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 7.199329821856801,
-        "overlapDiffPercent": 7.199329821856801,
+        "diffPercent": 7.091897910243233,
+        "overlapDiffPercent": 7.091897910243233,
         "wpWidth": 1920,
         "wpHeight": 973,
         "hugoWidth": 1920,
@@ -9877,16 +9645,16 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "margin-bottom",
             "wp": "0px",
             "hugo": "20px"
+          },
+          {
+            "element": "heading",
+            "property": "width",
+            "wp": "1044px",
+            "hugo": "409px"
           },
           {
             "element": "heading",
@@ -9902,27 +9670,27 @@
           },
           {
             "element": "firstParagraph",
+            "property": "margin-right",
+            "wp": "151px",
+            "hugo": "20px"
+          },
+          {
+            "element": "firstParagraph",
             "property": "margin-bottom",
             "wp": "26px",
             "hugo": "16px"
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
+            "property": "margin-left",
+            "wp": "151px",
+            "hugo": "20px"
           },
           {
             "element": "firstParagraph",
             "property": "line-height",
             "wp": "26px",
             "hugo": "24px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -9939,25 +9707,19 @@
         "heading": "Partners",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 56.73085854564756,
-        "overlapDiffPercent": 10.949838093008738,
+        "diffPercent": 23.591214107365793,
+        "overlapDiffPercent": 12.347386322950232,
         "wpWidth": 1920,
         "wpHeight": 1068,
         "hugoWidth": 1920,
-        "hugoHeight": 2198,
-        "heightDelta": 1130,
+        "hugoHeight": 931,
+        "heightDelta": -137,
         "styleDiffs": [
           {
             "element": "container",
             "property": "max-width",
             "wp": "1920px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -9985,12 +9747,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10004,25 +9760,19 @@
         "heading": "Meet Our Team",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 33.435695996275605,
-        "overlapDiffPercent": 7.635578165374677,
+        "diffPercent": 14.67062338501292,
+        "overlapDiffPercent": 9.626522304324029,
         "wpWidth": 1920,
         "wpHeight": 645,
         "hugoWidth": 1920,
-        "hugoHeight": 895,
-        "heightDelta": 250,
+        "hugoHeight": 609,
+        "heightDelta": -36,
         "styleDiffs": [
           {
             "element": "container",
             "property": "max-width",
             "wp": "1920px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -10035,12 +9785,6 @@
             "property": "line-height",
             "wp": "50px",
             "hugo": "40px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -10057,63 +9801,13 @@
         "heading": "CONTACT US",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 9.886556403731976,
-        "overlapDiffPercent": 8.489448751076658,
+        "diffPercent": 4.014525021204411,
+        "overlapDiffPercent": 2.526378122308355,
         "wpWidth": 1920,
         "wpHeight": 393,
         "hugoWidth": 1920,
         "hugoHeight": 387,
-        "heightDelta": -6,
-        "styleDiffs": [
-          {
-            "element": "container",
-            "property": "max-width",
-            "wp": "1920px",
-            "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "heading",
-            "property": "margin-bottom",
-            "wp": "0px",
-            "hugo": "20px"
-          },
-          {
-            "element": "heading",
-            "property": "max-width",
-            "wp": "100%",
-            "hugo": "none"
-          },
-          {
-            "element": "heading",
-            "property": "line-height",
-            "wp": "30px",
-            "hugo": "40px"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "margin-bottom",
-            "wp": "0px",
-            "hugo": "16px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          }
-        ]
+        "heightDelta": -6
       },
       {
         "slug": "home",
@@ -10122,39 +9816,13 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 33.26466480446928,
-        "overlapDiffPercent": 32.88974719101124,
+        "diffPercent": 4.931428460583488,
+        "overlapDiffPercent": 4.397335362047441,
         "wpWidth": 1920,
         "wpHeight": 537,
         "hugoWidth": 1920,
         "hugoHeight": 534,
-        "heightDelta": -3,
-        "styleDiffs": [
-          {
-            "element": "container",
-            "property": "max-width",
-            "wp": "1920px",
-            "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          }
-        ]
+        "heightDelta": -3
       },
       {
         "slug": "home",
@@ -10163,39 +9831,13 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 33.29328404189772,
-        "overlapDiffPercent": 33.29328404189772,
+        "diffPercent": 4.378369531731361,
+        "overlapDiffPercent": 4.378369531731361,
         "wpWidth": 1920,
         "wpHeight": 541,
         "hugoWidth": 1920,
         "hugoHeight": 541,
-        "heightDelta": 0,
-        "styleDiffs": [
-          {
-            "element": "container",
-            "property": "max-width",
-            "wp": "1920px",
-            "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          }
-        ]
+        "heightDelta": 0
       }
     ]
   },
@@ -10206,8 +9848,8 @@
     "matchedSections": 10,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 26.709171280456225,
-    "maxDiffPercent": 51.433998100664766,
+    "avgDiffPercent": 27.28743068399634,
+    "maxDiffPercent": 51.568939393939395,
     "sections": [
       {
         "slug": "home",
@@ -10216,13 +9858,13 @@
         "heading": "Make all maps on your site usable to everyone",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 39.706403940886695,
-        "overlapDiffPercent": 39.706403940886695,
+        "diffPercent": 38.41021956087825,
+        "overlapDiffPercent": 36.66568144499179,
         "wpWidth": 375,
         "wpHeight": 812,
         "hugoWidth": 375,
-        "hugoHeight": 812,
-        "heightDelta": 0,
+        "hugoHeight": 835,
+        "heightDelta": 23,
         "styleDiffs": [
           {
             "element": "container",
@@ -10255,12 +9897,6 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "heading",
             "property": "width",
             "wp": "338px",
@@ -10271,12 +9907,6 @@
             "property": "max-width",
             "wp": "100%",
             "hugo": "none"
-          },
-          {
-            "element": "heading",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "heading",
@@ -10295,12 +9925,6 @@
             "property": "width",
             "wp": "338px",
             "hugo": "346px"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "firstParagraph",
@@ -10334,12 +9958,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10353,13 +9971,13 @@
         "heading": "Media player",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 20,
-        "overlapDiffPercent": 0,
+        "diffPercent": 20.717184265010353,
+        "overlapDiffPercent": 0.27708333333333335,
         "wpWidth": 375,
         "wpHeight": 128,
         "hugoWidth": 375,
-        "hugoHeight": 160,
-        "heightDelta": 32,
+        "hugoHeight": 161,
+        "heightDelta": 33,
         "styleDiffs": [
           {
             "element": "container",
@@ -10390,12 +10008,6 @@
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -10435,12 +10047,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10454,13 +10060,13 @@
         "heading": "Return on investment of an accessible map",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 25.953971083382847,
-        "overlapDiffPercent": 23.405367752509733,
+        "diffPercent": 29.998965262379897,
+        "overlapDiffPercent": 22.383609916000818,
         "wpWidth": 375,
         "wpHeight": 1627,
         "hugoWidth": 375,
-        "hugoHeight": 1683,
-        "heightDelta": 56,
+        "hugoHeight": 1804,
+        "heightDelta": 177,
         "styleDiffs": [
           {
             "element": "container",
@@ -10491,12 +10097,6 @@
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -10530,12 +10130,6 @@
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "23px",
             "hugo": "24px"
@@ -10566,12 +10160,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10585,13 +10173,13 @@
         "heading": "Step One – Send us one feature layer",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 35.80239162929746,
-        "overlapDiffPercent": 12.036456733230928,
+        "diffPercent": 38.043967060508415,
+        "overlapDiffPercent": 11.39621095750128,
         "wpWidth": 375,
         "wpHeight": 651,
         "hugoWidth": 375,
-        "hugoHeight": 892,
-        "heightDelta": 241,
+        "hugoHeight": 931,
+        "heightDelta": 280,
         "styleDiffs": [
           {
             "element": "container",
@@ -10622,12 +10210,6 @@
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -10697,12 +10279,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10716,13 +10292,13 @@
         "heading": "A real deployment",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 18.576579006518315,
-        "overlapDiffPercent": 18.1349604519774,
+        "diffPercent": 28.136620565243536,
+        "overlapDiffPercent": 18.977084745762713,
         "wpWidth": 375,
         "wpHeight": 1475,
         "hugoWidth": 375,
-        "hugoHeight": 1483,
-        "heightDelta": 8,
+        "hugoHeight": 1663,
+        "heightDelta": 188,
         "styleDiffs": [
           {
             "element": "container",
@@ -10753,12 +10329,6 @@
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -10792,12 +10362,6 @@
           },
           {
             "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "23px",
             "hugo": "24px"
@@ -10828,12 +10392,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10847,8 +10405,8 @@
         "heading": "Partners",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 20.175749440715883,
-        "overlapDiffPercent": 14.617276860492941,
+        "diffPercent": 20.256107382550336,
+        "overlapDiffPercent": 14.703230437903805,
         "wpWidth": 375,
         "wpHeight": 1393,
         "hugoWidth": 375,
@@ -10884,12 +10442,6 @@
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -10959,12 +10511,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10978,13 +10524,13 @@
         "heading": "Meet Our Team",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 28.492816948030452,
-        "overlapDiffPercent": 24.20238596491228,
+        "diffPercent": 24.192254220456803,
+        "overlapDiffPercent": 22.024106230847803,
         "wpWidth": 375,
         "wpHeight": 1007,
         "hugoWidth": 375,
-        "hugoHeight": 950,
-        "heightDelta": -57,
+        "hugoHeight": 979,
+        "heightDelta": -28,
         "styleDiffs": [
           {
             "element": "container",
@@ -11015,12 +10561,6 @@
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -11084,12 +10624,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -11103,13 +10637,13 @@
         "heading": "CONTACT US",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 51.433998100664766,
-        "overlapDiffPercent": 9.80599647266314,
+        "diffPercent": 51.568939393939395,
+        "overlapDiffPercent": 9.800352733686067,
         "wpWidth": 375,
         "wpHeight": 189,
         "hugoWidth": 375,
-        "hugoHeight": 351,
-        "heightDelta": 162,
+        "hugoHeight": 352,
+        "heightDelta": 163,
         "styleDiffs": [
           {
             "element": "container",
@@ -11128,12 +10662,6 @@
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "heading",
@@ -11221,12 +10749,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -11240,8 +10762,8 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 16.709671614934773,
-        "overlapDiffPercent": 15.570269037847698,
+        "diffPercent": 14.781826360773731,
+        "overlapDiffPercent": 13.616051071591428,
         "wpWidth": 375,
         "wpHeight": 741,
         "hugoWidth": 375,
@@ -11267,12 +10789,6 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "innerWrapper",
             "property": "padding-right",
             "wp": "0px",
@@ -11292,12 +10808,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -11311,8 +10821,8 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 10.24013104013104,
-        "overlapDiffPercent": 10.24013104013104,
+        "diffPercent": 6.768222768222769,
+        "overlapDiffPercent": 6.768222768222769,
         "wpWidth": 375,
         "wpHeight": 407,
         "hugoWidth": 375,
@@ -11350,12 +10860,6 @@
             "hugo": "100%"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
             "element": "innerWrapper",
             "property": "padding-right",
             "wp": "0px",
@@ -11378,12 +10882,6 @@
             "property": "max-width",
             "wp": "min(100%, 767px)",
             "hugo": "100%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
