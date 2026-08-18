@@ -6847,3 +6847,20 @@ body.single-post .ast-related-post-link {
     line-height: 31.25px;
   }
 }
+
+/* ---- Tables: WP core table block (wp-includes/blocks/table/style.min.css
+   subset) + Astra table rules (main.min.css). Astra draws bare-table borders
+   with --ast-border-color = global color 6. ---- */
+:root{--ast-border-color:var(--ast-global-color-6,#e2e8f0)}
+table,td,th{border:1px solid var(--ast-border-color)}
+td,th{padding:.7em 1em;border-width:0 1px 1px 0}
+.entry-content table{border-collapse:collapse;margin:0 0 24px}
+.entry-content[data-ast-blocks-layout]>table{max-width:1200px;margin-left:auto;margin-right:auto}
+.entry-content th{font-weight:600}
+.wp-block-table{overflow-x:auto;max-width:1200px;margin-left:auto;margin-right:auto;margin-bottom:16px}
+.wp-block-table table{border-collapse:collapse;width:100%}
+.wp-block-table thead{border-bottom:3px solid}
+.wp-block-table tfoot{border-top:3px solid}
+.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}
+.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}
+.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}

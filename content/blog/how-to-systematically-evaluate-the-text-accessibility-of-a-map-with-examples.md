@@ -6,6 +6,8 @@ slug: "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examp
 url: /how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples/
 type: "audiom-embed"
 audiom_id: 13
+featured_image: "/images/111.png"
+featured_image_alt: "A map of COVID-19 statistic cases over the U.S. For more details of the map, visit: audiom.net/levelaccess."
 draft: false
 ---
 
@@ -41,47 +43,53 @@ A map of the U.S. with each state colored to show the amount of COVID-19 cases p
 
 #### Simple table
 
-COVID-19 Example Simple Table
-
-Name
-
-Total Cases
-
-Washington
-
-1975382
-
-Minnesota
-
-1817565
-
-Oregon
-
-974924
-
-Nevada
-
-904558
-
-Idaho
-
-525825
-
-Wyoming
-
-187858
-
-Virginia
-
-2315784
-
-Massachusetts
-
-2257300
-
-Utah
-
-1101767
+<table style="width: 100%; border-collapse: collapse;">
+    <caption style="caption-side: top; font-weight: bold; margin-bottom: 10px;">COVID-19 Example Simple Table</caption>
+    <thead>
+        <tr>
+            <th scope="col" style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; text-align: left;">Name</th>
+            <th scope="col" style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; text-align: left;">Total Cases</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Washington</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">1975382</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Minnesota</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">1817565</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Oregon</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">974924</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Nevada</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">904558</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Idaho</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">525825</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Wyoming</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">187858</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Virginia</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">2315784</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Massachusetts</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">2257300</td>
+        </tr>
+        <tr>
+            <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: left">Utah</th>
+            <td style="border: 1px solid #ddd; padding: 8px;">1101767</td>
+        </tr>
+    </tbody>
+</table>
 
 ##### Evaluation of a Simple Table
 

@@ -4,6 +4,8 @@ date: 2024-08-02
 lastmod: 2025-11-01
 slug: "how-to-make-detailed-map-text-descriptions"
 url: /how-to-make-detailed-map-text-descriptions/
+featured_image: "/images/0df4becc-a5db-45ff-9aaa-3c3dfaa8acc0.jpg"
+featured_image_alt: "A human hand writing text labels of objects on a floor plan of a building. The left side contains the floor plan of the building and the right side depicts the transformation of the floor plan into text."
 draft: false
 ---
 

@@ -4,6 +4,8 @@ date: 2024-07-18
 lastmod: 2024-07-18
 slug: "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business"
 url: /the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business/
+featured_image: "/images/DALL%25C2%25B7E-2024-02-19-15.21.24-Create-a-photo-realistic-image-depicting-a-magnifying-glass-placed-over-a-document-with-the-magnifying-glass-specifically-highlighting-the-title-Acc-1.png"
+featured_image_alt: "A person shopping in a store, looking at a CD or software. The setting should be a modern retail environment with shelves and products visible in the background. The person should appear to be considering their purchase, with a focused expression on their face."
 draft: false
 ---
 

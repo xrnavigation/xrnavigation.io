@@ -4404,8 +4404,8 @@
     "matchedSections": 3,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 22.11865764815302,
-    "maxDiffPercent": 45.531416617298575,
+    "avgDiffPercent": 22.275452754129855,
+    "maxDiffPercent": 46.00180193522907,
     "sections": [
       {
         "slug": "blog",
@@ -4578,8 +4578,8 @@
         "heading": "List of Non-Visual Drawing Tools",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 45.531416617298575,
-        "overlapDiffPercent": 36.76549604539202,
+        "diffPercent": 46.00180193522907,
+        "overlapDiffPercent": 37.31158298945438,
         "wpWidth": 1920,
         "wpHeight": 1454,
         "hugoWidth": 1920,
@@ -4759,8 +4759,8 @@
     "matchedSections": 3,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 37.28052977460168,
-    "maxDiffPercent": 64.65682326621923,
+    "avgDiffPercent": 39.41962130266317,
+    "maxDiffPercent": 71.07409785040367,
     "sections": [
       {
         "slug": "blog",
@@ -4905,13 +4905,13 @@
         "heading": "List of Non-Visual Drawing Tools",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 64.65682326621923,
-        "overlapDiffPercent": 62.031013584117034,
+        "diffPercent": 71.07409785040367,
+        "overlapDiffPercent": 69.137899543379,
         "wpWidth": 375,
         "wpHeight": 3427,
         "hugoWidth": 375,
-        "hugoHeight": 3190,
-        "heightDelta": -237,
+        "hugoHeight": 3212,
+        "heightDelta": -215,
         "styleDiffs": [
           {
             "element": "container",
@@ -8144,8 +8144,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 70.53875676195649,
-    "maxDiffPercent": 70.53875676195649,
+    "avgDiffPercent": 15.088300071916576,
+    "maxDiffPercent": 15.088300071916576,
     "sections": [
       {
         "slug": "digital-map-tool-accessibility-comparison",
@@ -8154,13 +8154,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 70.53875676195649,
-        "overlapDiffPercent": 6.391428443006113,
+        "diffPercent": 15.088300071916576,
+        "overlapDiffPercent": 7.776044717828549,
         "wpWidth": 1440,
         "wpHeight": 3090,
         "hugoWidth": 1440,
-        "hugoHeight": 9818,
-        "heightDelta": 6728
+        "hugoHeight": 2845,
+        "heightDelta": -245
       }
     ]
   },
@@ -8171,8 +8171,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 67.12202962834169,
-    "maxDiffPercent": 67.12202962834169,
+    "avgDiffPercent": 9.710062623849536,
+    "maxDiffPercent": 9.710062623849536,
     "sections": [
       {
         "slug": "digital-map-tool-accessibility-comparison",
@@ -8181,13 +8181,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 67.12202962834169,
-        "overlapDiffPercent": 7.631767664869808,
+        "diffPercent": 9.710062623849536,
+        "overlapDiffPercent": 9.392884857891163,
         "wpWidth": 338,
         "wpHeight": 3416,
         "hugoWidth": 338,
-        "hugoHeight": 9597,
-        "heightDelta": 6181
+        "hugoHeight": 3428,
+        "heightDelta": 12
       }
     ]
   },
@@ -8522,8 +8522,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 5.216429412579662,
-    "maxDiffPercent": 5.216429412579662,
+    "avgDiffPercent": 4.734958757884522,
+    "maxDiffPercent": 4.734958757884522,
     "sections": [
       {
         "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
@@ -8532,13 +8532,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 5.216429412579662,
-        "overlapDiffPercent": 2.417941449151334,
+        "diffPercent": 4.734958757884522,
+        "overlapDiffPercent": 1.9834010840108403,
         "wpWidth": 1440,
         "wpHeight": 1558,
         "hugoWidth": 1440,
-        "hugoHeight": 1604,
-        "heightDelta": 46
+        "hugoHeight": 1603,
+        "heightDelta": 45
       }
     ]
   },
@@ -8549,8 +8549,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 18.28052474931793,
-    "maxDiffPercent": 18.28052474931793,
+    "avgDiffPercent": 16.932026876444123,
+    "maxDiffPercent": 16.932026876444123,
     "sections": [
       {
         "slug": "five-ways-the-recent-nfb-digital-map-resolution-impacts-colleges-universities-and-federal-agencies",
@@ -8559,13 +8559,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 18.28052474931793,
-        "overlapDiffPercent": 16.27513885359567,
+        "diffPercent": 16.932026876444123,
+        "overlapDiffPercent": 14.925400225069883,
         "wpWidth": 338,
         "wpHeight": 2608,
         "hugoWidth": 338,
-        "hugoHeight": 2672,
-        "heightDelta": 64
+        "hugoHeight": 2671,
+        "heightDelta": 63
       }
     ]
   },
@@ -12618,8 +12618,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 7.809086937527304,
-    "maxDiffPercent": 7.809086937527304,
+    "avgDiffPercent": 7.6145719489981785,
+    "maxDiffPercent": 7.6145719489981785,
     "sections": [
       {
         "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
@@ -12628,13 +12628,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 7.809086937527304,
-        "overlapDiffPercent": 5.007877560207067,
+        "diffPercent": 7.6145719489981785,
+        "overlapDiffPercent": 4.869832695626078,
         "wpWidth": 1440,
         "wpHeight": 1481,
         "hugoWidth": 1440,
-        "hugoHeight": 1526,
-        "heightDelta": 45
+        "hugoHeight": 1525,
+        "heightDelta": 44
       }
     ]
   },
@@ -12645,8 +12645,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 14.995628650710184,
-    "maxDiffPercent": 14.995628650710184,
+    "avgDiffPercent": 14.094831738691735,
+    "maxDiffPercent": 14.094831738691735,
     "sections": [
       {
         "slug": "how-to-convert-from-a-pdf-map-to-a-vector-data-map",
@@ -12655,13 +12655,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 14.995628650710184,
-        "overlapDiffPercent": 13.739588396092255,
+        "diffPercent": 14.094831738691735,
+        "overlapDiffPercent": 12.862814983966322,
         "wpWidth": 338,
         "wpHeight": 2301,
         "hugoWidth": 338,
-        "hugoHeight": 2335,
-        "heightDelta": 34
+        "hugoHeight": 2334,
+        "heightDelta": 33
       }
     ]
   },
@@ -12726,8 +12726,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 7.656063507924612,
-    "maxDiffPercent": 7.656063507924612,
+    "avgDiffPercent": 7.6185916118466706,
+    "maxDiffPercent": 7.6185916118466706,
     "sections": [
       {
         "slug": "how-to-make-detailed-map-text-descriptions",
@@ -12736,8 +12736,8 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 7.656063507924612,
-        "overlapDiffPercent": 5.24153350992623,
+        "diffPercent": 7.6185916118466706,
+        "overlapDiffPercent": 5.203081830869578,
         "wpWidth": 1440,
         "wpHeight": 3901,
         "hugoWidth": 1440,
@@ -12753,8 +12753,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 13.868595592802489,
-    "maxDiffPercent": 13.868595592802489,
+    "avgDiffPercent": 13.031166785432998,
+    "maxDiffPercent": 13.031166785432998,
     "sections": [
       {
         "slug": "how-to-make-detailed-map-text-descriptions",
@@ -12763,13 +12763,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 13.868595592802489,
-        "overlapDiffPercent": 13.404237424947969,
+        "diffPercent": 13.031166785432998,
+        "overlapDiffPercent": 12.576502079851206,
         "wpWidth": 338,
         "wpHeight": 6121,
         "hugoWidth": 338,
-        "hugoHeight": 6154,
-        "heightDelta": 33
+        "hugoHeight": 6153,
+        "heightDelta": 32
       }
     ]
   },
@@ -12780,8 +12780,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 12.521080590562422,
-    "maxDiffPercent": 12.521080590562422,
+    "avgDiffPercent": 7.401759753504318,
+    "maxDiffPercent": 7.401759753504318,
     "sections": [
       {
         "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
@@ -12790,13 +12790,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 12.521080590562422,
-        "overlapDiffPercent": 4.556773683976327,
+        "diffPercent": 7.401759753504318,
+        "overlapDiffPercent": 5.053119298714012,
         "wpWidth": 1440,
         "wpHeight": 7491,
         "hugoWidth": 1440,
-        "hugoHeight": 8173,
-        "heightDelta": 682
+        "hugoHeight": 7681,
+        "heightDelta": 190
       }
     ]
   },
@@ -12807,8 +12807,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 17.524744043911554,
-    "maxDiffPercent": 17.524744043911554,
+    "avgDiffPercent": 16.099718216177173,
+    "maxDiffPercent": 16.099718216177173,
     "sections": [
       {
         "slug": "how-to-systematically-evaluate-the-text-accessibility-of-a-map-with-examples",
@@ -12817,13 +12817,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 17.524744043911554,
-        "overlapDiffPercent": 12.333993669052841,
+        "diffPercent": 16.099718216177173,
+        "overlapDiffPercent": 13.356824388629121,
         "wpWidth": 338,
         "wpHeight": 11440,
         "hugoWidth": 338,
-        "hugoHeight": 12160,
-        "heightDelta": 720
+        "hugoHeight": 11814,
+        "heightDelta": 374
       }
     ]
   },
@@ -14170,8 +14170,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 36.252955805609915,
-    "maxDiffPercent": 36.252955805609915,
+    "avgDiffPercent": 18.509812902509438,
+    "maxDiffPercent": 18.509812902509438,
     "sections": [
       {
         "slug": "table-vs-map-example",
@@ -14180,13 +14180,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 36.252955805609915,
-        "overlapDiffPercent": 6.528724294595888,
+        "diffPercent": 18.509812902509438,
+        "overlapDiffPercent": 12.254827235772357,
         "wpWidth": 1920,
         "wpHeight": 1394,
         "hugoWidth": 1920,
-        "hugoHeight": 2044,
-        "heightDelta": 650
+        "hugoHeight": 1501,
+        "heightDelta": 107
       }
     ]
   },
@@ -14197,8 +14197,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 35.056602463994444,
-    "maxDiffPercent": 35.056602463994444,
+    "avgDiffPercent": 16.88016586040083,
+    "maxDiffPercent": 16.88016586040083,
     "sections": [
       {
         "slug": "table-vs-map-example",
@@ -14207,13 +14207,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 35.056602463994444,
-        "overlapDiffPercent": 6.689404138618799,
+        "diffPercent": 16.88016586040083,
+        "overlapDiffPercent": 10.041585639491398,
         "wpWidth": 375,
         "wpHeight": 1337,
         "hugoWidth": 375,
-        "hugoHeight": 1921,
-        "heightDelta": 584
+        "hugoHeight": 1447,
+        "heightDelta": 110
       }
     ]
   },
@@ -14224,8 +14224,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 6.438483547925608,
-    "maxDiffPercent": 6.438483547925608,
+    "avgDiffPercent": 16.063658318034793,
+    "maxDiffPercent": 16.063658318034793,
     "sections": [
       {
         "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
@@ -14234,13 +14234,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 6.438483547925608,
-        "overlapDiffPercent": 5.628427128427129,
+        "diffPercent": 16.063658318034793,
+        "overlapDiffPercent": 7.633688071188072,
         "wpWidth": 1440,
         "wpHeight": 2310,
         "hugoWidth": 1440,
-        "hugoHeight": 2330,
-        "heightDelta": 20
+        "hugoHeight": 2542,
+        "heightDelta": 232
       }
     ]
   },
@@ -14251,8 +14251,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 11.9149122067029,
-    "maxDiffPercent": 11.9149122067029,
+    "avgDiffPercent": 27.689591231737708,
+    "maxDiffPercent": 27.689591231737708,
     "sections": [
       {
         "slug": "the-first-three-questions-to-ask-before-considering-any-digital-system-for-your-business",
@@ -14261,13 +14261,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 11.9149122067029,
-        "overlapDiffPercent": 11.847586024950061,
+        "diffPercent": 27.689591231737708,
+        "overlapDiffPercent": 16.930539328383524,
         "wpWidth": 338,
         "wpHeight": 3925,
         "hugoWidth": 338,
-        "hugoHeight": 3928,
-        "heightDelta": 3
+        "hugoHeight": 4509,
+        "heightDelta": 584
       }
     ]
   },
@@ -16001,8 +16001,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 53.45105421686747,
-    "maxDiffPercent": 53.45105421686747,
+    "avgDiffPercent": 9.132598039215686,
+    "maxDiffPercent": 9.132598039215686,
     "sections": [
       {
         "slug": "wcag-map-comparison-table",
@@ -16011,13 +16011,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 53.45105421686747,
-        "overlapDiffPercent": 11.790810502283106,
+        "diffPercent": 9.132598039215686,
+        "overlapDiffPercent": 6.9430220883534135,
         "wpWidth": 1920,
         "wpHeight": 415,
         "hugoWidth": 1920,
-        "hugoHeight": 219,
-        "heightDelta": -196
+        "hugoHeight": 425,
+        "heightDelta": 10
       }
     ]
   },
@@ -16028,8 +16028,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 51.89031705227078,
-    "maxDiffPercent": 51.89031705227078,
+    "avgDiffPercent": 12.598503740648379,
+    "maxDiffPercent": 12.598503740648379,
     "sections": [
       {
         "slug": "wcag-map-comparison-table",
@@ -16038,13 +16038,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 51.89031705227078,
-        "overlapDiffPercent": 14.152905198776757,
+        "diffPercent": 12.598503740648379,
+        "overlapDiffPercent": 9.902313624678664,
         "wpWidth": 375,
         "wpHeight": 389,
         "hugoWidth": 375,
-        "hugoHeight": 218,
-        "heightDelta": -171
+        "hugoHeight": 401,
+        "heightDelta": 12
       }
     ]
   },

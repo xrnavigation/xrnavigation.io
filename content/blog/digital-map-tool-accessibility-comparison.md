@@ -5,6 +5,8 @@ lastmod: 2025-05-21
 slug: "digital-map-tool-accessibility-comparison"
 aliases:
   - /digital-map-tool-accessibility-comparison/
+featured_image: "/images/e56a3e66-b3e7-4095-bbf2-489b8e0f0e7d.jpg"
+featured_image_alt: "Two cartoon-style maps with legs standing back to back. One map is noticeably shorter than the other. The taller map looks confident, while the shorter one appears slightly shy. Both maps have simple, expressive faces, with a light background highlighting the characters."
 draft: false
 ---
 
@@ -16,313 +18,199 @@ Understanding the accessibility of digital map tools is essential for creating i
 
 [Download the table from Google Sheets (Opens a new tab)](https://docs.google.com/spreadsheets/d/1D3IfrSR1aKuUUiFq5TCfGnuQ4tLR75Y5q2Ai38OTHCQ/edit?usp=sharing)
 
-Web map tool
-
-Total
-
-Level A
-
-Level AA
-
-Level AAA
-
-% Accessibility Attainment
-
-Failed
-
-Applicable
-
-Failed
-
-Applicable
-
-Failed
-
-Applicable
-
-Failed
-
-Applicable
-
-**Audiom**
-
-**100.00%**
-
-**0**
-
-**14**
-
-**0**
-
-**9**
-
-**0**
-
-**3**
-
-**0**
-
-**2**
-
-Bing Maps embed
-
-57.00%
-
-6
-
-14
-
-3
-
-9
-
-1
-
-3
-
-2
-
-2
-
-MapBox Studio embed
-
-50.00%
-
-7
-
-14
-
-4
-
-9
-
-1
-
-3
-
-2
-
-2
-
-Concept 3D
-
-50.00%
-
-7
-
-14
-
-4
-
-9
-
-1
-
-3
-
-2
-
-2
-
-Leaflet JS API
-
-46.00%
-
-7
-
-13
-
-3
-
-8
-
-3
-
-3
-
-1
-
-2
-
-Bing Maps Control API
-
-38.00%
-
-8
-
-13
-
-4
-
-8
-
-2
-
-3
-
-2
-
-2
-
-MapBox GL JS API
-
-38.00%
-
-8
-
-13
-
-4
-
-8
-
-2
-
-3
-
-2
-
-2
-
-OpenStreetMap embed
-
-36.00%
-
-9
-
-14
-
-4
-
-9
-
-3
-
-3
-
-2
-
-2
-
-OpenLayers API
-
-31.00%
-
-9
-
-13
-
-5
-
-8
-
-2
-
-3
-
-2
-
-2
-
-ESRI
-
-29.00%
-
-10
-
-14
-
-5
-
-9
-
-3
-
-3
-
-2
-
-2
-
-MapKit JS (Apple Maps) API
-
-25.00%
-
-9
-
-12
-
-5
-
-7
-
-2
-
-3
-
-2
-
-2
-
-TomTom Maps SDK for Web
-
-23.00%
-
-10
-
-13
-
-6
-
-8
-
-3
-
-3
-
-1
-
-2
-
-Google Maps Platform API
-
-15.00%
-
-11
-
-13
-
-7
-
-8
-
-2
-
-3
-
-2
-
-2
-
-Google Maps embed
-
-8.00%
-
-12
-
-13
-
-7
-
-8
-
-3
-
-3
-
-2
-
-2
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th rowspan="2">Web map tool</th>
+            <th></th>
+            <th colspan="2">Total</th>
+            <th colspan="2">Level A</th>
+            <th colspan="2">Level AA</th>
+            <th colspan="2">Level AAA</th>
+        </tr>
+        <tr>
+            <th>% Accessibility Attainment</th>
+            <th>Failed</th>
+            <th>Applicable</th>
+            <th>Failed</th>
+            <th>Applicable</th>
+            <th>Failed</th>
+            <th>Applicable</th>
+            <th>Failed</th>
+            <th>Applicable</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th><strong>Audiom</strong></th>
+            <td><strong>100.00%</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>14</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>9</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>3</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr>
+            <th>Bing Maps embed</th>
+            <td>57.00%</td>
+            <td>6</td>
+            <td>14</td>
+            <td>3</td>
+            <td>9</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>MapBox Studio embed</th>
+            <td>50.00%</td>
+            <td>7</td>
+            <td>14</td>
+            <td>4</td>
+            <td>9</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Concept 3D</th>
+            <td>50.00%</td>
+            <td>7</td>
+            <td>14</td>
+            <td>4</td>
+            <td>9</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Leaflet JS API</th>
+            <td>46.00%</td>
+            <td>7</td>
+            <td>13</td>
+            <td>3</td>
+            <td>8</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Bing Maps Control API</th>
+            <td>38.00%</td>
+            <td>8</td>
+            <td>13</td>
+            <td>4</td>
+            <td>8</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>MapBox GL JS API</th>
+            <td>38.00%</td>
+            <td>8</td>
+            <td>13</td>
+            <td>4</td>
+            <td>8</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>OpenStreetMap embed</th>
+            <td>36.00%</td>
+            <td>9</td>
+            <td>14</td>
+            <td>4</td>
+            <td>9</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>OpenLayers API</th>
+            <td>31.00%</td>
+            <td>9</td>
+            <td>13</td>
+            <td>5</td>
+            <td>8</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>ESRI</th>
+            <td>29.00%</td>
+            <td>10</td>
+            <td>14</td>
+            <td>5</td>
+            <td>9</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>MapKit JS (Apple Maps) API</th>
+            <td>25.00%</td>
+            <td>9</td>
+            <td>12</td>
+            <td>5</td>
+            <td>7</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>TomTom Maps SDK for Web</th>
+            <td>23.00%</td>
+            <td>10</td>
+            <td>13</td>
+            <td>6</td>
+            <td>8</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Google Maps Platform API</th>
+            <td>15.00%</td>
+            <td>11</td>
+            <td>13</td>
+            <td>7</td>
+            <td>8</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Google Maps embed</th>
+            <td>8.00%</td>
+            <td>12</td>
+            <td>13</td>
+            <td>7</td>
+            <td>8</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Sources
 

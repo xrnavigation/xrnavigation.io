@@ -4,6 +4,8 @@ date: 2024-08-17
 lastmod: 2024-10-03
 slug: "how-to-convert-from-a-pdf-map-to-a-vector-data-map"
 url: /how-to-convert-from-a-pdf-map-to-a-vector-data-map/
+featured_image: "/images/36852239-2abb-472b-81b9-e69415c64252.jpg"
+featured_image_alt: "The man who draws a map on paper."
 draft: false
 ---
 
