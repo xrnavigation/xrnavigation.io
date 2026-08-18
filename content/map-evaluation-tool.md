@@ -17,7 +17,7 @@ draft: false
 
 <div class="wp-block-uagb-container alignfull uagb-is-root-container map-eval-hero" style="background-image: url('/images/map-eval-hero.webp'); background-size: cover; background-position: 62% 12%; background-repeat: no-repeat; background-attachment: fixed; padding: 100px 10px; display: flex; gap: 20px;">
 <div class="uagb-container-inner-blocks-wrap" style="max-width: 70%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; width: 100%;">
-<div class="wp-block-uagb-container" style="padding: 10px;">
+<div class="wp-block-uagb-container" style="padding: 10px; flex-direction: column; align-items: center;">
 <div class="wp-block-uagb-advanced-heading" style="text-align: center;">
 <h1 class="uagb-heading-text" style="color: rgb(249, 250, 251); margin-bottom: 0; font-size: 2.5em;">Introduction</h1>
 </div>
