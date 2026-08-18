@@ -506,7 +506,7 @@ nav#ast-hf-menu-1 .main-header-menu {
 h1.uagb-heading-text {
   font-size: 40px;
   font-weight: 800;
-  line-height: 56px;
+  line-height: 1.4em;
   margin-bottom: 20px;
 }
 
@@ -596,7 +596,6 @@ h6.uagb-heading-text {
 
 .uagb-buttons__wrap.uagb-buttons-layout-wrap {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -650,7 +649,7 @@ h6.uagb-heading-text {
 h1.wp-block-heading {
   font-size: 40px;
   font-weight: 800;
-  line-height: 56px;
+  line-height: 1.4em;
   margin-bottom: 20px;
 }
 
@@ -10424,3 +10423,24 @@ body.home-page /* ---- Blog page sections: live UAGB block CSS (hero 450c520f, h
 .uagb-block-041eade5.wp-block-uagb-image .wp-block-uagb-image__figure img{width: 1024px;height: auto;}
 .uagb-block-041eade5.wp-block-uagb-image{margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;}
 }
+
+/* ---- UAGB buttons base rules (uploads/uag-plugin/custom-style-blocks.css). ---- */
+
+.uagb-buttons__outer-wrap .uagb-buttons__wrap{display:inline-flex;width:100%}
+.uagb-buttons__outer-wrap.uagb-btn__small-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn__small-btn .uagb-buttons-repeater.ast-outline-button{padding:5px 10px}
+.uagb-buttons__outer-wrap.uagb-btn__medium-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn__medium-btn .uagb-buttons-repeater.ast-outline-button{padding:12px 24px}
+.uagb-buttons__outer-wrap.uagb-btn__large-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn__large-btn .uagb-buttons-repeater.ast-outline-button{padding:20px 30px}
+.uagb-buttons__outer-wrap.uagb-btn__extralarge-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn__extralarge-btn .uagb-buttons-repeater.ast-outline-button{padding:30px 65px}
+.uagb-buttons__outer-wrap.uagb-btn-tablet__small-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-tablet__small-btn .uagb-buttons-repeater.ast-outline-button{padding:5px 10px}
+.uagb-buttons__outer-wrap.uagb-btn-tablet__medium-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-tablet__medium-btn .uagb-buttons-repeater.ast-outline-button{padding:12px 24px}
+.uagb-buttons__outer-wrap.uagb-btn-tablet__large-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-tablet__large-btn .uagb-buttons-repeater.ast-outline-button{padding:20px 30px}
+.uagb-buttons__outer-wrap.uagb-btn-tablet__extralarge-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-tablet__extralarge-btn .uagb-buttons-repeater.ast-outline-button{padding:30px 65px}
+.uagb-buttons__outer-wrap.uagb-btn-mobile__small-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-mobile__small-btn .uagb-buttons-repeater.ast-outline-button{padding:5px 10px}
+.uagb-buttons__outer-wrap.uagb-btn-mobile__medium-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-mobile__medium-btn .uagb-buttons-repeater.ast-outline-button{padding:12px 24px}
+.uagb-buttons__outer-wrap.uagb-btn-mobile__large-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-mobile__large-btn .uagb-buttons-repeater.ast-outline-button{padding:20px 30px}
+.uagb-buttons__outer-wrap.uagb-btn-mobile__extralarge-btn .uagb-buttons-repeater.wp-block-button__link:not(.is-style-outline),.uagb-buttons__outer-wrap.uagb-btn-mobile__extralarge-btn .uagb-buttons-repeater.ast-outline-button{padding:30px 65px}
+
+.uagb-buttons__outer-wrap .uagb-buttons-repeater{display:flex;justify-content:center;align-items:center;transition:box-shadow 0.2s ease}
+.uagb-buttons__outer-wrap .uagb-buttons-repeater a.uagb-button__link{display:flex;justify-content:center}
+.uagb-buttons__outer-wrap .uagb-buttons-repeater .uagb-button__icon{font-size:inherit;display:flex;align-items:center}
+.uagb-buttons__outer-wrap .uagb-buttons-repeater .uagb-button__icon svg{fill:currentColor;width:inherit;height:inherit}

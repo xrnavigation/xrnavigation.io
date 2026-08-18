@@ -9460,8 +9460,8 @@
     "matchedSections": 10,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 27.28743068399634,
-    "maxDiffPercent": 51.568939393939395,
+    "avgDiffPercent": 14.697736486328685,
+    "maxDiffPercent": 35.70377668308703,
     "sections": [
       {
         "slug": "home",
@@ -9470,38 +9470,14 @@
         "heading": "Make all maps on your site usable to everyone",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 38.41021956087825,
-        "overlapDiffPercent": 36.66568144499179,
+        "diffPercent": 35.70377668308703,
+        "overlapDiffPercent": 35.70377668308703,
         "wpWidth": 375,
         "wpHeight": 812,
         "hugoWidth": 375,
-        "hugoHeight": 835,
-        "heightDelta": 23,
+        "hugoHeight": 812,
+        "heightDelta": 0,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "94px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "19px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "94px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "19px",
-            "hugo": "0px"
-          },
           {
             "element": "container",
             "property": "max-width",
@@ -9510,21 +9486,9 @@
           },
           {
             "element": "heading",
-            "property": "width",
-            "wp": "338px",
-            "hugo": "346px"
-          },
-          {
-            "element": "heading",
             "property": "max-width",
             "wp": "100%",
             "hugo": "none"
-          },
-          {
-            "element": "heading",
-            "property": "line-height",
-            "wp": "42px",
-            "hugo": "56px"
           },
           {
             "element": "firstParagraph",
@@ -9534,39 +9498,9 @@
           },
           {
             "element": "firstParagraph",
-            "property": "width",
-            "wp": "338px",
-            "hugo": "346px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "23px",
             "hugo": "24px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "338px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 767px)",
-            "hugo": "100%"
           },
           {
             "element": "innerWrapper",
@@ -9583,87 +9517,13 @@
         "heading": "Media player",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 20.717184265010353,
-        "overlapDiffPercent": 0.27708333333333335,
+        "diffPercent": 0,
+        "overlapDiffPercent": 0,
         "wpWidth": 375,
         "wpHeight": 128,
         "hugoWidth": 375,
-        "hugoHeight": 161,
-        "heightDelta": 33,
-        "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "64px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "24px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "64px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "24px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "max-width",
-            "wp": "375px",
-            "hugo": "100%"
-          },
-          {
-            "element": "heading",
-            "property": "max-width",
-            "wp": "100%",
-            "hugo": "none"
-          },
-          {
-            "element": "heading",
-            "property": "line-height",
-            "wp": "31px",
-            "hugo": "33px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "327px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 767px)",
-            "hugo": "100%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          }
-        ]
+        "hugoHeight": 128,
+        "heightDelta": 0
       },
       {
         "slug": "home",
@@ -9672,38 +9532,14 @@
         "heading": "Return on investment of an accessible map",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 29.998965262379897,
-        "overlapDiffPercent": 22.383609916000818,
+        "diffPercent": 23.59565662774022,
+        "overlapDiffPercent": 21.915912897822444,
         "wpWidth": 375,
         "wpHeight": 1627,
         "hugoWidth": 375,
-        "hugoHeight": 1804,
-        "heightDelta": 177,
+        "hugoHeight": 1592,
+        "heightDelta": -35,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "10px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "10px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "10px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "10px",
-            "hugo": "0px"
-          },
           {
             "element": "container",
             "property": "max-width",
@@ -9715,12 +9551,6 @@
             "property": "margin-bottom",
             "wp": "0px",
             "hugo": "20px"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "302px",
-            "hugo": "293px"
           },
           {
             "element": "heading",
@@ -9736,39 +9566,9 @@
           },
           {
             "element": "firstParagraph",
-            "property": "width",
-            "wp": "335px",
-            "hugo": "326px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "23px",
             "hugo": "24px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "355px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 767px)",
-            "hugo": "100%"
           },
           {
             "element": "innerWrapper",
@@ -9785,49 +9585,19 @@
         "heading": "Step One – Send us one feature layer",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 38.043967060508415,
-        "overlapDiffPercent": 11.39621095750128,
+        "diffPercent": 13.802589928057554,
+        "overlapDiffPercent": 7.976651305683563,
         "wpWidth": 375,
         "wpHeight": 651,
         "hugoWidth": 375,
-        "hugoHeight": 931,
-        "heightDelta": 280,
+        "hugoHeight": 695,
+        "heightDelta": 44,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "10px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "10px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "10px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "10px",
-            "hugo": "0px"
-          },
           {
             "element": "container",
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "315px",
-            "hugo": "346px"
           },
           {
             "element": "heading",
@@ -9840,12 +9610,6 @@
             "property": "line-height",
             "wp": "28px",
             "hugo": "31px"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "width",
-            "wp": "315px",
-            "hugo": "346px"
           },
           {
             "element": "firstParagraph",
@@ -9867,30 +9631,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "355px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 767px)",
-            "hugo": "100%"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -9904,38 +9644,14 @@
         "heading": "A real deployment",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 28.136620565243536,
-        "overlapDiffPercent": 18.977084745762713,
+        "diffPercent": 14.883796610169492,
+        "overlapDiffPercent": 14.883796610169492,
         "wpWidth": 375,
         "wpHeight": 1475,
         "hugoWidth": 375,
-        "hugoHeight": 1663,
-        "heightDelta": 188,
+        "hugoHeight": 1475,
+        "heightDelta": 0,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "10px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "10px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "10px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "10px",
-            "hugo": "0px"
-          },
           {
             "element": "container",
             "property": "max-width",
@@ -9947,12 +9663,6 @@
             "property": "margin-bottom",
             "wp": "0px",
             "hugo": "20px"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "302px",
-            "hugo": "293px"
           },
           {
             "element": "heading",
@@ -9968,39 +9678,9 @@
           },
           {
             "element": "firstParagraph",
-            "property": "width",
-            "wp": "335px",
-            "hugo": "326px"
-          },
-          {
-            "element": "firstParagraph",
             "property": "line-height",
             "wp": "23px",
             "hugo": "24px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "355px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 767px)",
-            "hugo": "100%"
           },
           {
             "element": "innerWrapper",
@@ -10017,49 +9697,19 @@
         "heading": "Partners",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 20.256107382550336,
-        "overlapDiffPercent": 14.703230437903805,
+        "diffPercent": 11.920300046882325,
+        "overlapDiffPercent": 10.086623594161283,
         "wpWidth": 375,
         "wpHeight": 1393,
         "hugoWidth": 375,
-        "hugoHeight": 1490,
-        "heightDelta": 97,
+        "hugoHeight": 1422,
+        "heightDelta": 29,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "64px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "32px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "64px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "32px",
-            "hugo": "0px"
-          },
           {
             "element": "container",
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "280px",
-            "hugo": "311px"
           },
           {
             "element": "heading",
@@ -10071,13 +9721,19 @@
             "element": "firstParagraph",
             "property": "margin-right",
             "wp": "0px",
-            "hugo": "17px"
+            "hugo": "16px"
           },
           {
             "element": "firstParagraph",
             "property": "margin-left",
             "wp": "0px",
-            "hugo": "17px"
+            "hugo": "16px"
+          },
+          {
+            "element": "firstParagraph",
+            "property": "width",
+            "wp": "311px",
+            "hugo": "280px"
           },
           {
             "element": "firstParagraph",
@@ -10099,30 +9755,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "311px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 426px)",
-            "hugo": "100%"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10136,49 +9768,19 @@
         "heading": "Meet Our Team",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 24.192254220456803,
-        "overlapDiffPercent": 22.024106230847803,
+        "diffPercent": 19.556173452499173,
+        "overlapDiffPercent": 18.009176788124158,
         "wpWidth": 375,
         "wpHeight": 1007,
         "hugoWidth": 375,
-        "hugoHeight": 979,
-        "heightDelta": -28,
+        "hugoHeight": 988,
+        "heightDelta": -19,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "64px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "24px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "64px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "24px",
-            "hugo": "0px"
-          },
           {
             "element": "container",
             "property": "max-width",
             "wp": "375px",
             "hugo": "100%"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "294px",
-            "hugo": "311px"
           },
           {
             "element": "heading",
@@ -10190,49 +9792,25 @@
             "element": "firstParagraph",
             "property": "margin-right",
             "wp": "0px",
-            "hugo": "17px"
+            "hugo": "16px"
           },
           {
             "element": "firstParagraph",
             "property": "margin-left",
             "wp": "0px",
-            "hugo": "17px"
+            "hugo": "16px"
           },
           {
             "element": "firstParagraph",
             "property": "width",
             "wp": "327px",
-            "hugo": "311px"
+            "hugo": "294px"
           },
           {
             "element": "firstParagraph",
             "property": "max-width",
             "wp": "677px",
             "hugo": "90%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "327px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 426px)",
-            "hugo": "100%"
           },
           {
             "element": "innerWrapper",
@@ -10249,26 +9827,14 @@
         "heading": "CONTACT US",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 51.568939393939395,
-        "overlapDiffPercent": 9.800352733686067,
+        "diffPercent": 11.93019197207679,
+        "overlapDiffPercent": 10.998236331569665,
         "wpWidth": 375,
         "wpHeight": 189,
         "hugoWidth": 375,
-        "hugoHeight": 352,
-        "heightDelta": 163,
+        "hugoHeight": 191,
+        "heightDelta": 2,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "0px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "0px",
-            "hugo": "80px"
-          },
           {
             "element": "container",
             "property": "max-width",
@@ -10280,12 +9846,6 @@
             "property": "margin-bottom",
             "wp": "0px",
             "hugo": "20px"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "304px",
-            "hugo": "311px"
           },
           {
             "element": "heading",
@@ -10315,49 +9875,13 @@
             "element": "firstParagraph",
             "property": "width",
             "wp": "338px",
-            "hugo": "311px"
+            "hugo": "304px"
           },
           {
             "element": "firstParagraph",
             "property": "max-width",
             "wp": "1982px",
             "hugo": "90%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-right",
-            "wp": "19px",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-left",
-            "wp": "19px",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "338px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "90%",
-            "hugo": "100%"
           },
           {
             "element": "innerWrapper",
@@ -10374,8 +9898,8 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 14.781826360773731,
-        "overlapDiffPercent": 13.616051071591428,
+        "diffPercent": 10.801259559154296,
+        "overlapDiffPercent": 9.581030551755585,
         "wpWidth": 375,
         "wpHeight": 741,
         "hugoWidth": 375,
@@ -10402,24 +9926,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 767px)",
-            "hugo": "100%"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -10433,75 +9939,13 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 6.768222768222769,
-        "overlapDiffPercent": 6.768222768222769,
+        "diffPercent": 4.7836199836199835,
+        "overlapDiffPercent": 4.7836199836199835,
         "wpWidth": 375,
         "wpHeight": 407,
         "hugoWidth": 375,
         "hugoHeight": 407,
-        "heightDelta": 0,
-        "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "10px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "10px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "0px",
-            "hugo": "80px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "10px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "max-width",
-            "wp": "375px",
-            "hugo": "100%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "padding-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "355px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 767px)",
-            "hugo": "100%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          }
-        ]
+        "heightDelta": 0
       }
     ]
   },
