@@ -21,12 +21,19 @@
     </div>
   </div>
 </article>
-{{ with .PrevInSection }}
+{{ if or .PrevInSection .NextInSection }}
 <nav class="navigation post-navigation" aria-label="Posts">
   <div class="nav-links">
+    {{ with .PrevInSection }}
     <div class="nav-previous">
       <a title="{{ .Title }}" href="{{ .RelPermalink }}" rel="prev"><span class="ast-left-arrow" aria-hidden="true">&larr;</span> Previous Post</a>
     </div>
+    {{ end }}
+    {{ with .NextInSection }}
+    <div class="nav-next">
+      <a title="{{ .Title }}" href="{{ .RelPermalink }}" rel="next">Next Post <span class="ast-right-arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+    {{ end }}
   </div>
 </nav>
 {{ end }}
@@ -42,7 +49,7 @@
   {{ end }}
 {{ end }}
 {{ if eq (len $relatedPages) 0 }}
-  {{ $relatedPages = first 3 (where (where site.RegularPages "Section" "blog") "RelPermalink" "ne" .RelPermalink) }}
+  {{ $relatedPages = first 3 (sort (where (where site.RegularPages "Section" "blog") "RelPermalink" "ne" .RelPermalink) "Date" "asc") }}
 {{ end }}
 {{ if gt (len $relatedPages) 0 }}
 <div class="ast-single-related-posts-container ast-container--fallback">
