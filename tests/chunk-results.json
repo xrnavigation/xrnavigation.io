@@ -26,12 +26,6 @@
         "styleDiffs": [
           {
             "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "container",
             "property": "gap",
             "wp": "20px",
             "hugo": "normal"
@@ -1110,8 +1104,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 32.37421231995885,
-    "maxDiffPercent": 32.37421231995885,
+    "avgDiffPercent": 53.006655092592595,
+    "maxDiffPercent": 53.006655092592595,
     "sections": [
       {
         "slug": "accessibility-statement",
@@ -1120,26 +1114,14 @@
         "heading": "Accessibility Statement for XR Navigation and all its applications",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 32.37421231995885,
-        "overlapDiffPercent": 18.849054783950617,
+        "diffPercent": 53.006655092592595,
+        "overlapDiffPercent": 53.006655092592595,
         "wpWidth": 1920,
         "wpHeight": 540,
         "hugoWidth": 1920,
-        "hugoHeight": 648,
-        "heightDelta": 108,
+        "hugoHeight": 540,
+        "heightDelta": 0,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "96px",
-            "hugo": "115px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "96px",
-            "hugo": "58px"
-          },
           {
             "element": "container",
             "property": "max-width",
@@ -1148,27 +1130,21 @@
           },
           {
             "element": "container",
-            "property": "min-height",
-            "wp": "540px",
-            "hugo": "648px"
+            "property": "gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
+            "property": "row-gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "container",
-            "property": "background-position",
-            "wp": "62% 12%",
-            "hugo": "46% 23%"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "786px",
-            "hugo": "1041px"
+            "property": "column-gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "heading",
@@ -1186,7 +1162,7 @@
             "element": "firstParagraph",
             "property": "margin-right",
             "wp": "22px",
-            "hugo": "315px"
+            "hugo": "187px"
           },
           {
             "element": "firstParagraph",
@@ -1198,43 +1174,13 @@
             "element": "firstParagraph",
             "property": "margin-left",
             "wp": "22px",
-            "hugo": "315px"
+            "hugo": "187px"
           },
           {
             "element": "firstParagraph",
             "property": "width",
             "wp": "742px",
             "hugo": "412px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-right",
-            "wp": "288px",
-            "hugo": "144px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-left",
-            "wp": "288px",
-            "hugo": "144px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "1344px",
-            "hugo": "1632px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "70%",
-            "hugo": "85%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       }
@@ -1247,8 +1193,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 39.719831223628695,
-    "maxDiffPercent": 39.719831223628695,
+    "avgDiffPercent": 46.59324894514768,
+    "maxDiffPercent": 46.59324894514768,
     "sections": [
       {
         "slug": "accessibility-statement",
@@ -1257,38 +1203,14 @@
         "heading": "Accessibility Statement for XR Navigation and all its applications",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 39.719831223628695,
-        "overlapDiffPercent": 32.18481012658228,
+        "diffPercent": 46.59324894514768,
+        "overlapDiffPercent": 46.59324894514768,
         "wpWidth": 375,
         "wpHeight": 632,
         "hugoWidth": 375,
-        "hugoHeight": 711,
-        "heightDelta": 79,
+        "hugoHeight": 632,
+        "heightDelta": 0,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "padding-top",
-            "wp": "50px",
-            "hugo": "6px"
-          },
-          {
-            "element": "container",
-            "property": "padding-right",
-            "wp": "20px",
-            "hugo": "0px"
-          },
-          {
-            "element": "container",
-            "property": "padding-bottom",
-            "wp": "10px",
-            "hugo": "3px"
-          },
-          {
-            "element": "container",
-            "property": "padding-left",
-            "wp": "20px",
-            "hugo": "0px"
-          },
           {
             "element": "container",
             "property": "max-width",
@@ -1297,51 +1219,27 @@
           },
           {
             "element": "container",
-            "property": "min-height",
-            "wp": "406px",
-            "hugo": "487px"
+            "property": "gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
+            "property": "row-gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "container",
-            "property": "background-position",
-            "wp": "62% 12%",
-            "hugo": "46% 23%"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "302px",
-            "hugo": "338px"
+            "property": "column-gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "heading",
             "property": "text-align",
             "wp": "start",
             "hugo": "center"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "width",
-            "wp": "335px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "335px",
-            "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           }
         ]
       }
@@ -1401,12 +1299,6 @@
             "property": "min-height",
             "wp": "864px",
             "hugo": "760px"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "container",
@@ -1497,12 +1389,6 @@
             "property": "max-width",
             "wp": "min(100%, 1200px)",
             "hugo": "none"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -1604,12 +1490,6 @@
             "property": "min-height",
             "wp": "650px",
             "hugo": "730px"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "container",
@@ -1715,12 +1595,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "display",
             "wp": "flex",
             "hugo": "block"
@@ -1772,8 +1646,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 2.0966248075442646,
-    "maxDiffPercent": 2.0966248075442646,
+    "avgDiffPercent": 39.54556389530408,
+    "maxDiffPercent": 39.54556389530408,
     "sections": [
       {
         "slug": "asa625",
@@ -1782,8 +1656,8 @@
         "heading": "Audiom Atlanta Peachtree Streets Alive Map June 2025",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 2.0966248075442646,
-        "overlapDiffPercent": 1.29880917733799,
+        "diffPercent": 39.54556389530408,
+        "overlapDiffPercent": 39.0529200620877,
         "wpWidth": 1920,
         "wpHeight": 866,
         "hugoWidth": 1920,
@@ -1799,8 +1673,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 3.8070351758793968,
-    "maxDiffPercent": 3.8070351758793968,
+    "avgDiffPercent": 23.191155778894473,
+    "maxDiffPercent": 23.191155778894473,
     "sections": [
       {
         "slug": "asa625",
@@ -1809,8 +1683,8 @@
         "heading": "Audiom Atlanta Peachtree Streets Alive Map June 2025",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 3.8070351758793968,
-        "overlapDiffPercent": 3.125506072874494,
+        "diffPercent": 23.191155778894473,
+        "overlapDiffPercent": 22.646963562753037,
         "wpWidth": 375,
         "wpHeight": 995,
         "hugoWidth": 375,
@@ -1826,8 +1700,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 1.4152317176870748,
-    "maxDiffPercent": 1.4152317176870748,
+    "avgDiffPercent": 53.3313137755102,
+    "maxDiffPercent": 53.3313137755102,
     "sections": [
       {
         "slug": "atia",
@@ -1836,8 +1710,8 @@
         "heading": "Audiom ATIA 2026 Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 1.4152317176870748,
-        "overlapDiffPercent": 0.8079333504449008,
+        "diffPercent": 53.3313137755102,
+        "overlapDiffPercent": 53.04382700205339,
         "wpWidth": 1920,
         "wpHeight": 980,
         "hugoWidth": 1920,
@@ -1853,8 +1727,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 2.5813532896788276,
-    "maxDiffPercent": 2.5813532896788276,
+    "avgDiffPercent": 35.04134705332086,
+    "maxDiffPercent": 35.04134705332086,
     "sections": [
       {
         "slug": "atia",
@@ -1863,8 +1737,8 @@
         "heading": "Audiom ATIA 2026 Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 2.5813532896788276,
-        "overlapDiffPercent": 2.03148322358106,
+        "diffPercent": 35.04134705332086,
+        "overlapDiffPercent": 34.67469426152399,
         "wpWidth": 375,
         "wpHeight": 1069,
         "hugoWidth": 375,
@@ -1907,8 +1781,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 2.326052819414704,
-    "maxDiffPercent": 2.326052819414704,
+    "avgDiffPercent": 15.98258386866524,
+    "maxDiffPercent": 15.98258386866524,
     "sections": [
       {
         "slug": "atl-airport",
@@ -1917,8 +1791,8 @@
         "heading": "Atlanta Airport",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 2.326052819414704,
-        "overlapDiffPercent": 1.6945402298850574,
+        "diffPercent": 15.98258386866524,
+        "overlapDiffPercent": 15.439367816091954,
         "wpWidth": 375,
         "wpHeight": 934,
         "hugoWidth": 375,
@@ -2285,8 +2159,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 6.3108108108108105,
-    "maxDiffPercent": 6.3108108108108105,
+    "avgDiffPercent": 6.3200450450450445,
+    "maxDiffPercent": 6.3200450450450445,
     "sections": [
       {
         "slug": "audiom-demo",
@@ -2295,8 +2169,8 @@
         "heading": "Activate “Enable sounds and skip to map” if using a screen reader, or click on the enable sounds and then the “A” avatar on the map if sighted, and Press any Key or Tap to Continue.",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 6.3108108108108105,
-        "overlapDiffPercent": 6.3108108108108105,
+        "diffPercent": 6.3200450450450445,
+        "overlapDiffPercent": 6.3200450450450445,
         "wpWidth": 375,
         "wpHeight": 1184,
         "hugoWidth": 375,
@@ -2314,12 +2188,6 @@
             "property": "min-height",
             "wp": "0px",
             "hugo": "auto"
-          },
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
           },
           {
             "element": "container",
@@ -2377,12 +2245,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "justify-content",
             "wp": "center",
             "hugo": "normal"
@@ -2410,8 +2272,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 24.760370979532162,
-    "maxDiffPercent": 24.760370979532162,
+    "avgDiffPercent": 11.36701127819549,
+    "maxDiffPercent": 11.36701127819549,
     "sections": [
       {
         "slug": "audiom-demo-form",
@@ -2420,13 +2282,13 @@
         "heading": "Sign Up and Get A Demo Of Audiom!",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 24.760370979532162,
-        "overlapDiffPercent": 22.61066729323308,
+        "diffPercent": 11.36701127819549,
+        "overlapDiffPercent": 11.233527861445783,
         "wpWidth": 1920,
         "wpHeight": 665,
         "hugoWidth": 1920,
-        "hugoHeight": 684,
-        "heightDelta": 19,
+        "hugoHeight": 664,
+        "heightDelta": -1,
         "styleDiffs": [
           {
             "element": "container",
@@ -2444,73 +2306,25 @@
             "element": "container",
             "property": "gap",
             "wp": "20px 0px",
-            "hugo": "20px"
+            "hugo": "normal"
+          },
+          {
+            "element": "container",
+            "property": "row-gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "container",
             "property": "column-gap",
             "wp": "0px",
-            "hugo": "20px"
-          },
-          {
-            "element": "container",
-            "property": "background-image",
-            "wp": "url(\"https://xrnavigation.io/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp\")",
-            "hugo": "url(\"http://127.0.0.1:8642/images/DALL%25C2%25B7E-2023-10-17-13.21.37-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-corporate-campus-with-modern-structures-and-pathways-and-the-right-side-i.webp\")"
-          },
-          {
-            "element": "container",
-            "property": "background-position",
-            "wp": "62% 12%",
-            "hugo": "46% 23%"
-          },
-          {
-            "element": "heading",
-            "property": "width",
-            "wp": "1229px",
-            "hugo": "1041px"
+            "hugo": "normal"
           },
           {
             "element": "heading",
             "property": "max-width",
             "wp": "100%",
             "hugo": "none"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-right",
-            "wp": "192px",
-            "hugo": "144px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-left",
-            "wp": "192px",
-            "hugo": "144px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "width",
-            "wp": "1536px",
-            "hugo": "1632px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "80%",
-            "hugo": "85%"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "gap",
-            "wp": "20px 0px",
-            "hugo": "20px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "column-gap",
-            "wp": "0px",
-            "hugo": "20px"
           }
         ]
       }
@@ -2523,8 +2337,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 42.78638786387864,
-    "maxDiffPercent": 42.78638786387864,
+    "avgDiffPercent": 29.539975399754,
+    "maxDiffPercent": 29.539975399754,
     "sections": [
       {
         "slug": "audiom-demo-form",
@@ -2533,20 +2347,14 @@
         "heading": "Sign Up and Get A Demo Of Audiom!",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 42.78638786387864,
-        "overlapDiffPercent": 42.71592775041051,
+        "diffPercent": 29.539975399754,
+        "overlapDiffPercent": 29.45320197044335,
         "wpWidth": 375,
         "wpHeight": 812,
         "hugoWidth": 375,
         "hugoHeight": 813,
         "heightDelta": 1,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "min-height",
-            "wp": "812px",
-            "hugo": "487px"
-          },
           {
             "element": "container",
             "property": "justify-content",
@@ -2563,25 +2371,19 @@
             "element": "container",
             "property": "gap",
             "wp": "20px 0px",
-            "hugo": "20px"
+            "hugo": "normal"
+          },
+          {
+            "element": "container",
+            "property": "row-gap",
+            "wp": "20px",
+            "hugo": "normal"
           },
           {
             "element": "container",
             "property": "column-gap",
             "wp": "0px",
-            "hugo": "20px"
-          },
-          {
-            "element": "container",
-            "property": "background-image",
-            "wp": "url(\"https://xrnavigation.io/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-17-15.50.05-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-university-campus-with-iconic-academic-buildings-green-lawns-and-student.webp\")",
-            "hugo": "url(\"http://127.0.0.1:8642/images/DALL%25C2%25B7E-2023-10-17-13.21.37-A-composite-image-where-the-left-side-is-a-birds-eye-view-photo-of-a-sunny-corporate-campus-with-modern-structures-and-pathways-and-the-right-side-i.webp\")"
-          },
-          {
-            "element": "container",
-            "property": "background-position",
-            "wp": "62% 12%",
-            "hugo": "46% 23%"
+            "hugo": "normal"
           },
           {
             "element": "heading",
@@ -2591,21 +2393,15 @@
           },
           {
             "element": "innerWrapper",
+            "property": "max-width",
+            "wp": "min(100%, 767px)",
+            "hugo": "338px"
+          },
+          {
+            "element": "innerWrapper",
             "property": "min-height",
             "wp": "auto",
             "hugo": "625px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "gap",
-            "wp": "20px 0px",
-            "hugo": "20px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "column-gap",
-            "wp": "0px",
-            "hugo": "20px"
           }
         ]
       }
@@ -2672,8 +2468,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 1.918092757936508,
-    "maxDiffPercent": 1.918092757936508,
+    "avgDiffPercent": 1.9162326388888888,
+    "maxDiffPercent": 1.9162326388888888,
     "sections": [
       {
         "slug": "audiom-mean-sea-level-rise-map-fall-2024",
@@ -2682,8 +2478,8 @@
         "heading": "Audiom Mean Sea Level Rise Map Fall 2024",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 1.918092757936508,
-        "overlapDiffPercent": 1.2124675259792166,
+        "diffPercent": 1.9162326388888888,
+        "overlapDiffPercent": 1.2105940247801759,
         "wpWidth": 1920,
         "wpHeight": 840,
         "hugoWidth": 1920,
@@ -2726,8 +2522,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 19.644584052343976,
-    "maxDiffPercent": 19.644584052343976,
+    "avgDiffPercent": 19.725382873166524,
+    "maxDiffPercent": 19.725382873166524,
     "sections": [
       {
         "slug": "audiom-neighborhood-demo",
@@ -2736,20 +2532,14 @@
         "heading": "Press The “Enable sounds and skip to map” Button, and Press any Key to start.",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 19.644584052343976,
-        "overlapDiffPercent": 14.005607494613729,
+        "diffPercent": 19.725382873166524,
+        "overlapDiffPercent": 14.092076408125578,
         "wpWidth": 1920,
         "wpHeight": 1159,
         "hugoWidth": 1920,
         "hugoHeight": 1083,
         "heightDelta": -76,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
           {
             "element": "container",
             "property": "gap",
@@ -2812,12 +2602,6 @@
           },
           {
             "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
             "property": "justify-content",
             "wp": "center",
             "hugo": "normal"
@@ -2851,12 +2635,6 @@
         "hugoHeight": 973,
         "heightDelta": -24,
         "styleDiffs": [
-          {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
           {
             "element": "container",
             "property": "gap",
@@ -2940,12 +2718,6 @@
             "property": "max-width",
             "wp": "min(100%, 767px)",
             "hugo": "375px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -3198,8 +2970,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 13.553588867187498,
-    "maxDiffPercent": 13.553588867187498,
+    "avgDiffPercent": 1.0824788411458333,
+    "maxDiffPercent": 1.0824788411458333,
     "sections": [
       {
         "slug": "audiom-tvm-map-1",
@@ -3208,8 +2980,8 @@
         "heading": "Audiom TVM Map 1",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 13.553588867187498,
-        "overlapDiffPercent": 13.14646291208791,
+        "diffPercent": 1.0824788411458333,
+        "overlapDiffPercent": 0.6166192438513867,
         "wpWidth": 1920,
         "wpHeight": 1280,
         "hugoWidth": 1920,
@@ -3252,8 +3024,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 5.010742187499999,
-    "maxDiffPercent": 5.010742187499999,
+    "avgDiffPercent": 1.0888671875,
+    "maxDiffPercent": 1.0888671875,
     "sections": [
       {
         "slug": "audiom-tvm-map-2",
@@ -3262,8 +3034,8 @@
         "heading": "Audiom TVM Map 2",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 5.010742187499999,
-        "overlapDiffPercent": 4.563383045525902,
+        "diffPercent": 1.0888671875,
+        "overlapDiffPercent": 0.6230376766091051,
         "wpWidth": 1920,
         "wpHeight": 1280,
         "hugoWidth": 1920,
@@ -3306,8 +3078,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 5.870198567708333,
-    "maxDiffPercent": 5.870198567708333,
+    "avgDiffPercent": 1.089111328125,
+    "maxDiffPercent": 1.089111328125,
     "sections": [
       {
         "slug": "audiom-tvm-map-3",
@@ -3316,8 +3088,8 @@
         "heading": "Audiom TVM Map 3",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 5.870198567708333,
-        "overlapDiffPercent": 5.426887100994244,
+        "diffPercent": 1.089111328125,
+        "overlapDiffPercent": 0.623282967032967,
         "wpWidth": 1920,
         "wpHeight": 1280,
         "hugoWidth": 1920,
@@ -3360,8 +3132,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 6.0367431640625,
-    "maxDiffPercent": 6.0367431640625,
+    "avgDiffPercent": 1.0877278645833333,
+    "maxDiffPercent": 1.0877278645833333,
     "sections": [
       {
         "slug": "audiom-tvm-map-4",
@@ -3370,8 +3142,8 @@
         "heading": "Audiom TVM Map 4",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 6.0367431640625,
-        "overlapDiffPercent": 5.594216051805337,
+        "diffPercent": 1.0877278645833333,
+        "overlapDiffPercent": 0.6218929879644165,
         "wpWidth": 1920,
         "wpHeight": 1280,
         "hugoWidth": 1920,
@@ -3414,8 +3186,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 1.7870429421768708,
-    "maxDiffPercent": 1.7870429421768708,
+    "avgDiffPercent": 44.25552721088435,
+    "maxDiffPercent": 44.25552721088435,
     "sections": [
       {
         "slug": "audiom-wisconsin-geological-survey-quaternary-map",
@@ -3424,8 +3196,8 @@
         "heading": "Audiom Wisconsin Geological Survey Quaternary Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 1.7870429421768708,
-        "overlapDiffPercent": 1.182034993155373,
+        "diffPercent": 44.25552721088435,
+        "overlapDiffPercent": 43.91213210130048,
         "wpWidth": 1920,
         "wpHeight": 980,
         "hugoWidth": 1920,
@@ -3441,8 +3213,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 3.8600660066006607,
-    "maxDiffPercent": 3.8600660066006607,
+    "avgDiffPercent": 30.739873987398745,
+    "maxDiffPercent": 30.739873987398745,
     "sections": [
       {
         "slug": "audiom-wisconsin-geological-survey-quaternary-map",
@@ -3451,8 +3223,8 @@
         "heading": "Audiom Wisconsin Geological Survey Quaternary Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 3.8600660066006607,
-        "overlapDiffPercent": 3.338039215686275,
+        "diffPercent": 30.739873987398745,
+        "overlapDiffPercent": 30.363800904977378,
         "wpWidth": 375,
         "wpHeight": 1111,
         "hugoWidth": 375,
@@ -3742,8 +3514,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 25.649739583333332,
-    "maxDiffPercent": 25.649739583333332,
+    "avgDiffPercent": 38.82744984567901,
+    "maxDiffPercent": 38.82744984567901,
     "sections": [
       {
         "slug": "brandon-keith-biggs",
@@ -3752,13 +3524,13 @@
         "heading": "Brandon Biggs",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 25.649739583333332,
-        "overlapDiffPercent": 22.116119059165857,
+        "diffPercent": 38.82744984567901,
+        "overlapDiffPercent": 21.90738278171789,
         "wpWidth": 1920,
         "wpHeight": 1080,
         "hugoWidth": 1920,
-        "hugoHeight": 1031,
-        "heightDelta": -49,
+        "hugoHeight": 846,
+        "heightDelta": -234,
         "styleDiffs": [
           {
             "element": "container",
@@ -3791,40 +3563,10 @@
             "hugo": "0px"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "container",
-            "property": "gap",
-            "wp": "0px 40px",
-            "hugo": "normal"
-          },
-          {
-            "element": "container",
-            "property": "row-gap",
-            "wp": "0px",
-            "hugo": "normal"
-          },
-          {
-            "element": "container",
-            "property": "column-gap",
-            "wp": "40px",
-            "hugo": "normal"
-          },
-          {
-            "element": "heading",
-            "property": "margin-bottom",
-            "wp": "20px",
-            "hugo": "24px"
-          },
-          {
             "element": "heading",
             "property": "width",
             "wp": "1004px",
-            "hugo": "600px"
+            "hugo": "516px"
           },
           {
             "element": "heading",
@@ -3834,75 +3576,33 @@
           },
           {
             "element": "heading",
-            "property": "font-size",
-            "wp": "40px",
-            "hugo": "56px"
-          },
-          {
-            "element": "heading",
-            "property": "font-weight",
-            "wp": "700",
-            "hugo": "600"
-          },
-          {
-            "element": "heading",
             "property": "line-height",
             "wp": "50px",
             "hugo": "62px"
           },
           {
-            "element": "heading",
-            "property": "text-align",
-            "wp": "left",
-            "hugo": "start"
-          },
-          {
             "element": "innerWrapper",
             "property": "margin-right",
             "wp": "192px",
-            "hugo": "220px"
+            "hugo": "340px"
           },
           {
             "element": "innerWrapper",
             "property": "margin-left",
             "wp": "192px",
-            "hugo": "220px"
+            "hugo": "340px"
           },
           {
             "element": "innerWrapper",
             "property": "width",
             "wp": "1536px",
-            "hugo": "1440px"
+            "hugo": "1200px"
           },
           {
             "element": "innerWrapper",
             "property": "max-width",
             "wp": "80%",
-            "hugo": "none"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "gap",
-            "wp": "0px 40px",
-            "hugo": "80px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "row-gap",
-            "wp": "0px",
-            "hugo": "80px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "column-gap",
-            "wp": "40px",
-            "hugo": "80px"
+            "hugo": "min(100%, 1200px)"
           }
         ]
       }
@@ -3915,8 +3615,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 32.716388888888886,
-    "maxDiffPercent": 32.716388888888886,
+    "avgDiffPercent": 23.60183908045977,
+    "maxDiffPercent": 23.60183908045977,
     "sections": [
       {
         "slug": "brandon-keith-biggs",
@@ -3925,13 +3625,13 @@
         "heading": "Brandon Biggs",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 32.716388888888886,
-        "overlapDiffPercent": 20.45287356321839,
+        "diffPercent": 23.60183908045977,
+        "overlapDiffPercent": 18.144827586206898,
         "wpWidth": 375,
         "wpHeight": 812,
         "hugoWidth": 375,
-        "hugoHeight": 960,
-        "heightDelta": 148,
+        "hugoHeight": 870,
+        "heightDelta": 58,
         "styleDiffs": [
           {
             "element": "container",
@@ -3964,34 +3664,10 @@
             "hugo": "0px"
           },
           {
-            "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "container",
-            "property": "gap",
-            "wp": "40px 0px",
-            "hugo": "normal"
-          },
-          {
-            "element": "container",
-            "property": "row-gap",
-            "wp": "40px",
-            "hugo": "normal"
-          },
-          {
-            "element": "container",
-            "property": "column-gap",
-            "wp": "0px",
-            "hugo": "normal"
-          },
-          {
             "element": "heading",
             "property": "width",
             "wp": "327px",
-            "hugo": "305px"
+            "hugo": "335px"
           },
           {
             "element": "heading",
@@ -4001,57 +3677,15 @@
           },
           {
             "element": "heading",
-            "property": "font-size",
-            "wp": "36px",
-            "hugo": "30px"
-          },
-          {
-            "element": "heading",
-            "property": "font-weight",
-            "wp": "700",
-            "hugo": "600"
-          },
-          {
-            "element": "heading",
             "property": "line-height",
             "wp": "46px",
             "hugo": "42px"
           },
           {
-            "element": "heading",
-            "property": "text-align",
-            "wp": "left",
-            "hugo": "start"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-right",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "margin-left",
-            "wp": "0px",
-            "hugo": "15px"
-          },
-          {
             "element": "innerWrapper",
             "property": "width",
             "wp": "327px",
-            "hugo": "305px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "max-width",
-            "wp": "min(100%, 426px)",
-            "hugo": "none"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
+            "hugo": "335px"
           },
           {
             "element": "innerWrapper",
@@ -4063,19 +3697,7 @@
             "element": "innerWrapper",
             "property": "flex-direction",
             "wp": "column",
-            "hugo": "row"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "gap",
-            "wp": "40px 0px",
-            "hugo": "40px"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "column-gap",
-            "wp": "0px",
-            "hugo": "40px"
+            "hugo": "column-reverse"
           }
         ]
       }
@@ -4138,12 +3760,6 @@
           },
           {
             "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "container",
             "property": "gap",
             "wp": "20px",
             "hugo": "normal"
@@ -4195,12 +3811,6 @@
             "property": "max-width",
             "wp": "min(100%, 1200px)",
             "hugo": "none"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -4305,12 +3915,6 @@
           },
           {
             "element": "container",
-            "property": "display",
-            "wp": "flex",
-            "hugo": "block"
-          },
-          {
-            "element": "container",
             "property": "gap",
             "wp": "20px",
             "hugo": "normal"
@@ -4374,12 +3978,6 @@
             "property": "max-width",
             "wp": "min(100%, 767px)",
             "hugo": "none"
-          },
-          {
-            "element": "innerWrapper",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "innerWrapper",
@@ -4488,8 +4086,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 11.868574625060473,
-    "maxDiffPercent": 11.868574625060473,
+    "avgDiffPercent": 12.049089864537978,
+    "maxDiffPercent": 12.049089864537978,
     "sections": [
       {
         "slug": "case-study-wisconsin-geological-survey",
@@ -4498,8 +4096,8 @@
         "heading": "Case Study: Wisconsin Geological Survey",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 11.868574625060473,
-        "overlapDiffPercent": 5.34286502987789,
+        "diffPercent": 12.049089864537978,
+        "overlapDiffPercent": 5.536746557547415,
         "wpWidth": 1920,
         "wpHeight": 1378,
         "hugoWidth": 1920,
@@ -6902,8 +6500,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 1.7557104820627802,
-    "maxDiffPercent": 1.7557104820627802,
+    "avgDiffPercent": 60.51914004110612,
+    "maxDiffPercent": 60.51914004110612,
     "sections": [
       {
         "slug": "election2024",
@@ -6912,8 +6510,8 @@
         "heading": "Audiom 2024 U.S. Election Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 1.7557104820627802,
-        "overlapDiffPercent": 0.9786370056497176,
+        "diffPercent": 60.51914004110612,
+        "overlapDiffPercent": 60.20686205273069,
         "wpWidth": 1920,
         "wpHeight": 892,
         "hugoWidth": 1920,
@@ -6956,8 +6554,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 30.165334302325583,
-    "maxDiffPercent": 30.165334302325583,
+    "avgDiffPercent": 30.63669472776361,
+    "maxDiffPercent": 30.63669472776361,
     "sections": [
       {
         "slug": "events",
@@ -6966,13 +6564,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 30.165334302325583,
+        "diffPercent": 30.63669472776361,
         "overlapDiffPercent": 6.064359892342068,
         "wpWidth": 1920,
         "wpHeight": 4923,
         "hugoWidth": 1920,
-        "hugoHeight": 6622,
-        "heightDelta": 1699
+        "hugoHeight": 6667,
+        "heightDelta": 1744
       }
     ]
   },
@@ -6983,8 +6581,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 16.977637596593596,
-    "maxDiffPercent": 16.977637596593596,
+    "avgDiffPercent": 17.50151467669487,
+    "maxDiffPercent": 17.50151467669487,
     "sections": [
       {
         "slug": "events",
@@ -6993,13 +6591,13 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 16.977637596593596,
-        "overlapDiffPercent": 13.271037891268534,
+        "diffPercent": 17.50151467669487,
+        "overlapDiffPercent": 13.2610653487095,
         "wpWidth": 375,
         "wpHeight": 6070,
         "hugoWidth": 375,
-        "hugoHeight": 6341,
-        "heightDelta": 271
+        "hugoHeight": 6382,
+        "heightDelta": 312
       }
     ]
   },
@@ -7307,8 +6905,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 34.65219831618335,
-    "maxDiffPercent": 34.65219831618335,
+    "avgDiffPercent": 2.6808855628313064,
+    "maxDiffPercent": 2.6808855628313064,
     "sections": [
       {
         "slug": "gatech",
@@ -7317,8 +6915,8 @@
         "heading": "Audiom Georgia Tech Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 34.65219831618335,
-        "overlapDiffPercent": 34.28334901222954,
+        "diffPercent": 2.6808855628313064,
+        "overlapDiffPercent": 2.131577296958294,
         "wpWidth": 375,
         "wpHeight": 1069,
         "hugoWidth": 375,
@@ -7334,8 +6932,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 30.277157738095237,
-    "maxDiffPercent": 30.277157738095237,
+    "avgDiffPercent": 1.5757688492063493,
+    "maxDiffPercent": 1.5757688492063493,
     "sections": [
       {
         "slug": "gavilan-gilroy",
@@ -7344,8 +6942,8 @@
         "heading": "Gilroy Campus Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 30.277157738095237,
-        "overlapDiffPercent": 29.775554556354916,
+        "diffPercent": 1.5757688492063493,
+        "overlapDiffPercent": 0.8676808553157475,
         "wpWidth": 1920,
         "wpHeight": 840,
         "hugoWidth": 1920,
@@ -7388,8 +6986,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 15.997705853174603,
-    "maxDiffPercent": 15.997705853174603,
+    "avgDiffPercent": 1.6595982142857142,
+    "maxDiffPercent": 1.6595982142857142,
     "sections": [
       {
         "slug": "gavilan-hollister",
@@ -7398,8 +6996,8 @@
         "heading": "Gavilan Hollister Campus",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 15.997705853174603,
-        "overlapDiffPercent": 15.393372801758593,
+        "diffPercent": 1.6595982142857142,
+        "overlapDiffPercent": 0.952113309352518,
         "wpWidth": 1920,
         "wpHeight": 840,
         "hugoWidth": 1920,
@@ -9452,8 +9050,8 @@
     "matchedSections": 10,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 14.385184299143194,
-    "maxDiffPercent": 54.08017852411235,
+    "avgDiffPercent": 11.110784872254095,
+    "maxDiffPercent": 23.5734140917603,
     "sections": [
       {
         "slug": "home",
@@ -9515,13 +9113,13 @@
         "heading": "Media player",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 54.08017852411235,
-        "overlapDiffPercent": 29.552273882113823,
+        "diffPercent": 20.67165971118177,
+        "overlapDiffPercent": 20.67165971118177,
         "wpWidth": 1920,
         "wpHeight": 1258,
         "hugoWidth": 1920,
-        "hugoHeight": 820,
-        "heightDelta": -438,
+        "hugoHeight": 1258,
+        "heightDelta": 0,
         "styleDiffs": [
           {
             "element": "container",
@@ -9550,8 +9148,8 @@
         "heading": "Return on investment of an accessible map",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 9.166720195272353,
-        "overlapDiffPercent": 9.166720195272353,
+        "diffPercent": 10.46120246659815,
+        "overlapDiffPercent": 10.46120246659815,
         "wpWidth": 1920,
         "wpHeight": 973,
         "hugoWidth": 1920,
@@ -9615,13 +9213,13 @@
         "heading": "Step One – Send us one feature layer",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 2.9395906690140845,
-        "overlapDiffPercent": 1.903358540925267,
+        "diffPercent": 3.440067488262911,
+        "overlapDiffPercent": 2.060639880952381,
         "wpWidth": 1920,
         "wpHeight": 284,
         "hugoWidth": 1920,
-        "hugoHeight": 281,
-        "heightDelta": -3
+        "hugoHeight": 280,
+        "heightDelta": -4
       },
       {
         "slug": "home",
@@ -9630,8 +9228,8 @@
         "heading": "A real deployment",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 7.091897910243233,
-        "overlapDiffPercent": 7.091897910243233,
+        "diffPercent": 7.104530661185338,
+        "overlapDiffPercent": 7.104530661185338,
         "wpWidth": 1920,
         "wpHeight": 973,
         "hugoWidth": 1920,
@@ -9707,8 +9305,8 @@
         "heading": "Partners",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 23.591214107365793,
-        "overlapDiffPercent": 12.347386322950232,
+        "diffPercent": 23.5734140917603,
+        "overlapDiffPercent": 12.326966970998926,
         "wpWidth": 1920,
         "wpHeight": 1068,
         "hugoWidth": 1920,
@@ -9760,8 +9358,8 @@
         "heading": "Meet Our Team",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 14.67062338501292,
-        "overlapDiffPercent": 9.626522304324029,
+        "diffPercent": 14.713743540051679,
+        "overlapDiffPercent": 9.672191434044883,
         "wpWidth": 1920,
         "wpHeight": 645,
         "hugoWidth": 1920,
@@ -9801,8 +9399,8 @@
         "heading": "CONTACT US",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 4.014525021204411,
-        "overlapDiffPercent": 2.526378122308355,
+        "diffPercent": 4.105306403731976,
+        "overlapDiffPercent": 2.6185669681309216,
         "wpWidth": 1920,
         "wpHeight": 393,
         "hugoWidth": 1920,
@@ -9816,13 +9414,27 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 4.931428460583488,
-        "overlapDiffPercent": 4.397335362047441,
+        "diffPercent": 5.292908131595283,
+        "overlapDiffPercent": 4.76084581772784,
         "wpWidth": 1920,
         "wpHeight": 537,
         "hugoWidth": 1920,
         "hugoHeight": 534,
-        "heightDelta": -3
+        "heightDelta": -3,
+        "styleDiffs": [
+          {
+            "element": "container",
+            "property": "max-width",
+            "wp": "1920px",
+            "hugo": "100%"
+          },
+          {
+            "element": "innerWrapper",
+            "property": "display",
+            "wp": "flex",
+            "hugo": "block"
+          }
+        ]
       },
       {
         "slug": "home",
@@ -9831,8 +9443,8 @@
         "heading": null,
         "selectorType": "uagb-root",
         "matchMethod": "position",
-        "diffPercent": 4.378369531731361,
-        "overlapDiffPercent": 4.378369531731361,
+        "diffPercent": 2.7577210412815774,
+        "overlapDiffPercent": 2.7577210412815774,
         "wpWidth": 1920,
         "wpHeight": 541,
         "hugoWidth": 1920,
@@ -11413,8 +11025,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 15.954785229841749,
-    "maxDiffPercent": 15.954785229841749,
+    "avgDiffPercent": 1.4175332830946998,
+    "maxDiffPercent": 1.4175332830946998,
     "sections": [
       {
         "slug": "lske-map-1",
@@ -11423,8 +11035,8 @@
         "heading": "LSKE Map 1",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 15.954785229841749,
-        "overlapDiffPercent": 15.573050719152157,
+        "diffPercent": 1.4175332830946998,
+        "overlapDiffPercent": 0.9697703759777946,
         "wpWidth": 375,
         "wpHeight": 1327,
         "hugoWidth": 375,
@@ -11440,8 +11052,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 1.0194498697916667,
-    "maxDiffPercent": 1.0194498697916667,
+    "avgDiffPercent": 1.0203857421875,
+    "maxDiffPercent": 1.0203857421875,
     "sections": [
       {
         "slug": "lske-map-2",
@@ -11450,8 +11062,8 @@
         "heading": "LSKE Map 2",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 1.0194498697916667,
-        "overlapDiffPercent": 0.5532934327577185,
+        "diffPercent": 1.0203857421875,
+        "overlapDiffPercent": 0.5542337127158556,
         "wpWidth": 1920,
         "wpHeight": 1280,
         "hugoWidth": 1920,
@@ -11548,8 +11160,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 1.0185953776041667,
-    "maxDiffPercent": 1.0185953776041667,
+    "avgDiffPercent": 1.019287109375,
+    "maxDiffPercent": 1.019287109375,
     "sections": [
       {
         "slug": "lske-map-4",
@@ -11558,8 +11170,8 @@
         "heading": "LSKE Map 4",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 1.0185953776041667,
-        "overlapDiffPercent": 0.552434916274202,
+        "diffPercent": 1.019287109375,
+        "overlapDiffPercent": 0.5531299058084772,
         "wpWidth": 1920,
         "wpHeight": 1280,
         "hugoWidth": 1920,
@@ -11656,8 +11268,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 19.904874924653406,
-    "maxDiffPercent": 19.904874924653406,
+    "avgDiffPercent": 47.38593557810578,
+    "maxDiffPercent": 47.38593557810578,
     "sections": [
       {
         "slug": "map-evaluation-tool",
@@ -11666,13 +11278,13 @@
         "heading": "Introduction",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 19.904874924653406,
-        "overlapDiffPercent": 18.279328105781058,
+        "diffPercent": 47.38593557810578,
+        "overlapDiffPercent": 28.707942708333334,
         "wpWidth": 1920,
         "wpHeight": 542,
         "hugoWidth": 1920,
-        "hugoHeight": 553,
-        "heightDelta": 11,
+        "hugoHeight": 400,
+        "heightDelta": -142,
         "styleDiffs": [
           {
             "element": "container",
@@ -11690,7 +11302,7 @@
             "element": "heading",
             "property": "width",
             "wp": "1310px",
-            "hugo": "742px"
+            "hugo": "272px"
           },
           {
             "element": "heading",
@@ -11708,12 +11320,6 @@
             "element": "firstParagraph",
             "property": "margin-left",
             "wp": "284px",
-            "hugo": "0px"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
             "hugo": "0px"
           },
           {
@@ -11745,8 +11351,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 29.395604395604394,
-    "maxDiffPercent": 29.395604395604394,
+    "avgDiffPercent": 66.6472303206997,
+    "maxDiffPercent": 66.6472303206997,
     "sections": [
       {
         "slug": "map-evaluation-tool",
@@ -11755,13 +11361,13 @@
         "heading": "Introduction",
         "selectorType": "uagb-root",
         "matchMethod": "exact_heading",
-        "diffPercent": 29.395604395604394,
-        "overlapDiffPercent": 21.044546850998465,
+        "diffPercent": 66.6472303206997,
+        "overlapDiffPercent": 29.708141321044547,
         "wpWidth": 375,
         "wpHeight": 651,
         "hugoWidth": 375,
-        "hugoHeight": 728,
-        "heightDelta": 77,
+        "hugoHeight": 1372,
+        "heightDelta": 721,
         "styleDiffs": [
           {
             "element": "container",
@@ -11791,7 +11397,7 @@
             "element": "heading",
             "property": "width",
             "wp": "302px",
-            "hugo": "320px"
+            "hugo": "223px"
           },
           {
             "element": "heading",
@@ -11809,19 +11415,13 @@
             "element": "firstParagraph",
             "property": "width",
             "wp": "335px",
-            "hugo": "355px"
+            "hugo": "111px"
           },
           {
             "element": "firstParagraph",
             "property": "max-width",
             "wp": "677px",
             "hugo": "742px"
-          },
-          {
-            "element": "firstParagraph",
-            "property": "min-height",
-            "wp": "auto",
-            "hugo": "0px"
           },
           {
             "element": "firstParagraph",
@@ -11912,8 +11512,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 11.836723449491807,
-    "maxDiffPercent": 11.836723449491807,
+    "avgDiffPercent": 3.8517034847542004,
+    "maxDiffPercent": 3.8517034847542004,
     "sections": [
       {
         "slug": "nasa-jpl-campus-map",
@@ -11922,8 +11522,8 @@
         "heading": "NASA JPL Campus Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 11.836723449491807,
-        "overlapDiffPercent": 11.72686266874351,
+        "diffPercent": 3.8517034847542004,
+        "overlapDiffPercent": 3.731892523364486,
         "wpWidth": 1920,
         "wpHeight": 1607,
         "hugoWidth": 1920,
@@ -11966,8 +11566,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 14.947624719730939,
-    "maxDiffPercent": 14.947624719730939,
+    "avgDiffPercent": 2.0604446935724963,
+    "maxDiffPercent": 2.0604446935724963,
     "sections": [
       {
         "slug": "nfb",
@@ -11976,8 +11576,8 @@
         "heading": "Audiom NFB Jernigan Institute and Riverside Park Map",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 14.947624719730939,
-        "overlapDiffPercent": 14.274894067796609,
+        "diffPercent": 2.0604446935724963,
+        "overlapDiffPercent": 1.2857815442561205,
         "wpWidth": 1920,
         "wpHeight": 892,
         "hugoWidth": 1920,
@@ -12047,8 +11647,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 2.459289617486339,
-    "maxDiffPercent": 2.459289617486339,
+    "avgDiffPercent": 2.4456284153005465,
+    "maxDiffPercent": 2.4456284153005465,
     "sections": [
       {
         "slug": "nfb24",
@@ -12057,8 +11657,8 @@
         "heading": "NFB Exhibit Hall Map 2024",
         "selectorType": "whole-page",
         "matchMethod": "exact_heading",
-        "diffPercent": 2.459289617486339,
-        "overlapDiffPercent": 1.8559450171821306,
+        "diffPercent": 2.4456284153005465,
+        "overlapDiffPercent": 1.8421993127147767,
         "wpWidth": 375,
         "wpHeight": 976,
         "hugoWidth": 375,
@@ -12074,8 +11674,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 5.537430311032864,
-    "maxDiffPercent": 5.537430311032864,
+    "avgDiffPercent": 5.501516040688576,
+    "maxDiffPercent": 5.501516040688576,
     "sections": [
       {
         "slug": "nfb25",
@@ -12084,8 +11684,8 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 5.537430311032864,
-        "overlapDiffPercent": 3.643089643819216,
+        "diffPercent": 5.501516040688576,
+        "overlapDiffPercent": 3.6064551531477598,
         "wpWidth": 1920,
         "wpHeight": 3408,
         "hugoWidth": 1920,
@@ -12182,8 +11782,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 4.444682549065973,
-    "maxDiffPercent": 4.444682549065973,
+    "avgDiffPercent": 4.443949761566958,
+    "maxDiffPercent": 4.443949761566958,
     "sections": [
       {
         "slug": "privacy-policy",
@@ -12192,8 +11792,8 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 4.444682549065973,
-        "overlapDiffPercent": 4.218194477364304,
+        "diffPercent": 4.443949761566958,
+        "overlapDiffPercent": 4.21745995299044,
         "wpWidth": 1920,
         "wpHeight": 8438,
         "hugoWidth": 1920,
@@ -12236,8 +11836,8 @@
     "matchedSections": 1,
     "unmatchedWp": 0,
     "unmatchedHugo": 0,
-    "avgDiffPercent": 29.64395539906103,
-    "maxDiffPercent": 29.64395539906103,
+    "avgDiffPercent": 16.607159624413146,
+    "maxDiffPercent": 16.607159624413146,
     "sections": [
       {
         "slug": "rose-quarter-and-sunset-maps",
@@ -12246,8 +11846,8 @@
         "heading": null,
         "selectorType": "whole-page",
         "matchMethod": "position",
-        "diffPercent": 29.64395539906103,
-        "overlapDiffPercent": 24.905604830627382,
+        "diffPercent": 16.607159624413146,
+        "overlapDiffPercent": 10.99080477049509,
         "wpWidth": 1920,
         "wpHeight": 1775,
         "hugoWidth": 1920,
